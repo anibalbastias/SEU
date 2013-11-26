@@ -1,4 +1,4 @@
-Servicio de Empaques Universitarios - Easy
+Servicio de Empaques Universitarios
 ===
 
 ## Requisitos
