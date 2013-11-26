@@ -1,7 +1,5 @@
-SEU
+Servicio de Empaques Universitarios - Easy
 ===
-
-# Servicio de Empaques Universitarios - Easy
 
 ## Requisitos
 
