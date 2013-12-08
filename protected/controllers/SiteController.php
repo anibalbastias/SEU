@@ -32,6 +32,35 @@ class SiteController extends Controller
 		$this->render('index');
 	}
 
+        public function actionPerfil()
+        {
+        
+            $this->render('perfil');
+                   
+        }
+        
+        public function actionTurnos()
+        {
+        
+            $this->render('turnos');
+                   
+        }
+        
+        public function actionPeticion()
+        {
+        
+            $this->render('peticion');
+                   
+        }
+        
+        public function actionRepechaje()
+        {
+        
+            $this->render('repechaje');
+                   
+        }
+       
+        
 	/**
 	 * This is the action to handle external exceptions.
 	 */

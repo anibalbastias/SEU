@@ -10,7 +10,7 @@ Servicio de Empaques Universitarios
  
 # Comandos GIT
 
-## Clonación o descarga inicial de Repositorio
+## Clonaciï¿½n o descarga inicial de Repositorio
 git clone https://github.com/anibalbastias/SEU
 
 ## Agregar todos los archivos a peticion de Git
