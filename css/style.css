@@ -1,0 +1,23 @@
+/* 
+    Document   : style
+    Created on : 08-12-2013, 09:03:25 PM
+    Author     : Alvaro
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.all{ font-family: 'Oxygen', sans-serif; }
+
+.centrar{text-align: center;}
+
+.altura1{margin-top:10px;}
+.altura2{margin-top:20px;}
+.altura3{margin-top:30px;}
+.altura4{margin-top:40px;}
+.altura5{margin-top:50px;}
+.altura6{margin-top:60px;}
+.altura7{margin-top:70px;}
+.altura8{margin-top:80px;}
+.altura9{margin-top:90px;}
+.altura10{margin-top:100px;}
+
