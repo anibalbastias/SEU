@@ -60,6 +60,13 @@ class SiteController extends Controller
                    
         }
        
+        public function actionAdmin()
+        {
+        
+            $this->render('admin');
+                   
+        }
+        
         
 	/**
 	 * This is the action to handle external exceptions.
