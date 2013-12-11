@@ -55,6 +55,8 @@
             <div class="well centrar">
 		Copyright &copy; <?php echo date('Y'); ?> by Bastías - Rojas<br/>
 		All Rights Reserved.<br/>
+                
+                <a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>"> Panel</a>
 		
             </div>
         <!-- fin footer -->
