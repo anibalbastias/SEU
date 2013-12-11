@@ -39,10 +39,10 @@ class SiteController extends Controller
                    
         }
         
-        public function actionTurnos()
+        public function actionTurnosuser()
         {
         
-            $this->render('turnos');
+            $this->render('turnosuser');
                    
         }
         

@@ -33,3 +33,368 @@ REQUEST_URI=/easy/SEU/site/index
 in C:\wamp\www\easy\SEU\protected\views\layouts\main.php (38)
 in C:\wamp\www\easy\SEU\protected\views\layouts\column1.php (6)
 in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (32)
+2013/12/11 14:12:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perfil".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('perfil')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/perfil
+HTTP_REFERER=http://localhost/easy/SEU/
+---
+2013/12/11 14:12:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('index')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/index
+HTTP_REFERER=http://localhost/easy/SEU/perfil
+---
+2013/12/11 14:12:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "peticion".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('peticion')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/peticion
+HTTP_REFERER=http://localhost/easy/SEU/turnos
+---
+2013/12/11 14:12:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('index')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/index
+HTTP_REFERER=http://localhost/easy/SEU/peticion
+---
+2013/12/11 14:19:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('index')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/index
+HTTP_REFERER=http://localhost/easy/SEU/peticion
+---
+2013/12/11 14:19:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/turno...')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/site/turnos
+HTTP_REFERER=http://localhost/easy/SEU/site/perfil
+---
+2013/12/11 14:19:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/site/site/peticion
+HTTP_REFERER=http://localhost/easy/SEU/site/site/turnos
+---
+2013/12/11 14:19:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/site/site/site/repechaje
+HTTP_REFERER=http://localhost/easy/SEU/site/site/site/peticion
+---
+2013/12/11 14:19:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/site/site/site/site/peticion
+HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/repechaje
+---
+2013/12/11 14:19:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/site/site/site/site/site/turnos
+HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/peticion
+---
+2013/12/11 14:19:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/perfil
+HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/turnos
+---
+2013/12/11 14:19:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/site/index
+HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/site/perfil
+---
+2013/12/11 14:19:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/site/site/perfil
+HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/site/site/index
+---
+2013/12/11 14:20:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/site/site/site/turnos
+HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/site/site/site/perfil
+---
+2013/12/11 14:20:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/peticion
+HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/site/site/site/site/turnos
+---
+2013/12/11 14:20:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/repechaje
+HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/peticion
+---
+2013/12/11 14:20:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/site/peticion
+HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/repechaje
+---
+2013/12/11 14:22:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/site/peticion
+HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/repechaje
+---
+2013/12/11 14:22:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/site/index
+HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/site/peticion
+---
+2013/12/11 14:22:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/site/index
+HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/site/index
+---
+2013/12/11 14:22:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/site/perfil
+HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/site/index
+---
+2013/12/11 14:22:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perfil".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('perfil')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/perfil
+HTTP_REFERER=http://localhost/easy/SEU/
+---
+2013/12/11 14:22:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "peticion".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('peticion')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/peticion
+HTTP_REFERER=http://localhost/easy/SEU/turnos
+---
+2013/12/11 14:22:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "repechaje".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('repechaje')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/repechaje
+HTTP_REFERER=http://localhost/easy/SEU/peticion
+---
+2013/12/11 14:22:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "peticion".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('peticion')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/peticion
+HTTP_REFERER=http://localhost/easy/SEU/repechaje
+---
+2013/12/11 14:22:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perfil".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('perfil')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/perfil
+HTTP_REFERER=http://localhost/easy/SEU/turnos
+---
+2013/12/11 14:24:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('index')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/index
+HTTP_REFERER=http://localhost/easy/SEU/perfil
+---
+2013/12/11 14:24:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('index')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/index
+HTTP_REFERER=http://localhost/easy/SEU/index
+---
+2013/12/11 14:24:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perfil".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('perfil')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/perfil
+HTTP_REFERER=http://localhost/easy/SEU/index
+---
+2013/12/11 14:24:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perfil".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('perfil')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/perfil
+HTTP_REFERER=http://localhost/easy/SEU/turnos
+---
+2013/12/11 14:24:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perfil".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('perfil')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/perfil
+HTTP_REFERER=http://localhost/easy/SEU/turnos
+---
+2013/12/11 14:24:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perfil".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('perfil')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/perfil
+HTTP_REFERER=http://localhost/easy/SEU/turnos
+---
+2013/12/11 14:24:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('index')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/index
+HTTP_REFERER=http://localhost/easy/SEU/perfil
+---
+2013/12/11 14:24:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perfil".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('perfil')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/perfil
+HTTP_REFERER=http://localhost/easy/SEU/index
+---
+2013/12/11 14:25:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "turnosuser".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('turnosuser')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/perfil
+---
+2013/12/11 14:25:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "peticion".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('peticion')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/peticion
+HTTP_REFERER=http://localhost/easy/SEU/turnosuser
+---
+2013/12/11 14:25:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "repechaje".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('repechaje')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/repechaje
+HTTP_REFERER=http://localhost/easy/SEU/peticion
+---

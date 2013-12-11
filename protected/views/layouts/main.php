@@ -36,11 +36,11 @@
     
         
         <ul class="altura3 nav nav-tabs">
-            <li <?php if($pagina == "index") { ?>class="active" <?php } ?> ><a href="index"> Inicio</a></li>
-            <li <?php if($pagina == "perfil") { ?>class="active" <?php } ?> ><a href="perfil"> Perfil</a></li>
-            <li <?php if($pagina == "turnos") { ?>class="active" <?php } ?> ><a href="turnos"> Mis Turnos</a></li>
-            <li <?php if($pagina == "peticion") { ?>class="active" <?php } ?> ><a href="peticion">Tomar Turnos </a></li>
-            <li <?php if($pagina == "repechaje") { ?>class="active" <?php } ?> ><a href="repechaje"> Turnos Repechaje</a></li>
+            <li <?php if($pagina == "index") { ?>class="active" <?php } ?>><a href="<?php echo Yii:: app() ->baseUrl.'/site/index' ?>"> Inicio</a></li>
+            <li <?php if($pagina == "perfil") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/perfil' ?>"> Perfil</a></li>
+            <li <?php if($pagina == "turnos") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/turnosuser' ?>"> Mis Turnos</a></li>
+            <li <?php if($pagina == "peticion") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/peticion' ?>">Tomar Turnos </a></li>
+            <li <?php if($pagina == "repechaje") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/repechaje' ?>"> Turnos Repechaje</a></li>
         </ul>
         <!--fin del menu-->
         
