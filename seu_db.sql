@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 11-12-2013 a las 06:52:54
+-- Tiempo de generación: 11-12-2013 a las 09:47:50
 -- Versión del servidor: 5.5.16
 -- Versión de PHP: 5.3.9
 
@@ -4413,7 +4413,8 @@ CREATE TABLE IF NOT EXISTS `faltas` (
   `desc_falta` text,
   `tipo_falta` enum('Sancion','Falta') DEFAULT NULL,
   `fecha_falta` datetime DEFAULT NULL,
-  PRIMARY KEY (`id_falta`,`usuarios_id_usuario`),
+  PRIMARY KEY (`id_falta`),
+  UNIQUE KEY `usuarios_id_usuario` (`usuarios_id_usuario`),
   KEY `faltas_FKIndex1` (`usuarios_id_usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
