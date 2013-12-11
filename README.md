@@ -7,6 +7,9 @@ Servicio de Empaques Universitarios
 * IDE: Netbeans 6.0
 * Server: Apache + PHP + MySQL
 * Framework: Yii v1.1.14
+
+## Pass Gii -> localhost/SEU/gii
+* master_master
  
 # Comandos GIT
 
