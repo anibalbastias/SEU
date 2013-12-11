@@ -24,3 +24,6 @@ git push -u origin master
 
 ## Actualizar repositorio
 git pull
+
+## Combinar versiones
+git merge master

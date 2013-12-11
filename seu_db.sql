@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 25-11-2013 a las 19:59:17
+-- Tiempo de generación: 11-12-2013 a las 06:52:54
 -- Versión del servidor: 5.5.16
 -- Versión de PHP: 5.3.9
 
@@ -4783,7 +4783,8 @@ CREATE TABLE IF NOT EXISTS `usuarios_has_turnos` (
   `usuarios_id_usuario` int(10) unsigned NOT NULL,
   `turnos_id_turno` int(10) unsigned NOT NULL,
   `estado` enum('Aceptado','Rechazado','Suspendido') DEFAULT NULL,
-  PRIMARY KEY (`usuarios_id_usuario`,`turnos_id_turno`),
+  PRIMARY KEY (`usuarios_id_usuario`),
+  UNIQUE KEY `turnos_id_turno` (`turnos_id_turno`),
   KEY `usuarios_has_turnos_FKIndex1` (`usuarios_id_usuario`),
   KEY `usuarios_has_turnos_FKIndex2` (`turnos_id_turno`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
