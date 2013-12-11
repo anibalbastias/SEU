@@ -52,6 +52,8 @@ class UsuariosHasTurnos extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'turnos'=>array(self::BELONGS_TO,'Turnos','turnos_id_turno'),
+                    'usuarios'=>array(self::BELONGS_TO,'Usuarios','usuarios_id_usuario')
 		);
 	}
 
@@ -61,8 +63,8 @@ class UsuariosHasTurnos extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'usuarios_id_usuario' => 'Usuarios Id Usuario',
-			'turnos_id_turno' => 'Turnos Id Turno',
+			'usuarios_id_usuario' => 'ID Usuario',
+			'turnos_id_turno' => 'ID Turno',
 			'estado' => 'Estado',
 		);
 	}

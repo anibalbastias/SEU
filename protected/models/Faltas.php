@@ -56,6 +56,7 @@ class Faltas extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'usuarios'=>array(self::BELONGS_TO,'Usuarios','usuarios_id_usuario')
 		);
 	}
 
@@ -65,11 +66,11 @@ class Faltas extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_falta' => 'Id Falta',
-			'usuarios_id_usuario' => 'Usuarios Id Usuario',
-			'desc_falta' => 'Desc Falta',
-			'tipo_falta' => 'Tipo Falta',
-			'fecha_falta' => 'Fecha Falta',
+			'id_falta' => 'ID Falta',
+			'usuarios_id_usuario' => 'ID Usuario',
+			'desc_falta' => 'Descripcion',
+			'tipo_falta' => 'Tipo',
+			'fecha_falta' => 'Fecha de realizacion',
 		);
 	}
 

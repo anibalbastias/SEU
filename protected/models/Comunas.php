@@ -53,6 +53,7 @@ class Comunas extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'provincias'=>array(self::BELONGS_TO,'Provincias','provincias_id_provincia')
 		);
 	}
 
@@ -62,9 +63,9 @@ class Comunas extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_comuna' => 'Id Comuna',
-			'provincias_id_provincia' => 'Provincias Id Provincia',
-			'nom_comuna' => 'Nom Comuna',
+			'id_comuna' => 'ID Comuna',
+			'provincias_id_provincia' => 'ID Provincia',
+			'nom_comuna' => 'Nombre',
 		);
 	}
 

@@ -55,6 +55,7 @@ class Carreras extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'universidades'=>array(self::BELONGS_TO,'Universidades','universidades_id_universidad')
 		);
 	}
 
@@ -64,9 +65,9 @@ class Carreras extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_carrera' => 'Id Carrera',
-			'universidades_id_univ' => 'Universidades Id Univ',
-			'nom_carrera' => 'Nom Carrera',
+			'id_carrera' => 'ID Carrera',
+			'universidades_id_univ' => 'ID Universidad',
+			'nom_carrera' => 'Carrera',
 			'tipo' => 'Tipo',
 		);
 	}

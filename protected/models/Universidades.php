@@ -52,6 +52,7 @@ class Universidades extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'carreras'=>array(self::HAS_MANY,'Carreras','id_carrera')
 		);
 	}
 
@@ -61,9 +62,9 @@ class Universidades extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_univ' => 'Id Univ',
-			'nom_univ' => 'Nom Univ',
-			'univ_web' => 'Univ Web',
+			'id_univ' => 'ID Universidad',
+			'nom_univ' => 'Nombre',
+			'univ_web' => 'URL',
 		);
 	}
 

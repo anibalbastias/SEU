@@ -50,6 +50,7 @@ class Regiones extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'provincias'=>array(self::HAS_MANY,'Provincias','id_provincia')
 		);
 	}
 
@@ -59,8 +60,8 @@ class Regiones extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_region' => 'Id Region',
-			'nom_region' => 'Nom Region',
+			'id_region' => 'ID Region',
+			'nom_region' => 'Nombre',
 		);
 	}
 

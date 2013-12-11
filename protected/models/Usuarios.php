@@ -67,6 +67,10 @@ class Usuarios extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'carreras'=>array(self::BELONGS_TO,'Carreras','carreras_id_carrera'),
+                    'comunas'=>array(self::BELONGS_TO,'Comunas','comunas_id_comuna'),
+                    'faltas'=>array(self::HAS_MANY,'Faltas','id_falta'),
+                    'usuarios_has_turnos'=>array(self::HAS_MANY,'UsuariosHasTurnos','usuario_id_usuario')
 		);
 	}
 
@@ -76,21 +80,21 @@ class Usuarios extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_usuario' => 'Id Usuario',
-			'carreras_id_carrera' => 'Carreras Id Carrera',
-			'comunas_id_comuna' => 'Comunas Id Comuna',
-			'nom_usuario' => 'Nom Usuario',
-			'apel1_usuario' => 'Apel1 Usuario',
-			'apel2_usuario' => 'Apel2 Usuario',
-			'rut_usuario' => 'Rut Usuario',
-			'dir_usuario' => 'Dir Usuario',
-			'email_usuario' => 'Email Usuario',
-			'cel_usuario' => 'Cel Usuario',
-			'estudios_usuario' => 'Estudios Usuario',
-			'fnac_usuario' => 'Fnac Usuario',
-			'genero_usuario' => 'Genero Usuario',
-			'hijos_usuario' => 'Hijos Usuario',
-			'pass_usuario' => 'Pass Usuario',
+			'id_usuario' => 'ID Usuario',
+			'carreras_id_carrera' => 'ID Carrera',
+			'comunas_id_comuna' => 'ID Comuna',
+			'nom_usuario' => 'Nombre',
+			'apel1_usuario' => 'Apellido Paterno',
+			'apel2_usuario' => 'Apellido Materno',
+			'rut_usuario' => 'RUT',
+			'dir_usuario' => 'Direccion',
+			'email_usuario' => 'Email',
+			'cel_usuario' => 'Celular/Telefono',
+			'estudios_usuario' => 'Educacion Superior',
+			'fnac_usuario' => 'Fecha Nacimiento',
+			'genero_usuario' => 'Genero',
+			'hijos_usuario' => 'Cantidad Hijos',
+			'pass_usuario' => 'Contraseña',
 		);
 	}
 
