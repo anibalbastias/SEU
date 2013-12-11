@@ -544,6 +544,7 @@ REQUEST_URI=/peticion
 HTTP_REFERER=http://localhost/turnos
 >>>>>>> 935bb48aa9ce48cc58e213267576f81ca57fde08
 ---
+<<<<<<< HEAD
 2013/12/11 14:42:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
 Stack trace:
 #0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('index')
@@ -574,4 +575,101 @@ Stack trace:
 #16 {main}
 REQUEST_URI=/easy/SEU/gii/model
 HTTP_REFERER=http://localhost/easy/SEU/gii/default/index
+=======
+2013/12/11 09:25:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "SEU/gii".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('SEU/gii')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/SEU/gii
+---
+2013/12/11 09:25:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "SEU/gii".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('SEU/gii')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/SEU/gii
+---
+2013/12/11 09:25:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "SEU".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('SEU')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('SEU')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/SEU/gii')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/SEU/gii
+---
+2013/12/11 09:25:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gii".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('gii')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('gii')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/gii')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/gii
+---
+2013/12/11 09:25:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gii".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('gii')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('gii')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/gii')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/gii
+---
+2013/12/11 09:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gii".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('gii')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('gii')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/gii')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/gii
+---
+2013/12/11 09:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gii".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('gii')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('gii')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/gii')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/gii
+---
+2013/12/11 09:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gii".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('gii')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('gii')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/gii')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/gii
+---
+2013/12/11 09:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gii".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('gii')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('gii')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/gii')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/gii
+---
+2013/12/11 09:25:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gii".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('gii')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('gii')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/gii')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/gii
+>>>>>>> f1a967068d5dd5130e48429893f8503dfa4433f2
 ---
