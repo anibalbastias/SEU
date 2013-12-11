@@ -52,13 +52,27 @@
 	
         <!--footer-->
 
-            <div class="well centrar">
-		Copyright &copy; <?php echo date('Y'); ?> by Bastías - Rojas<br/>
-		All Rights Reserved.<br/>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span-12">
+                    <div class="well centrar">
+                        Copyright &copy; <?php echo date('Y'); ?> by Bastías - Rojas<br/>
+                        All Rights Reserved.<br/>
                 
-                <a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>"> Panel</a>
-		
-            </div>
+                        <a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>"> Panel</a>
+                        <br>
+                        Última conexión <?php
+
+                                date_default_timezone_set("Chile/Continental");
+                                echo "Hora:". date ("G:i:s") . "<br />";
+                                echo "Fecha:". date ("d:m:Y") . "<br/>";
+
+                                ?>
+                        
+                    </div>
+                </div>
+           </div>
+        </div>
         <!-- fin footer -->
 
 </div><!-- page -->

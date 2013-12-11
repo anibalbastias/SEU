@@ -1,9 +1,10 @@
-<?php
-/* @var $this UsuariosController */
-/* @var $model Usuarios */
-/* @var $form CActiveForm */
-?>
 
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            
+            
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -100,9 +101,14 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class'=>'btn btn-primary')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+
+
+        </div>
+    </div>
+</div>

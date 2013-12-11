@@ -32,7 +32,8 @@ return array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'master_master',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1'),
+			//'ipFilters'=>array('127.0.0.1','::1'),
+                        'ipFilters'=>array('*'),
 		),
 		
 	),
@@ -71,7 +72,21 @@ return array(
 			'username' => 'seu',
 			'password' => 'seu2013',
 			'charset' => 'utf8',
-		),
+                    
+//                    'connectionString' => 'mysql:host=https://mysql16.000webhost.com;dbname="a2972641_seudb',
+//                    'emulatePrepare' => true,
+//                    'username' => 'a2972641_seu',  
+//                    'password' => 'master_master',
+//                    'charset' => 'utf8',
+                    
+                    
+//                    'connectionString' => 'mysql:host=http://www.seu.cl;dbname=seu_db',
+//			'emulatePrepare' => true,
+//			'username' => 'seucl_root',
+//			'password' => 'master_master',
+//			'charset' => 'utf8',
+                    
+                    ),
 		
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
