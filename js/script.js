@@ -5,9 +5,9 @@ $(document).ready(function(){
 	/* ---- Countdown timer ---- */
 
 	var sec = 5,	/*-- segundos --*/
-		min = 0,	/*-- minutos --*/
-		hr = 0,		/*-- horas --*/
-		dia = 0;    /*-- dias --*/
+		min = 1,	/*-- minutos --*/
+		hr = 11,		/*-- horas --*/
+		dia = 3;    /*-- dias --*/
 	
 	
 	$('#counter').countdown({
