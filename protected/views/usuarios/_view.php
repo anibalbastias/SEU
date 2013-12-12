@@ -55,12 +55,14 @@
         ?>
         
         <b><?php echo CHtml::encode($data->getAttributeLabel('faltas')); ?>:</b><br>
-	<?php 
-        $i=1;
-        foreach ($data->faltas as $usu){
-            echo $i.". ".$usu->tipo_falta." ".$usu->fecha_falta."<br />";
-            $i++;
-        }
+	
+        
+        <?php 
+            $i=1;
+                foreach ($data->faltas as $usu){
+                    echo $i.". ".$usu->tipo_falta." ".$usu->fecha_falta."<br />";
+                    $i++;
+                }
         ?>
 	<br />
 
