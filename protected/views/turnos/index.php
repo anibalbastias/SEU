@@ -3,12 +3,12 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Turnoses',
+	'Turnos',
 );
 
 $this->menu=array(
-	array('label'=>'Create Turnos', 'url'=>array('create')),
-	array('label'=>'Manage Turnos', 'url'=>array('admin')),
+	array('label'=>'Crear Turnos', 'url'=>array('create')),
+	array('label'=>'Administrar Turnos', 'url'=>array('admin')),
 );
 ?>
 

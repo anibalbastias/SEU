@@ -3,16 +3,16 @@
 /* @var $model UsuariosHasTurnos */
 
 $this->breadcrumbs=array(
-	'Usuarios Has Turnoses'=>array('index'),
+	'Turnos de Usuarios'=>array('index'),
 	$model->usuarios_id_usuario=>array('view','id'=>$model->usuarios_id_usuario),
 	'Update',
 );
 
 $this->menu=array(
-	array('label'=>'List UsuariosHasTurnos', 'url'=>array('index')),
-	array('label'=>'Create UsuariosHasTurnos', 'url'=>array('create')),
-	array('label'=>'View UsuariosHasTurnos', 'url'=>array('view', 'id'=>$model->usuarios_id_usuario)),
-	array('label'=>'Manage UsuariosHasTurnos', 'url'=>array('admin')),
+	array('label'=>'Listar Turnos de Usuarios', 'url'=>array('index')),
+	array('label'=>'Crear Turnos de Usuarios', 'url'=>array('create')),
+	array('label'=>'Ver Turnos de Usuarios', 'url'=>array('view', 'id'=>$model->usuarios_id_usuario)),
+	array('label'=>'Administrar Turnos de Usuarios', 'url'=>array('admin')),
 );
 ?>
 

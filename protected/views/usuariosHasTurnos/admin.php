@@ -3,13 +3,13 @@
 /* @var $model UsuariosHasTurnos */
 
 $this->breadcrumbs=array(
-	'Usuarios Has Turnoses'=>array('index'),
-	'Manage',
+	'Turnos de Usuario'=>array('index'),
+	'Administrar',
 );
 
 $this->menu=array(
-	array('label'=>'List UsuariosHasTurnos', 'url'=>array('index')),
-	array('label'=>'Create UsuariosHasTurnos', 'url'=>array('create')),
+	array('label'=>'Listar Turno de Usuario', 'url'=>array('index')),
+	array('label'=>'Crear Turno de Usuario', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Usuarios Has Turnoses</h1>
+<h1>Administrar Turnos de Usuarios</h1>
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>

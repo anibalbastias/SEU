@@ -3,16 +3,16 @@
 /* @var $model Turnos */
 
 $this->breadcrumbs=array(
-	'Turnoses'=>array('index'),
+	'Turnos'=>array('index'),
 	$model->id_turno,
 );
 
 $this->menu=array(
-	array('label'=>'List Turnos', 'url'=>array('index')),
-	array('label'=>'Create Turnos', 'url'=>array('create')),
-	array('label'=>'Update Turnos', 'url'=>array('update', 'id'=>$model->id_turno)),
-	array('label'=>'Delete Turnos', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_turno),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Turnos', 'url'=>array('admin')),
+	array('label'=>'Listar Turnos', 'url'=>array('index')),
+	array('label'=>'Crear Turnos', 'url'=>array('create')),
+	array('label'=>'Modificar Turnos', 'url'=>array('update', 'id'=>$model->id_turno)),
+	array('label'=>'Eliminar Turnos', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_turno),'confirm'=>'¿Estas seguro de eliminar este turno?')),
+	array('label'=>'Administrar Turnos', 'url'=>array('admin')),
 );
 ?>
 

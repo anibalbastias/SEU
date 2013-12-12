@@ -3,16 +3,16 @@
 /* @var $model Turnos */
 
 $this->breadcrumbs=array(
-	'Turnoses'=>array('index'),
+	'Turnos'=>array('index'),
 	$model->id_turno=>array('view','id'=>$model->id_turno),
-	'Update',
+	'Modificar',
 );
 
 $this->menu=array(
-	array('label'=>'List Turnos', 'url'=>array('index')),
-	array('label'=>'Create Turnos', 'url'=>array('create')),
-	array('label'=>'View Turnos', 'url'=>array('view', 'id'=>$model->id_turno)),
-	array('label'=>'Manage Turnos', 'url'=>array('admin')),
+	array('label'=>'Listar Turnos', 'url'=>array('index')),
+	array('label'=>'Crear Turnos', 'url'=>array('create')),
+	array('label'=>'Ver Turnos', 'url'=>array('view', 'id'=>$model->id_turno)),
+	array('label'=>'Administrar Turnos', 'url'=>array('admin')),
 );
 ?>
 

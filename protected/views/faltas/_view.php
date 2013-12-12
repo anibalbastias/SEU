@@ -9,8 +9,8 @@
 	<?php echo CHtml::link(CHtml::encode($data->id_falta), array('view', 'id'=>$data->id_falta)); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('usuarios_id_usuario')); ?>:</b>
-	<?php echo CHtml::encode($data->usuarios_id_usuario); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('usuario')); ?>:</b>
+	<?php echo $data->usuarios->nom_usuario." ".$data->usuarios->apel1_usuario." ".$data->usuarios->apel2_usuario; ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('desc_falta')); ?>:</b>

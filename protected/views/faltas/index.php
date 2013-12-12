@@ -3,12 +3,12 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Faltases',
+	'Faltas',
 );
 
 $this->menu=array(
-	array('label'=>'Create Faltas', 'url'=>array('create')),
-	array('label'=>'Manage Faltas', 'url'=>array('admin')),
+	array('label'=>'Crear Faltas', 'url'=>array('create')),
+	array('label'=>'Administrar Faltas', 'url'=>array('admin')),
 );
 ?>
 

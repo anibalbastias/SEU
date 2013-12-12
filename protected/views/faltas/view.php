@@ -3,16 +3,16 @@
 /* @var $model Faltas */
 
 $this->breadcrumbs=array(
-	'Faltases'=>array('index'),
+	'Faltas'=>array('index'),
 	$model->id_falta,
 );
 
 $this->menu=array(
-	array('label'=>'List Faltas', 'url'=>array('index')),
-	array('label'=>'Create Faltas', 'url'=>array('create')),
-	array('label'=>'Update Faltas', 'url'=>array('update', 'id'=>$model->id_falta)),
-	array('label'=>'Delete Faltas', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_falta),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Faltas', 'url'=>array('admin')),
+	array('label'=>'Listar Faltas', 'url'=>array('index')),
+	array('label'=>'Crear Faltas', 'url'=>array('create')),
+	array('label'=>'Modificar Faltas', 'url'=>array('update', 'id'=>$model->id_falta)),
+	array('label'=>'Eliminar Faltas', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_falta),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar Faltas', 'url'=>array('admin')),
 );
 ?>
 

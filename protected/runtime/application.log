@@ -4315,3 +4315,48 @@ Stack trace:
 REQUEST_URI=/faltas/create
 HTTP_REFERER=http://localhost/faltas/create
 ---
+2013/12/11 22:08:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "usuarios_has_turnos".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('usuarios_has_tu...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('usuarios_has_tu...')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('turnos/usuarios...')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/turnos/usuarios_has_turnos
+---
+2013/12/11 22:08:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "usuarioshasturnos".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('usuarioshasturn...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('usuarioshasturn...')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('turnos/usuarios...')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/turnos/usuarioshasturnos
+---
+2013/12/11 17:09:53 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `usuarios_has_turnos` (`usuarios_id_usuario`, `turnos_id_turno`, `estado`) VALUES (:yp0, :yp1, :yp2).
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosHasTurnosController.php (73)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)
+2013/12/11 17:09:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `usuarios_has_turnos` (`usuarios_id_usuario`, `turnos_id_turno`, `estado`) VALUES (:yp0, :yp1, :yp2)' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1017): CDbCommand->execute()
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosHasTurnosController.php(73): CActiveRecord->save()
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosHasTurnosController->actionCreate()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarioshasturn...')
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/usuarioshasturnos/create
+HTTP_REFERER=http://localhost/usuarioshasturnos/create
+---

@@ -3,13 +3,13 @@
 /* @var $model Faltas */
 
 $this->breadcrumbs=array(
-	'Faltases'=>array('index'),
-	'Create',
+	'Faltas'=>array('index'),
+	'Crear',
 );
 
 $this->menu=array(
-	array('label'=>'List Faltas', 'url'=>array('index')),
-	array('label'=>'Manage Faltas', 'url'=>array('admin')),
+	array('label'=>'Listar Faltas', 'url'=>array('index')),
+	array('label'=>'Administrar Faltas', 'url'=>array('admin')),
 );
 ?>
 

@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Usuarios Has Turnoses',
+	'Turnos de Usuarios',
 );
 
 $this->menu=array(
-	array('label'=>'Create UsuariosHasTurnos', 'url'=>array('create')),
-	array('label'=>'Manage UsuariosHasTurnos', 'url'=>array('admin')),
+	array('label'=>'Crear Turnos de Usuarios', 'url'=>array('create')),
+	array('label'=>'Administrar Turnos de Usuarios', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Usuarios Has Turnoses</h1>
+<h1>Turnos de Usuarios</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

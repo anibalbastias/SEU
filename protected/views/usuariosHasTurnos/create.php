@@ -3,16 +3,16 @@
 /* @var $model UsuariosHasTurnos */
 
 $this->breadcrumbs=array(
-	'Usuarios Has Turnoses'=>array('index'),
-	'Create',
+	'Turnos de Usuarios'=>array('index'),
+	'Crear',
 );
 
 $this->menu=array(
-	array('label'=>'List UsuariosHasTurnos', 'url'=>array('index')),
-	array('label'=>'Manage UsuariosHasTurnos', 'url'=>array('admin')),
+	array('label'=>'Listar Turnos de Usuarios', 'url'=>array('index')),
+	array('label'=>'Administrar Turnos de Usuario', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create UsuariosHasTurnos</h1>
+<h1>Crear Turno de Usuario</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
