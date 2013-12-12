@@ -9,14 +9,26 @@
 	<?php echo CHtml::link(CHtml::encode($data->id_usuario), array('view', 'id'=>$data->id_usuario)); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('carreras_id_carrera')); ?>:</b>
-	<?php echo CHtml::encode($data->carreras_id_carrera); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('carrera')); ?>:</b>
+	<?php echo $data->carreras->nom_carrera; ?>
+	<br />
+        
+        <b><?php echo CHtml::encode($data->getAttributeLabel('universidad')); ?>:</b>
+	<?php echo $data->carreras->universidades->nom_univ; ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('comunas_id_comuna')); ?>:</b>
-	<?php echo CHtml::encode($data->comunas_id_comuna); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('comuna')); ?>:</b>
+	<?php echo CHtml::encode($data->comunas->nom_comuna); ?>
 	<br />
-
+        
+        <b><?php echo CHtml::encode($data->getAttributeLabel('provincia')); ?>:</b>
+	<?php echo CHtml::encode($data->comunas->provincias->nom_provincia); ?>
+	<br />
+        
+        <b><?php echo CHtml::encode($data->getAttributeLabel('region')); ?>:</b>
+	<?php echo CHtml::encode($data->comunas->provincias->regiones->nom_region); ?>
+	<br />
+        
 	<b><?php echo CHtml::encode($data->getAttributeLabel('nom_usuario')); ?>:</b>
 	<?php echo CHtml::encode($data->nom_usuario); ?>
 	<br />

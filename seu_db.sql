@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 11-12-2013 a las 09:47:50
+-- Tiempo de generación: 11-12-2013 a las 16:50:53
 -- Versión del servidor: 5.5.16
 -- Versión de PHP: 5.3.9
 
@@ -4414,9 +4414,16 @@ CREATE TABLE IF NOT EXISTS `faltas` (
   `tipo_falta` enum('Sancion','Falta') DEFAULT NULL,
   `fecha_falta` datetime DEFAULT NULL,
   PRIMARY KEY (`id_falta`),
-  UNIQUE KEY `usuarios_id_usuario` (`usuarios_id_usuario`),
   KEY `faltas_FKIndex1` (`usuarios_id_usuario`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Volcado de datos para la tabla `faltas`
+--
+
+INSERT INTO `faltas` (`id_falta`, `usuarios_id_usuario`, `desc_falta`, `tipo_falta`, `fecha_falta`) VALUES
+(1, 1, 'Le agarro el trasero redondo y hermoso de la jefa', 'Falta', '2013-11-12 00:00:00'),
+(3, 1, 'Le toco un pezón a la hermana gemela de la jefa', 'Falta', '2013-11-11 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -4772,7 +4779,14 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   PRIMARY KEY (`id_usuario`),
   KEY `usuarios_FKIndex1` (`comunas_id_comuna`),
   KEY `usuarios_FKIndex2` (`carreras_id_carrera`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id_usuario`, `carreras_id_carrera`, `comunas_id_comuna`, `nom_usuario`, `apel1_usuario`, `apel2_usuario`, `rut_usuario`, `dir_usuario`, `email_usuario`, `cel_usuario`, `estudios_usuario`, `fnac_usuario`, `genero_usuario`, `hijos_usuario`, `pass_usuario`) VALUES
+(1, 1, 2201, 'Anibal', 'Bastias', 'Soto', '16846047-3', 'Avenida Estacion 175', 'anibal.bastias@gmail.com', '81839102', 2, '0000-00-00', 0, 0, 'fc1586');
 
 -- --------------------------------------------------------
 
@@ -4785,7 +4799,6 @@ CREATE TABLE IF NOT EXISTS `usuarios_has_turnos` (
   `turnos_id_turno` int(10) unsigned NOT NULL,
   `estado` enum('Aceptado','Rechazado','Suspendido') DEFAULT NULL,
   PRIMARY KEY (`usuarios_id_usuario`),
-  UNIQUE KEY `turnos_id_turno` (`turnos_id_turno`),
   KEY `usuarios_has_turnos_FKIndex1` (`usuarios_id_usuario`),
   KEY `usuarios_has_turnos_FKIndex2` (`turnos_id_turno`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;

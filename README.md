@@ -13,14 +13,14 @@ Servicio de Empaques Universitarios
 
 # Datos Importantes
 
-# FTP
+## FTP
 
 * Nombre de usuario FTP: seucl
 * Servidor FTP: ftp.seu.cl
 * Pass: master_master
 * FTP & explícito puerto FTPS: 21
 
-# Hosting y Base de Datos
+## Hosting y Base de Datos
 
 * URL: www.seu.cl
 * BD host: seu.cl
