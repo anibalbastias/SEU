@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 11-12-2013 a las 16:50:53
+-- Tiempo de generación: 11-12-2013 a las 18:21:23
 -- Versión del servidor: 5.5.16
 -- Versión de PHP: 5.3.9
 
@@ -4415,7 +4415,7 @@ CREATE TABLE IF NOT EXISTS `faltas` (
   `fecha_falta` datetime DEFAULT NULL,
   PRIMARY KEY (`id_falta`),
   KEY `faltas_FKIndex1` (`usuarios_id_usuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Volcado de datos para la tabla `faltas`
@@ -4423,7 +4423,8 @@ CREATE TABLE IF NOT EXISTS `faltas` (
 
 INSERT INTO `faltas` (`id_falta`, `usuarios_id_usuario`, `desc_falta`, `tipo_falta`, `fecha_falta`) VALUES
 (1, 1, 'Le agarro el trasero redondo y hermoso de la jefa', 'Falta', '2013-11-12 00:00:00'),
-(3, 1, 'Le toco un pezón a la hermana gemela de la jefa', 'Falta', '2013-11-11 00:00:00');
+(3, 1, 'Le toco un pezón a la hermana gemela de la jefa', 'Falta', '2013-11-11 20:00:00'),
+(4, 1, 'Una PLR al jefe', 'Falta', '2013-12-09 12:00:00');
 
 -- --------------------------------------------------------
 
@@ -4543,7 +4544,15 @@ CREATE TABLE IF NOT EXISTS `turnos` (
   `fecha_turno` datetime DEFAULT NULL,
   `cupos_turno` int(10) unsigned DEFAULT NULL,
   PRIMARY KEY (`id_turno`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Volcado de datos para la tabla `turnos`
+--
+
+INSERT INTO `turnos` (`id_turno`, `fecha_turno`, `cupos_turno`) VALUES
+(1, '2013-12-11 20:00:00', 10),
+(2, '2013-12-11 15:00:00', 10);
 
 -- --------------------------------------------------------
 
@@ -4798,10 +4807,18 @@ CREATE TABLE IF NOT EXISTS `usuarios_has_turnos` (
   `usuarios_id_usuario` int(10) unsigned NOT NULL,
   `turnos_id_turno` int(10) unsigned NOT NULL,
   `estado` enum('Aceptado','Rechazado','Suspendido') DEFAULT NULL,
-  PRIMARY KEY (`usuarios_id_usuario`),
+  PRIMARY KEY (`turnos_id_turno`),
   KEY `usuarios_has_turnos_FKIndex1` (`usuarios_id_usuario`),
   KEY `usuarios_has_turnos_FKIndex2` (`turnos_id_turno`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `usuarios_has_turnos`
+--
+
+INSERT INTO `usuarios_has_turnos` (`usuarios_id_usuario`, `turnos_id_turno`, `estado`) VALUES
+(1, 1, 'Aceptado'),
+(1, 2, 'Suspendido');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
