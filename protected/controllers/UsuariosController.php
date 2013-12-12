@@ -70,6 +70,7 @@ class UsuariosController extends Controller
 		if(isset($_POST['Usuarios']))
 		{
 			$model->attributes=$_POST['Usuarios'];
+                        $model->pass_usuario=md5($model->pass_usuario);
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_usuario));
 		}
@@ -94,6 +95,7 @@ class UsuariosController extends Controller
 		if(isset($_POST['Usuarios']))
 		{
 			$model->attributes=$_POST['Usuarios'];
+                        $model->pass_usuario=md5($model->pass_usuario);
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_usuario));
 		}

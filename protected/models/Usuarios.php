@@ -129,4 +129,14 @@ class Usuarios extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+        
+        public function validatePassword($pass_usuario)
+        {
+            return $this->hashPassword($pass_usuario)===$this->pass_usuario;
+        }
+        
+        public function hashPassword($pass_usuario)
+        {
+            return md5($pass_usuario);
+        }
 }
