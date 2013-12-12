@@ -12,7 +12,7 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Campos con <span class="required">*</span> son obligatorios.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -123,7 +123,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'pass_usuario'); ?>
-		<?php echo $form->textField($model,'pass_usuario',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->passwordField($model,'pass_usuario',array('size'=>60,'maxlength'=>100 , 'type'=>'password')); ?>
 		<?php echo $form->error($model,'pass_usuario'); ?>
 	</div>
 
