@@ -16,12 +16,16 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
+        
+        
 	<div class="row">
 		<?php echo $form->labelEx($model,'carreras_id_carrera'); ?>
 		<?php echo $form->textField($model,'carreras_id_carrera',array('size'=>10,'maxlength'=>10)); ?>
 		<?php echo $form->error($model,'carreras_id_carrera'); ?>
 	</div>
-
+        
+       
+        
 	<div class="row">
 		<?php echo $form->labelEx($model,'comunas_id_comuna'); ?>
 		<?php echo $form->textField($model,'comunas_id_comuna',array('size'=>10,'maxlength'=>10)); ?>
@@ -76,12 +80,35 @@
 		<?php echo $form->error($model,'estudios_usuario'); ?>
 	</div>
 
-	<div class="row">
+<!--	<div class="row">
 		<?php echo $form->labelEx($model,'fnac_usuario'); ?>
 		<?php echo $form->textField($model,'fnac_usuario'); ?>
 		<?php echo $form->error($model,'fnac_usuario'); ?>
-	</div>
+	</div>-->
 
+        <div class="row">
+		<?php echo $form->labelEx($model,'fnac_usuario'); ?>
+		<?php // echo $form->textField($model,'edad'); 
+                
+                    $this->widget("zii.widgets.jui.CJuiDatePicker",array(
+                        "attribute"=>"fnac_usuario",
+                        "model"=>$model,
+                        "language"=>"es",
+                        "options"=>array(
+                            "dateFormat"=>"yy-mm-dd",
+                            "showButtonPanel" => true,
+                            "changeYear" => true,
+                            "yearRange" =>"-50:+10",
+                            "minDate" => "-80Y",
+                            "maxDate" => "+0Y",
+                        )
+                        ));
+                
+                ?>
+		<?php echo $form->error($model,'fnac_usuario'); ?>
+	</div>
+        
+        
 	<div class="row">
 		<?php echo $form->labelEx($model,'genero_usuario'); ?>
 		<?php echo $form->textField($model,'genero_usuario'); ?>
