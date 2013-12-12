@@ -36,6 +36,14 @@
         
         <!--menu-->
         
+        <!--en la sesion-->
+        
+        <?php 
+        
+            if(Yii::app()->session['var'] != NULL)
+            {
+                
+            ?>
     
         
         <ul class="altura3 nav nav-tabs">
@@ -48,7 +56,16 @@
         <!--fin del menu-->
         
         <!--contenido-->
-            <?php echo $content; ?>
+            <?php 
+            
+             
+                 
+             
+                echo $content; 
+                
+            
+            
+            ?>
         <!--fin del contenido-->
         
         
@@ -78,6 +95,29 @@
         </div>
         <!-- fin footer -->
 
+        <?php
+        
+            }
+        ?>
+        
+        <!--fuera de la sesion-->
+        
+         <?php 
+        
+            if(Yii::app()->session['var'] == NULL)
+            {
+                
+            ?>
+        
+                
+        
+        
+        <?php
+        
+            }
+        ?>
+        
+            
 </div><!-- page -->
 
 </body>
