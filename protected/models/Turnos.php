@@ -52,7 +52,7 @@ class Turnos extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-                    'usuarios_has_turnos'=>array(self::HAS_MANY,'UsuariosHasTurnos','usuario_id_usuario')
+                    'usuarios_has_turnos'=>array(self::HAS_MANY,'UsuariosHasTurnos','usuarios_id_usuario')
 		);
 	}
 

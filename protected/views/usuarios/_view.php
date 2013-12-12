@@ -44,6 +44,25 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('rut_usuario')); ?>:</b>
 	<?php echo CHtml::encode($data->rut_usuario); ?>
 	<br />
+        
+        <b><?php echo CHtml::encode($data->getAttributeLabel('turnos_tomados')); ?>:</b><br>
+	<?php 
+        $i=1;
+        foreach ($data->usuarios_has_turnos as $usu){
+            echo $i.". ".$usu->turnos->fecha_turno." ".$usu->estado."<br />";
+            $i++;
+        }
+        ?>
+        
+        <b><?php echo CHtml::encode($data->getAttributeLabel('faltas')); ?>:</b><br>
+	<?php 
+        $i=1;
+        foreach ($data->faltas as $usu){
+            echo $i.". ".$usu->tipo_falta." ".$usu->fecha_falta."<br />";
+            $i++;
+        }
+        ?>
+	<br />
 
 	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('dir_usuario')); ?>:</b>

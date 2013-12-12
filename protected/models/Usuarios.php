@@ -70,7 +70,7 @@ class Usuarios extends CActiveRecord
                     'carreras'=>array(self::BELONGS_TO,'Carreras','carreras_id_carrera'),
                     'comunas'=>array(self::BELONGS_TO,'Comunas','comunas_id_comuna'),
                     'faltas'=>array(self::HAS_MANY,'Faltas','id_falta'),
-                    'usuarios_has_turnos'=>array(self::HAS_MANY,'UsuariosHasTurnos','usuario_id_usuario')
+                    'usuarios_has_turnos'=>array(self::HAS_MANY,'UsuariosHasTurnos','usuarios_id_usuario')
 		);
 	}
 
