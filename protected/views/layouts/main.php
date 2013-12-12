@@ -38,9 +38,13 @@
         
         <!--en la sesion-->
         
+        
+        
         <?php 
         
-            if(Yii::app()->session['var'] != NULL)
+         
+        
+            if(Yii::app()->session['var'] != NULL || $controlador=='site' && $pagina=='login' )
             {
                 
             ?>
@@ -52,6 +56,7 @@
             <li <?php if($pagina == "turnosuser") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/turnosuser' ?>"> Mis Turnos</a></li>
             <li <?php if($pagina == "peticion") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/peticion' ?>">Tomar Turnos </a></li>
             <li <?php if($pagina == "repechaje") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/repechaje' ?>"> Turnos Repechaje</a></li>
+            
         </ul>
         <!--fin del menu-->
         
