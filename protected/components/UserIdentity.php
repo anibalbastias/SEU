@@ -32,6 +32,10 @@ class UserIdentity extends CUserIdentity
                 $this->_id = $user->id_usuario;
                 $this->username = $user->rut_usuario;
                 $this->errorCode = self::ERROR_NONE;
+                
+               Yii::app()->session['var'] = $user->id_usuario;
+                 
+                
             }
             return $this->errorCode==self::ERROR_NONE;
 	}
