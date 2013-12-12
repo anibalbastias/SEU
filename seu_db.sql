@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 11-12-2013 a las 18:21:23
+-- Tiempo de generación: 11-12-2013 a las 19:44:52
 -- Versión del servidor: 5.5.16
 -- Versión de PHP: 5.3.9
 
@@ -4429,6 +4429,27 @@ INSERT INTO `faltas` (`id_falta`, `usuarios_id_usuario`, `desc_falta`, `tipo_fal
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `planillas`
+--
+
+CREATE TABLE IF NOT EXISTS `planillas` (
+  `id_planill` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `fecha_planilla` datetime DEFAULT NULL,
+  `fecha_creacion` datetime DEFAULT NULL,
+  PRIMARY KEY (`id_planill`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Volcado de datos para la tabla `planillas`
+--
+
+INSERT INTO `planillas` (`id_planill`, `fecha_planilla`, `fecha_creacion`) VALUES
+(1, '2013-12-13 13:00:00', '2013-12-12 00:00:00'),
+(2, '2013-12-20 15:00:00', '2013-12-10 17:00:00');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `provincias`
 --
 
@@ -4795,7 +4816,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `carreras_id_carrera`, `comunas_id_comuna`, `nom_usuario`, `apel1_usuario`, `apel2_usuario`, `rut_usuario`, `dir_usuario`, `email_usuario`, `cel_usuario`, `estudios_usuario`, `fnac_usuario`, `genero_usuario`, `hijos_usuario`, `pass_usuario`) VALUES
-(1, 1, 2201, 'Anibal', 'Bastias', 'Soto', '16846047-3', 'Avenida Estacion 175', 'anibal.bastias@gmail.com', '81839102', 2, '0000-00-00', 0, 0, 'fc1586');
+(1, 1, 2201, 'Anibal', 'Bastias', 'Soto', '16846047-3', 'Avenida Estacion 175', 'anibal.bastias@gmail.com', '81839102', 2, '0000-00-00', 0, 0, '4e203e5dd38ff16be0b2ab44daa2e17c');
 
 -- --------------------------------------------------------
 
