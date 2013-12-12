@@ -56,7 +56,7 @@
             <li <?php if($pagina == "turnosuser") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/turnosuser' ?>"> Mis Turnos</a></li>
             <li <?php if($pagina == "peticion") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/peticion' ?>">Tomar Turnos </a></li>
             <li <?php if($pagina == "repechaje") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/repechaje' ?>"> Turnos Repechaje</a></li>
-            <button type="button" class="btn btn-danger pull-right">Cerrar Sesion</button>
+            <button type="button" class="btn btn-danger pull-right"><a href="<?php echo Yii:: app() ->baseUrl.'/site/logout' ?>">Cerrar Sesion</a></button>
         </ul>
         <!--fin del menu-->
         
