@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Comunases',
+	'Comunas',
 );
 
 $this->menu=array(
-	array('label'=>'Create Comunas', 'url'=>array('create')),
-	array('label'=>'Manage Comunas', 'url'=>array('admin')),
+	array('label'=>'Crear Comunas', 'url'=>array('create')),
+	array('label'=>'Administrar Comunas', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Comunases</h1>
+<h1>Comunas</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

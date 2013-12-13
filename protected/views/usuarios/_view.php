@@ -4,9 +4,13 @@
 ?>
 
 <div class="view">
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('id_usuario')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->id_usuario), array('view', 'id'=>$data->id_usuario)); ?>
+    <div class="well">
+	<b><?php echo CHtml::encode($data->getAttributeLabel('rut')); ?>:</b>
+	<?php echo CHtml::link(CHtml::encode($data->rut_usuario), array('view', 'id'=>$data->id_usuario)); ?>
+	<br />
+        
+        <b><?php echo CHtml::encode($data->getAttributeLabel('nom_usuario')); ?>:</b>
+	<?php echo CHtml::encode($data->nom_usuario." ".$data->apel1_usuario." ".$data->apel2_usuario); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('carrera')); ?>:</b>
@@ -28,39 +32,26 @@
         <b><?php echo CHtml::encode($data->getAttributeLabel('region')); ?>:</b>
 	<?php echo CHtml::encode($data->comunas->provincias->regiones->nom_region); ?>
 	<br />
-        
-	<b><?php echo CHtml::encode($data->getAttributeLabel('nom_usuario')); ?>:</b>
-	<?php echo CHtml::encode($data->nom_usuario); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('apel1_usuario')); ?>:</b>
-	<?php echo CHtml::encode($data->apel1_usuario); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('apel2_usuario')); ?>:</b>
-	<?php echo CHtml::encode($data->apel2_usuario); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('rut_usuario')); ?>:</b>
-	<?php echo CHtml::encode($data->rut_usuario); ?>
-	<br />
+        <br />
         
         <b><?php echo CHtml::encode($data->getAttributeLabel('turnos_tomados')); ?>:</b><br>
 	<?php 
         $i=1;
         foreach ($data->usuarios_has_turnos as $usu){
-            echo $i.". ".$usu->turnos->fecha_turno." ".$usu->estado."<br />";
+            echo $i.'. <a href="turnos/'.$usu->turnos->id_turno.'">'.$usu->turnos->fecha_turno.'</a> '.$usu->estado."<br />"; 
             $i++;
         }
         ?>
         
+        <br />
         <b><?php echo CHtml::encode($data->getAttributeLabel('faltas')); ?>:</b><br>
 	
         
         <?php 
             $i=1;
                 foreach ($data->faltas as $usu){
-                    echo $i.". ".$usu->tipo_falta." ".$usu->fecha_falta."<br />";
+                    //echo $i.". ".$usu->tipo_falta." ".$usu->fecha_falta."<br />";
+                    echo $i.'. <a href="faltas/'.$usu->id_falta.'">'.$usu->fecha_falta.'</a> '.$usu->tipo_falta."<br />"; 
                     $i++;
                 }
         ?>
@@ -100,5 +91,6 @@
 	<br />
 
 	*/ ?>
+    </div>
 
 </div>

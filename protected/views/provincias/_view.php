@@ -4,18 +4,14 @@
 ?>
 
 <div class="view">
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('id_provincia')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->id_provincia), array('view', 'id'=>$data->id_provincia)); ?>
+    <div class="well">
+	<b><?php echo CHtml::encode($data->getAttributeLabel('provincia')); ?>:</b>
+	<?php echo CHtml::link(CHtml::encode($data->nom_provincia), array('view', 'id'=>$data->id_provincia)); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('regiones_id_region')); ?>:</b>
-	<?php echo CHtml::encode($data->regiones_id_region); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('region')); ?>:</b>
+	<?php echo CHtml::encode($data->regiones->nom_region); ?>
 	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('nom_provincia')); ?>:</b>
-	<?php echo CHtml::encode($data->nom_provincia); ?>
-	<br />
-
+    </div>
 
 </div>

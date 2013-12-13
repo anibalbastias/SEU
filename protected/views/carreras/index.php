@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Carrerases',
+	'Carreras',
 );
 
 $this->menu=array(
-	array('label'=>'Create Carreras', 'url'=>array('create')),
-	array('label'=>'Manage Carreras', 'url'=>array('admin')),
+	array('label'=>'Crear Carreras', 'url'=>array('create')),
+	array('label'=>'Administrar Carreras', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Carrerases</h1>
+<h1>Carreras</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Provinciases',
+	'Provincias',
 );
 
 $this->menu=array(
-	array('label'=>'Create Provincias', 'url'=>array('create')),
-	array('label'=>'Manage Provincias', 'url'=>array('admin')),
+	array('label'=>'Crear Provincias', 'url'=>array('create')),
+	array('label'=>'Administrar Provincias', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Provinciases</h1>
+<h1>Provincias</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
