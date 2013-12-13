@@ -4694,6 +4694,7 @@ REQUEST_URI=/easy/SEU/usuarios/index
 HTTP_REFERER=http://localhost/easy/SEU/usuarios/index
 >>>>>>> 318cabc34cbf36d08ad4d6a754b6ded5f0b99b9c
 ---
+<<<<<<< HEAD
 2013/12/13 18:12:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
 Stack trace:
 #0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
@@ -4701,4 +4702,122 @@ Stack trace:
 #2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
 #3 {main}
 REQUEST_URI=/favicon.ico
+=======
+2013/12/13 20:49:45 [error] [php] include(well.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\easy\SEU\yii\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\YiiBase.php(198): import()
+#1 C:\wamp\www\easy\SEU\yii\framework\zii\widgets\grid\CGridView.php(336): createComponent()
+#2 C:\wamp\www\easy\SEU\yii\framework\zii\widgets\grid\CGridView.php(307): CGridView->initColumns()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(148): CGridView->init()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(173): UsuariosController->createWidget()
+#5 C:\wamp\www\easy\SEU\protected\views\usuarios\admin.php(70): UsuariosController->widget()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): UsuariosController->renderInternal()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): UsuariosController->renderFile()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): UsuariosController->renderPartial()
+#10 C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php(145): UsuariosController->render()
+#11 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionAdmin()
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): UsuariosController->runAction()
+#14 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#16 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): UsuariosController->filterAccessControl()
+#17 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#18 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): UsuariosController->runActionWithFilters()
+#20 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): UsuariosController->run()
+#21 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#22 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/usuarios/admin
+in C:\wamp\www\easy\SEU\protected\views\usuarios\admin.php (70)
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (145)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/13 20:49:55 [error] [php] include(well.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\easy\SEU\yii\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\YiiBase.php(198): import()
+#1 C:\wamp\www\easy\SEU\yii\framework\zii\widgets\grid\CGridView.php(336): createComponent()
+#2 C:\wamp\www\easy\SEU\yii\framework\zii\widgets\grid\CGridView.php(307): CGridView->initColumns()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(148): CGridView->init()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(173): UsuariosController->createWidget()
+#5 C:\wamp\www\easy\SEU\protected\views\usuarios\admin.php(70): UsuariosController->widget()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): UsuariosController->renderInternal()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): UsuariosController->renderFile()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): UsuariosController->renderPartial()
+#10 C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php(145): UsuariosController->render()
+#11 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionAdmin()
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): UsuariosController->runAction()
+#14 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#16 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): UsuariosController->filterAccessControl()
+#17 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#18 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): UsuariosController->runActionWithFilters()
+#20 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): UsuariosController->run()
+#21 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#22 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/usuarios/admin
+in C:\wamp\www\easy\SEU\protected\views\usuarios\admin.php (70)
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (145)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/13 20:52:09 [error] [exception.CException] exception 'CException' with message 'Either "name" or "value" must be specified for CDataColumn.' in C:\wamp\www\easy\SEU\yii\framework\zii\widgets\grid\CDataColumn.php:79
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\zii\widgets\grid\CGridView.php(349): CDataColumn->init()
+#1 C:\wamp\www\easy\SEU\yii\framework\zii\widgets\grid\CGridView.php(307): CGridView->initColumns()
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(148): CGridView->init()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 C:\wamp\www\easy\SEU\protected\views\usuarios\admin.php(70): CBaseController->widget('zii.widgets.gri...', Array)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#9 C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php(145): CController->render('admin', Array)
+#10 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionAdmin()
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#15 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#20 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/admin')
+#21 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/easy/SEU/usuarios/admin
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/1
+---
+2013/12/13 20:58:45 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in C:\wamp\www\easy\SEU\yii\framework\zii\widgets\CBaseListView.php:106
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\zii\widgets\grid\CGridView.php(289): CBaseListView->init()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(148): CGridView->init()
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 C:\wamp\www\easy\SEU\protected\views\usuarios\admin.php(70): CBaseController->widget('zii.widgets.gri...', Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#8 C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php(145): CController->render('admin', Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionAdmin()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#19 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/admin')
+#20 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/easy/SEU/usuarios/admin
+HTTP_REFERER=http://localhost/easy/SEU/site/admin
+>>>>>>> 1363c94231d2f145e385bedd1b9c624b9aa47783
 ---
