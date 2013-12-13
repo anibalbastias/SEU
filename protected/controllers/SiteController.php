@@ -55,6 +55,8 @@ class SiteController extends Controller
 
         public function actionPerfil()
         {
+            
+            $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
         
             $this->render('perfil');
                    
