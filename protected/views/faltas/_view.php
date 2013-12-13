@@ -4,17 +4,14 @@
 ?>
 
 <div class="view">
+    <div class="well">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('id_falta')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->id_falta), array('view', 'id'=>$data->id_falta)); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('falta')); ?>:</b>
+	<?php echo CHtml::link(CHtml::encode($data->desc_falta), array('view', 'id'=>$data->id_falta)); ?>
 	<br />
-
+        
 	<b><?php echo CHtml::encode($data->getAttributeLabel('usuario')); ?>:</b>
 	<?php echo $data->usuarios->nom_usuario." ".$data->usuarios->apel1_usuario." ".$data->usuarios->apel2_usuario; ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('desc_falta')); ?>:</b>
-	<?php echo CHtml::encode($data->desc_falta); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('tipo_falta')); ?>:</b>
@@ -24,6 +21,6 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('fecha_falta')); ?>:</b>
 	<?php echo CHtml::encode($data->fecha_falta); ?>
 	<br />
-
+    </div>
 
 </div>

@@ -4,7 +4,8 @@
  * This is the model class for table "usuarios_has_turnos".
  *
  * The followings are the available columns in table 'usuarios_has_turnos':
- * @property string $usuarios_id_usuario
+ * @property string $id
+ * * @property string $usuarios_id_usuario
  * @property string $turnos_id_turno
  * @property string $estado
  */
@@ -36,7 +37,7 @@ class UsuariosHasTurnos extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('usuarios_id_usuario, turnos_id_turno', 'required'),
+                        array('usuarios_id_usuario, turnos_id_turno', 'required'),
 			array('usuarios_id_usuario, turnos_id_turno, estado', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.

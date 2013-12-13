@@ -33,14 +33,31 @@
 		<?php echo $form->error($model,'tipo_falta'); ?>
 	</div>
 
-	<div class="row">
+        <div class="row">
 		<?php echo $form->labelEx($model,'fecha_falta'); ?>
-		<?php echo $form->textField($model,'fecha_falta'); ?>
+		<?php 
+                    $this->widget(
+                        'ext.jui.EJuiDateTimePicker',
+                        array(
+                            'model'     => $model,
+                            'attribute' => 'fecha_falta',
+                            'language'=> 'es',
+                            'mode'    => 'datetime',
+                            'options'   => array(
+                                'dateFormat' => 'yy-mm-dd',
+                                'timeFormat' => 'HH:mm:00',
+                                "minDate" => "-0Y",
+                                "maxDate" => "+1Y",
+                            ),
+                        )
+                    );
+
+                ?>
 		<?php echo $form->error($model,'fecha_falta'); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear Usuario' : 'Guardar Usuario'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear Falta' : 'Guardar falta'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
