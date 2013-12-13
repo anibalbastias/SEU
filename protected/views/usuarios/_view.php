@@ -13,10 +13,10 @@
 	<?php echo CHtml::encode($data->nom_usuario." ".$data->apel1_usuario." ".$data->apel2_usuario); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('carrera')); ?>:</b>
+<!--	<b><?php echo CHtml::encode($data->getAttributeLabel('carrera')); ?>:</b>
 	<?php echo $data->carreras->nom_carrera; ?>
 	<br />
-        
+        -->
         <b><?php echo CHtml::encode($data->getAttributeLabel('universidad')); ?>:</b>
 	<?php echo $data->carreras->universidades->nom_univ; ?>
 	<br />

@@ -6,32 +6,49 @@
 ?>  
 
 
+<div class="panel">
+<h2>Panel de administracion</h2>
 
-<h1>Panel de administracion</h1>
-
-
-<div class="well">
+<div class="container">
+    <div class="row-fluid">
+<div class="span4 centrar">
 
     <h2> Usuarios </h2>
-
-    <li><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/index' ?>">Listar usuarios</a></li>
-    <li><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/create' ?>">Crear usuarios</a></li>
-    <!--<li><a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>">Eliminar usuario</a></li>-->
     
+    <div class="nav">
+    <li><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/index' ?>"><i class="icon-list-alt"></i> Listar usuarios</a></li>
+    <li><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/create' ?>"><i class="icon-plus-sign"></i>Crear usuarios</a></li>
+    
+    </div>
 </div>
 
 
-<div class="well">
+<div class="span4 centrar">
     
     <h2>Planilla</h2>
-    <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>">Listar turnos</a></li>
-    <li><a href="<?php echo Yii:: app() ->baseUrl.'/turnos/create' ?>">Crear turnos</a></li>
+    <div class="nav">
+    <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>"><i class="icon-list-alt"></i> Listar turnos</a></li>
+    <li><a href="<?php echo Yii:: app() ->baseUrl.'/turnos/create' ?>"><i class="icon-plus-sign"></i> Crear turnos</a></li>
     <!--<li><a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>">Eliminar turnos</a></li>-->
     <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/planilla' ?>">Generar planilla</a></li>
+    </div>
+</div>  
+        
+<div class="span4 centrar">
     
-</div>   
+    <h2>Faltas</h2>
+    <div class="nav ">
+    <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>"><i class="icon-list-alt"></i> Listar turnos</a></li>
+    <li><a href="<?php echo Yii:: app() ->baseUrl.'/turnos/create' ?>"><i class="icon-plus-sign"></i>Crear turnos</a></li>
+    <!--<li><a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>">Eliminar turnos</a></li>-->
+    <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/planilla' ?>">Generar planilla</a></li>
+    </div>
+</div>         
+        
+    </div>
+</div>
 
-
+</div>
 
 <?php
 
