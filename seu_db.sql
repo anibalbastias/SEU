@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 12-12-2013 a las 18:19:38
+-- Tiempo de generación: 13-12-2013 a las 09:08:30
 -- Versión del servidor: 5.5.16
 -- Versión de PHP: 5.3.9
 
@@ -4847,7 +4847,6 @@ INSERT INTO `usuarios_has_turnos` (`id`, `usuarios_id_usuario`, `turnos_id_turno
 (1, 1, 1, 'Aceptado'),
 (2, 1, 2, 'Suspendido'),
 (3, 2, 2, 'Suspendido'),
-(4, 2, 2, 'Suspendido'),
 (5, 1, 3, 'Suspendido');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

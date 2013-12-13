@@ -18,7 +18,7 @@
 	<!--<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />-->
 	<?php Yii::app()->bootstrap->registerAllCss(); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" />
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
         
 	<title>SEU</title>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -46,11 +46,19 @@
         
          
         
-            if(Yii::app()->session['var'] != NULL)
-            {
+            if(Yii::app()->session['var'] != NULL){
+             $usuario=Usuarios::model()->findByPk(Yii::app()->session['var']);
+              if( $usuario->rut_usuario != 'admin') 
+                {    
+                
+                
+            
                 
             ?>
     
+        
+        
+        
         <div class="container">
         
         <ul class="altura3 nav nav-tabs">
@@ -79,7 +87,44 @@
         <!--fin del menu-->
         </div>
         
+        <!--administrador #############################################-->
         
+        <?php
+        
+            }
+             if( $usuario->rut_usuario == 'admin') 
+                {    
+               
+            ?>
+       
+                    <div class="container">
+        
+        <ul class="altura3 nav nav-tabs">
+       
+            <li>  
+                <div class="style_user"> 
+                    <h1> Bienvenido Administrador <?php
+            
+                                 $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
+                                 $nombre=$empaque->nom_usuario;
+                                 $apellido=$empaque->apel1_usuario;   
+                                 echo $nombre." ".$apellido;
+            
+                        ?>
+                    </h1>   
+                </div>
+                    
+            </li>
+            
+            <button type="button" class="btn btn-danger pull-right"><a href="<?php echo Yii:: app() ->baseUrl.'/site/logout' ?>">Cerrar Sesion</a></button>
+        </ul>
+        <!--fin del menu-->
+        </div>
+        
+          <?php
+        
+                }
+          ?>
         <!--contenido-->
         
        
@@ -94,6 +139,7 @@
                 
                 
                 if(Yii::app()->session['var'] != NULL)
+                    
             {
             
             ?>
@@ -110,7 +156,15 @@
                         Copyright &copy; <?php echo date('Y'); ?> by Bastías - Rojas<br/>
                         All Rights Reserved.<br/>
                 
-                        <a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>"> Panel</a>
+                        <?php
+                            $usuario=Usuarios::model()->findByPk(Yii::app()->session['var']);
+                            if( $usuario->rut_usuario == 'admin') 
+                            {
+                                ?>
+                                <a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>"> Panel</a>
+                         <?php
+                            }       
+                                    ?>
                         <br>
                         Última conexión <?php
 

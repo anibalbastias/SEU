@@ -10,17 +10,21 @@
 </div>
 
 
-<?php
+
+    <?php
+
+        $admin=Usuarios::model()->findByPk(Yii::app()->session['var']);
+    
+       if($admin->rut_usuario =='admin'){ 
+         $this->redirect(array('admin'));
+       }    
+      
+        
+    ?>
 
 
-   
-// store session data
-//   echo  $_SESSION['user'];
-    echo Yii::app()->session['var']; // Prints "value"
 
-?>
-
-
+  <!--fuera de la sesion ###############################-->
 
 <?php 
             }
@@ -32,11 +36,13 @@
 
 <div class="inicio centrar">
 
-<h1>Ingreso a SEU</h1>
+    <div class="row">
+        <div class="span4 offset5">
+<h1>Ingreso al Sistema</h1>
+<br><br>
 
 
-
-<div class="form">
+<div class="form well">
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'login-form',
 	'enableClientValidation'=>true,
@@ -66,9 +72,14 @@
 		<?php echo $form->error($model,'rememberMe'); ?>
 	</div>
 
+    <br>
 	<div class=" buttons">
-		<?php echo CHtml::submitButton('Iniciar Sesion',array('class'=>'btn')); ?>
-	</div>
+		<?php echo CHtml::submitButton('Iniciar Sesion',array('class'=>'btn btn-primary btn-large')); ?>
+
+        </div>
+    
+</div>
+        </div>    
 </div>
 <?php $this->endWidget(); ?>
 </div><!-- form -->

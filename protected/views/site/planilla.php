@@ -19,6 +19,8 @@
 
         <?php
         $model= Turnos::model()->findall(array('order'=>'fecha_turno'));
+        
+        
         if($model)
         {
             foreach($model as $m)
@@ -37,9 +39,13 @@
                 
                 $m2_f = explode(" ", $nuevafecha);
                 
+//                $dia = date('d',$m2[0]);
+                
                 echo "<h4>Turno: ".$m2[0]."</h4>";
                 echo "<h4>Hora: ".$m2[1]." - ".$m2_f[1]."</h4>";
                 echo "<h4>Cupos: ".$m->cupos_turno."</h4>";
+                
+                
                 ?>
                 
                     
