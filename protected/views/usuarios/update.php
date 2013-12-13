@@ -1,6 +1,13 @@
 <?php
 /* @var $this UsuariosController */
 /* @var $model Usuarios */
+$empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
+$controlador = $this->getId();
+    $pagina = $this->getAction()->getId();
+    $id_url = $_GET['id'];
+// echo $id_url;
+// echo " ";
+// echo $empaque->id_usuario;
 
 $this->breadcrumbs=array(
 	'Usuarios'=>array('index'),
