@@ -44,7 +44,7 @@
         
          
         
-            if(Yii::app()->session['var'] != NULL || $controlador=='site' && $pagina=='login' )
+            if(Yii::app()->session['var'] != NULL)
             {
                 
             ?>
@@ -63,12 +63,14 @@
         <!--contenido-->
             <?php 
             
-             
+                    }
                  
              
                 echo $content; 
                 
-            
+                
+                if(Yii::app()->session['var'] != NULL)
+            {
             
             ?>
         <!--fin del contenido-->
@@ -104,24 +106,6 @@
         
             }
         ?>
-        
-        <!--fuera de la sesion-->
-        
-         <?php 
-        
-            if(Yii::app()->session['var'] == NULL)
-            {
-                
-            ?>
-        
-                
-        
-        
-        <?php
-        
-            }
-        ?>
-        
             
 </div><!-- page -->
 

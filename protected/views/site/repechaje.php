@@ -1,13 +1,24 @@
 
+<?php
+
+    if(Yii::app()->session['var'] != NULL)
+            {
+
+?>
+
+
 <h1>Turnos de repechaje</h1>
 
 
 <?php
 
-
-   
-// store session data
-//   echo  $_SESSION['user'];
-//    echo Yii::app()->session['var']; // Prints "value"
-unset(Yii::app()->session['var']);
-?>
+            }
+      
+      if(Yii::app()->session['var'] == NULL)
+            {
+        
+                    header("Location: ".Yii:: app() ->baseUrl.'/site/index');
+          
+              }
+            
+  ?>
