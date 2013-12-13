@@ -4170,3 +4170,87 @@ Stack trace:
 #12 {main}
 REQUEST_URI=/easy/SEU/usuarios/view
 ---
+2013/12/13 19:23:12 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in C:\wamp\www\easy\SEU\yii\framework\zii\widgets\CBaseListView.php:106
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\zii\widgets\CListView.php(182): CBaseListView->init()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(148): CListView->init()
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 C:\wamp\www\easy\SEU\protected\views\usuarios\index.php(38): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php(130): CController->render('index', Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionIndex()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#19 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/index')
+#20 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/easy/SEU/usuarios/index
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/index
+---
+2013/12/13 19:23:40 [error] [exception.CException] exception 'CException' with message 'Property "CListView.class" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWidgetFactory.php(162): CComponent->__set('class', 'well')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(UsuariosController), 'zii.widgets.CLi...', Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 C:\wamp\www\easy\SEU\protected\views\usuarios\index.php(39): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php(130): CController->render('index', Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionIndex()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#19 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/index')
+#20 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/easy/SEU/usuarios/index
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/index
+---
+2013/12/13 19:23:42 [error] [exception.CException] exception 'CException' with message 'Property "CListView.class" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWidgetFactory.php(162): CComponent->__set('class', 'well')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(UsuariosController), 'zii.widgets.CLi...', Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 C:\wamp\www\easy\SEU\protected\views\usuarios\index.php(39): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php(130): CController->render('index', Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionIndex()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#19 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/index')
+#20 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/easy/SEU/usuarios/index
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/index
+---

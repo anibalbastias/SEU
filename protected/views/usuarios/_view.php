@@ -3,21 +3,30 @@
 /* @var $data Usuarios */
 ?>
 
+
+
+<div class="container-fluid row-fluid">
 <div class="view">
     <div class="well">
-	<b><?php echo CHtml::encode($data->getAttributeLabel('rut')); ?>:</b>
+        
+        <b><?php echo CHtml::encode($data->getAttributeLabel('nom_usuario')); ?>:</b>
+	<?php echo CHtml::encode($data->nom_usuario." ".$data->apel1_usuario." ".$data->apel2_usuario); ?>
+	<br />
+        
+        
+<!--	<b><?php echo CHtml::encode($data->getAttributeLabel('rut')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($data->rut_usuario), array('view', 'id'=>$data->id_usuario)); ?>
 	<br />
         
         <b><?php echo CHtml::encode($data->getAttributeLabel('nom_usuario')); ?>:</b>
 	<?php echo CHtml::encode($data->nom_usuario." ".$data->apel1_usuario." ".$data->apel2_usuario); ?>
-	<br />
+	<br />-->
 
 <!--	<b><?php echo CHtml::encode($data->getAttributeLabel('carrera')); ?>:</b>
 	<?php echo $data->carreras->nom_carrera; ?>
 	<br />
         -->
-        <b><?php echo CHtml::encode($data->getAttributeLabel('universidad')); ?>:</b>
+<!--        <b><?php echo CHtml::encode($data->getAttributeLabel('universidad')); ?>:</b>
 	<?php echo $data->carreras->universidades->nom_univ; ?>
 	<br />
 
@@ -27,9 +36,9 @@
         
         <b><?php echo CHtml::encode($data->getAttributeLabel('provincia')); ?>:</b>
 	<?php echo CHtml::encode($data->comunas->provincias->nom_provincia); ?>
-	<br />
+	<br />-->
         
-        <b><?php echo CHtml::encode($data->getAttributeLabel('region')); ?>:</b>
+<!--        <b><?php echo CHtml::encode($data->getAttributeLabel('region')); ?>:</b>
 	<?php echo CHtml::encode($data->comunas->provincias->regiones->nom_region); ?>
 	<br />
         <br />
@@ -42,8 +51,8 @@
             $i++;
         }
         ?>
-        
-        <br />
+        -->
+<!--        <br />
         <b><?php echo CHtml::encode($data->getAttributeLabel('faltas')); ?>:</b><br>
 	
         
@@ -55,7 +64,7 @@
                     $i++;
                 }
         ?>
-	<br />
+	<br />-->
 
 	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('dir_usuario')); ?>:</b>
@@ -92,5 +101,5 @@
 
 	*/ ?>
     </div>
-
+</div>
 </div>
