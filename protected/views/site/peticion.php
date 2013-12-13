@@ -1,4 +1,12 @@
 
+<?php
+
+    if(Yii::app()->session['var'] != NULL)
+            {
+
+?>
+
+
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie_1.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/reset2.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style_1.css" />
@@ -12,3 +20,18 @@
 <h1>Toma de turnos</h1>
 
 <div id="counter"></div>
+
+
+
+<?php
+
+            }
+      
+      if(Yii::app()->session['var'] == NULL)
+            {
+        
+                    header("Location: ".Yii:: app() ->baseUrl.'/site/index');
+          
+              }
+            
+  ?>          

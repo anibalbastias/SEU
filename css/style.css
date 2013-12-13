@@ -21,3 +21,30 @@
 .altura9{margin-top:90px;}
 .altura10{margin-top:100px;}
 
+.btn a:link{
+    
+    text-decoration:none;
+    /*background-color:#B2FF99;*/
+    color:white;
+}
+
+.btn a:visited{
+    
+    text-decoration:none;
+    /*background-color:#B2FF99;*/
+    color:white;
+}
+
+.btn a:active{
+    
+    text-decoration:none;
+  color:white;
+ 
+}
+
+.btn a:hover{
+    
+    text-decoration:none;
+  color:white;
+ 
+}
