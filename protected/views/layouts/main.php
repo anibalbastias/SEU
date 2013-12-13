@@ -103,7 +103,7 @@
 	
         <!--footer-->
 
-        <div class="container-fluid">
+        <div class="container">
             <div class="row-fluid">
                 <div class="span-12">
                     <div class="well centrar">

@@ -14,7 +14,7 @@
 
    
   
-    <div class="style_user">
+    <div class="style_user well">
     <h3>perfil    
    <?php 
                         $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
@@ -26,7 +26,7 @@
      
     ?>
     </h3>
-    </div>
+    
 
 
 
@@ -63,6 +63,8 @@
         
         <a href="<?php echo Yii:: app() ->baseUrl.'/site/mperfil' ?>"><h3>Modificar datos</h3></a>
 
+        
+        </div>
         <!--fuera de sesion-->
 <?php
 

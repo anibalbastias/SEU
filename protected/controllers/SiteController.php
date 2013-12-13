@@ -67,13 +67,32 @@ class SiteController extends Controller
         
             $model=Usuarios::model()->findByPk(Yii::app()->session['var']);
             
+             $pass = $model->pass_usuario;   
+            
+            
+             
             if(isset($_POST['Usuarios']))
 		{
-			$model->attributes=$_POST['Usuarios'];
+                
+                    if($pass != md5($model->pass_usuario) ){
+			
                         $model->pass_usuario=md5($model->pass_usuario);
+                        $model->attributes=$_POST['Usuarios'];
 			if($model->save())
 				$this->redirect(array('perfil'));
-		}
+		
+                    }
+                    
+                     if($pass == $model->pass_usuario || $pass == md5($model->pass_usuario)){
+			$model->attributes=$_POST['Usuarios'];
+                        
+                        
+			if($model->save())
+				$this->redirect(array('perfil'));
+		
+                    }
+                    
+                 }
             
             $this->render('mperfil');
                    

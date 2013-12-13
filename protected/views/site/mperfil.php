@@ -138,6 +138,8 @@ $model=Usuarios::model()->findByPk(Yii::app()->session['var']);
 		<?php echo $form->passwordField($model,'pass_usuario',array('size'=>60,'maxlength'=>100 , 'type'=>'password')); ?>
 		<?php echo $form->error($model,'pass_usuario'); ?>
 	</div>
+                
+               
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class'=>'btn btn-primary')); ?>
