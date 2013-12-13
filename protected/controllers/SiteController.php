@@ -60,6 +60,23 @@ class SiteController extends Controller
                    
         }
         
+        public function actionMperfil()
+        {
+        
+            $model=Usuarios::model()->findByPk(Yii::app()->session['var']);
+            
+            if(isset($_POST['Usuarios']))
+		{
+			$model->attributes=$_POST['Usuarios'];
+                        $model->pass_usuario=md5($model->pass_usuario);
+			if($model->save())
+				$this->redirect(array('perfil'));
+		}
+            
+            $this->render('mperfil');
+                   
+        }
+        
         public function actionTurnosuser()
         {
         

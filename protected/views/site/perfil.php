@@ -59,8 +59,9 @@
 	<?php echo CHtml::encode($empaque->comunas->provincias->regiones->nom_region); ?>
 	<br />
 
+        <br><br><br>
         
-        <li><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/'.Yii::app()->session['var'] ?>">Listar usuarios</a></li>
+        <a href="<?php echo Yii:: app() ->baseUrl.'/site/mperfil' ?>"><h3>Modificar datos</h3></a>
 
         <!--fuera de sesion-->
 <?php

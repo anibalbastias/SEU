@@ -121,3 +121,90 @@ REQUEST_URI=/easy/SEU/site/perfil
 in C:\wamp\www\easy\SEU\protected\views\site\perfil.php (5)
 in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (59)
 in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/13 00:33:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "modify".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('modify')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('modify')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/modify')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/modify
+HTTP_REFERER=http://localhost/easy/SEU/site/perfil
+---
+2013/12/13 00:44:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('mperfil')
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/mperfil')
+#5 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/easy/SEU/site/mperfil
+HTTP_REFERER=http://localhost/easy/SEU/site/perfil
+---
+2013/12/13 00:44:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('mperfil')
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/mperfil')
+#5 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/easy/SEU/site/mperfil
+HTTP_REFERER=http://localhost/easy/SEU/site/perfil
+---
+2013/12/13 03:46:15 [error] [php] Undefined variable: model (C:\wamp\www\easy\SEU\protected\views\site\mperfil.php:25)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(74): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionMperfil()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/mperfil
+in C:\wamp\www\easy\SEU\protected\views\site\mperfil.php (25)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (74)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/13 03:47:19 [error] [php] Undefined property: stdClass::$pass_usuario (C:\wamp\www\easy\SEU\protected\controllers\SiteController.php:69)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/mperfil
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (69)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/13 00:49:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('view')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/view')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/1
+HTTP_REFERER=http://localhost/easy/SEU/site/mperfil
+---
+2013/12/13 00:49:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('view')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/view')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/view?0=perfil
+HTTP_REFERER=http://localhost/easy/SEU/site/mperfil
+---
