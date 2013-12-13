@@ -22,10 +22,6 @@
 		<?php echo $form->labelEx($model,'carreras_id_carrera'); ?>
 		<?php echo $form->textField($model,'carreras_id_carrera',array('size'=>10,'maxlength'=>10)); ?>
 		<?php echo $form->error($model,'carreras_id_carrera'); ?>
-            
-            
-            
-            
 	</div>
         
        

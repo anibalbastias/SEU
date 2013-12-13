@@ -28,6 +28,8 @@
                             'options'   => array(
                                 'dateFormat' => 'yy-mm-dd',
                                 'timeFormat' => 'HH:mm:00',
+                                'hourMin' => 8,
+                                'hourMax' => 19,
                                 "minDate" => "-0Y",
                                 "maxDate" => "+1Y",
                             ),
