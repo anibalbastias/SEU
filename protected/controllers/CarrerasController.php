@@ -153,6 +153,9 @@ class CarrerasController extends Controller
 		$model=Carreras::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
+                if (isset($_GET['id_carrera']))
+                    // NOTE 'with()'
+                    $this->_model=  Carreras::model()->with('nom_carrera')->findbyPk($_GET['id_carrera']); 
 		return $model;
 	}
 
@@ -168,4 +171,33 @@ class CarrerasController extends Controller
 			Yii::app()->end();
 		}
 	}
+        
+        // data provider for EJuiAutoCompleteFkField for PostCodeId field
+        public function actionFindPostCode() {
+            $q = $_GET['term'];
+            if (isset($q)) {
+                $criteria = new CDbCriteria;
+                //condition to find your data, using q as the parameter field
+                $criteria->condition = '...';
+                $criteria->order = '...'; // correct order-by field
+                $criteria->limit = '...'; // probably a good idea to limit the results
+                // with trailing wildcard only; probably a good idea for large volumes of data
+                $criteria->params = array(':q' => trim($q) . '%'); 
+                $PostCodes = Carreras::model()->findAll($criteria);
+
+                if (!empty($PostCodes)) {
+                    $out = array();
+                    foreach ($PostCodes as $p) {
+                        $out[] = array(
+                            // expression to give the string for the autoComplete drop-down
+                            'label' => $p->PostCodeAndProvince,  
+                            'value' => $p->PostCodeAndProvince,
+                            'id' => $p->PostCodeId, // return value from autocomplete
+                        );
+                    }
+                    echo CJSON::encode($out);
+                    Yii::app()->end();
+                }
+            }
+        }
 }
