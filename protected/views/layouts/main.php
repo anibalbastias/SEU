@@ -4,6 +4,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
+        
+        <!--<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/reset2.css" />-->
 
 	<!-- blueprint CSS framework -->
 	<!--<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />-->
@@ -30,7 +32,7 @@
 
 <body>
 
-<div class="container all" id="page">
+<div class=" all" id="">
 
 	
         
@@ -49,6 +51,7 @@
                 
             ?>
     
+        <div class="container">
         
         <ul class="altura3 nav nav-tabs">
             <li <?php if($pagina == "index") { ?>class="active" <?php } ?>><a href="<?php echo Yii:: app() ->baseUrl.'/site/index' ?>"> Inicio</a></li>
@@ -56,11 +59,32 @@
             <li <?php if($pagina == "turnosuser") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/turnosuser' ?>"> Mis Turnos</a></li>
             <li <?php if($pagina == "peticion") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/peticion' ?>">Tomar Turnos </a></li>
             <li <?php if($pagina == "repechaje") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/repechaje' ?>"> Turnos Repechaje</a></li>
+           
+            <li>  
+                    
+                    Bienvenido <?php
+            
+                                 $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
+                                 $nombre=$empaque->nom_usuario;
+                                 $apellido=$empaque->apel1_usuario;   
+                                 echo $nombre." ".$apellido;
+            
+                        ?>
+                  
+                    
+            </li>
+            
             <button type="button" class="btn btn-danger pull-right"><a href="<?php echo Yii:: app() ->baseUrl.'/site/logout' ?>">Cerrar Sesion</a></button>
         </ul>
         <!--fin del menu-->
+        </div>
+        
         
         <!--contenido-->
+        
+       
+        <div class="container">
+        
             <?php 
             
                     }
@@ -74,7 +98,7 @@
             
             ?>
         <!--fin del contenido-->
-        
+        </div>
         
 	
         <!--footer-->
