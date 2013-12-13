@@ -283,3 +283,439 @@ Stack trace:
 REQUEST_URI=/easy/SEU/site/mperfil
 in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (75)
 in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/13 02:09:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/body-pattern.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/body-pat...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/images/body-pattern.jpg
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/13 05:19:46 [error] [php] Undefined variable: empaque (C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php:10)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(105): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/turnosuser
+in C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php (10)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (105)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/13 05:34:25 [error] [php] Array to string conversion (C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php:11)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(105): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/turnosuser
+in C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php (11)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (105)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/13 05:37:16 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.usuario_id" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCriteria.php(161): CComponent->__set('usuario_id', '1')
+#1 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1409): CDbCommandBuilder->createCriteria(Array, Array)
+#3 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(10): CActiveRecord->findAll(Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#8 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(105): CController->render('turnosuser')
+#9 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#15 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/perfil
+---
+2013/12/13 05:38:00 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.usuario_id_usuario" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCriteria.php(161): CComponent->__set('usuario_id_usua...', '1')
+#1 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1409): CDbCommandBuilder->createCriteria(Array, Array)
+#3 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(10): CActiveRecord->findAll(Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#8 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(105): CController->render('turnosuser')
+#9 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#15 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/perfil
+---
+2013/12/13 05:38:39 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.usuario_id_usuario" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCriteria.php(161): CComponent->__set('usuario_id_usua...', '1')
+#1 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1395): CDbCommandBuilder->createCriteria(Array, Array)
+#3 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(10): CActiveRecord->find(Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#8 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(105): CController->render('turnosuser')
+#9 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#15 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/perfil
+---
+2013/12/13 05:39:54 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.usuarios_id_usuario" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCriteria.php(161): CComponent->__set('usuarios_id_usu...', '1')
+#1 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1395): CDbCommandBuilder->createCriteria(Array, Array)
+#3 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(10): CActiveRecord->find(Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#8 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(105): CController->render('turnosuser')
+#9 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#15 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/perfil
+---
+2013/12/13 05:40:03 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.usuarios_id" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCriteria.php(161): CComponent->__set('usuarios_id', '1')
+#1 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1395): CDbCommandBuilder->createCriteria(Array, Array)
+#3 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(10): CActiveRecord->find(Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#8 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(105): CController->render('turnosuser')
+#9 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#15 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/perfil
+---
+2013/12/13 05:40:25 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.id_usuario" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCriteria.php(161): CComponent->__set('id_usuario', '1')
+#1 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1395): CDbCommandBuilder->createCriteria(Array, Array)
+#3 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(10): CActiveRecord->find(Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#8 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(105): CController->render('turnosuser')
+#9 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#15 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/perfil
+---
+2013/12/13 05:41:20 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.usuarios_id_usuario" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCriteria.php(161): CComponent->__set('usuarios_id_usu...', '1')
+#1 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1395): CDbCommandBuilder->createCriteria(Array, Array)
+#3 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(10): CActiveRecord->find(Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#8 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(105): CController->render('turnosuser')
+#9 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#15 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/perfil
+---
+2013/12/13 05:42:51 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.usuarios_id" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCriteria.php(161): CComponent->__set('usuarios_id', '1')
+#1 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1395): CDbCommandBuilder->createCriteria(Array, Array)
+#3 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(10): CActiveRecord->find(Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#8 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(105): CController->render('turnosuser')
+#9 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#15 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/perfil
+---
+2013/12/13 05:46:55 [error] [php] Attempt to assign property of non-object (C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php:11)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(105): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/turnosuser
+in C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php (11)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (105)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/13 05:48:35 [error] [php] Attempt to assign property of non-object (C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php:11)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(105): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/turnosuser
+in C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php (11)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (105)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/13 02:48:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/body-pattern.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/body-pat...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/images/body-pattern.jpg
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/13 02:48:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.woff".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.woff
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/13 02:48:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.ttf".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.ttf
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/13 02:48:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.svg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.svg
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/13 05:51:48 [error] [php] include(Falts.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\easy\SEU\yii\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(10): spl_autoload_call()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require()
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#5 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(105): SiteController->render()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/turnosuser
+in C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php (10)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (105)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/13 05:52:03 [error] [php] Trying to get property of non-object (C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php:25)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(105): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/turnosuser
+in C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php (25)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (105)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/13 05:52:29 [error] [php] Object of class Faltas could not be converted to string (C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php:12)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(105): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/turnosuser
+in C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php (12)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (105)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/13 05:53:52 [error] [php] Trying to get property of non-object (C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php:26)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(105): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/turnosuser
+in C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php (26)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (105)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/13 05:54:39 [error] [php] Trying to get property of non-object (C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php:26)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(105): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/turnosuser
+in C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php (26)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (105)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/13 05:54:40 [error] [php] Trying to get property of non-object (C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php:26)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(105): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/turnosuser
+in C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php (26)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (105)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/13 06:01:08 [error] [php] Trying to get property of non-object (C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php:26)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(105): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/turnosuser
+in C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php (26)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (105)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/13 06:15:27 [error] [php] Trying to get property of non-object (C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php:26)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(105): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/turnosuser
+in C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php (26)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (105)
+in C:\wamp\www\easy\SEU\index.php (13)

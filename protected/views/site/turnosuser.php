@@ -1,3 +1,7 @@
 
 
-<h1>Mis turnos</h1>
+<?php $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);  ?>
+
+<h3>Turnos de la semana</h3>
+
+
