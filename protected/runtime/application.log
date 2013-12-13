@@ -33,372 +33,6 @@ REQUEST_URI=/easy/SEU/site/index
 in C:\wamp\www\easy\SEU\protected\views\layouts\main.php (38)
 in C:\wamp\www\easy\SEU\protected\views\layouts\column1.php (6)
 in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (32)
-<<<<<<< HEAD
-2013/12/11 14:12:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perfil".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('perfil')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/perfil
-HTTP_REFERER=http://localhost/easy/SEU/
----
-2013/12/11 14:12:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('index')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/index
-HTTP_REFERER=http://localhost/easy/SEU/perfil
----
-2013/12/11 14:12:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "peticion".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('peticion')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/peticion
-HTTP_REFERER=http://localhost/easy/SEU/turnos
----
-2013/12/11 14:12:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('index')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/index
-HTTP_REFERER=http://localhost/easy/SEU/peticion
----
-2013/12/11 14:19:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('index')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/index
-HTTP_REFERER=http://localhost/easy/SEU/peticion
----
-2013/12/11 14:19:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
-#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
-#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/turno...')
-#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/easy/SEU/site/site/turnos
-HTTP_REFERER=http://localhost/easy/SEU/site/perfil
----
-2013/12/11 14:19:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
-#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
-#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
-#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/easy/SEU/site/site/site/peticion
-HTTP_REFERER=http://localhost/easy/SEU/site/site/turnos
----
-2013/12/11 14:19:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
-#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
-#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
-#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/easy/SEU/site/site/site/site/repechaje
-HTTP_REFERER=http://localhost/easy/SEU/site/site/site/peticion
----
-2013/12/11 14:19:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
-#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
-#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
-#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/easy/SEU/site/site/site/site/site/peticion
-HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/repechaje
----
-2013/12/11 14:19:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
-#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
-#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
-#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/easy/SEU/site/site/site/site/site/site/turnos
-HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/peticion
----
-2013/12/11 14:19:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
-#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
-#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
-#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/perfil
-HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/turnos
----
-2013/12/11 14:19:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
-#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
-#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
-#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/site/index
-HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/site/perfil
----
-2013/12/11 14:19:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
-#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
-#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
-#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/site/site/perfil
-HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/site/site/index
----
-2013/12/11 14:20:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
-#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
-#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
-#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/site/site/site/turnos
-HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/site/site/site/perfil
----
-2013/12/11 14:20:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
-#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
-#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
-#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/peticion
-HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/site/site/site/site/turnos
----
-2013/12/11 14:20:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
-#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
-#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
-#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/repechaje
-HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/peticion
----
-2013/12/11 14:20:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
-#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
-#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
-#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/site/peticion
-HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/repechaje
----
-2013/12/11 14:22:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
-#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
-#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
-#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/site/peticion
-HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/repechaje
----
-2013/12/11 14:22:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
-#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
-#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
-#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/site/index
-HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/site/peticion
----
-2013/12/11 14:22:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
-#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
-#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
-#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/site/index
-HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/site/index
----
-2013/12/11 14:22:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('site')
-#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('site')
-#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/site/site/...')
-#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/site/perfil
-HTTP_REFERER=http://localhost/easy/SEU/site/site/site/site/site/site/site/site/site/site/site/site/site/index
----
-2013/12/11 14:22:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perfil".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('perfil')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/perfil
-HTTP_REFERER=http://localhost/easy/SEU/
----
-2013/12/11 14:22:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "peticion".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('peticion')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/peticion
-HTTP_REFERER=http://localhost/easy/SEU/turnos
----
-2013/12/11 14:22:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "repechaje".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('repechaje')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/repechaje
-HTTP_REFERER=http://localhost/easy/SEU/peticion
----
-2013/12/11 14:22:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "peticion".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('peticion')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/peticion
-HTTP_REFERER=http://localhost/easy/SEU/repechaje
----
-2013/12/11 14:22:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perfil".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('perfil')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/perfil
-HTTP_REFERER=http://localhost/easy/SEU/turnos
----
-2013/12/11 14:24:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('index')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/index
-HTTP_REFERER=http://localhost/easy/SEU/perfil
----
-2013/12/11 14:24:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('index')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/index
-HTTP_REFERER=http://localhost/easy/SEU/index
----
-2013/12/11 14:24:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perfil".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('perfil')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/perfil
-HTTP_REFERER=http://localhost/easy/SEU/index
----
-2013/12/11 14:24:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perfil".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('perfil')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/perfil
-HTTP_REFERER=http://localhost/easy/SEU/turnos
----
-2013/12/11 14:24:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perfil".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('perfil')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/perfil
-HTTP_REFERER=http://localhost/easy/SEU/turnos
----
-2013/12/11 14:24:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perfil".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('perfil')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/perfil
-HTTP_REFERER=http://localhost/easy/SEU/turnos
----
-2013/12/11 14:24:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('index')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/index
-HTTP_REFERER=http://localhost/easy/SEU/perfil
----
-2013/12/11 14:24:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "perfil".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('perfil')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/perfil
-HTTP_REFERER=http://localhost/easy/SEU/index
----
-2013/12/11 14:25:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "turnosuser".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('turnosuser')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/turnosuser
-HTTP_REFERER=http://localhost/easy/SEU/perfil
----
-2013/12/11 14:25:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "peticion".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('peticion')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/peticion
-HTTP_REFERER=http://localhost/easy/SEU/turnosuser
----
-2013/12/11 14:25:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "repechaje".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('repechaje')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/repechaje
-HTTP_REFERER=http://localhost/easy/SEU/peticion
-=======
 2013/12/11 06:16:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
 Stack trace:
 #0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
@@ -542,40 +176,7 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/peticion
 HTTP_REFERER=http://localhost/turnos
->>>>>>> 935bb48aa9ce48cc58e213267576f81ca57fde08
 ---
-<<<<<<< HEAD
-2013/12/11 14:42:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('index')
-#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#3 {main}
-REQUEST_URI=/easy/SEU/index
-HTTP_REFERER=http://localhost/easy/SEU/repechaje
----
-2013/12/11 14:44:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'seu'@'localhost' (using password: YES)' in C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:382
-Stack trace:
-#0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
-#1 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
-#2 C:\wamp\www\easy\SEU\yii\framework\base\CModule.php(388): CDbConnection->init()
-#3 C:\wamp\www\easy\SEU\yii\framework\base\CModule.php(104): CModule->getComponent('db')
-#4 C:\wamp\www\easy\SEU\yii\framework\gii\generators\model\ModelCode.php(57): CModule->__get('db')
-#5 C:\wamp\www\easy\SEU\yii\framework\web\CFormModel.php(40): ModelCode->init()
-#6 C:\wamp\www\easy\SEU\yii\framework\gii\CCodeGenerator.php(154): CFormModel->__construct()
-#7 C:\wamp\www\easy\SEU\yii\framework\gii\CCodeGenerator.php(64): CCodeGenerator->prepare()
-#8 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
-#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
-#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
-#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
-#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('')
-#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii/model')
-#14 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#15 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
-#16 {main}
-REQUEST_URI=/easy/SEU/gii/model
-HTTP_REFERER=http://localhost/easy/SEU/gii/default/index
-=======
 2013/12/11 09:25:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "SEU/gii".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
 Stack trace:
 #0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('SEU/gii')
@@ -671,7 +272,6 @@ Stack trace:
 #4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
 #5 {main}
 REQUEST_URI=/site/gii
->>>>>>> f1a967068d5dd5130e48429893f8503dfa4433f2
 ---
 2013/12/11 09:42:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "usuarios".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
 Stack trace:
@@ -757,7 +357,7 @@ REQUEST_URI=/easy/SEU/usuarios/create
 in C:\wamp\www\easy\SEU\protected\views\usuarios\create.php (13)
 in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (79)
 in C:\wamp\www\easy\SEU\index.php (13)
-2013/12/11 19:05:24 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiemp (trying to connect via tcp://10.10.5.163:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
+2013/12/11 19:05:24 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexiï¿½n ya que la parte conectada no respondiï¿½ adecuadamente tras un periodo de tiemp (trying to connect via tcp://10.10.5.163:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
 Stack trace:
 #0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
 #1 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
@@ -784,7 +384,7 @@ Stack trace:
 REQUEST_URI=/easy/SEU/usuarios
 in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (125)
 in C:\wamp\www\easy\SEU\index.php (13)
-2013/12/11 19:05:45 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiemp (trying to connect via tcp://10.10.5.163:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
+2013/12/11 19:05:45 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexiï¿½n ya que la parte conectada no respondiï¿½ adecuadamente tras un periodo de tiemp (trying to connect via tcp://10.10.5.163:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
 Stack trace:
 #0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
 #1 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
@@ -811,7 +411,7 @@ Stack trace:
 REQUEST_URI=/easy/SEU/usuarios
 in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (125)
 in C:\wamp\www\easy\SEU\index.php (13)
-2013/12/11 19:07:43 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiemp (trying to connect via tcp://10.10.5.163:3306:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
+2013/12/11 19:07:43 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexiï¿½n ya que la parte conectada no respondiï¿½ adecuadamente tras un periodo de tiemp (trying to connect via tcp://10.10.5.163:3306:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
 Stack trace:
 #0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
 #1 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
@@ -892,7 +492,7 @@ Stack trace:
 REQUEST_URI=/easy/SEU/usuarios
 in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (125)
 in C:\wamp\www\easy\SEU\index.php (13)
-2013/12/11 19:13:07 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiemp (trying to connect via tcp://10.10.5.163:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
+2013/12/11 19:13:07 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexiï¿½n ya que la parte conectada no respondiï¿½ adecuadamente tras un periodo de tiemp (trying to connect via tcp://10.10.5.163:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
 Stack trace:
 #0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
 #1 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
@@ -919,7 +519,7 @@ Stack trace:
 REQUEST_URI=/easy/SEU/usuarios
 in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (125)
 in C:\wamp\www\easy\SEU\index.php (13)
-2013/12/11 19:13:45 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiemp (trying to connect via tcp://10.10.5.163:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
+2013/12/11 19:13:45 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexiï¿½n ya que la parte conectada no respondiï¿½ adecuadamente tras un periodo de tiemp (trying to connect via tcp://10.10.5.163:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
 Stack trace:
 #0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
 #1 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
@@ -946,7 +546,7 @@ Stack trace:
 REQUEST_URI=/easy/SEU/usuarios
 in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (125)
 in C:\wamp\www\easy\SEU\index.php (13)
-2013/12/11 19:17:57 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiemp (trying to connect via tcp://10.10.5.163:3306:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
+2013/12/11 19:17:57 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexiï¿½n ya que la parte conectada no respondiï¿½ adecuadamente tras un periodo de tiemp (trying to connect via tcp://10.10.5.163:3306:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
 Stack trace:
 #0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
 #1 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
@@ -973,7 +573,7 @@ Stack trace:
 REQUEST_URI=/easy/SEU/usuarios
 in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (125)
 in C:\wamp\www\easy\SEU\index.php (13)
-2013/12/11 19:22:33 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+2013/12/11 19:22:33 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] No se puede establecer una conexiï¿½n ya que el equipo de destino denegï¿½ expresamente dicha conexiï¿½n.
  (trying to connect via tcp://mysql16.000webhost.com:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
 Stack trace:
 #0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
@@ -1001,7 +601,7 @@ Stack trace:
 REQUEST_URI=/easy/SEU/usuarios
 in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (125)
 in C:\wamp\www\easy\SEU\index.php (13)
-2013/12/11 19:23:22 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+2013/12/11 19:23:22 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] No se puede establecer una conexiï¿½n ya que el equipo de destino denegï¿½ expresamente dicha conexiï¿½n.
  (trying to connect via tcp://mysql16.000webhost.com:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
 Stack trace:
 #0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
@@ -1137,7 +737,7 @@ Stack trace:
 REQUEST_URI=/easy/SEU/usuarios
 in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (125)
 in C:\wamp\www\easy\SEU\index.php (13)
-2013/12/11 19:55:07 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiemp (trying to connect via tcp://190.170.1.5:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
+2013/12/11 19:55:07 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexiï¿½n ya que la parte conectada no respondiï¿½ adecuadamente tras un periodo de tiemp (trying to connect via tcp://190.170.1.5:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
 Stack trace:
 #0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
 #1 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
@@ -1164,7 +764,7 @@ Stack trace:
 REQUEST_URI=/easy/SEU/usuarios
 in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (125)
 in C:\wamp\www\easy\SEU\index.php (13)
-2013/12/11 19:57:41 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiemp (trying to connect via tcp://190.170.1.5:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
+2013/12/11 19:57:41 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexiï¿½n ya que la parte conectada no respondiï¿½ adecuadamente tras un periodo de tiemp (trying to connect via tcp://190.170.1.5:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
 Stack trace:
 #0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
 #1 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
@@ -1191,7 +791,7 @@ Stack trace:
 REQUEST_URI=/easy/SEU/usuarios
 in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (125)
 in C:\wamp\www\easy\SEU\index.php (13)
-2013/12/11 19:58:45 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiemp (trying to connect via tcp://190.170.1.5:3306:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
+2013/12/11 19:58:45 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexiï¿½n ya que la parte conectada no respondiï¿½ adecuadamente tras un periodo de tiemp (trying to connect via tcp://190.170.1.5:3306:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
 Stack trace:
 #0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
 #1 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
@@ -1218,7 +818,7 @@ Stack trace:
 REQUEST_URI=/easy/SEU/usuarios
 in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (125)
 in C:\wamp\www\easy\SEU\index.php (13)
-2013/12/11 20:01:41 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiemp (trying to connect via tcp://190.170.1.5:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
+2013/12/11 20:01:41 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexiï¿½n ya que la parte conectada no respondiï¿½ adecuadamente tras un periodo de tiemp (trying to connect via tcp://190.170.1.5:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
 Stack trace:
 #0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
 #1 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
@@ -1299,7 +899,7 @@ Stack trace:
 REQUEST_URI=/easy/SEU/usuarios
 in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (125)
 in C:\wamp\www\easy\SEU\index.php (13)
-2013/12/11 20:02:40 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiemp (trying to connect via tcp://190.170.1.5:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
+2013/12/11 20:02:40 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexiï¿½n ya que la parte conectada no respondiï¿½ adecuadamente tras un periodo de tiemp (trying to connect via tcp://190.170.1.5:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
 Stack trace:
 #0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
 #1 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
@@ -1353,7 +953,7 @@ Stack trace:
 REQUEST_URI=/easy/SEU/usuarios
 in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (125)
 in C:\wamp\www\easy\SEU\index.php (13)
-2013/12/11 20:18:02 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiemp (trying to connect via tcp://190.170.1.5:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
+2013/12/11 20:18:02 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexiï¿½n ya que la parte conectada no respondiï¿½ adecuadamente tras un periodo de tiemp (trying to connect via tcp://190.170.1.5:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
 Stack trace:
 #0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
 #1 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
@@ -1380,7 +980,7 @@ Stack trace:
 REQUEST_URI=/easy/SEU/usuarios
 in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (125)
 in C:\wamp\www\easy\SEU\index.php (13)
-2013/12/11 20:19:50 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiemp (trying to connect via tcp://190.170.1.5:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
+2013/12/11 20:19:50 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexiï¿½n ya que la parte conectada no respondiï¿½ adecuadamente tras un periodo de tiemp (trying to connect via tcp://190.170.1.5:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
 Stack trace:
 #0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
 #1 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
@@ -1407,7 +1007,7 @@ Stack trace:
 REQUEST_URI=/easy/SEU/usuarios
 in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (125)
 in C:\wamp\www\easy\SEU\index.php (13)
-2013/12/11 20:21:15 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiemp (trying to connect via tcp://190.170.1.5:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
+2013/12/11 20:21:15 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexiï¿½n ya que la parte conectada no respondiï¿½ adecuadamente tras un periodo de tiemp (trying to connect via tcp://190.170.1.5:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
 Stack trace:
 #0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
 #1 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
@@ -1434,7 +1034,7 @@ Stack trace:
 REQUEST_URI=/easy/SEU/usuarios
 in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (125)
 in C:\wamp\www\easy\SEU\index.php (13)
-2013/12/11 20:23:27 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiemp (trying to connect via tcp://190.170.1.5:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
+2013/12/11 20:23:27 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Se produjo un error durante el intento de conexiï¿½n ya que la parte conectada no respondiï¿½ adecuadamente tras un periodo de tiemp (trying to connect via tcp://190.170.1.5:3306) (C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:422)
 Stack trace:
 #0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
 #1 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
