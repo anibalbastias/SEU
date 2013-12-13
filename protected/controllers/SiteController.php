@@ -67,6 +67,13 @@ class SiteController extends Controller
                    
         }
         
+        public function actionPlanilla()
+        {
+        
+            $this->render('planilla');
+                   
+        }
+        
         public function actionPeticion()
         {
         
