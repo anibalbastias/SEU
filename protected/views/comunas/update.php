@@ -2,6 +2,23 @@
 /* @var $this ComunasController */
 /* @var $model Comunas */
 
+if(Yii::app()->session['var'] != NULL)
+{
+    $usuario=Usuarios::model()->findByPk(Yii::app()->session['var']);
+    
+    if( $usuario->rut_usuario != 'admin') 
+       {
+    
+        header("Location: ".Yii:: app() ->baseUrl.'/site/index');
+        
+       }
+    
+    if( $usuario->rut_usuario == 'admin') 
+       {
+    
+
+
+
 $this->breadcrumbs=array(
 	'Comunases'=>array('index'),
 	$model->id_comuna=>array('view','id'=>$model->id_comuna),
@@ -18,4 +35,21 @@ $this->menu=array(
 
 <h1>Update Comunas <?php echo $model->id_comuna; ?></h1>
 
-<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php echo $this->renderPartial('_form', array('model'=>$model));
+
+
+}}
+
+if(Yii::app()->session['var'] == NULL)
+            {
+        
+                    header("Location: ".Yii:: app() ->baseUrl.'/site/index');
+          
+              }
+
+
+
+
+
+
+?>

@@ -2,6 +2,23 @@
 /* @var $this UsuariosHasTurnosController */
 /* @var $model UsuariosHasTurnos */
 
+
+if(Yii::app()->session['var'] != NULL)
+{
+    $usuario=Usuarios::model()->findByPk(Yii::app()->session['var']);
+    
+    if( $usuario->rut_usuario != 'admin') 
+       {
+    
+        header("Location: ".Yii:: app() ->baseUrl.'/site/index');
+        
+       }
+    
+    if( $usuario->rut_usuario == 'admin') 
+       {
+    
+
+
 $this->breadcrumbs=array(
 	'Turnos de Usuarios'=>array('index'),
 	$model->usuarios_id_usuario,
@@ -25,4 +42,18 @@ $this->menu=array(
 		'turnos_id_turno',
 		'estado',
 	),
-)); ?>
+));
+
+}}
+
+if(Yii::app()->session['var'] == NULL)
+            {
+        
+                    header("Location: ".Yii:: app() ->baseUrl.'/site/index');
+          
+              }
+
+
+
+
+?>
