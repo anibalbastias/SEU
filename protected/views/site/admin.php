@@ -27,6 +27,7 @@
     <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>">Listar turnos</a></li>
     <li><a href="<?php echo Yii:: app() ->baseUrl.'/turnos/create' ?>">Crear turnos</a></li>
     <!--<li><a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>">Eliminar turnos</a></li>-->
+    <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/planilla' ?>">Generar planilla</a></li>
     
 </div>   
 
