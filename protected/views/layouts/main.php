@@ -61,7 +61,7 @@
             <li <?php if($pagina == "repechaje") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/repechaje' ?>"> Turnos Repechaje</a></li>
            
             <li>  
-                    
+                <div class="style_user"> 
                     Bienvenido <?php
             
                                  $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
@@ -70,7 +70,7 @@
                                  echo $nombre." ".$apellido;
             
                         ?>
-                  
+                </div>
                     
             </li>
             
@@ -103,7 +103,7 @@
 	
         <!--footer-->
 
-        <div class="container-fluid">
+        <div class="container">
             <div class="row-fluid">
                 <div class="span-12">
                     <div class="well centrar">
