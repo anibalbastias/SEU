@@ -135,7 +135,7 @@
     <h2> Usuarios </h2>
     
     <div class="nav">
-    <li><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/index' ?>"><i class="icon-list-alt"></i> Listar usuarios</a></li>
+    <li><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/admin' ?>"><i class="icon-list-alt"></i> Listar usuarios</a></li>
     <li><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/create' ?>"><i class="icon-plus-sign"></i> Crear usuarios</a></li>
     
     </div>

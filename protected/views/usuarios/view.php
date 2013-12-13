@@ -25,16 +25,17 @@ $this->breadcrumbs=array(
 	$model->id_usuario,
 );
 
-$this->menu=array(
-	array('label'=>'Listar Usuarios', 'url'=>array('index')),
-	array('label'=>'Crear Usuarios', 'url'=>array('create')),
-	array('label'=>'Modificar Usuarios', 'url'=>array('update', 'id'=>$model->id_usuario)),
-	array('label'=>'Eliminar Usuarios', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_usuario),'confirm'=>'¿Estas seguro de eliminar este usuario?')),
-	array('label'=>'Administrar Usuarios', 'url'=>array('admin')),
-);
-?>
+//$this->menu=array(
+//	array('label'=>'Listar Usuarios', 'url'=>array('index')),
+//	array('label'=>'Crear Usuarios', 'url'=>array('create')),
+//	array('label'=>'Modificar Usuarios', 'url'=>array('update', 'id'=>$model->id_usuario)),
+//	array('label'=>'Eliminar Usuarios', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_usuario),'confirm'=>'¿Estas seguro de eliminar este usuario?')),
+//	array('label'=>'Administrar Usuarios', 'url'=>array('admin')),
+//);
+//?>
 
 <h1>Usuario #<?php echo $model->id_usuario; ?></h1>
+
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
