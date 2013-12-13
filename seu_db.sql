@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 11-12-2013 a las 19:44:52
+-- Tiempo de generación: 12-12-2013 a las 18:19:38
 -- Versión del servidor: 5.5.16
 -- Versión de PHP: 5.3.9
 
@@ -4565,7 +4565,7 @@ CREATE TABLE IF NOT EXISTS `turnos` (
   `fecha_turno` datetime DEFAULT NULL,
   `cupos_turno` int(10) unsigned DEFAULT NULL,
   PRIMARY KEY (`id_turno`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Volcado de datos para la tabla `turnos`
@@ -4573,7 +4573,10 @@ CREATE TABLE IF NOT EXISTS `turnos` (
 
 INSERT INTO `turnos` (`id_turno`, `fecha_turno`, `cupos_turno`) VALUES
 (1, '2013-12-11 20:00:00', 10),
-(2, '2013-12-11 15:00:00', 10);
+(2, '2013-12-11 15:00:00', 10),
+(3, '2013-12-29 09:34:00', 12),
+(4, '2013-12-12 17:27:00', 10),
+(5, '2013-12-12 06:00:00', 10);
 
 -- --------------------------------------------------------
 
@@ -4809,14 +4812,15 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   PRIMARY KEY (`id_usuario`),
   KEY `usuarios_FKIndex1` (`comunas_id_comuna`),
   KEY `usuarios_FKIndex2` (`carreras_id_carrera`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Volcado de datos para la tabla `usuarios`
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `carreras_id_carrera`, `comunas_id_comuna`, `nom_usuario`, `apel1_usuario`, `apel2_usuario`, `rut_usuario`, `dir_usuario`, `email_usuario`, `cel_usuario`, `estudios_usuario`, `fnac_usuario`, `genero_usuario`, `hijos_usuario`, `pass_usuario`) VALUES
-(1, 1, 2201, 'Anibal', 'Bastias', 'Soto', '16846047-3', 'Avenida Estacion 175', 'anibal.bastias@gmail.com', '81839102', 2, '0000-00-00', 0, 0, '4e203e5dd38ff16be0b2ab44daa2e17c');
+(1, 1, 2201, 'Anibal', 'Bastias', 'Soto', '16846047-3', 'Avenida Estacion 175', 'anibal.bastias@gmail.com', '81839102', 2, '1987-10-27', 0, 0, '202cb962ac59075b964b07152d234b70'),
+(2, 3985, 14101, 'Camila', 'Soto', 'Moreno', '111-1', 'Los Vilos 2323', 'asdasd@asdasd.cl', '3498329483', 2, '1996-12-17', 1, 0, '202cb962ac59075b964b07152d234b70');
 
 -- --------------------------------------------------------
 
@@ -4825,21 +4829,26 @@ INSERT INTO `usuarios` (`id_usuario`, `carreras_id_carrera`, `comunas_id_comuna`
 --
 
 CREATE TABLE IF NOT EXISTS `usuarios_has_turnos` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `usuarios_id_usuario` int(10) unsigned NOT NULL,
   `turnos_id_turno` int(10) unsigned NOT NULL,
   `estado` enum('Aceptado','Rechazado','Suspendido') DEFAULT NULL,
-  PRIMARY KEY (`turnos_id_turno`),
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`),
   KEY `usuarios_has_turnos_FKIndex1` (`usuarios_id_usuario`),
   KEY `usuarios_has_turnos_FKIndex2` (`turnos_id_turno`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
 -- Volcado de datos para la tabla `usuarios_has_turnos`
 --
 
-INSERT INTO `usuarios_has_turnos` (`usuarios_id_usuario`, `turnos_id_turno`, `estado`) VALUES
-(1, 1, 'Aceptado'),
-(1, 2, 'Suspendido');
+INSERT INTO `usuarios_has_turnos` (`id`, `usuarios_id_usuario`, `turnos_id_turno`, `estado`) VALUES
+(1, 1, 1, 'Aceptado'),
+(2, 1, 2, 'Suspendido'),
+(3, 2, 2, 'Suspendido'),
+(4, 2, 2, 'Suspendido'),
+(5, 1, 3, 'Suspendido');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
