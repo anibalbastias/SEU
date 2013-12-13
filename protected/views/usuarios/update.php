@@ -1,6 +1,26 @@
 <?php
 /* @var $this UsuariosController */
 /* @var $model Usuarios */
+
+
+if(Yii::app()->session['var'] != NULL)
+{
+    $usuario=Usuarios::model()->findByPk(Yii::app()->session['var']);
+    
+    if( $usuario->rut_usuario != 'admin') 
+       {
+    
+        header("Location: ".Yii:: app() ->baseUrl.'/site/index');
+        
+       }
+    
+    if( $usuario->rut_usuario == 'admin') 
+       {
+    
+
+
+
+
 $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
 $controlador = $this->getId();
     $pagina = $this->getAction()->getId();
@@ -25,4 +45,19 @@ $this->menu=array(
 
 <h1>Modificar Usuarios <?php echo $model->id_usuario; ?></h1>
 
-<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php echo $this->renderPartial('_form', array('model'=>$model));
+
+}}
+
+if(Yii::app()->session['var'] == NULL)
+            {
+        
+                    header("Location: ".Yii:: app() ->baseUrl.'/site/index');
+          
+              }
+
+
+
+
+
+?>

@@ -80,6 +80,15 @@
     
 }
 
+.panel {
+    
+     border-bottom-color: #b5b5b5;
+     border-bottom-style: dotted;
+    border-bottom-width: 1px;
+}
+
+
+
 .panel h2{
     
     text-decoration: underline;

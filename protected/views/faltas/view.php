@@ -2,6 +2,23 @@
 /* @var $this FaltasController */
 /* @var $model Faltas */
 
+if(Yii::app()->session['var'] != NULL)
+{
+    $usuario=Usuarios::model()->findByPk(Yii::app()->session['var']);
+    
+    if( $usuario->rut_usuario != 'admin') 
+       {
+    
+        header("Location: ".Yii:: app() ->baseUrl.'/site/index');
+        
+       }
+    
+    if( $usuario->rut_usuario == 'admin') 
+       {
+    
+
+
+
 $this->breadcrumbs=array(
 	'Faltas'=>array('index'),
 	$model->id_falta,
@@ -27,4 +44,19 @@ $this->menu=array(
 		'tipo_falta',
 		'fecha_falta',
 	),
-)); ?>
+));
+
+
+}}
+
+if(Yii::app()->session['var'] == NULL)
+            {
+        
+                    header("Location: ".Yii:: app() ->baseUrl.'/site/index');
+          
+              }
+
+
+
+
+?>

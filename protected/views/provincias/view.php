@@ -2,6 +2,23 @@
 /* @var $this ProvinciasController */
 /* @var $model Provincias */
 
+if(Yii::app()->session['var'] != NULL)
+{
+    $usuario=Usuarios::model()->findByPk(Yii::app()->session['var']);
+    
+    if( $usuario->rut_usuario != 'admin') 
+       {
+    
+        header("Location: ".Yii:: app() ->baseUrl.'/site/index');
+        
+       }
+    
+    if( $usuario->rut_usuario == 'admin') 
+       {
+    
+
+
+
 $this->breadcrumbs=array(
 	'Provinciases'=>array('index'),
 	$model->id_provincia,
@@ -25,4 +42,19 @@ $this->menu=array(
 		'regiones_id_region',
 		'nom_provincia',
 	),
-)); ?>
+));
+
+
+}}
+
+if(Yii::app()->session['var'] == NULL)
+            {
+        
+                    header("Location: ".Yii:: app() ->baseUrl.'/site/index');
+          
+              }
+
+
+
+
+?>

@@ -2,6 +2,24 @@
 /* @var $this UsuariosController */
 /* @var $model Usuarios */
 
+
+if(Yii::app()->session['var'] != NULL)
+{
+    $usuario=Usuarios::model()->findByPk(Yii::app()->session['var']);
+    
+    if( $usuario->rut_usuario != 'admin') 
+       {
+    
+        header("Location: ".Yii:: app() ->baseUrl.'/site/index');
+        
+       }
+    
+    if( $usuario->rut_usuario == 'admin') 
+       {
+    
+
+
+
 $this->breadcrumbs=array(
 	'Usuarios'=>array('index'),
 	$model->id_usuario,
@@ -37,4 +55,19 @@ $this->menu=array(
 		'hijos_usuario',
 		'pass_usuario',
 	),
-)); ?>
+)); 
+
+
+}}
+
+if(Yii::app()->session['var'] == NULL)
+            {
+        
+                    header("Location: ".Yii:: app() ->baseUrl.'/site/index');
+          
+              }
+
+
+
+
+?>
