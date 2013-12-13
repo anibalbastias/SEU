@@ -4821,3 +4821,1563 @@ REQUEST_URI=/easy/SEU/usuarios/admin
 HTTP_REFERER=http://localhost/easy/SEU/site/admin
 >>>>>>> 1363c94231d2f145e385bedd1b9c624b9aa47783
 ---
+2013/12/13 13:27:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/12/13 13:28:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/12/13 18:28:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/admin')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/usuarios/admin
+HTTP_REFERER=http://localhost/
+---
+2013/12/13 18:29:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/body-pattern.jpg".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/body-pat...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/body-pattern.jpg
+HTTP_REFERER=http://localhost/site/peticion
+---
+2013/12/13 18:29:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.woff".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/League_Gothic-webfont.woff
+HTTP_REFERER=http://localhost/site/peticion
+---
+2013/12/13 18:29:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.ttf".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/League_Gothic-webfont.ttf
+HTTP_REFERER=http://localhost/site/peticion
+---
+2013/12/13 18:29:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.svg".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/League_Gothic-webfont.svg
+HTTP_REFERER=http://localhost/site/peticion
+---
+2013/12/13 18:29:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.woff".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/League_Gothic-webfont.woff
+HTTP_REFERER=http://localhost/site/peticion
+---
+2013/12/13 18:29:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.ttf".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/League_Gothic-webfont.ttf
+HTTP_REFERER=http://localhost/site/peticion
+---
+2013/12/13 18:29:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.svg".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/League_Gothic-webfont.svg
+HTTP_REFERER=http://localhost/site/peticion
+---
+2013/12/13 18:29:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.woff".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/League_Gothic-webfont.woff
+HTTP_REFERER=http://localhost/site/peticion
+---
+2013/12/13 18:29:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.ttf".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/League_Gothic-webfont.ttf
+HTTP_REFERER=http://localhost/site/peticion
+---
+2013/12/13 18:29:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.svg".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/League_Gothic-webfont.svg
+HTTP_REFERER=http://localhost/site/peticion
+---
+2013/12/13 18:34:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/admin')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/usuarios/admin
+HTTP_REFERER=http://localhost/
+---
+2013/12/13 14:01:21 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.id_carrera" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('id_carrera')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('id_carrera')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Usuarios), 'id_carrera')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1332): CHtml::activeInputField('hidden', Object(Usuarios), 'id_carrera', Array)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\widgets\CActiveForm.php(673): CHtml::activeHiddenField(Object(Usuarios), 'id_carrera', Array)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(50): CActiveForm->hiddenField(Object(Usuarios), 'id_carrera', Array)
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 14:03:38 [error] [exception.CException] exception 'CException' with message 'Property "Carreras.carreras" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('carreras')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\models\Carreras.php(98): CActiveRecord->__get('carreras')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1803): Carreras->afterFind()
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1824): CActiveRecord->populateRecord(Array, true)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1291): CActiveRecord->populateRecords(Array, true, NULL)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(49): CActiveRecord->findAll()
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 14:03:39 [error] [exception.CException] exception 'CException' with message 'Property "Carreras.carreras" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('carreras')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\models\Carreras.php(98): CActiveRecord->__get('carreras')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1803): Carreras->afterFind()
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1824): CActiveRecord->populateRecord(Array, true)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1291): CActiveRecord->populateRecords(Array, true, NULL)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(49): CActiveRecord->findAll()
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 14:03:40 [error] [exception.CException] exception 'CException' with message 'Property "Carreras.carreras" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('carreras')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\models\Carreras.php(98): CActiveRecord->__get('carreras')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1803): Carreras->afterFind()
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1824): CActiveRecord->populateRecord(Array, true)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1291): CActiveRecord->populateRecords(Array, true, NULL)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(49): CActiveRecord->findAll()
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 14:03:40 [error] [exception.CException] exception 'CException' with message 'Property "Carreras.carreras" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('carreras')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\models\Carreras.php(98): CActiveRecord->__get('carreras')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1803): Carreras->afterFind()
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1824): CActiveRecord->populateRecord(Array, true)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1291): CActiveRecord->populateRecords(Array, true, NULL)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(49): CActiveRecord->findAll()
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 14:04:23 [error] [exception.CException] exception 'CException' with message 'Property "Carreras.carreras" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('carreras')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\models\Carreras.php(98): CActiveRecord->__get('carreras')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1803): Carreras->afterFind()
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1291): CActiveRecord->populateRecord(Array)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1396): CActiveRecord->query(Object(CDbCriteria))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(49): CActiveRecord->find('id_carrera=2')
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 14:04:24 [error] [exception.CException] exception 'CException' with message 'Property "Carreras.carreras" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('carreras')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\models\Carreras.php(98): CActiveRecord->__get('carreras')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1803): Carreras->afterFind()
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1291): CActiveRecord->populateRecord(Array)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1396): CActiveRecord->query(Object(CDbCriteria))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(49): CActiveRecord->find('id_carrera=2')
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 14:04:39 [error] [exception.CException] exception 'CException' with message 'Property "Carreras.carreras" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('carreras')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\models\Carreras.php(98): CActiveRecord->__get('carreras')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1803): Carreras->afterFind()
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1824): CActiveRecord->populateRecord(Array, true)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1291): CActiveRecord->populateRecords(Array, true, NULL)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(49): CActiveRecord->findAll()
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 14:12:09 [error] [php] Undefined variable: carr (C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php:50)
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): UsuariosController->renderFile()
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): UsuariosController->renderPartial()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require()
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): UsuariosController->renderInternal()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): UsuariosController->renderFile()
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): UsuariosController->renderPartial()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): UsuariosController->render()
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): UsuariosController->runAction()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): UsuariosController->filterAccessControl()
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): UsuariosController->runActionWithFilters()
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): UsuariosController->run()
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/usuarios/create
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php (50)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php (36)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php (80)
+2013/12/13 14:12:30 [error] [php] Undefined variable: carr (C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php:50)
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): UsuariosController->renderFile()
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): UsuariosController->renderPartial()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require()
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): UsuariosController->renderInternal()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): UsuariosController->renderFile()
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): UsuariosController->renderPartial()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): UsuariosController->render()
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): UsuariosController->runAction()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): UsuariosController->filterAccessControl()
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): UsuariosController->runActionWithFilters()
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): UsuariosController->run()
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/usuarios/create
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php (50)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php (36)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php (80)
+2013/12/13 14:12:47 [error] [php] Undefined variable: model1 (C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php:50)
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): UsuariosController->renderFile()
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): UsuariosController->renderPartial()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require()
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): UsuariosController->renderInternal()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): UsuariosController->renderFile()
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): UsuariosController->renderPartial()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): UsuariosController->render()
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): UsuariosController->runAction()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): UsuariosController->filterAccessControl()
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): UsuariosController->runActionWithFilters()
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): UsuariosController->run()
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/usuarios/create
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php (50)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php (36)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php (80)
+2013/12/13 14:12:47 [error] [php] Undefined variable: model1 (C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php:50)
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): UsuariosController->renderFile()
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): UsuariosController->renderPartial()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require()
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): UsuariosController->renderInternal()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): UsuariosController->renderFile()
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): UsuariosController->renderPartial()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): UsuariosController->render()
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): UsuariosController->runAction()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): UsuariosController->filterAccessControl()
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): UsuariosController->runActionWithFilters()
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): UsuariosController->run()
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/usuarios/create
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php (50)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php (36)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php (80)
+2013/12/13 14:12:58 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.id_carrera" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('id_carrera')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('id_carrera')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Usuarios), 'id_carrera')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1332): CHtml::activeInputField('hidden', Object(Usuarios), 'id_carrera', Array)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\widgets\CActiveForm.php(673): CHtml::activeHiddenField(Object(Usuarios), 'id_carrera', Array)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(51): CActiveForm->hiddenField(Object(Usuarios), 'id_carrera', Array)
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 14:13:15 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.carrera->id_carrera" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('carrera->id_car...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('carrera->id_car...')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Usuarios), 'carrera->id_car...')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1332): CHtml::activeInputField('hidden', Object(Usuarios), 'carrera->id_car...', Array)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\widgets\CActiveForm.php(673): CHtml::activeHiddenField(Object(Usuarios), 'carrera->id_car...', Array)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(51): CActiveForm->hiddenField(Object(Usuarios), 'carrera->id_car...', Array)
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 14:13:26 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.nom_carrera" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('nom_carrera')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('nom_carrera')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Usuarios), 'nom_carrera')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Usuarios), 'nom_carrera', Array)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\zii\widgets\jui\CJuiAutoComplete.php(85): CHtml::activeTextField(Object(Usuarios), 'nom_carrera', Array)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(174): CJuiAutoComplete->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(66): CBaseController->widget('zii.widgets.jui...', Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 14:13:27 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.nom_carrera" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('nom_carrera')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('nom_carrera')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Usuarios), 'nom_carrera')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Usuarios), 'nom_carrera', Array)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\zii\widgets\jui\CJuiAutoComplete.php(85): CHtml::activeTextField(Object(Usuarios), 'nom_carrera', Array)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(174): CJuiAutoComplete->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(66): CBaseController->widget('zii.widgets.jui...', Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 14:14:06 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.nom_carrera" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('nom_carrera')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('nom_carrera')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Usuarios), 'nom_carrera')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Usuarios), 'nom_carrera', Array)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\zii\widgets\jui\CJuiAutoComplete.php(85): CHtml::activeTextField(Object(Usuarios), 'nom_carrera', Array)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(174): CJuiAutoComplete->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(66): CBaseController->widget('zii.widgets.jui...', Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 14:14:07 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.nom_carrera" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('nom_carrera')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('nom_carrera')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Usuarios), 'nom_carrera')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Usuarios), 'nom_carrera', Array)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\zii\widgets\jui\CJuiAutoComplete.php(85): CHtml::activeTextField(Object(Usuarios), 'nom_carrera', Array)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(174): CJuiAutoComplete->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(66): CBaseController->widget('zii.widgets.jui...', Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 14:14:07 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.nom_carrera" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('nom_carrera')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('nom_carrera')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Usuarios), 'nom_carrera')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Usuarios), 'nom_carrera', Array)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\zii\widgets\jui\CJuiAutoComplete.php(85): CHtml::activeTextField(Object(Usuarios), 'nom_carrera', Array)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(174): CJuiAutoComplete->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(66): CBaseController->widget('zii.widgets.jui...', Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 19:14:45 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php (72)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)
+2013/12/13 19:14:57 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php (72)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)
+2013/12/13 19:15:40 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php (72)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)
+2013/12/13 19:16:12 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php (72)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)
+2013/12/13 19:16:54 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php (72)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)
+2013/12/13 19:18:17 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php (72)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)
+2013/12/13 14:25:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete?term=a
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 14:26:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete?term=as
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 14:26:11 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete?term=a
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 14:26:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete?term=a
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 14:26:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete?term=as
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 14:26:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete?term=ingenieria
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 14:27:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete?term=as
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 14:28:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete?term=ing
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 14:29:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "autocomplete".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('autocomplete')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/carreras/autocomplete?term=a
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 14:29:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "autocomplete".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('autocomplete')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/carreras/autocomplete?term=as
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 14:29:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete?term=a
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 14:29:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete?term=as
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 19:30:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete
+---
+2013/12/13 19:32:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete
+---
+2013/12/13 19:32:01 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete
+---
+2013/12/13 19:32:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete
+---
+2013/12/13 19:32:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete
+---
+2013/12/13 19:32:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete
+---
+2013/12/13 19:32:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete
+---
+2013/12/13 14:33:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete?term=ass
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 14:33:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete?term=as
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 14:34:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete?term=a
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 14:35:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete?term=a
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 14:36:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete?term=a
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 14:39:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete?term=h
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 14:40:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "carreras".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('carreras')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('carreras')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/carreras/a...')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/carreras/autocomplete?term=a
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 14:41:36 [error] [php] Use of undefined constant baseUrl - assumed 'baseUrl' (C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php:56)
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): UsuariosController->renderFile()
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): UsuariosController->renderPartial()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require()
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): UsuariosController->renderInternal()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): UsuariosController->renderFile()
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): UsuariosController->renderPartial()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): UsuariosController->render()
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): UsuariosController->runAction()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): UsuariosController->filterAccessControl()
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): UsuariosController->runActionWithFilters()
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): UsuariosController->run()
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/usuarios/create
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php (56)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php (36)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php (80)
+2013/12/13 14:42:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete?term=a
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 19:46:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete
+---
+2013/12/13 19:46:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('carreras/autoco...')
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/carreras/autocomplete/as
+---
+2013/12/13 14:52:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "carreras".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('carreras')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('carreras')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/carrer...')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usuarios/carreras/autocomplete?term=a
+HTTP_REFERER=http://localhost/usuarios/create
+---
+2013/12/13 14:54:35 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.nom_carrera" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('nom_carrera')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('nom_carrera')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Usuarios), 'nom_carrera')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1332): CHtml::activeInputField('hidden', Object(Usuarios), 'nom_carrera', Array)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\widgets\CActiveForm.php(673): CHtml::activeHiddenField(Object(Usuarios), 'nom_carrera', Array)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(51): CActiveForm->hiddenField(Object(Usuarios), 'nom_carrera', Array)
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 14:54:49 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.id_carrera" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('id_carrera')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('id_carrera')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Usuarios), 'id_carrera')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1332): CHtml::activeInputField('hidden', Object(Usuarios), 'id_carrera', Array)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\widgets\CActiveForm.php(673): CHtml::activeHiddenField(Object(Usuarios), 'id_carrera', Array)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(51): CActiveForm->hiddenField(Object(Usuarios), 'id_carrera', Array)
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 14:54:56 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.id_carrera" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('id_carrera')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('id_carrera')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Usuarios), 'id_carrera')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1332): CHtml::activeInputField('hidden', Object(Usuarios), 'id_carrera', Array)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\widgets\CActiveForm.php(673): CHtml::activeHiddenField(Object(Usuarios), 'id_carrera', Array)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(51): CActiveForm->hiddenField(Object(Usuarios), 'id_carrera', Array)
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 14:54:57 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.id_carrera" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('id_carrera')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('id_carrera')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Usuarios), 'id_carrera')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1332): CHtml::activeInputField('hidden', Object(Usuarios), 'id_carrera', Array)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\widgets\CActiveForm.php(673): CHtml::activeHiddenField(Object(Usuarios), 'id_carrera', Array)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(51): CActiveForm->hiddenField(Object(Usuarios), 'id_carrera', Array)
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 14:58:06 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.nom_carrera" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('nom_carrera')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('nom_carrera')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Usuarios), 'nom_carrera')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Usuarios), 'nom_carrera', Array)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\zii\widgets\jui\CJuiAutoComplete.php(85): CHtml::activeTextField(Object(Usuarios), 'nom_carrera', Array)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(174): CJuiAutoComplete->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(66): CBaseController->widget('zii.widgets.jui...', Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 14:58:19 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.nom_carrera" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('nom_carrera')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('nom_carrera')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Usuarios), 'nom_carrera')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Usuarios), 'nom_carrera', Array)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\zii\widgets\jui\CJuiAutoComplete.php(85): CHtml::activeTextField(Object(Usuarios), 'nom_carrera', Array)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(174): CJuiAutoComplete->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(66): CBaseController->widget('zii.widgets.jui...', Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 14:58:21 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.nom_carrera" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('nom_carrera')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('nom_carrera')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Usuarios), 'nom_carrera')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Usuarios), 'nom_carrera', Array)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\zii\widgets\jui\CJuiAutoComplete.php(85): CHtml::activeTextField(Object(Usuarios), 'nom_carrera', Array)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(174): CJuiAutoComplete->run()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(66): CBaseController->widget('zii.widgets.jui...', Array)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/13 15:09:50 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.id_comuna" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('id_comuna')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('id_comuna')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Usuarios), 'id_comuna')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1332): CHtml::activeInputField('hidden', Object(Usuarios), 'id_comuna', Array)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\widgets\CActiveForm.php(673): CHtml::activeHiddenField(Object(Usuarios), 'id_comuna', Array)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\_form.php(73): CActiveForm->hiddenField(Object(Usuarios), 'id_comuna', Array)
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/usuarios/create
+HTTP_REFERER=http://localhost/usuarios/admin
+---

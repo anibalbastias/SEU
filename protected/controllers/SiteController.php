@@ -76,8 +76,9 @@ class SiteController extends Controller
                 
                     if($pass != md5($model->pass_usuario) ){
 			
-                        $model->pass_usuario=md5($model->pass_usuario);
                         $model->attributes=$_POST['Usuarios'];
+                        $model->pass_usuario=md5($model->pass_usuario);
+                        
 			if($model->save())
 				$this->redirect(array('perfil'));
 		

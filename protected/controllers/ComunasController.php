@@ -28,7 +28,7 @@ class ComunasController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','autocomplete'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -168,4 +168,31 @@ class ComunasController extends Controller
 			Yii::app()->end();
 		}
 	}
+        
+        public function actionAutocomplete()
+        {
+            if (isset($_GET['term'])) 
+            {
+                $criteria=new CDbCriteria;
+                $criteria->alias = "comunas";
+                $criteria->condition = "comunas.nom_comuna like '" . $_GET['term'] . "%'";
+
+                $dataProvider = new CActiveDataProvider(get_class(Comunas::model()), array(
+                'criteria'=>$criteria,'pagination'=>false,
+                ));
+                $comunas = $dataProvider->getData();
+
+                $return_array = array();
+                
+                foreach($comunas as $comuna)
+                {
+                    $return_array[] = array(
+                    'label'=>$comuna->nom_comuna,
+                    'value'=>$comuna->nom_comuna,
+                    'id'=>$comuna->id_comuna,
+                    );
+                }
+                echo CJSON::encode($return_array);
+            }            
+        }
 }

@@ -39,16 +39,52 @@
                     
 
                     
-                        <div class="span3">
-                            <?php echo $form->labelEx($model,'carreras_id_carrera'); ?>
-                            <?php echo $form->textField($model,'carreras_id_carrera',array('size'=>10,'maxlength'=>10)); ?>
-                            <?php echo $form->error($model,'carreras_id_carrera'); ?>
-                        </div>
+<!--                    <div class="span3">
+                            <?php //echo $form->labelEx($model,'carreras_id_carrera'); ?>
+                            <?php //echo $form->textField($model,'carreras_id_carrera',array('size'=>10,'maxlength'=>10)); ?>
+                            <?php //echo $form->error($model,'carreras_id_carrera'); ?>
+                        </div>-->
 
                         <div class="span3">
-                            <?php echo $form->labelEx($model,'comunas_id_comuna'); ?>
-                            <?php echo $form->textField($model,'comunas_id_comuna',array('size'=>10,'maxlength'=>10)); ?>
-                            <?php echo $form->error($model,'comunas_id_comuna'); ?>
+                        
+                        <?php echo $form->label($model,Yii::t('messages','carrera')); ?>
+                        <?php echo $form->hiddenField($model,'id_usuario',array()); ?>
+                        <?php 
+                        $this->widget('zii.widgets.jui.CJuiAutoComplete',array(
+                            'name'=>'nom_carrera',
+                            'sourceUrl'=>$this->createUrl('carreras/autocomplete'),
+                            // additional javascript options for the autocomplete plugin
+                            'options'=>array(
+                                'minLength'=>'1',
+                            ),
+                            'htmlOptions'=>array(
+                                'style'=>'height:20px;',
+                            ),
+                        ));
+                        ?>
+                      </div>
+
+                        <div class="span3">
+                            <?php //echo $form->labelEx($model,'comunas_id_comuna'); ?>
+                            <?php //echo $form->textField($model,'comunas_id_comuna',array('size'=>10,'maxlength'=>10)); ?>
+                            <?php //echo $form->error($model,'comunas_id_comuna'); ?>
+                            
+                            <?php echo $form->label($model,Yii::t('messages','comuna')); ?>
+                            <?php echo $form->hiddenField($model,'id_usuario',array()); ?>
+                            <?php 
+                            $this->widget('zii.widgets.jui.CJuiAutoComplete',array(
+                                'name'=>'nom_comuna',
+                                'sourceUrl'=>$this->createUrl('comunas/autocomplete'),
+                                // additional javascript options for the autocomplete plugin
+                                'options'=>array(
+                                    'minLength'=>'1',
+                                ),
+                                'htmlOptions'=>array(
+                                    'style'=>'height:20px;',
+                                ),
+                            ));
+                            ?>
+                            
                         </div>
 
                         <div class="span3">
