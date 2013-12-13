@@ -15,9 +15,41 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
+        <div class="row">
 		<?php echo $form->labelEx($model,'fecha_turno'); ?>
-		<?php echo $form->textField($model,'fecha_turno'); ?>
+		<?php // echo $form->textField($model,'edad'); 
+//                
+//                    $this->widget("zii.widgets.jui.CJuiDatePicker",array(
+//                        "attribute"=>"fecha_turno",
+//                        "model"=>$model,
+//                        "language"=>"es",
+//                        "options"=>array(
+//                            "dateFormat"=>"yy-mm-dd",
+//                            "showButtonPanel" => true,
+//                            "changeYear" => true,
+//                            "yearRange" =>"-50:+10",
+//                            "minDate" => "-0Y",
+//                            "maxDate" => "+1Y",
+//                        )
+//                        ));
+                
+                $this->widget(
+                    'ext.jui.EJuiDateTimePicker',
+                    array(
+                        'model'     => $model,
+                        'attribute' => 'fecha_turno',
+                        'language'=> 'es',
+                        'mode'    => 'datetime',
+                        'options'   => array(
+                            'dateFormat' => 'yy-mm-dd',
+                            'timeFormat' => 'HH:mm:00',
+                            "minDate" => "-0Y",
+                            "maxDate" => "+1Y",
+                        ),
+                    )
+                );
+
+                ?>
 		<?php echo $form->error($model,'fecha_turno'); ?>
 	</div>
 
