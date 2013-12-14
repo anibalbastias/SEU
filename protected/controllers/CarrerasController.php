@@ -28,7 +28,7 @@ class CarrerasController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','autocomplete'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -172,32 +172,30 @@ class CarrerasController extends Controller
 		}
 	}
         
-        // data provider for EJuiAutoCompleteFkField for PostCodeId field
-        public function actionFindPostCode() {
-            $q = $_GET['term'];
-            if (isset($q)) {
-                $criteria = new CDbCriteria;
-                //condition to find your data, using q as the parameter field
-                $criteria->condition = '...';
-                $criteria->order = '...'; // correct order-by field
-                $criteria->limit = '...'; // probably a good idea to limit the results
-                // with trailing wildcard only; probably a good idea for large volumes of data
-                $criteria->params = array(':q' => trim($q) . '%'); 
-                $PostCodes = Carreras::model()->findAll($criteria);
+        public function actionAutocomplete()
+        {
+            if (isset($_GET['term'])) 
+            {
+                $criteria=new CDbCriteria;
+                $criteria->alias = "carreras";
+                $criteria->condition = "carreras.nom_carrera like '" . $_GET['term'] . "%'";
 
-                if (!empty($PostCodes)) {
-                    $out = array();
-                    foreach ($PostCodes as $p) {
-                        $out[] = array(
-                            // expression to give the string for the autoComplete drop-down
-                            'label' => $p->PostCodeAndProvince,  
-                            'value' => $p->PostCodeAndProvince,
-                            'id' => $p->PostCodeId, // return value from autocomplete
-                        );
-                    }
-                    echo CJSON::encode($out);
-                    Yii::app()->end();
+                $dataProvider = new CActiveDataProvider(get_class(Carreras::model()), array(
+                'criteria'=>$criteria,'pagination'=>false,
+                ));
+                $carreras = $dataProvider->getData();
+
+                $return_array = array();
+                
+                foreach($carreras as $carrera)
+                {
+                    $return_array[] = array(
+                    'label'=>$carrera->nom_carrera,
+                    'value'=>$carrera->nom_carrera,
+                    'id'=>$carrera->id_carrera,
+                    );
                 }
-            }
+                echo CJSON::encode($return_array);
+            }            
         }
 }
