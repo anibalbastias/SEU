@@ -6551,3 +6551,6 @@ REQUEST_URI=/usuarios/create
 HTTP_REFERER=http://localhost/usuarios/admin
 ---
 >>>>>>> 911ef785c7bd42dd38490b5b887b6b0184480c26
+2013/12/14 02:00:43 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (97)
+in C:\wamp\www\easy\SEU\index.php (13)

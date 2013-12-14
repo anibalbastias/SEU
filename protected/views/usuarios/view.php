@@ -38,9 +38,9 @@ $this->breadcrumbs=array(
 <div class="style_user">
     
     <div class="">
-        <div class="row-fluid">
+        <div class="row">
             
-            <div class="span-12 well">    
+            <div class="span-5">    
     <h3>perfil    
    <?php 
                         $empaque=Usuarios::model()->findByPk($_GET['id']);
@@ -85,7 +85,7 @@ $this->breadcrumbs=array(
         
             </div>
             
-            <div class="span6">
+            <div class="span-6">
                 
                 asduhadshu
                 

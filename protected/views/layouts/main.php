@@ -101,8 +101,10 @@
                
             ?>
        
-                    <div class="container">
+                    <div class="cabecera">
         
+                        <div class="container">
+                        
         <ul class="altura3 nav nav-tabs">
        
             <li>  
@@ -124,7 +126,7 @@
         </ul>
         <!--fin del menu-->
         </div>
-        
+                    </div>               
         
         <div class="">
 <!--<h2>Panel de administracion</h2>-->
@@ -200,10 +202,10 @@
 	
         <!--footer-->
 
-        <div class="container">
+        <div class="">
             <div class="row-fluid">
                 <div class="span-12">
-                    <div class="well centrar">
+                    <div class="pie centrar">
                         Copyright &copy; <?php echo date('Y'); ?> by Bastías - Rojas<br/>
                         All Rights Reserved.<br/>
                 
@@ -212,7 +214,7 @@
                             if( $usuario->rut_usuario == 'admin') 
                             {
                                 ?>
-                                <a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>"> Panel</a>
+                                <button type="button" class="btn btn-info btn-large"><a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>"> Panel</a></button>
                          <?php
                             }       
                                     ?>

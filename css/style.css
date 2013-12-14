@@ -79,6 +79,7 @@
 .style_user{
     
     text-transform:capitalize;
+    /*background-color:#00b2d9;*/
     
 }
 
@@ -96,4 +97,27 @@
     text-decoration: underline;
     text-decoration-color: #b5b5b5;
     
+}
+
+
+.pie{
+    
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #00b2d9;
+    color:white;
+    /*position: 0 0;*/
+}
+
+.pie button{
+    
+    color: black;
+    
+}
+
+.cabecera{
+    
+    background-color:#00b2d9;
+    color:white;
 }
