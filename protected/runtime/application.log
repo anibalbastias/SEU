@@ -7624,3 +7624,139 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/easy/SEU/favicon.ico
 ---
+2013/12/15 15:47:45 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (72)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/15 16:35:32 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (72)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/15 16:50:19 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (72)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/15 16:50:39 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (72)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/15 16:51:46 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (72)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/15 19:56:31 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (112)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/15 19:57:37 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (112)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/15 17:00:25 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (72)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/15 20:01:18 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.id_comuna" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('id_comuna')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('id_comuna')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Usuarios), 'id_comuna')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Usuarios), 'id_comuna', Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\zii\widgets\jui\CJuiAutoComplete.php(85): CHtml::activeTextField(Object(Usuarios), 'id_comuna', Array)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(174): CJuiAutoComplete->run()
+#6 C:\wamp\www\easy\SEU\protected\views\usuarios\_form.php(89): CBaseController->widget('zii.widgets.jui...', Array)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#10 C:\wamp\www\easy\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#15 C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#16 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#17 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#26 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#27 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/easy/SEU/usuarios/create
+---
+2013/12/15 20:01:38 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.comuna_id_comuna" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('comuna_id_comun...')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('comuna_id_comun...')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Usuarios), 'comuna_id_comun...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Usuarios), 'comuna_id_comun...', Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\zii\widgets\jui\CJuiAutoComplete.php(85): CHtml::activeTextField(Object(Usuarios), 'comuna_id_comun...', Array)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(174): CJuiAutoComplete->run()
+#6 C:\wamp\www\easy\SEU\protected\views\usuarios\_form.php(89): CBaseController->widget('zii.widgets.jui...', Array)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#10 C:\wamp\www\easy\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#15 C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#16 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#17 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#26 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#27 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/easy/SEU/usuarios/create
+---
+2013/12/15 17:02:55 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (72)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/15 20:03:42 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.carreras_id_comuna" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('carreras_id_com...')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('carreras_id_com...')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Usuarios), 'carreras_id_com...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Usuarios), 'carreras_id_com...', Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\zii\widgets\jui\CJuiAutoComplete.php(85): CHtml::activeTextField(Object(Usuarios), 'carreras_id_com...', Array)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(174): CJuiAutoComplete->run()
+#6 C:\wamp\www\easy\SEU\protected\views\usuarios\_form.php(66): CBaseController->widget('zii.widgets.jui...', Array)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#10 C:\wamp\www\easy\SEU\protected\views\usuarios\create.php(36): CController->renderPartial('_form', Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#15 C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php(80): CController->render('create', Array)
+#16 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionCreate()
+#17 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#26 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/create')
+#27 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/easy/SEU/usuarios/create
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/create
+---
+2013/12/15 20:04:37 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (72)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/15 20:05:58 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (112)
+in C:\wamp\www\easy\SEU\index.php (13)

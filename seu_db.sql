@@ -1,18 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.1
+-- version 3.4.9
 -- http://www.phpmyadmin.net
 --
-<<<<<<< HEAD
--- Servidor: localhost
--- Tiempo de generación: 15-12-2013 a las 03:59:35
--- Versión del servidor: 5.5.24-log
--- Versión de PHP: 5.3.13
-=======
 -- Servidor: localhost:3306
 -- Tiempo de generación: 14-12-2013 a las 19:03:59
 -- Versión del servidor: 5.5.16
 -- Versión de PHP: 5.3.9
->>>>>>> 3b06a4998610101b7ad520141ffdeee97ea47022
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -30,8 +23,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
-<<<<<<< HEAD
-=======
 -- Estructura de tabla para la tabla `carreras`
 --
 
@@ -4800,7 +4791,6 @@ INSERT INTO `universidades` (`id_univ`, `nom_univ`, `univ_web`) VALUES
 -- --------------------------------------------------------
 
 --
->>>>>>> 3b06a4998610101b7ad520141ffdeee97ea47022
 -- Estructura de tabla para la tabla `usuarios`
 --
 
@@ -4823,24 +4813,13 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   PRIMARY KEY (`id_usuario`),
   KEY `usuarios_FKIndex1` (`comunas_id_comuna`),
   KEY `usuarios_FKIndex2` (`carreras_id_carrera`)
-<<<<<<< HEAD
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
-=======
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
->>>>>>> 3b06a4998610101b7ad520141ffdeee97ea47022
 
 --
 -- Volcado de datos para la tabla `usuarios`
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `carreras_id_carrera`, `comunas_id_comuna`, `nom_usuario`, `apel1_usuario`, `apel2_usuario`, `rut_usuario`, `dir_usuario`, `email_usuario`, `cel_usuario`, `estudios_usuario`, `fnac_usuario`, `genero_usuario`, `hijos_usuario`, `pass_usuario`) VALUES
-<<<<<<< HEAD
-(1, 1, 2201, 'Anibal', 'Bastias', 'Soto', '16846047-3', 'Avenida Estacion 175', 'anibal.bastias@gmail.com', '81839102', 2, '1987-10-27', 0, 0, '123'),
-(2, 3985, 14101, 'Camila', 'Soto', 'Moreno', '111-1', 'Los Vilos 2323', 'asdasd@asdasd.cl', '3498329483', 2, '1996-12-17', 1, 0, '202cb962ac59075b964b07152d234b70'),
-(3, 1, 2201, 'admin', '', '', 'admin', '', '', '', NULL, '0000-00-00', NULL, 0, '202cb962ac59075b964b07152d234b70'),
-(5, 1, 2201, 'caty', 'vignolo', 'rojas', 'caty', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '202cb962ac59075b964b07152d234b70'),
-(6, 1, 2201, 'pedro', 'gonzalez', 'nunez', 'pedro', '', '', '', NULL, '0000-00-00', NULL, 0, '202cb962ac59075b964b07152d234b70');
-=======
 (1, 1, 2201, 'Anibal', 'Bastias', 'Soto', '16846047-3', 'Avenida Estacion 175', 'anibal.bastias@gmail.com', '81839102', 2, '1987-10-27', 0, 0, '202cb962ac59075b964b07152d234b70'),
 (2, 3985, 14101, 'Camila', 'Soto', 'Moreno', '111-1', 'Los Vilos 2323', 'asdasd@asdasd.cl', '3498329483', 2, '1996-12-17', 1, 0, '202cb962ac59075b964b07152d234b70'),
 (3, 1, 2201, NULL, NULL, NULL, 'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'fd9d3ba4587efeefe8057d1eaf7e287a');
@@ -4871,7 +4850,6 @@ INSERT INTO `usuarios_has_turnos` (`id`, `usuarios_id_usuario`, `turnos_id_turno
 (2, 1, 2, 'Suspendido'),
 (3, 2, 2, 'Suspendido'),
 (5, 1, 3, 'Suspendido');
->>>>>>> 3b06a4998610101b7ad520141ffdeee97ea47022
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

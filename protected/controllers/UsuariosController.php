@@ -109,6 +109,8 @@ class UsuariosController extends Controller
                     
                         if(($pass == $model->pass_usuario) or ($pass == md5($model->pass_usuario))){
 			
+                            $model->attributes=$_POST['Usuarios'];
+                            if($model->save())
 				$this->redirect(array('admin'));
                         }
                     

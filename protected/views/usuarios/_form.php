@@ -53,6 +53,8 @@
                         $this->widget('zii.widgets.jui.CJuiAutoComplete',array(
                             'name'=>'nom_carrera',
                             'sourceUrl'=>$this->createUrl('carreras/autocomplete'),
+                            "attribute"=>"carreras_id_carrera",
+                                "model"=>$model,
                             // additional javascript options for the autocomplete plugin
                             'options'=>array(
                                 'minLength'=>'1',
@@ -77,6 +79,8 @@
                                 'name'=>'nom_comuna',
                                 'sourceUrl'=>$this->createUrl('comunas/autocomplete'),
                                 // additional javascript options for the autocomplete plugin
+                                "attribute"=>"comunas_id_comuna",
+                                "model"=>$model,
                                 'options'=>array(
                                     'minLength'=>'1',
                                 ),
