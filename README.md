@@ -36,8 +36,8 @@ git clone https://github.com/anibalbastias/SEU
 ## Agregar todos los archivos a peticion de Git
 git add --all
 
-## Confirmar todos los archivos a Git
-git commit -m --all
+## Confirmar todos los archivos a Git (Modo seguro, sin riesgo a Merge)
+git commit -a -m "Nombre commit"
 
 ## Subir archivos con marca "master" a Git
 git push -u origin master
