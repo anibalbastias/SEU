@@ -28,43 +28,37 @@ $('.search-form form').submit(function(){
 
 <h3>Administrar Usuarios</h3>
 
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
+<?php $empaque = Usuarios::model()->findAll();
 
-<?php // echo CHtml::link('Búsqueda Avanzada','#',array('class'=>'search-button')); ?>
-<!--<div class="search-form" style="display:none">-->
-<?php // $this->renderPartial('_search',array(
-//	'model'=>$model,
-//)); ?>
-</div><!-- search-form -->
+    
+    foreach ($empaque as $emp){
+        
+    
+    ?> 
+    
+<div class="">
+<div class="span-12 well style_user centrar">
+           
+	<b><?php echo CHtml::encode($emp->nom_usuario." ".$emp->apel1_usuario." ".$emp->apel2_usuario); ?></b>
+	<br />
+        
+        <a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/'.$emp->id_usuario?>"><img src="<?php echo Yii:: app() ->baseUrl.'/img/search-file-icon.png'?>" ></a>
+        <a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/update/'.$emp->id_usuario?>"><img src="<?php echo Yii:: app() ->baseUrl.'/img/Gear-icon.png'?>" ></a>
+        <a href="#"><img src="<?php echo Yii:: app() ->baseUrl.'/img/Close-2-icon.png'?>" ></a>
+        
+</div>      
+</div>
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'usuarios-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
-	'columns'=>array(
-		'id_usuario',
-//		'carreras_id_carrera',
-//		'comunas_id_comuna',
-		'nom_usuario',
-		'apel1_usuario',
-//		'apel2_usuario',
-		
-		'rut_usuario',
-//		'dir_usuario',
-		'email_usuario',
-//		'cel_usuario',
-//		'estudios_usuario',
-//		'fnac_usuario',
-//		'genero_usuario',
-//		'hijos_usuario',
-//		'pass_usuario',
-		
-		array(
-			'class'=>'CButtonColumn',
-                        
-		),
-	),
-)); ?>
+    <?php
+    }
+
+?>
+
+
+
+
+
+
+<br>
+
+
