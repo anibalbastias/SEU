@@ -6722,3 +6722,115 @@ Stack trace:
 REQUEST_URI=/easy/SEU/site/6
 HTTP_REFERER=http://localhost/easy/SEU/site/mperfil
 ---
+2013/12/15 01:33:55 [error] [exception.CException] exception 'CException' with message 'Alias "ext.jui.EJuiDateTimePicker" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\www\easy\SEU\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('ext.jui.EJuiDat...', true)
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(TurnosController), 'ext.jui.EJuiDat...', Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('ext.jui.EJuiDat...', Array)
+#3 C:\wamp\www\easy\SEU\protected\views\turnos\_form.php(37): CBaseController->widget('ext.jui.EJuiDat...', Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#7 C:\wamp\www\easy\SEU\protected\views\turnos\create.php(35): CController->renderPartial('_form', Array)
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 C:\wamp\www\easy\SEU\protected\controllers\TurnosController.php(79): CController->render('create', Array)
+#13 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): TurnosController->actionCreate()
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#21 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#23 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('turnos/create')
+#24 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/easy/SEU/turnos/create
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2013/12/14 22:37:08 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:1119
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('delete')
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/delete')
+#10 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/easy/SEU/usuarios/delete/4
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2013/12/14 22:39:19 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:1119
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('delete')
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/delete')
+#10 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/easy/SEU/usuarios/delete/4
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2013/12/14 22:46:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:1119
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('delete')
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/delete')
+#10 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/easy/SEU/usuarios/delete/4
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2013/12/14 22:46:51 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:1119
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('delete')
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/delete')
+#10 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/easy/SEU/usuarios/delete/4
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2013/12/14 23:23:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/favicon.ico
+---

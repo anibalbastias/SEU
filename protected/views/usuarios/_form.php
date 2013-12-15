@@ -1,8 +1,8 @@
 
 
-<div class="well">
+<div class="">
     <div class="row-fluid">
-            <div class="form">
+            <div class="span-10 offset1 form" style="padding-top: 50px;">
 
                 <?php $form=$this->beginWidget('CActiveForm', array(
                         'id'=>'usuarios-form',

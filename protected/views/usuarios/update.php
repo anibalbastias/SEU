@@ -43,7 +43,7 @@ $this->breadcrumbs=array(
 //);
 ?>
 
-<h1>Modificar Usuarios <?php echo $model->id_usuario; ?></h1>
+<h3>Modificar Usuarios <?php echo $model->nom_usuario." ".$model->apel1_usuario." ".$model->apel2_usuario; ?></h3>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model));
 

@@ -28,9 +28,11 @@ $('.search-form form').submit(function(){
 
 <h3>Administrar Usuarios</h3>
 
+<div class="" style="padding-top: 50px;">
 <?php $empaque = Usuarios::model()->findAll();
 
     
+
     foreach ($empaque as $emp){
         
     
@@ -39,13 +41,13 @@ $('.search-form form').submit(function(){
 <div class="">
 <div class="span-12 well style_user centrar">
            
+
 	<b><?php echo CHtml::encode($emp->nom_usuario." ".$emp->apel1_usuario." ".$emp->apel2_usuario); ?></b>
 	<br />
         
-        <a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/'.$emp->id_usuario?>"><img src="<?php echo Yii:: app() ->baseUrl.'/img/search-file-icon.png'?>" ></a>
-        <a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/update/'.$emp->id_usuario?>"><img src="<?php echo Yii:: app() ->baseUrl.'/img/Gear-icon.png'?>" ></a>
-        <a href="#"><img src="<?php echo Yii:: app() ->baseUrl.'/img/Close-2-icon.png'?>" ></a>
-        
+        <button type="button" class="btn btn-info btn-mini"><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/'.$emp->id_usuario ?>"> Perfil</a></button>
+        <button type="button" class="btn btn-warning btn-mini"><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/update/'.$emp->id_usuario ?>"> Modificar</a></button>
+        <button type="button" class="btn btn-danger btn-mini"><a  href="<?php echo Yii:: app() ->baseUrl.'/usuarios/delete/'.$emp->id_usuario ?>"> Eliminar</a></button>
 </div>      
 </div>
 
@@ -54,7 +56,7 @@ $('.search-form form').submit(function(){
 
 ?>
 
-
+</div>
 
 
 

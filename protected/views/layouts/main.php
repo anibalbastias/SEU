@@ -19,7 +19,7 @@
         <?php $pagina = $this->getAction()->getId(); ?>
         <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'></link>
         
-        
+        <link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/img/favicon.ico" />
      
         
 </head>
@@ -139,10 +139,10 @@
     
     <h2>Planilla</h2>
     <div class="nav">
-    <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>"><i class="icon-list-alt"></i> Listar turnos</a></li>
-    <li><a href="<?php echo Yii:: app() ->baseUrl.'/turnos/create' ?>"><i class="icon-plus-sign"></i> Crear turnos</a></li>
+    <li><a href="<?php // echo Yii:: app() ->baseUrl.'/site/admin' ?>#"><i class="icon-list-alt"></i> Listar turnos</a></li>
+    <li><a href="<?php // echo Yii:: app() ->baseUrl.'/turnos/create' ?>#"><i class="icon-plus-sign"></i> Crear turnos</a></li>
    
-    <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/planilla' ?>"><i class="icon-plus"></i> Generar planilla</a></li>
+    <li><a href="<?php // echo Yii:: app() ->baseUrl.'/site/planilla' ?>#"><i class="icon-plus"></i> Generar planilla</a></li>
     </div>
 </div>  
         
@@ -152,10 +152,10 @@
     
     <h2>Faltas</h2>
     <div class="nav ">
-    <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>"><i class="icon-list-alt"></i> Listar turnos</a></li>
-    <li><a href="<?php echo Yii:: app() ->baseUrl.'/turnos/create' ?>"><i class="icon-plus-sign"></i> Crear turnos</a></li>
-    <!--<li><a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>">Eliminar turnos</a></li>-->
-    <!--<li><a href="<?php echo Yii:: app() ->baseUrl.'/site/planilla' ?>">Generar planilla</a></li>-->
+    <li><a href="<?php // echo Yii:: app() ->baseUrl.'/site/admin' ?>#"><i class="icon-list-alt"></i> Listar faltas</a></li>
+    <li><a href="<?php // echo Yii:: app() ->baseUrl.'/turnos/create' ?>#"><i class="icon-plus-sign"></i> Crear faltas</a></li>
+    <!--<li><a href="<?php // echo Yii:: app() ->baseUrl.'/site/admin' ?>">Eliminar turnos</a></li>-->
+    <!--<li><a href="<?php // echo Yii:: app() ->baseUrl.'/site/planilla' ?>">Generar planilla</a></li>-->
     </div>
 </div>         
         
@@ -171,7 +171,7 @@
         <!--contenido-->
         
        
-        <div class="container">
+        <div class="container contenido">
         
             <?php 
             

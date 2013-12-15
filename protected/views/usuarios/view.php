@@ -40,7 +40,7 @@ $this->breadcrumbs=array(
     <div class="">
         <div class="row">
             
-            <div class="span-5">    
+            <div class="span-6 well">    
     <h3>perfil    
    <?php 
                         $empaque=Usuarios::model()->findByPk($_GET['id']);

@@ -31,7 +31,7 @@ $this->breadcrumbs=array(
 //);
 ?>
 
-<h1>Crear Usuarios</h1>
+<h3>Crear Usuarios</h3>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model));
 
