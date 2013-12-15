@@ -188,7 +188,7 @@ class ComunasController extends Controller
                 {
                     $return_array[] = array(
                     'label'=>$comuna->nom_comuna,
-                    'value'=>$comuna->nom_comuna,
+                    'value'=>$comuna->id_comuna,
                     'id'=>$comuna->id_comuna,
                     );
                 }

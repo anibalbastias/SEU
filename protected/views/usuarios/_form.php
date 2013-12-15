@@ -47,7 +47,7 @@
 
                         <div class="span3">
                         
-                        <?php echo $form->label($model,Yii::t('messages','carrera')); ?>
+                        <?php echo $form->label($model,Yii::t('messages','id_carrera')); ?>
                         <?php echo $form->hiddenField($model,'id_usuario',array()); ?>
                         <?php 
                         $this->widget('zii.widgets.jui.CJuiAutoComplete',array(
@@ -59,6 +59,7 @@
                             ),
                             'htmlOptions'=>array(
                                 'style'=>'height:20px;',
+                                'placeholder'=>'Escriba nombre carrera'
                             ),
                         ));
                         ?>
@@ -69,7 +70,7 @@
                             <?php //echo $form->textField($model,'comunas_id_comuna',array('size'=>10,'maxlength'=>10)); ?>
                             <?php //echo $form->error($model,'comunas_id_comuna'); ?>
                             
-                            <?php echo $form->label($model,Yii::t('messages','comuna')); ?>
+                            <?php echo $form->label($model,Yii::t('messages','id_comuna')); ?>
                             <?php echo $form->hiddenField($model,'id_usuario',array()); ?>
                             <?php 
                             $this->widget('zii.widgets.jui.CJuiAutoComplete',array(
@@ -81,6 +82,7 @@
                                 ),
                                 'htmlOptions'=>array(
                                     'style'=>'height:20px;',
+                                    'placeholder'=>'Escriba nombre comuna'
                                 ),
                             ));
                             ?>
