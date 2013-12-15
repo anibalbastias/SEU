@@ -191,7 +191,7 @@ class CarrerasController extends Controller
                 {
                     $return_array[] = array(
                     'label'=>$carrera->nom_carrera,
-                    'value'=>$carrera->nom_carrera,
+                    'value'=>$carrera->id_carrera,
                     'id'=>$carrera->id_carrera,
                     );
                 }
