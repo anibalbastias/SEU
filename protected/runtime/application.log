@@ -6554,3 +6554,171 @@ HTTP_REFERER=http://localhost/usuarios/admin
 2013/12/14 02:00:43 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
 in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (97)
 in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 03:13:59 [error] [php] Trying to get property of non-object (C:\wamp\www\easy\SEU\protected\views\usuarios\admin.php:57)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): UsuariosController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): UsuariosController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php(145): UsuariosController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionAdmin()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): UsuariosController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): UsuariosController->filterAccessControl()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): UsuariosController->runActionWithFilters()
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): UsuariosController->run()
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/usuarios/admin
+in C:\wamp\www\easy\SEU\protected\views\usuarios\admin.php (57)
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (145)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 00:25:22 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (72)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 00:25:50 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (72)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 01:24:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update3".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('update3')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('update3')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/update...')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/usuarios/update3
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2013/12/14 04:25:00 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (97)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 04:39:04 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (100)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 01:39:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "perfil".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('perfil')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('perfil')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/perfil')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/usuarios/perfil
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/update/3
+---
+2013/12/14 04:39:58 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (100)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 01:39:58 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('update')
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/update')
+#10 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/easy/SEU/usuarios/update
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/update/3
+---
+2013/12/14 04:40:36 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (100)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 04:45:14 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (100)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 05:08:19 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (100)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 05:11:53 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (100)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 05:12:51 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (100)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 05:12:57 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (100)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 05:23:54 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (100)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 05:24:12 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (100)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 05:28:51 [error] [exception.CException] exception 'CException' with message 'Alias "ext.jui.EJuiDateTimePicker" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\www\easy\SEU\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('ext.jui.EJuiDat...', true)
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(TurnosController), 'ext.jui.EJuiDat...', Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('ext.jui.EJuiDat...', Array)
+#3 C:\wamp\www\easy\SEU\protected\views\turnos\_form.php(37): CBaseController->widget('ext.jui.EJuiDat...', Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#7 C:\wamp\www\easy\SEU\protected\views\turnos\create.php(35): CController->renderPartial('_form', Array)
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 C:\wamp\www\easy\SEU\protected\controllers\TurnosController.php(79): CController->render('create', Array)
+#13 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): TurnosController->actionCreate()
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#21 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#23 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('turnos/create')
+#24 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/easy/SEU/turnos/create
+HTTP_REFERER=http://localhost/easy/SEU/site/admin
+---
+2013/12/14 05:31:48 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (95)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 05:36:45 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (95)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 06:02:06 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (111)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 06:03:33 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (111)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 06:06:21 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (111)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 06:06:39 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (111)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 06:08:56 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (111)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 06:09:09 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (111)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/14 21:34:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('view')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/view')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/6
+HTTP_REFERER=http://localhost/easy/SEU/site/mperfil
+---

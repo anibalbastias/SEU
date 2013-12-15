@@ -80,6 +80,10 @@ $this->breadcrumbs=array(
         <b><?php echo CHtml::encode($empaque->getAttributeLabel('region')); ?>:</b>
 	<?php echo CHtml::encode($empaque->comunas->provincias->regiones->nom_region); ?>
 	<br />
+        
+        <b><?php echo CHtml::encode($empaque->getAttributeLabel('pass')); ?>:</b>
+	<?php echo CHtml::encode($empaque->pass_usuario); ?>
+	<br />
 
         <br><br><br>
         

@@ -58,6 +58,8 @@
         <b><?php echo CHtml::encode($empaque->getAttributeLabel('region')); ?>:</b>
 	<?php echo CHtml::encode($empaque->comunas->provincias->regiones->nom_region); ?>
 	<br />
+        
+        
 
         <br><br><br>
         

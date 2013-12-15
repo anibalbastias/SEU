@@ -88,16 +88,43 @@ class UsuariosController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
-
+                
+                
+//                if(isset($_POST['Usuarios']))
+//		{
+//			$model->attributes=$_POST['Usuarios'];
+//                        $model->pass_usuario=md5($model->pass_usuario);
+//			if($model->save())
+//				$this->redirect(array($model->id_usuario));
+//		}
+                
+                
+                 $pass = $model->pass_usuario;
+                
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Usuarios']))
 		{
-			$model->attributes=$_POST['Usuarios'];
+                    
+                        if(($pass == $model->pass_usuario) or ($pass == md5($model->pass_usuario))){
+			
+				$this->redirect(array($model->id_usuario));
+                        }
+                    
+                    
+			else{ 
+                            if($pass != md5($model->pass_usuario) ){
+			
+                        $model->attributes=$_POST['Usuarios'];
                         $model->pass_usuario=md5($model->pass_usuario);
+                        
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_usuario));
+				$this->redirect(array($model->id_usuario));
+		
+                        }}
+                    
+                    
 		}
 
 		$this->render('update',array(

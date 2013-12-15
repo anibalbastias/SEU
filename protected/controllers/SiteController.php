@@ -69,12 +69,26 @@ class SiteController extends Controller
             
              $pass = $model->pass_usuario;   
             
-            
+//              if(isset($_POST['Usuarios']))
+//		{
+//			$model->attributes=$_POST['Usuarios'];
+//                        $model->pass_usuario=md5($model->pass_usuario);
+//			if($model->save())
+//				$this->redirect(array('perfil'));
+//		}
              
             if(isset($_POST['Usuarios']))
 		{
                 
-                    if($pass != md5($model->pass_usuario) ){
+                    
+                        if(($pass == $model->pass_usuario) or ($pass == md5($model->pass_usuario))){
+			
+				$this->redirect(array('perfil'));
+                        }
+                    
+                    
+			else{ 
+                            if($pass != md5($model->pass_usuario) ){
 			
                         $model->attributes=$_POST['Usuarios'];
                         $model->pass_usuario=md5($model->pass_usuario);
@@ -82,16 +96,8 @@ class SiteController extends Controller
 			if($model->save())
 				$this->redirect(array('perfil'));
 		
-                    }
+                        }}
                     
-                     if($pass == $model->pass_usuario || $pass == md5($model->pass_usuario)){
-			$model->attributes=$_POST['Usuarios'];
-                        
-                        
-			if($model->save())
-				$this->redirect(array('perfil'));
-		
-                    }
                     
                  }
             
