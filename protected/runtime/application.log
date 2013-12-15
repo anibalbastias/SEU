@@ -7457,3 +7457,58 @@ HTTP_REFERER=http://localhost/turnos/create
 2013/12/14 23:46:02 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
 in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php (72)
 in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)
+2013/12/15 00:01:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('view')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/view')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/1
+HTTP_REFERER=http://localhost/site/perfil
+---
+2013/12/15 00:01:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/body-pattern.jpg".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/body-pat...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/body-pattern.jpg
+HTTP_REFERER=http://localhost/site/peticion
+---
+2013/12/15 00:01:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.woff".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/League_Gothic-webfont.woff
+HTTP_REFERER=http://localhost/site/peticion
+---
+2013/12/15 00:01:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.ttf".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/League_Gothic-webfont.ttf
+HTTP_REFERER=http://localhost/site/peticion
+---
+2013/12/15 00:01:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.svg".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/League_Gothic-webfont.svg
+HTTP_REFERER=http://localhost/site/peticion
+---
+2013/12/15 00:22:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---

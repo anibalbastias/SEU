@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 13-12-2013 a las 09:08:30
+-- Tiempo de generación: 14-12-2013 a las 19:03:59
 -- Versión del servidor: 5.5.16
 -- Versión de PHP: 5.3.9
 
@@ -4565,7 +4565,7 @@ CREATE TABLE IF NOT EXISTS `turnos` (
   `fecha_turno` datetime DEFAULT NULL,
   `cupos_turno` int(10) unsigned DEFAULT NULL,
   PRIMARY KEY (`id_turno`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Volcado de datos para la tabla `turnos`
@@ -4576,7 +4576,8 @@ INSERT INTO `turnos` (`id_turno`, `fecha_turno`, `cupos_turno`) VALUES
 (2, '2013-12-11 15:00:00', 10),
 (3, '2013-12-29 09:34:00', 12),
 (4, '2013-12-12 17:27:00', 10),
-(5, '2013-12-12 06:00:00', 10);
+(5, '2013-12-12 06:00:00', 10),
+(6, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -4812,7 +4813,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   PRIMARY KEY (`id_usuario`),
   KEY `usuarios_FKIndex1` (`comunas_id_comuna`),
   KEY `usuarios_FKIndex2` (`carreras_id_carrera`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Volcado de datos para la tabla `usuarios`
@@ -4820,7 +4821,8 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 
 INSERT INTO `usuarios` (`id_usuario`, `carreras_id_carrera`, `comunas_id_comuna`, `nom_usuario`, `apel1_usuario`, `apel2_usuario`, `rut_usuario`, `dir_usuario`, `email_usuario`, `cel_usuario`, `estudios_usuario`, `fnac_usuario`, `genero_usuario`, `hijos_usuario`, `pass_usuario`) VALUES
 (1, 1, 2201, 'Anibal', 'Bastias', 'Soto', '16846047-3', 'Avenida Estacion 175', 'anibal.bastias@gmail.com', '81839102', 2, '1987-10-27', 0, 0, '202cb962ac59075b964b07152d234b70'),
-(2, 3985, 14101, 'Camila', 'Soto', 'Moreno', '111-1', 'Los Vilos 2323', 'asdasd@asdasd.cl', '3498329483', 2, '1996-12-17', 1, 0, '202cb962ac59075b964b07152d234b70');
+(2, 3985, 14101, 'Camila', 'Soto', 'Moreno', '111-1', 'Los Vilos 2323', 'asdasd@asdasd.cl', '3498329483', 2, '1996-12-17', 1, 0, '202cb962ac59075b964b07152d234b70'),
+(3, 1, 2201, NULL, NULL, NULL, 'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'fd9d3ba4587efeefe8057d1eaf7e287a');
 
 -- --------------------------------------------------------
 
