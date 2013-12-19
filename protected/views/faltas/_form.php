@@ -4,6 +4,9 @@
 /* @var $form CActiveForm */
 ?>
 
+
+
+
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -11,14 +14,20 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Campos con <span class="required">*</span> son obligatorios.</p>
+	
 
 	<?php echo $form->errorSummary($model); ?>
 
+      
+    
+    
 	<div class="row">
 		<?php echo $form->labelEx($model,'usuarios_id_usuario'); ?>
 		<?php echo $form->textField($model,'usuarios_id_usuario',array('size'=>10,'maxlength'=>10)); ?>
 		<?php echo $form->error($model,'usuarios_id_usuario'); ?>
+            
+              
+            
 	</div>
 
 	<div class="row">
@@ -45,7 +54,7 @@
                             'mode'    => 'datetime',
                             'options'   => array(
                                 'dateFormat' => 'yy-mm-dd',
-                                'timeFormat' => 'HH:mm:00',
+                                'timeFormat' => 'hh:mm:00',
                                 "minDate" => "-0Y",
                                 "maxDate" => "+1Y",
                             ),
