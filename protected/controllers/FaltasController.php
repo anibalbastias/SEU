@@ -28,7 +28,7 @@ class FaltasController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','autocomplete'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -168,4 +168,31 @@ class FaltasController extends Controller
 			Yii::app()->end();
 		}
 	}
+        
+        public function actionAutocomplete()
+        {
+            if (isset($_GET['term'])) 
+            {
+                $criteria=new CDbCriteria;
+                $criteria->alias = "usuarios";
+                $criteria->condition = "usuarios.nom_usuario like '" . $_GET['term'] . "%'"." OR "."usuarios.apel1_usuario like '" . $_GET['term'] . "%'"." OR "."usuarios.apel2_usuario like '" . $_GET['term'] . "%';";
+
+                $dataProvider = new CActiveDataProvider(get_class(Usuarios::model()), array(
+                'criteria'=>$criteria,'pagination'=>false,
+                ));
+                $usuarios = $dataProvider->getData();
+
+                $return_array = array();
+                
+                foreach($usuarios as $usuario)
+                {
+                    $return_array[] = array(
+                    'label'=>$usuario->nom_usuario." ".$usuario->apel1_usuario." ".$usuario->apel2_usuario,
+                    'value'=>$usuario->id_usuario,
+                    'id'=>$usuario->id_usuario,
+                    );
+                }
+                echo CJSON::encode($return_array);
+            }            
+        }
 }

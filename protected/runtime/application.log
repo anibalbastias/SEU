@@ -8744,3 +8744,246 @@ Stack trace:
 REQUEST_URI=/easy/SEU/
 HTTP_REFERER=http://localhost/easy/SEU/
 ---
+2013/12/19 12:24:38 [error] [exception.CException] exception 'CException' with message 'Property "Faltas.id_usuario" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('id_usuario')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('id_usuario')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Faltas), 'id_usuario')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1332): CHtml::activeInputField('hidden', Object(Faltas), 'id_usuario', Array)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\widgets\CActiveForm.php(673): CHtml::activeHiddenField(Object(Faltas), 'id_usuario', Array)
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\faltas\_form.php(34): CActiveForm->hiddenField(Object(Faltas), 'id_usuario', Array)
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\faltas\create.php(35): CController->renderPartial('_form', Array)
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\FaltasController.php(79): CController->render('create', Array)
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): FaltasController->actionCreate()
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('faltas/create')
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/faltas/create
+HTTP_REFERER=http://localhost/usuarios/4
+---
+2013/12/19 17:24:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/12/19 12:27:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "autocomplete".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('autocomplete')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/autoco...')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usuarios/autocomplete?term=s
+HTTP_REFERER=http://localhost/faltas/create
+---
+2013/12/19 12:27:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "autocomplete".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('autocomplete')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/autoco...')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usuarios/autocomplete?term=a
+HTTP_REFERER=http://localhost/faltas/create
+---
+2013/12/19 12:27:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "autocomplete".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('autocomplete')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/autoco...')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usuarios/autocomplete?term=al
+HTTP_REFERER=http://localhost/faltas/create
+---
+2013/12/19 12:27:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "autocomplete".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('autocomplete')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/autoco...')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usuarios/autocomplete?term=a
+HTTP_REFERER=http://localhost/faltas/create
+---
+2013/12/19 12:27:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "autocomplete".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('autocomplete')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/autoco...')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usuarios/autocomplete?term=a
+HTTP_REFERER=http://localhost/faltas/create
+---
+2013/12/19 12:27:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "autocomplete".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('autocomplete')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/autoco...')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usuarios/autocomplete?term=as
+HTTP_REFERER=http://localhost/faltas/create
+---
+2013/12/19 12:30:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "autocomplete".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('autocomplete')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/autoco...')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usuarios/autocomplete?term=a
+HTTP_REFERER=http://localhost/faltas/create
+---
+2013/12/19 12:30:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "autocomplete".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('autocomplete')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/autoco...')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usuarios/autocomplete?term=as
+HTTP_REFERER=http://localhost/faltas/create
+---
+2013/12/19 12:31:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "autocomplete".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('autocomplete')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/autoco...')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usuarios/autocomplete?term=a
+HTTP_REFERER=http://localhost/faltas/create
+---
+2013/12/19 12:31:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "autocomplete".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('autocomplete')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/autoco...')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usuarios/autocomplete?term=as
+HTTP_REFERER=http://localhost/faltas/create
+---
+2013/12/19 17:31:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "autocomplete".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('autocomplete')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/autoco...')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usuarios/autocomplete
+---
+2013/12/19 17:32:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "autocomplete".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(271): CController->missingAction('autocomplete')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('autocomplete')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/autoco...')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/usuarios/autocomplete
+---
+2013/12/19 12:34:43 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php (72)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)
+2013/12/19 12:56:56 [error] [exception.CException] exception 'CException' with message 'Property "Faltas.departmentId" is not defined.' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('departmentId')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('departmentId')
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php(1515): CHtml::resolveValue(Object(Faltas), 'departmentId')
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\widgets\CActiveForm.php(764): CHtml::activeDropDownList(Object(Faltas), 'departmentId', 'asd', Array)
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\faltas\_form.php(62): CActiveForm->dropDownList(Object(Faltas), 'departmentId', 'asd')
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\faltas\create.php(35): CController->renderPartial('_form', Array)
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require('C:\Program File...')
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\Program File...', Array, true)
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\Program File...', Array, true)
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\FaltasController.php(79): CController->render('create', Array)
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): FaltasController->actionCreate()
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#24 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('faltas/create')
+#25 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/faltas/create
+HTTP_REFERER=http://localhost/faltas/5
+---
+2013/12/19 12:57:10 [error] [php] Invalid argument supplied for foreach() (C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\helpers\CHtml.php:1960)
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\faltas\_form.php(62): CActiveForm->dropDownList()
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): FaltasController->renderInternal()
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): FaltasController->renderFile()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\faltas\create.php(35): FaltasController->renderPartial()
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(127): require()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CBaseController.php(96): FaltasController->renderInternal()
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): FaltasController->renderFile()
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): FaltasController->renderPartial()
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\FaltasController.php(79): FaltasController->render()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): FaltasController->actionCreate()
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(134): FaltasController->runAction()
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CInlineFilter.php(59): FaltasController->filterAccessControl()
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): FaltasController->runActionWithFilters()
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): FaltasController->run()
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/faltas/create
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\faltas\_form.php (62)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\faltas\create.php (35)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\FaltasController.php (79)
+2013/12/19 13:19:38 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php (72)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)
+2013/12/19 13:23:51 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php (112)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)

@@ -7,28 +7,48 @@
 
 
 
-<div class="form">
+<div class="form ">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'faltas-form',
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	
+    
 
 	<?php echo $form->errorSummary($model); ?>
 
       
     
     
-	<div class="row">
-		<?php echo $form->labelEx($model,'usuarios_id_usuario'); ?>
-		<?php echo $form->textField($model,'usuarios_id_usuario',array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'usuarios_id_usuario'); ?>
+<!--	<div class="row">
+		<?php // echo $form->labelEx($model,'usuarios_id_usuario'); ?>
+		<?php // echo $form->textField($model,'usuarios_id_usuario',array('size'=>10,'maxlength'=>10)); ?>
+		<?php // echo $form->error($model,'usuarios_id_usuario'); ?>
             
-              
-            
-	</div>
+	</div>-->
+    
+            <div class="row">
+                        
+                        <?php echo $form->label($model,Yii::t('messages','usuarios_id_usuario')); ?>
+                        <?php echo $form->hiddenField($model,'usuarios_id_usuario',array()); ?>
+                        <?php 
+                        $this->widget('zii.widgets.jui.CJuiAutoComplete',array(
+                            'name'=>'nom_usuario',
+                            'sourceUrl'=>$this->createUrl('faltas/autocomplete'),
+                            "attribute"=>"usuarios_id_usuario",
+                                "model"=>$model,
+                            // additional javascript options for the autocomplete plugin
+                            'options'=>array(
+                                'minLength'=>'1',
+                            ),
+                            'htmlOptions'=>array(
+                                'style'=>'height:20px;',
+                                'placeholder'=>'Escriba nombre usuario'
+                            ),
+                        ));
+                        ?>
+        </div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'desc_falta'); ?>
@@ -38,7 +58,8 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'tipo_falta'); ?>
-		<?php echo $form->textField($model,'tipo_falta',array('size'=>7,'maxlength'=>7)); ?>
+		<?php //echo $form->textField($model,'tipo_falta',array('size'=>7,'maxlength'=>7)); ?>
+                <?php echo $form->dropDownList($model,'tipo_falta', array("Sanción"=>"Sancion","Falta"=>"Falta")); ?>
 		<?php echo $form->error($model,'tipo_falta'); ?>
 	</div>
 

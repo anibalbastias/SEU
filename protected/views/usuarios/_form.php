@@ -111,11 +111,7 @@
                             <?php echo $form->error($model,'cel_usuario'); ?>
                         </div>
 
-                        <div class="span3">
-                            <?php echo $form->labelEx($model,'estudios_usuario'); ?>
-                            <?php echo $form->textField($model,'estudios_usuario'); ?>
-                            <?php echo $form->error($model,'estudios_usuario'); ?>
-                        </div>
+                        <?php $form->textField($model,'estudios_usuario'); ?>
 
                         <div class="span3">
                             <?php echo $form->labelEx($model,'fnac_usuario'); ?>
@@ -141,14 +137,16 @@
 
                         <div class="span3">
                             <?php echo $form->labelEx($model,'genero_usuario'); ?>
-                            <?php echo $form->textField($model,'genero_usuario'); ?>
+                            <?php //echo $form->textField($model,'genero_usuario'); ?>
+                            <?php echo $form->dropDownList($model,'hijos_usuario', array("0"=>"Masculino","1"=>"Femenino")); ?>
                             <?php echo $form->error($model,'genero_usuario'); ?>
                         </div>
 
                     
                         <div class="span3">
                             <?php echo $form->labelEx($model,'hijos_usuario'); ?>
-                            <?php echo $form->textField($model,'hijos_usuario',array('size'=>10,'maxlength'=>10)); ?>
+                            <?php //echo $form->textField($model,'hijos_usuario',array('size'=>10,'maxlength'=>10)); ?>
+                            <?php echo $form->dropDownList($model,'hijos_usuario', array("0"=>"0","1"=>"1","2"=>"2","3"=>"3","4"=>"4","5"=>"5")); ?>
                             <?php echo $form->error($model,'hijos_usuario'); ?>
                         </div>
 
