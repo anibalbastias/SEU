@@ -17,7 +17,7 @@
 <h1>Planilla generada</h1><br>
 
 <div class="">
-    <div class="row planilla-all">
+    <div class="row planilla-all well">
     
     <div class="span-2 centrar planilla"><h3> Lunes </h3><?php echo $this->renderPartial('_col1'); ?></div>
     <div class="span-2 centrar planilla"><h3> Martes </h3><?php echo $this->renderPartial('_col2'); ?></div>
