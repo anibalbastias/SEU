@@ -37,11 +37,19 @@ $this->breadcrumbs=array(
 
 <div class="style_user">
     
-    <div class="">
-        <div class="row">
+    <div class="container-fluid">
+        <div class="row-fluid">
             
-            <div class="span-6 well">    
-    <h3>perfil    
+            
+            <div class="span6 well">    
+    
+                <h3> Foto </h3>
+                
+            </div>
+            
+            <div class="span6 well">
+    
+                 <h3>perfil    
    <?php 
                         $empaque=Usuarios::model()->findByPk($_GET['id']);
                        $nombre=$empaque->nom_usuario;
@@ -81,21 +89,19 @@ $this->breadcrumbs=array(
 	<?php echo CHtml::encode($empaque->comunas->provincias->regiones->nom_region); ?>
 	<br />
         
-        <b><?php echo CHtml::encode($empaque->getAttributeLabel('pass')); ?>:</b>
-	<?php echo CHtml::encode($empaque->pass_usuario); ?>
+        <b><?php // echo CHtml::encode($empaque->getAttributeLabel('pass')); ?>:</b>
+	<?php // echo CHtml::encode($empaque->pass_usuario); ?>
 	<br />
 
-        <br><br><br>
-        
-            </div>
-            
-            <div class="span-6">
+        <br><br><br>   
                 
-                asduhadshu
                 
             </div>
             
         </div>
+        
+      
+        
     </div>
     </div>
 
