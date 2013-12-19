@@ -45,9 +45,13 @@ $('.search-form form').submit(function(){
 	<b><?php echo CHtml::encode($emp->nom_usuario." ".$emp->apel1_usuario." ".$emp->apel2_usuario); ?></b>
 	<br />
         
-        <button type="button" class="btn btn-info btn-mini"><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/'.$emp->id_usuario ?>"> Perfil</a></button>
-        <button type="button" class="btn btn-warning btn-mini"><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/update/'.$emp->id_usuario ?>"> Modificar</a></button>
-        <button type="button" class="btn btn-danger btn-mini"><a  href="<?php echo Yii:: app() ->baseUrl.'/usuarios/delete/'.$emp->id_usuario ?>"> Eliminar</a></button>
+        <div type="button" class="btn btn-info btn-mini"><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/'.$emp->id_usuario ?>"> Perfil</a></div>
+        <div type="button" class="btn btn-warning btn-mini"><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/update/'.$emp->id_usuario ?>"> Modificar</a></div>
+        <div type="button" class="btn btn-danger btn-mini"><a  href="<?php echo Yii:: app() ->baseUrl.'/usuarios/delete/'.$emp->id_usuario ?>"> Eliminar</a></div>
+        
+        
+
+
 </div>      
 </div>
 

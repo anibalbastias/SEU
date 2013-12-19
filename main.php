@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
@@ -68,22 +68,12 @@ return array(
 		
 		'db'=>array(
 //			'connectionString' => 'mysql:host=localhost;dbname=seu_db',
-//			
                         'connectionString' => 'mysql:host=localhost;dbname=seu_db',
 			'emulatePrepare' => true,
 			'username' => 'seu',
 			'password' => 'seu2013',
 			'charset' => 'utf8',
                     
-//					seu.cl
-//					   'connectionString' => 'mysql:host=localhost;dbname=seucl_db',
-//			'emulatePrepare' => true,
-//			'username' => 'seucl_root',
-//			'password' => 'master_master',
-//			'charset' => 'utf8',
-					
-					
-					
 //                    'connectionString' => 'mysql:host=https://mysql16.000webhost.com;dbname="a2972641_seudb',
 //                    'emulatePrepare' => true,
 //                    'username' => 'a2972641_seu',  

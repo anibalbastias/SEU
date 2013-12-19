@@ -104,12 +104,18 @@ class UsuariosController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
+             
+                 
 		if(isset($_POST['Usuarios']))
 		{
                     
-                        if(($pass == $model->pass_usuario) or ($pass == md5($model->pass_usuario))){
+                    $model->attributes=$_POST['Usuarios'];
+                    $pass2 = $model->pass_usuario;
+                    
+                        if($pass == $pass2){
 			
-                            $model->attributes=$_POST['Usuarios'];
+                              $model->pass_usuario = $pass2;  
+//                            $model->attributes=$_POST['Usuarios'];
                             if($model->save())
 				$this->redirect(array('admin'));
                         }
@@ -118,13 +124,31 @@ class UsuariosController extends Controller
 			else{ 
                             if($pass != md5($model->pass_usuario) ){
 			
-                        $model->attributes=$_POST['Usuarios'];
-                        $model->pass_usuario=md5($model->pass_usuario);
-                        
-			if($model->save())
-				$this->redirect(array($model->id_usuario));
+//                        $model->attributes=$_POST['Usuarios'];
+//                            $model->pass_usuario = md5($model->pass_usuario);
+                               $model->pass_usuario = md5($pass2); 
+                                
+                            if($model->save())
+//				$this->redirect(array($model->id_usuario));
+                                $this->redirect(array('admin'));
 		
-                        }}
+                        }
+                        else{
+                            
+                            if($pass == md5($pass2)){
+                                
+                                  $model->pass_usuario = $pass;
+//                                $model->attributes=$_POST['Usuarios'];
+                            if($model->save())
+				$this->redirect(array('admin'));
+                                
+                            }
+                            
+                        }
+                        
+                        
+                            }
+                        
                     
                     
 		}

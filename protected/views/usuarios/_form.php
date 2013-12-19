@@ -158,11 +158,14 @@
                             <?php echo $form->error($model,'pass_usuario'); ?>
                         </div>
                     
+                        
 
                         <div class="span3 buttons" style="margin-top: 25px;">
                                 <?php echo CHtml::submitButton($model->isNewRecord ? 'Crear Usuario' : 'Guardar Usuario',array('class'=>'btn btn-primary')); ?>
                         </div>
 
+
+                        
 
             <?php $this->endWidget(); ?>
 
