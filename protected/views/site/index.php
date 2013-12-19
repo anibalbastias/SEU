@@ -34,15 +34,23 @@
 
 ?>
 
-<div class="inicio centrar">
+  <div class="fondo">
+  
+<div class=" inicio centrar">
 
-    <div class="row">
-        <div class="span4 offset5">
-<h1>Ingreso al Sistema</h1>
+    <div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+<h1><b>Ingreso al Sistema</b></h1>
 <br><br>
-
-
-<div class="form well">
+        </div>
+<div class="row-fluid">
+    
+    <div class="span4"> 
+        
+    </div>
+<div class="span4 well">
+<div class="form form_ini">
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'login-form',
 	'enableClientValidation'=>true,
@@ -77,12 +85,20 @@
 		<?php echo CHtml::submitButton('Iniciar Sesion',array('class'=>'btn btn-primary btn-large')); ?>
 
         </div>
-    
+</div>    
 </div>
+    
+    <div class="span4">
+        
+    </div>
+    
         </div>    
 </div>
+    </div>
+</div>
+  </div>     
 <?php $this->endWidget(); ?>
-</div><!-- form -->
+<!-- form -->
 
 <?php
             }

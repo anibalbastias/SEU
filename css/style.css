@@ -6,12 +6,30 @@
         Purpose of the stylesheet follows.
 */
 
+body{
+    
+    /*background-color: blue;*/
+   
+    /*opacity: 0.5;*/
+}
+
+.fondo{
+    
+/*      background-image: url('../img/difuminada.JPG');
+    background-size: 100%;*/
+    
+}
+
 .all{ 
     font-family: 'Oxygen', sans-serif;
     /*background-color: #B2EAF7;*/
     width: 100%;
     height: 100%;
     color: #9f9f9f;
+    
+   
+    /*background-image: url('../img/difuminada.jpg');*/
+    /*background-size: 100%;*/
 }
 
 .contenido{
@@ -65,15 +83,20 @@
 }
 
 
+
 .inicio{ 
     /*background-color: #f5f5f5;*/
     /*width: 100%;*/
-    height: auto;
-    top:10%;
+    /*height: auto;*/
+    /*top:10%;*/
     /*left:35%;*/
     /*right: 35%;*/
     /*background-color: #C7F7F7;*/
-    position: absolute;
+    /*position: absolute;*/
+    
+    margin-top: 50px;
+    
+    
 }
 
 .inicio h1{
@@ -137,5 +160,14 @@
     
     width:120px;
     /*margin-right: 20px;*/
+    
+}
+
+.form_ini{
+    
+    /*background-color: white;*/
+    padding-top: 40px;
+   padding-bottom: 40px;
+   /*opacity: 0.6;*/
     
 }
