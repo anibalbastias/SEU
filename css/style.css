@@ -61,6 +61,26 @@ body{
     color:white;
 }
 
+
+.well_semana{
+    background-color: #E6E6E6;
+}
+
+.well_concupos{
+    background-color: #A9F5BC;
+    opacity:0.8;
+}
+
+.well_cupos{
+    background-color: #A9F5E1;
+    opacity:0.8;
+}
+
+.well_sincupos{
+    background-color: #F5A9BC;
+    opacity:0.8;
+}
+
 .btn a:visited{
     
     text-decoration:none;

@@ -19,13 +19,13 @@
 <div class="">
     <div class="row planilla-all well">
     
-    <div class="span-2 centrar planilla"><h3> Lunes </h3><?php echo $this->renderPartial('_col1'); ?></div>
-    <div class="span-2 centrar planilla"><h3> Martes </h3><?php echo $this->renderPartial('_col2'); ?></div>
-    <div class="span-2 centrar planilla"><h3> Miercoles </h3><?php echo $this->renderPartial('_col3'); ?></div>
-    <div class="span-2 centrar planilla"><h3> Jueves </h3><?php echo $this->renderPartial('_col4'); ?></div>
-    <div class="span-2 centrar planilla"><h3> Viernes </h3><?php echo $this->renderPartial('_col5'); ?></div>
-    <div class="span-2 centrar planilla"><h3> Sabado </h3><?php echo $this->renderPartial('_col5'); ?></div>
-    <div class="span-2  planilla centrar"><h3> Domingo </h3><?php echo $this->renderPartial('_col7'); ?></div>
+    <div class="span-2 centrar planilla well_semana"><h3> Lunes </h3><?php echo $this->renderPartial('_col1'); ?></div>
+    <div class="span-2 centrar planilla well_semana"><h3> Martes </h3><?php echo $this->renderPartial('_col2'); ?></div>
+    <div class="span-2 centrar planilla well_semana"><h3> Miercoles </h3><?php echo $this->renderPartial('_col3'); ?></div>
+    <div class="span-2 centrar planilla well_semana"><h3> Jueves </h3><?php echo $this->renderPartial('_col4'); ?></div>
+    <div class="span-2 centrar planilla well_semana"><h3> Viernes </h3><?php echo $this->renderPartial('_col5'); ?></div>
+    <div class="span-2 centrar planilla well_semana"><h3> Sabado </h3><?php echo $this->renderPartial('_col6'); ?></div>
+    <div class="span-2 planilla centrar well_semana"><h3> Domingo </h3><?php echo $this->renderPartial('_col7'); ?></div>
     
     
     </div>    
