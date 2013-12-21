@@ -159,7 +159,7 @@
     
     <h2>Faltas</h2>
     <div class="nav ">
-    <li><a href="<?php // echo Yii:: app() ->baseUrl.'/site/admin' ?>#"><i class="icon-list-alt"></i> Listar faltas</a></li>
+    <li><a href="<?php echo Yii:: app() ->baseUrl.'/faltas/' ?>"><i class="icon-list-alt"></i> Listar faltas</a></li>
     <li><a href="<?php echo Yii:: app() ->baseUrl.'/faltas/create' ?>"><i class="icon-plus-sign"></i> Crear faltas</a></li>
     <!--<li><a href="<?php // echo Yii:: app() ->baseUrl.'/site/admin' ?>">Eliminar turnos</a></li>-->
     <!--<li><a href="<?php // echo Yii:: app() ->baseUrl.'/site/planilla' ?>">Generar planilla</a></li>-->
@@ -222,6 +222,7 @@
                                 echo "Hora:". date ("G:i:s") . "<br />";
                                 echo "Fecha:". date ("d:m:Y") . "<br/>";
 
+                                echo "version de actualizazion: 11:15 - 21/12/2013";
                                 ?>
                         
                     </div>

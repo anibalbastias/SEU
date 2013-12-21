@@ -6,7 +6,7 @@ class UsuariosController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+//	public $layout='//layouts/column2';
 
 	/**
 	 * @return array action filters
@@ -28,7 +28,7 @@ class UsuariosController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','pdf'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -55,6 +55,47 @@ class UsuariosController extends Controller
 			'model'=>$this->loadModel($id),
 		));
 	}
+        
+        public function actionPdf()
+	{
+            
+            $mPDF1 = Yii::app()->ePdf->mpdf();
+//            
+            $this->layout="//layouts/pdf_usuario";
+            $stylesheet = file_get_contents(Yii::getPathOfAlias('webroot.css') . '/style.css');
+            $stylesheet2 = file_get_contents(Yii::getPathOfAlias('webroot.css') . '/style_1.css');
+            $stylesheet3 = file_get_contents(Yii::getPathOfAlias('bootstrap').'/assets/css/bootstrap.css');
+            $stylesheet4 = file_get_contents(Yii::getPathOfAlias('bootstrap').'/assets/css/bootstrap.min.css');
+// 
+//            
+//            $mPDF1->WriteHTML($stylesheet, 1);
+//            $mPDF1->WriteHTML($stylesheet2, 1);
+//            $mPDF1->WriteHTML($stylesheet3, 1);
+//          
+        $mPDF1->Bookmark('Start of the document');
+                $mPDF1->WriteHTML($stylesheet,1);
+        $mPDF1->WriteHTML($stylesheet2,1);
+        $mPDF1->WriteHTML($stylesheet3,1);
+        $mPDF1->WriteHTML($stylesheet4,1);
+            
+            $mPDF1->WriteHTML(CHtml::image(Yii::app()->request->baseUrl.'/img/logo_seu.png',' ',array('width'=>'20%',
+                'class'=>'')));
+//            $mpdf->headerPageNoMarker = "xx"; //muestra la numeracion de la pagina
+//            $mPDF1->WriteHTML($this->render('pdf',array(),true));
+//
+//            $mPDF1->Output();
+//            exit();
+            
+       
+    
+//        $mpdf->Image('files/images/frontcover.png',0,0,210,297,'png','',true, false);
+//        $mPDF1->WriteHTML('<div class="well">  Section 1 text</div>');
+        $mPDF1->WriteHTML($this->render('pdf',array(),true));
+        $mPDF1->Output();
+        exit();
+		
+	}
+     
 
 	/**
 	 * Creates a new model.
@@ -191,9 +232,14 @@ class UsuariosController extends Controller
 	{
 		$model=new Usuarios('search');
 		$model->unsetAttributes();  // clear any default values
+                
+//                $mPDF1 = Yii::app()->ePdf->mpdf();
+//                $mPDF1->WriteHTML("<h1>Hola mundo</h1>");
+//                $mPDF1->Output();
+                
 		if(isset($_GET['Usuarios']))
 			$model->attributes=$_GET['Usuarios'];
-
+                
 		$this->render('admin',array(
 			'model'=>$model,
 		));

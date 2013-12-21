@@ -9433,3 +9433,308 @@ REQUEST_URI=/site/planilla
 in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\site\_col1.php (19)
 in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\site\planilla.php (22)
 in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\SiteController.php (119)
+2013/12/21 14:15:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'seucl_root'@'localhost' (using password: YES)' in C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\easy\SEU\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(624): CApplication->getDb()
+#5 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(2311): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Turnos))
+#7 C:\wamp\www\easy\SEU\protected\models\Turnos.php(20): CActiveRecord::model('Turnos')
+#8 C:\wamp\www\easy\SEU\protected\views\site\_col1.php(11): Turnos::model()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#12 C:\wamp\www\easy\SEU\protected\views\site\planilla.php(22): CController->renderPartial('_col1')
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#15 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#16 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('planilla', NULL, true)
+#17 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(119): CController->render('planilla')
+#18 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionPlanilla()
+#19 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#20 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#21 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('planilla')
+#23 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/planilla')
+#24 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/easy/SEU/site/planilla
+HTTP_REFERER=http://localhost/easy/SEU/site/admin
+---
+2013/12/21 16:13:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'seucl_root'@'localhost' (using password: YES)' in C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\easy\SEU\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(624): CApplication->getDb()
+#5 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(2311): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Turnos))
+#7 C:\wamp\www\easy\SEU\protected\models\Turnos.php(20): CActiveRecord::model('Turnos')
+#8 C:\wamp\www\easy\SEU\protected\views\site\_col1.php(11): Turnos::model()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#12 C:\wamp\www\easy\SEU\protected\views\site\planilla.php(22): CController->renderPartial('_col1')
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#15 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#16 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('planilla', NULL, true)
+#17 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(119): CController->render('planilla')
+#18 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionPlanilla()
+#19 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#20 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#21 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('planilla')
+#23 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/planilla')
+#24 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/easy/SEU/site/planilla
+HTTP_REFERER=http://localhost/easy/SEU/site/admin
+---
+2013/12/21 16:46:06 [error] [exception.CException] exception 'CException' with message 'Alias "ext.yii-pdf.EYiiPdf" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\www\easy\SEU\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\YiiBase.php(198): YiiBase::import('ext.yii-pdf.EYi...', true)
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CModule.php(387): YiiBase::createComponent(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\base\CModule.php(104): CModule->getComponent('ePdf')
+#3 C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php(195): CModule->__get('ePdf')
+#4 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionAdmin()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/admin')
+#15 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/easy/SEU/usuarios/admin
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2013/12/21 14:17:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "down_pdf()".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('down_pdf()')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('down_pdf()')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/down_p...')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/usuarios/down_pdf()
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2013/12/21 14:18:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Hello".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('Hello')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('Hello')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/Hello')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/usuarios/Hello
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2013/12/21 17:21:22 [error] [php] Undefined variable: empaque (C:\wamp\www\easy\SEU\protected\views\usuarios\admin.php:34)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): UsuariosController->renderInternal()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): UsuariosController->renderFile()
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): UsuariosController->renderPartial()
+#3 C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php(204): UsuariosController->render()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionAdmin()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): UsuariosController->runAction()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): UsuariosController->filterAccessControl()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): UsuariosController->runActionWithFilters()
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): UsuariosController->run()
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/usuarios/admin
+in C:\wamp\www\easy\SEU\protected\views\usuarios\admin.php (34)
+in C:\wamp\www\easy\SEU\protected\views\usuarios\admin.php (38)
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (204)
+2013/12/21 17:28:15 [error] [php] Trying to get property of non-object (C:\wamp\www\easy\SEU\protected\views\usuarios\admin.php:71)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): UsuariosController->renderInternal()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): UsuariosController->renderFile()
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): UsuariosController->renderPartial()
+#3 C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php(204): UsuariosController->render()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionAdmin()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): UsuariosController->runAction()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): UsuariosController->filterAccessControl()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): UsuariosController->runActionWithFilters()
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): UsuariosController->run()
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/usuarios/admin
+in C:\wamp\www\easy\SEU\protected\views\usuarios\admin.php (71)
+in C:\wamp\www\easy\SEU\protected\views\usuarios\admin.php (76)
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (204)
+2013/12/21 15:35:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\easy\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('pdf')
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/pdf')
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/easy/SEU/usuarios/pdf
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2013/12/21 15:37:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\easy\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('pdf')
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/pdf')
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/easy/SEU/usuarios/pdf
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2013/12/21 19:06:46 [error] [php] Undefined variable: mPDF1 (C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php:65)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): UsuariosController->runAction()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): UsuariosController->filterAccessControl()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): UsuariosController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): UsuariosController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/usuarios/pdf
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (65)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/21 19:51:22 [error] [php] include(mPDF.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\easy\SEU\yii\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php(81): spl_autoload_call()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionPdf()
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): UsuariosController->runAction()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): UsuariosController->filterAccessControl()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): UsuariosController->runActionWithFilters()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): UsuariosController->run()
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/usuarios/pdf
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (81)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/21 19:58:08 [error] [php] file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Filename cannot be empty (C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php:83)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): UsuariosController->runAction()
+#2 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): UsuariosController->filterAccessControl()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): UsuariosController->runActionWithFilters()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): UsuariosController->run()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/usuarios/pdf
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (83)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/21 20:01:55 [error] [php] file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Filename cannot be empty (C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php:83)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): UsuariosController->runAction()
+#2 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): UsuariosController->filterAccessControl()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): UsuariosController->runActionWithFilters()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): UsuariosController->run()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/usuarios/pdf
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (83)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/21 20:04:42 [error] [php] file_get_contents() [<a href='function.file-get-contents'>function.file-get-contents</a>]: Filename cannot be empty (C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php:68)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): UsuariosController->runAction()
+#2 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): UsuariosController->filterAccessControl()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): UsuariosController->runActionWithFilters()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): UsuariosController->run()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/usuarios/pdf
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (68)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/21 20:37:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "&lt;".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('&lt;')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/%26lt%3B?php
+---
+2013/12/21 20:58:14 [error] [php] Undefined variable: i (C:\wamp\www\easy\SEU\protected\views\usuarios\admin.php:67)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): UsuariosController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): UsuariosController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php(245): UsuariosController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionAdmin()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): UsuariosController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): UsuariosController->filterAccessControl()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): UsuariosController->runActionWithFilters()
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): UsuariosController->run()
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/usuarios/admin
+in C:\wamp\www\easy\SEU\protected\views\usuarios\admin.php (67)
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (245)
+in C:\wamp\www\easy\SEU\index.php (13)

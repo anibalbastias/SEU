@@ -26,7 +26,12 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
+
+
 <h3>Administrar Usuarios</h3>
+
+<div type="button" class="btn btn-info btn-mini"><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/pdf'?> "> Generar PDF</a></div>
+        
 
 <div class="" style="padding-top: 50px;">
 <?php $empaque = Usuarios::model()->findAll();
@@ -57,10 +62,17 @@ $('.search-form form').submit(function(){
 </div>
 
     <?php
+    
+    
+    
     }
 
 ?>
 
+    
+      <!-- ######################################## generacion de pdf ############################-->   
+ 
+    
 </div>
 
 
