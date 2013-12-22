@@ -146,7 +146,7 @@
     
     <h2>Planilla</h2>
     <div class="nav">
-    <li><a href="<?php // echo Yii:: app() ->baseUrl.'/site/admin' ?>#"><i class="icon-list-alt"></i> Listar turnos</a></li>
+    <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>"><i class="icon-list-alt"></i> Listar turnos</a></li>
     <li><a href="<?php // echo Yii:: app() ->baseUrl.'/turnos/create' ?>#"><i class="icon-plus-sign"></i> Crear turnos</a></li>
    
     <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/planilla' ?>"><i class="icon-plus"></i> Generar planilla</a></li>

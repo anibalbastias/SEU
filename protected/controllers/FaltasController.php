@@ -122,7 +122,10 @@ class FaltasController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Faltas');
+		$dataProvider=new CActiveDataProvider('Faltas',array(
+                        'sort'=>array('defaultOrder'=>'fecha_falta DESC',),
+                    
+                ));
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
