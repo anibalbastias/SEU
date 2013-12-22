@@ -51,14 +51,17 @@ $('.search-form form').submit(function(){
 <div class="row-fluid">
 <div class="span-12 well style_user ">
            
-
+     
 	<b><?php echo CHtml::encode($emp->nom_usuario." ".$emp->apel1_usuario." ".$emp->apel2_usuario); ?></b>
 	<!--<br />-->
         <div class="pull-right">
         <div type="button" class="btn btn-info btn-mini"><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/'.$emp->id_usuario ?>"> Perfil</a></div>
         <div type="button" class="btn btn-warning btn-mini"><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/update/'.$emp->id_usuario ?>"> Modificar</a></div>
-        <div type="button" class="btn btn-success btn-mini"><a href="<?php // echo Yii:: app() ->baseUrl.'/faltas/create' ?>#"> Faltas</a></div>
+        <div type="button" class="btn btn-success btn-mini"><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/faltas?id='.$emp->id_usuario ?> "> Faltas</a></div>
         <div type="button" class="btn btn-danger btn-mini"><a  href="<?php echo Yii:: app() ->baseUrl.'/usuarios/delete/'.$emp->id_usuario ?>"> Eliminar</a></div>
+        
+       
+        
         </div>
         
 
