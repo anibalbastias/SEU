@@ -434,3 +434,22 @@ Stack trace:
 REQUEST_URI=/easy/SEU/usuarios/faltas?id=3
 HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
 ---
+2013/12/23 01:36:06 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "_col7-pdf".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\easy\SEU\protected\views\site\pdf.php(75): CController->renderPartial('_col7-pdf')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('pdf', Array, true)
+#5 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(178): CController->render('pdf', Array, true)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionPdf()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('pdf')
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/pdf')
+#12 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/easy/SEU/site/pdf
+---
