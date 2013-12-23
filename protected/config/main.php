@@ -105,9 +105,9 @@ return array(
 			'username' => 'seu',
 			'password' => 'seu2013',
 			'charset' => 'utf8',
-                    
+                   
 //					seu.cl
-//					   'connectionString' => 'mysql:host=localhost;dbname=seucl_db',
+//				   'connectionString' => 'mysql:host=localhost;dbname=seucl_db',
 //			'emulatePrepare' => true,
 //			'username' => 'seucl_root',
 //			'password' => 'master_master',

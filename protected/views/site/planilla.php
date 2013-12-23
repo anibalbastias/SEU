@@ -16,6 +16,12 @@
 
 <h1>Planilla generada</h1><br>
 
+
+<div type="button" class="btn btn-info btn-mini"><a target="_blank" href="<?php echo Yii:: app() ->baseUrl.'/site/pdf'?> "> Generar PDF</a></div>
+        
+
+
+
 <div class="">
     <div class="row planilla-all well">
     <div class="span1 centrar planilla well_semana"><?php echo $this->renderPartial('_col0'); ?></div>

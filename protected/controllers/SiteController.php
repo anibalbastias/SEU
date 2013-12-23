@@ -141,6 +141,47 @@ class SiteController extends Controller
                    
         }
         
+                public function actionPdf()
+	{
+            
+            $mPDF1 = Yii::app()->ePdf->mpdf();
+//            
+            $this->layout="//layouts/pdf_usuario";
+            $stylesheet = file_get_contents(Yii::getPathOfAlias('webroot.css') . '/style.css');
+            $stylesheet2 = file_get_contents(Yii::getPathOfAlias('webroot.css') . '/style_1.css');
+            $stylesheet3 = file_get_contents(Yii::getPathOfAlias('bootstrap').'/assets/css/bootstrap.css');
+            $stylesheet4 = file_get_contents(Yii::getPathOfAlias('bootstrap').'/assets/css/bootstrap.min.css');
+// 
+//            
+//            $mPDF1->WriteHTML($stylesheet, 1);
+//            $mPDF1->WriteHTML($stylesheet2, 1);
+//            $mPDF1->WriteHTML($stylesheet3, 1);
+//          
+//        $mPDF1->Bookmark('Start of the document');
+                $mPDF1->WriteHTML($stylesheet,1);
+        $mPDF1->WriteHTML($stylesheet2,1);
+        $mPDF1->WriteHTML($stylesheet3,1);
+        $mPDF1->WriteHTML($stylesheet4,1);
+            
+            $mPDF1->WriteHTML(CHtml::image(Yii::app()->request->baseUrl.'/img/logo_seu.png',' ',array('width'=>'20%',
+                'class'=>'')));
+//            $mpdf->headerPageNoMarker = "xx"; //muestra la numeracion de la pagina
+//            $mPDF1->WriteHTML($this->render('pdf',array(),true));
+//
+//            $mPDF1->Output();
+//            exit();
+            
+       
+    
+//        $mpdf->Image('files/images/frontcover.png',0,0,210,297,'png','',true, false);
+//        $mPDF1->WriteHTML('<div class="well">  Section 1 text</div>');
+        $mPDF1->WriteHTML($this->render('pdf',array(),true));
+        $mPDF1->Output();
+        exit();
+		
+	}
+        
+        
         
 	/**
 	 * This is the action to handle external exceptions.
