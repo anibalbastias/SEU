@@ -10,6 +10,10 @@
 <?php
 $model= Turnos::model()->findall(array('order'=>'fecha_turno'));
 
+$nuevafecha2 = date ( 'l j/m' , strtotime("last tuesday"));
+$m2_f2 = explode(" ", $nuevafecha2);
+echo "<h4>Mar ".$m2_f2[1]."</h4>";
+
 if($model)
 {
     foreach($model as $m)
@@ -25,11 +29,15 @@ if($model)
 
         $m2_f = explode(" ", $nuevafecha);
         $m2_f1 = explode(" ", $nuevafecha1);
+        
+        
 
         if($m2_f1[0] == 'Tuesday')
         {
             $model1 = UsuariosHasTurnos::model()->findall('turnos_id_turno='.$m->id_turno);
             $model2 = UsuariosHasTurnos::model()->findall('turnos_id_turno='.$m->id_turno);
+            
+            
             
             if($model2)
             {
@@ -43,6 +51,8 @@ if($model)
             echo "<h5>Turno: ".$m2[0]."</h5>";
             echo "<h5>Hora: ".$m2[1]." <br> ".$m2_f[1]."</h5>";
             echo "<h5>Cupos: ".$m->cupos_turno."</h5>";
+
+            
 
             if($model1)
             {
