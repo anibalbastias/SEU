@@ -26,6 +26,9 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
+<?php header("Location: ".Yii:: app() ->baseUrl.'/usuarios/admin'); ?>
+
+
 <h1>Administrar Faltas</h1>
 
 <p>

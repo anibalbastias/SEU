@@ -7,7 +7,16 @@
 
 
 
-<div class="form ">
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span2">
+            
+        </div>
+        <div class="span8 centrar">
+            
+            <h1>Create Faltas</h1>
+            
+<div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'faltas-form',
@@ -35,6 +44,7 @@
                         <?php 
                         $this->widget('zii.widgets.jui.CJuiAutoComplete',array(
                             'name'=>'nom_usuario',
+                            
                             'sourceUrl'=>$this->createUrl('faltas/autocomplete'),
                             "attribute"=>"usuarios_id_usuario",
                                 "model"=>$model,
@@ -45,6 +55,7 @@
                             'htmlOptions'=>array(
                                 'style'=>'height:20px;',
                                 'placeholder'=>'Escriba nombre usuario'
+                                
                             ),
                         ));
                         ?>
@@ -93,3 +104,10 @@
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+</div>
+        <div class="span2">   
+        
+        </div>    
+        
+</div>
+</div>   

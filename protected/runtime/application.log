@@ -7689,3 +7689,230 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/images/body-pattern.jpg
 ---
+2013/12/25 20:43:55 [error] [exception.CException] exception 'CException' with message 'Property "Faltas.id_usuario" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('id_usuario')
+#1 C:\wamp\www\easy\SEU\protected\views\usuarios\faltas.php(32): CActiveRecord->__get('id_usuario')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('faltas', NULL, true)
+#6 C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php(230): CController->render('faltas')
+#7 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionFaltas()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('faltas')
+#17 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/faltas')
+#18 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/easy/SEU/usuarios/faltas?id=1
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2013/12/25 17:47:29 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('delete')
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('faltas/delete')
+#10 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/easy/SEU/faltas/delete
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/faltas?id=1
+---
+2013/12/25 20:52:58 [error] [php] Trying to get property of non-object (C:\wamp\www\easy\SEU\protected\controllers\FaltasController.php:118)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): FaltasController->runAction()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): FaltasController->filterAccessControl()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): FaltasController->runActionWithFilters()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): FaltasController->run()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/faltas/delete/6
+in C:\wamp\www\easy\SEU\protected\controllers\FaltasController.php (118)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/25 17:53:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\easy\SEU\protected\controllers\FaltasController.php:159
+Stack trace:
+#0 C:\wamp\www\easy\SEU\protected\controllers\FaltasController.php(113): FaltasController->loadModel('6')
+#1 [internal function]: FaltasController->actionDelete('6')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FaltasController), Array)
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FaltasController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('delete')
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('faltas/delete')
+#14 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easy/SEU/faltas/delete/6
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/faltas?id=4
+---
+2013/12/25 20:54:19 [error] [php] Trying to get property of non-object (C:\wamp\www\easy\SEU\protected\controllers\FaltasController.php:118)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): FaltasController->runAction()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): FaltasController->filterAccessControl()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): FaltasController->runActionWithFilters()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): FaltasController->run()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/faltas/delete/5
+in C:\wamp\www\easy\SEU\protected\controllers\FaltasController.php (118)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/25 17:54:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\easy\SEU\protected\controllers\FaltasController.php:159
+Stack trace:
+#0 C:\wamp\www\easy\SEU\protected\controllers\FaltasController.php(113): FaltasController->loadModel('5')
+#1 [internal function]: FaltasController->actionDelete('5')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FaltasController), Array)
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FaltasController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('delete')
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('faltas/delete')
+#14 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easy/SEU/faltas/delete/5
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/faltas?id=5
+---
+2013/12/25 17:54:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\wamp\www\easy\SEU\protected\controllers\FaltasController.php:159
+Stack trace:
+#0 C:\wamp\www\easy\SEU\protected\controllers\FaltasController.php(113): FaltasController->loadModel('5')
+#1 [internal function]: FaltasController->actionDelete('5')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(FaltasController), Array)
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FaltasController), Object(ReflectionMethod), Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('delete')
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('faltas/delete')
+#14 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easy/SEU/faltas/delete/5
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/faltas?id=5
+---
+2013/12/25 17:55:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('delete')
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('faltas/delete')
+#10 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/easy/SEU/faltas/delete
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/faltas?id=1
+---
+2013/12/25 21:04:20 [error] [php] Undefined variable: f (C:\wamp\www\easy\SEU\protected\views\faltas\_view.php:25)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\zii\widgets\CListView.php(260): FaltasController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\zii\widgets\CBaseListView.php(161): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\wamp\www\easy\SEU\yii\framework\zii\widgets\CBaseListView.php(144): preg_replace_callback()
+#4 C:\wamp\www\easy\SEU\yii\framework\zii\widgets\CBaseListView.php(129): CListView->renderContent()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(174): CListView->run()
+#6 C:\wamp\www\easy\SEU\protected\views\faltas\index.php(40): FaltasController->widget()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): FaltasController->renderInternal()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): FaltasController->renderFile()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): FaltasController->renderPartial()
+#11 C:\wamp\www\easy\SEU\protected\controllers\FaltasController.php(132): FaltasController->render()
+#12 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): FaltasController->actionIndex()
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): FaltasController->runAction()
+#15 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#17 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): FaltasController->filterAccessControl()
+#18 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#19 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): FaltasController->runActionWithFilters()
+#21 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): FaltasController->run()
+#22 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#23 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/faltas/
+in C:\wamp\www\easy\SEU\protected\views\faltas\_view.php (25)
+in C:\wamp\www\easy\SEU\protected\views\faltas\index.php (40)
+in C:\wamp\www\easy\SEU\protected\controllers\FaltasController.php (132)
+2013/12/25 21:18:19 [error] [exception.CException] exception 'CException' with message 'Property "CJuiAutoComplete.class" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWidgetFactory.php(162): CComponent->__set('class', 'span8')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(FaltasController), 'zii.widgets.jui...', Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.jui...', Array)
+#3 C:\wamp\www\easy\SEU\protected\views\faltas\_form.php(60): CBaseController->widget('zii.widgets.jui...', Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#7 C:\wamp\www\easy\SEU\protected\views\faltas\create.php(35): CController->renderPartial('_form', Array)
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 C:\wamp\www\easy\SEU\protected\controllers\FaltasController.php(79): CController->render('create', Array)
+#13 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): FaltasController->actionCreate()
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#21 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#23 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('faltas/create')
+#24 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/easy/SEU/faltas/create
+HTTP_REFERER=http://localhost/easy/SEU/faltas/
+---

@@ -26,10 +26,11 @@
 
 <div class="well">
     
-    <?php echo $f->desc_falta."<br>"; ?>
-    <?php echo $f->tipo_falta."<br>"; ?>
-    <?php echo $f->fecha_falta."<br>"; ?>
-    
+    <?php echo "<b>Nombre:</b> ".$f->desc_falta."<br>"; ?>
+    <?php echo "<b>Tipo: </b>".$f->tipo_falta."<br>"; ?>
+    <?php echo "<b>Fecha: </b>".$f->fecha_falta."<br>"; ?>
+    <div type="button" class="btn btn-danger btn-mini"><a  href="<?php echo Yii:: app() ->baseUrl.'/faltas/delete/'.$f->id_falta ?>"> Eliminar</a></div>
+        
 </div>  
 
 

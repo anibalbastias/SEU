@@ -21,6 +21,10 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('fecha_falta')); ?>:</b>
 	<?php echo CHtml::encode($data->fecha_falta); ?>
 	<br />
+        
+        <div type="button" class="btn btn-danger btn-mini"><a  href="<?php echo Yii:: app() ->baseUrl.'/faltas/delete/'.$data->id_falta ?>"> Eliminar</a></div>
+     
+        
     </div>
 
 </div>

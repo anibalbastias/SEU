@@ -22,7 +22,12 @@
           </tr>
         </thead>   
         <tbody>
-<?php $empaque = Usuarios::model()->findAll();
+<?php 
+
+    $criteria = new CDbCriteria();
+    $criteria->order = "nom_usuario ASC";
+    
+    $empaque = Usuarios::model()->findAll($criteria);
 
     $i = 1;
 

@@ -112,7 +112,7 @@
        
             <li>  
                 <div class="style_user"> 
-                    <h1> Sesión Administrador <?php
+                    <h2> Sesión Administrador <?php
             
                                  $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
                                  $nombre=$empaque->nom_usuario;
@@ -120,7 +120,7 @@
                                  echo $nombre." ".$apellido;
             
                         ?>
-                    </h1>   
+                    </h2>   
                 </div>
                     
             </li>
@@ -138,7 +138,7 @@
     <div class="row-fluid">
 <div class="span4 centrar">
 
-    <h2> Usuarios </h2>
+    <h3> Usuarios </h3>
     
     <div class="nav">
     <li><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/admin' ?>"><i class="icon-list-alt"></i> Listar usuarios</a></li>
@@ -150,7 +150,7 @@
 
 <div class="span4 centrar">
     
-    <h2>Planilla</h2>
+    <h3>Planilla</h3>
     <div class="nav">
     <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>"><i class="icon-list-alt"></i> Listar turnos</a></li>
     <li><a href="<?php echo Yii:: app() ->baseUrl.'/turnos/create' ?>#"><i class="icon-plus-sign"></i> Crear turnos</a></li>
@@ -163,7 +163,7 @@
         
 <div class="span4 centrar">
     
-    <h2>Faltas</h2>
+    <h3>Faltas</h3>
     <div class="nav ">
     <li><a href="<?php echo Yii:: app() ->baseUrl.'/faltas/' ?>"><i class="icon-list-alt"></i> Listar faltas</a></li>
     <li><a href="<?php echo Yii:: app() ->baseUrl.'/faltas/create' ?>"><i class="icon-plus-sign"></i> Crear faltas</a></li>
