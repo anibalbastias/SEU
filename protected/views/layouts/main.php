@@ -28,7 +28,13 @@
         
 </head>
 
-<body>
+<body <?php  if(Yii::app()->session['var'] == NULL){ ?>  
+    
+ 
+     
+     style="background-image:url('http://www.wallsave.com/wallpapers/2560x1600/casas/229961/casas-de-luz-fondo-borroso-x-hq-papel-pintado-229961.jpg'); background-size: 100%;"
+            
+            <?php } ?> >
 
 <div class="all" id="">
 

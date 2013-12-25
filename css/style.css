@@ -8,6 +8,10 @@
 
 body{
     
+/*    background-image: url('http://fondopantalla.com.es/file/421/1600x1200/crop/fondo-de-pantalla-degradado-azul.jpg'); 
+    background-size: 100%;*/
+
+    
     /*background-color: blue;*/
    
     /*opacity: 0.5;*/
@@ -15,8 +19,15 @@ body{
 
 .fondo{
     
-/*      background-image: url('../img/difuminada.JPG');
-    background-size: 100%;*/
+      background-image: url('../img/difuminada.JPG');
+    background-size: 100%;
+    
+    /*position: relative;*/
+    /*position:static;*/
+    /*top:0;*/
+
+
+
     
 }
 
@@ -124,13 +135,16 @@ body{
     /*position: absolute;*/
     
     margin-top: 50px;
+    /*opacity:0.8;*/
     
     
 }
 
 .inicio h1{
     
-    color:#57CCFE;
+    /*color:#57CCFE;*/
+    color:white;
+    text-shadow:2px 2px white;
     /*font-weight: bold;*/
     
 }
@@ -194,10 +208,10 @@ body{
 
 .form_ini{
     
-    /*background-color: white;*/
+    background-color: white;
     padding-top: 40px;
    padding-bottom: 40px;
-   /*opacity: 0.6;*/
+   /*opacity: 0.8;*/
     
 }
 

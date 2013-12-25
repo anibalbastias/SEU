@@ -34,7 +34,7 @@
 
 ?>
 
-  <div class="fondo">
+  <div class="">
   
 <div class=" inicio centrar">
 
@@ -49,7 +49,7 @@
     <div class="span4"> 
         
     </div>
-<div class="span4 well">
+<div class="span4 ">
 <div class="form form_ini">
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'login-form',
