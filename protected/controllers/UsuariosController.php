@@ -114,17 +114,18 @@ class UsuariosController extends Controller
                     $uploadedFile=CUploadedFile::getInstance($model,'id_usuario');
                     $model->pass_usuario=md5($model->pass_usuario);
 
-                    if($model->save())
-                        if($uploadedFile)
-                        {
-                            $uploadedFile->saveAs(Yii::app()->basePath.'/../img/users/'.$model->id_usuario.'.jpg');
-                            $model->img_usuario = "1";
-                        }
-                        else
-                        {
-                            $model->img_usuario = "0";
-                        }    
-                        $this->redirect(array('view','id'=>$model->id_usuario));
+                    if($uploadedFile)
+                    {
+                        $model->img_usuario = 1;
+                        $model->save();
+                        $uploadedFile->saveAs(Yii::app()->basePath.'/../img/users/'.$model->id_usuario.'.jpg');
+                    }
+                    else
+                    {
+                        $model->img_usuario = 0;
+                        $model->save();
+                    }    
+                    $this->redirect(array('view','id'=>$model->id_usuario));
 		}
 
 		$this->render('create',array(

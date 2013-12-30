@@ -724,3 +724,39 @@ Stack trace:
 REQUEST_URI=/img/users/7.jpg
 HTTP_REFERER=http://localhost/usuarios/update/7
 ---
+2013/12/30 09:47:31 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php (113)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)
+2013/12/30 09:50:55 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php (113)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)
+2013/12/30 14:50:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/9.jpg".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/9.jpg')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/users/9.jpg
+HTTP_REFERER=http://localhost/usuarios/9
+---
+2013/12/30 14:51:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/9.jpg".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/9.jpg')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/users/9.jpg
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/30 14:51:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/9.jpg".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/9.jpg')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/users/9.jpg
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2013/12/30 09:52:19 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php (113)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)
