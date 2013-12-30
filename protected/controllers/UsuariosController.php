@@ -170,15 +170,18 @@ class UsuariosController extends Controller
 			
                               $model->pass_usuario = $pass2;  
 //                            $model->attributes=$_POST['Usuarios'];
-                            if($model->save())
-                                if($uploadedFile)
-                                {
-                                    $uploadedFile->saveAs(Yii::app()->basePath.'/../img/users/'.$model->id_usuario.".jpg");
-                                }
-                                else
-                                {
-                                    // No hace nada =)
-                                }
+                            if($uploadedFile)
+							{
+								$model->img_usuario = 1;
+								$model->save();
+								$uploadedFile->saveAs(Yii::app()->basePath.'/../img/users/'.$model->id_usuario.'.jpg');
+							}
+							else
+							{
+								$model->img_usuario = 0;
+								$model->save();
+							}    
+							$this->redirect(array('view','id'=>$model->id_usuario));
                                 
 				$this->redirect(array('admin'));
                         }
