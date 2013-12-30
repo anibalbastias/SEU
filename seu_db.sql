@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 14-12-2013 a las 19:03:59
+-- Tiempo de generación: 30-12-2013 a las 08:00:17
 -- Versión del servidor: 5.5.16
 -- Versión de PHP: 5.3.9
 
@@ -4415,7 +4415,7 @@ CREATE TABLE IF NOT EXISTS `faltas` (
   `fecha_falta` datetime DEFAULT NULL,
   PRIMARY KEY (`id_falta`),
   KEY `faltas_FKIndex1` (`usuarios_id_usuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Volcado de datos para la tabla `faltas`
@@ -4424,7 +4424,9 @@ CREATE TABLE IF NOT EXISTS `faltas` (
 INSERT INTO `faltas` (`id_falta`, `usuarios_id_usuario`, `desc_falta`, `tipo_falta`, `fecha_falta`) VALUES
 (1, 1, 'Le agarro el trasero redondo y hermoso de la jefa', 'Falta', '2013-11-12 00:00:00'),
 (3, 1, 'Le toco un pezón a la hermana gemela de la jefa', 'Falta', '2013-11-11 20:00:00'),
-(4, 1, 'Una PLR al jefe', 'Falta', '2013-12-09 12:00:00');
+(4, 1, 'Una PLR al jefe', 'Falta', '2013-12-09 12:00:00'),
+(5, 5, 'Le toco una teta a una compañera', 'Falta', '2013-12-19 17:35:00'),
+(6, 2, 'Se cayo de poto', 'Sancion', '2013-12-21 20:32:00');
 
 -- --------------------------------------------------------
 
@@ -4565,19 +4567,24 @@ CREATE TABLE IF NOT EXISTS `turnos` (
   `fecha_turno` datetime DEFAULT NULL,
   `cupos_turno` int(10) unsigned DEFAULT NULL,
   PRIMARY KEY (`id_turno`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 --
 -- Volcado de datos para la tabla `turnos`
 --
 
 INSERT INTO `turnos` (`id_turno`, `fecha_turno`, `cupos_turno`) VALUES
-(1, '2013-12-11 20:00:00', 10),
-(2, '2013-12-11 15:00:00', 10),
+(1, '2013-12-24 20:00:00', 10),
+(2, '2013-12-25 15:00:00', 10),
 (3, '2013-12-29 09:34:00', 12),
 (4, '2013-12-12 17:27:00', 10),
 (5, '2013-12-12 06:00:00', 10),
-(6, '0000-00-00 00:00:00', 0);
+(6, '2013-12-26 14:00:00', 4),
+(7, '2013-12-27 16:00:00', 6),
+(8, '2013-12-22 14:05:00', 10),
+(9, '2013-12-21 14:05:00', 10),
+(10, '2013-12-23 10:20:00', 2),
+(11, '2013-12-23 15:44:00', 3);
 
 -- --------------------------------------------------------
 
@@ -4810,19 +4817,24 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `genero_usuario` tinyint(1) DEFAULT NULL,
   `hijos_usuario` int(10) unsigned DEFAULT NULL,
   `pass_usuario` varchar(100) DEFAULT NULL,
+  `img_usuario` tinyint(1) NOT NULL,
   PRIMARY KEY (`id_usuario`),
   KEY `usuarios_FKIndex1` (`comunas_id_comuna`),
   KEY `usuarios_FKIndex2` (`carreras_id_carrera`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id_usuario`, `carreras_id_carrera`, `comunas_id_comuna`, `nom_usuario`, `apel1_usuario`, `apel2_usuario`, `rut_usuario`, `dir_usuario`, `email_usuario`, `cel_usuario`, `estudios_usuario`, `fnac_usuario`, `genero_usuario`, `hijos_usuario`, `pass_usuario`) VALUES
-(1, 1, 2201, 'Anibal', 'Bastias', 'Soto', '16846047-3', 'Avenida Estacion 175', 'anibal.bastias@gmail.com', '81839102', 2, '1987-10-27', 0, 0, '202cb962ac59075b964b07152d234b70'),
-(2, 3985, 14101, 'Camila', 'Soto', 'Moreno', '111-1', 'Los Vilos 2323', 'asdasd@asdasd.cl', '3498329483', 2, '1996-12-17', 1, 0, '202cb962ac59075b964b07152d234b70'),
-(3, 1, 2201, NULL, NULL, NULL, 'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'fd9d3ba4587efeefe8057d1eaf7e287a');
+INSERT INTO `usuarios` (`id_usuario`, `carreras_id_carrera`, `comunas_id_comuna`, `nom_usuario`, `apel1_usuario`, `apel2_usuario`, `rut_usuario`, `dir_usuario`, `email_usuario`, `cel_usuario`, `estudios_usuario`, `fnac_usuario`, `genero_usuario`, `hijos_usuario`, `pass_usuario`, `img_usuario`) VALUES
+(1, 1, 2201, 'Anibal', 'Bastias', 'Soto', '16846047-3', 'Avenida Estacion 175', 'anibal.bastias@gmail.com', '81839102', 2, '1987-10-27', 0, 0, '202cb962ac59075b964b07152d234b70', 1),
+(2, 3985, 14101, 'Camila', 'Soto', 'Moreno', '111-1', 'Los Vilos 2323', 'asdasd@asdasd.cl', '3498329483', 2, '1996-12-17', 1, 0, '202cb962ac59075b964b07152d234b70', 1),
+(3, 1, 2201, NULL, NULL, NULL, 'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'fd9d3ba4587efeefe8057d1eaf7e287a', 1),
+(4, 1101, 6105, 'Donatello', 'Carreño', 'Diaz', '123', 'ASD', '', '', NULL, '0000-00-00', NULL, 0, '202cb962ac59075b964b07152d234b70', 1),
+(5, 1101, 5101, 'Alvaro', 'Rojas', 'Gonzalez', '12345', 'asdasd', 'asdasd', '23123', 2, '2013-12-04', 0, 0, '827ccb0eea8a706c4c34a16891f84e7b', 1),
+(6, 670, 5109, 'Olga', 'Orrego', 'Diaz', 'olga', 'asdasd', 'asdasd', '12312', NULL, '2013-12-01', 1, 0, '202cb962ac59075b964b07152d234b70', 1),
+(7, 670, 10205, 'Maria de los Angeles', 'Lazo', 'Silva', '321321', '', '', '', NULL, '2013-12-20', NULL, 0, '202cb962ac59075b964b07152d234b70', 0);
 
 -- --------------------------------------------------------
 
@@ -4839,7 +4851,7 @@ CREATE TABLE IF NOT EXISTS `usuarios_has_turnos` (
   UNIQUE KEY `id` (`id`),
   KEY `usuarios_has_turnos_FKIndex1` (`usuarios_id_usuario`),
   KEY `usuarios_has_turnos_FKIndex2` (`turnos_id_turno`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Volcado de datos para la tabla `usuarios_has_turnos`
@@ -4849,7 +4861,9 @@ INSERT INTO `usuarios_has_turnos` (`id`, `usuarios_id_usuario`, `turnos_id_turno
 (1, 1, 1, 'Aceptado'),
 (2, 1, 2, 'Suspendido'),
 (3, 2, 2, 'Suspendido'),
-(5, 1, 3, 'Suspendido');
+(5, 1, 3, 'Suspendido'),
+(6, 5, 10, 'Aceptado'),
+(7, 6, 10, 'Aceptado');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
