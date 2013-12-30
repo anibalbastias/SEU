@@ -44,6 +44,19 @@ $this->breadcrumbs=array(
             <div class="span6 well">    
     
                 <h3> Foto </h3>
+                <?php
+                
+                if($model->img_usuario == "1")
+                {
+                    echo CHtml::image(Yii::app()->request->baseUrl.'/img/users/'.$model->id_usuario.".jpg","id_usuario",array("width"=>176));
+                }
+                else
+                {
+                    echo CHtml::image(Yii::app()->request->baseUrl.'/img/users/gen.png',"id_usuario",array("width"=>176));
+                }
+                
+                ?>
+                
                 
             </div>
             

@@ -21,6 +21,7 @@ return array(
 		'application.models.*',
 		'application.components.*',
                 'application.extensions.*',
+                'application.extensions.yiifilemanager.*',
 	),
 
 	'modules'=>array(
@@ -42,13 +43,22 @@ return array(
 	// application components
 	'components'=>array(
             
+            /* File Manager */
+            
+            'fileman' => array(
+            'class'=>'application.extensions.yiifilemanager.YiiDiskFileManager',
+            'storage_path' => "/var/tmp/fileman",
+            ),
+            
+            /* PDF */
+            
             'ePdf' => array(
-        'class'         => 'ext.yii-pdf.EYiiPdf',
-        'params'        => array(
+            'class'         => 'ext.yii-pdf.EYiiPdf',
+            'params'        => array(
             'mpdf'     => array(
-                'librarySourcePath' => 'application.vendors.mpdf.*',
-                'constants'         => array(
-                    '_MPDF_TEMP_PATH' => Yii::getPathOfAlias('application.runtime'),
+            'librarySourcePath' => 'application.vendors.mpdf.*',
+            'constants'         => array(
+            '_MPDF_TEMP_PATH' => Yii::getPathOfAlias('application.runtime'),
                 ),
                 'class'=>'mpdf', // the literal class filename to be loaded from the vendors folder
                 /*'defaultParams'     => array( // More info: http://mpdf1.com/manual/index.php?tid=184

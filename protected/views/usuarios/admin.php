@@ -1,7 +1,7 @@
 <?php
 /* @var $this UsuariosController */
 /* @var $model Usuarios */
-
+                
 $this->breadcrumbs=array(
 	'Usuarios'=>array('index'),
 	'Administrar',
@@ -24,6 +24,7 @@ $('.search-form form').submit(function(){
 	return false;
 });
 ");
+
 ?>
 
 
@@ -35,7 +36,7 @@ $('.search-form form').submit(function(){
 
 <div class="" style="padding-top: 50px;">
 <?php 
-
+    
     $criteria = new CDbCriteria();
 //    $criteria->limit = 1;
     $criteria->order = "nom_usuario ASC";
@@ -51,7 +52,18 @@ $('.search-form form').submit(function(){
 <div class="row-fluid">
 <div class="span-12 well style_user ">
            
-     
+        <?php
+                if($emp->img_usuario == "1")
+                {
+                    echo CHtml::image(Yii::app()->request->baseUrl.'/img/users/'.$emp->id_usuario.".jpg","id_usuario",array("width"=>50));
+                }
+                else
+                {
+                    echo CHtml::image(Yii::app()->request->baseUrl.'/img/users/gen.png',"id_usuario",array("width"=>50));
+                }
+                
+                ?>
+    
 	<b><?php echo CHtml::encode($emp->nom_usuario." ".$emp->apel1_usuario." ".$emp->apel2_usuario); ?></b>
 	<!--<br />-->
         <div class="pull-right">

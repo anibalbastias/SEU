@@ -110,10 +110,21 @@ class UsuariosController extends Controller
 
 		if(isset($_POST['Usuarios']))
 		{
-			$model->attributes=$_POST['Usuarios'];
-                        $model->pass_usuario=md5($model->pass_usuario);
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_usuario));
+                    $model->attributes=$_POST['Usuarios'];
+                    $uploadedFile=CUploadedFile::getInstance($model,'id_usuario');
+                    $model->pass_usuario=md5($model->pass_usuario);
+
+                    if($model->save())
+                        if($uploadedFile)
+                        {
+                            $uploadedFile->saveAs(Yii::app()->basePath.'/../img/users/'.$model->id_usuario.'.jpg');
+                            $model->img_usuario = "1";
+                        }
+                        else
+                        {
+                            $model->img_usuario = "0";
+                        }    
+                        $this->redirect(array('view','id'=>$model->id_usuario));
 		}
 
 		$this->render('create',array(
@@ -151,6 +162,7 @@ class UsuariosController extends Controller
 		{
                     
                     $model->attributes=$_POST['Usuarios'];
+                    $uploadedFile=CUploadedFile::getInstance($model,'id_usuario');
                     $pass2 = $model->pass_usuario;
                     
                         if($pass == $pass2){
@@ -158,6 +170,15 @@ class UsuariosController extends Controller
                               $model->pass_usuario = $pass2;  
 //                            $model->attributes=$_POST['Usuarios'];
                             if($model->save())
+                                if($uploadedFile)
+                                {
+                                    $uploadedFile->saveAs(Yii::app()->basePath.'/../img/users/'.$model->id_usuario.".jpg");
+                                }
+                                else
+                                {
+                                    // No hace nada =)
+                                }
+                                
 				$this->redirect(array('admin'));
                         }
                     

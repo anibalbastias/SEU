@@ -19,6 +19,7 @@
  * @property integer $genero_usuario
  * @property string $hijos_usuario
  * @property string $pass_usuario
+ * @property bool $img_usuario
  */
 class Usuarios extends CActiveRecord
 {
@@ -56,6 +57,7 @@ class Usuarios extends CActiveRecord
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id_usuario, carreras_id_carrera, comunas_id_comuna, nom_usuario, apel1_usuario, apel2_usuario, rut_usuario, dir_usuario, email_usuario, cel_usuario, estudios_usuario, fnac_usuario, genero_usuario, hijos_usuario, pass_usuario', 'safe', 'on'=>'search'),
+                        array('id_usuario', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'), 
 		);
 	}
 
@@ -95,6 +97,7 @@ class Usuarios extends CActiveRecord
 			'genero_usuario' => 'Genero',
 			'hijos_usuario' => 'Cantidad Hijos',
 			'pass_usuario' => 'Contraseña',
+                        'img_usuario' => 'Foto Usuario',
 		);
 	}
 
@@ -124,6 +127,7 @@ class Usuarios extends CActiveRecord
 		$criteria->compare('genero_usuario',$this->genero_usuario);
 		$criteria->compare('hijos_usuario',$this->hijos_usuario,true);
 		$criteria->compare('pass_usuario',$this->pass_usuario,true);
+                $criteria->compare('img_usuario',$this->img_usuario,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
