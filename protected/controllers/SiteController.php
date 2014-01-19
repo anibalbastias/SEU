@@ -179,7 +179,27 @@ class SiteController extends Controller
             $this->render('repechaje');
                    
         }
+        public function actionEnviar()
+        {
+        
+            $this->render('enviar');
+                   
+        }
+        
+        public function actionEmpresa()
+        {
+        
+            $this->render('empresa');
+                   
+        }
        
+         public function actionFotos()
+        {
+        
+            $this->render('fotos');
+                   
+        }
+        
         public function actionAdmin()
         {
         

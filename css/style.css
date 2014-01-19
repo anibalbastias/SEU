@@ -54,6 +54,8 @@ body{
 
 .iz{text-align: left;}
 
+.ju{text-align: justify;}
+
 .altura1{margin-top:10px;}
 .altura2{margin-top:20px;}
 .altura3{margin-top:30px;}
@@ -209,9 +211,20 @@ body{
 
 .form_ini{
     
-    background-color: white;
+    background-color: #00b2d9;
     padding-top: 40px;
    padding-bottom: 40px;
+   color:white;
+   /*opacity: 0.8;*/
+    
+}
+
+.form_ini2{
+    
+    background-color: #f5f5f5;
+    padding-top: 10px;
+   padding-bottom: 40px;
+   color:#b5b5b5;
    /*opacity: 0.8;*/
     
 }

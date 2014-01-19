@@ -32,7 +32,7 @@
     
  
      
-     style="background-image:url('http://www.wallsave.com/wallpapers/2560x1600/casas/229961/casas-de-luz-fondo-borroso-x-hq-papel-pintado-229961.jpg'); background-size: 100%;"
+     style="background-color:white; background-size: 100%;"
             
             <?php } ?> >
 
