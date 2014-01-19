@@ -67,22 +67,48 @@ class SiteController extends Controller
         
             $model=Usuarios::model()->findByPk(Yii::app()->session['var']);
             
-             $pass = $model->pass_usuario;   
-            
-//              if(isset($_POST['Usuarios']))
+               
+                
+//                if(isset($_POST['Usuarios']))
 //		{
 //			$model->attributes=$_POST['Usuarios'];
 //                        $model->pass_usuario=md5($model->pass_usuario);
 //			if($model->save())
-//				$this->redirect(array('perfil'));
+//				$this->redirect(array($model->id_usuario));
 //		}
-             
-            if(isset($_POST['Usuarios']))
-		{
                 
+                
+                 $pass = $model->pass_usuario;
+                
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+             
+                 
+		if(isset($_POST['Usuarios']))
+		{
                     
-                        if(($pass == $model->pass_usuario) or ($pass == md5($model->pass_usuario))){
+                    $model->attributes=$_POST['Usuarios'];
+                    $uploadedFile=CUploadedFile::getInstance($model,'id_usuario');
+                    $pass2 = $model->pass_usuario;
+                    
+                        if($pass == $pass2){
 			
+                              $model->pass_usuario = $pass2;  
+//                            $model->attributes=$_POST['Usuarios'];
+                            if($uploadedFile)
+							{
+								$model->img_usuario = 1;
+								$model->save();
+								$uploadedFile->saveAs(Yii::app()->basePath.'/../img/users/'.$model->id_usuario.'.jpg');
+							}
+							else
+							{
+								$model->img_usuario = 0;
+								$model->save();
+							}    
+							$this->redirect(array('perfil'));
+                                
 				$this->redirect(array('perfil'));
                         }
                     
@@ -90,16 +116,36 @@ class SiteController extends Controller
 			else{ 
                             if($pass != md5($model->pass_usuario) ){
 			
-                        $model->attributes=$_POST['Usuarios'];
-                        $model->pass_usuario=md5($model->pass_usuario);
-                        
-			if($model->save())
-				$this->redirect(array('perfil'));
+//                        $model->attributes=$_POST['Usuarios'];
+//                            $model->pass_usuario = md5($model->pass_usuario);
+                               $model->pass_usuario = md5($pass2); 
+                                
+                            if($model->save())
+//				$this->redirect(array($model->id_usuario));
+                                $this->redirect(array('perfil'));
 		
-                        }}
+                        }
+                        else{
+                            
+                            if($pass == md5($pass2)){
+                                
+                                  $model->pass_usuario = $pass;
+//                                $model->attributes=$_POST['Usuarios'];
+                            if($model->save())
+				$this->redirect(array('perfil'));
+                                
+                            }
+                            
+                        }
+                        
+                        
+                            }
+                        
                     
                     
-                 }
+		}
+
+		
             
             $this->render('mperfil');
                    

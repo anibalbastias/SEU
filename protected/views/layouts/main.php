@@ -55,8 +55,10 @@
               if( $usuario->rut_usuario != 'admin') 
                 {    
                 
-                
-            
+                 
+                $fecha_dia = date("w");
+
+         
                 
             ?>
     
@@ -65,12 +67,26 @@
         
         <div class="container">
         
-        <ul class="altura3 nav nav-tabs">
+        <ul class="altura3 nav nav-tabs nav-pills">
             <li <?php if($pagina == "index") { ?>class="active" <?php } ?>><a href="<?php echo Yii:: app() ->baseUrl.'/site/index' ?>"> Inicio</a></li>
             <li <?php if($pagina == "perfil") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/perfil' ?>"> Perfil</a></li>
             <li <?php if($pagina == "turnosuser") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/turnosuser' ?>"> Mis Turnos</a></li>
-            <li <?php if($pagina == "peticion") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/peticion' ?>">Tomar Turnos </a></li>
-            <li <?php if($pagina == "repechaje") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/repechaje' ?>"> Turnos Repechaje</a></li>
+            <li <?php if($pagina == "peticion") { ?>class="active" <?php } ?> >
+                
+                    <?php if($fecha_dia == '3') { ?>
+                                <a href="<?php echo Yii:: app() ->baseUrl.'/site/peticion'; ?>">Tomar Turnos </a>
+                    <?php } ?>
+                                
+            </li>
+            <li 
+                <?php if($pagina == "repechaje") { ?>class="active" <?php } ?> >
+            
+                       <?php if($fecha_dia == '4') { ?>
+                
+                                <a href="<?php echo Yii:: app() ->baseUrl.'/site/repechaje' ?>"> Turnos Repechaje</a>
+                       <?php } ?>
+            
+            </li>
            
             <li>  
                 <div class="style_user"> 

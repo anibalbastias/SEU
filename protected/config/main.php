@@ -110,11 +110,21 @@ return array(
 		'db'=>array(
 //			'connectionString' => 'mysql:host=localhost;dbname=seu_db',
 //			
+//                        'connectionString' => 'mysql:host=localhost;dbname=seu_db',
+//			'emulatePrepare' => true,
+//			'username' => 'seu',
+//			'password' => 'seu2013',
+//			'charset' => 'utf8',
+                    
+                    
                         'connectionString' => 'mysql:host=localhost;dbname=seu_db',
 			'emulatePrepare' => true,
-			'username' => 'seu',
-			'password' => 'seu2013',
+			'username' => 'root',
+			'password' => '',
 			'charset' => 'utf8',
+                    
+                    
+                    
                    
 //					seu.cl
 //				   'connectionString' => 'mysql:host=localhost;dbname=seucl_db',

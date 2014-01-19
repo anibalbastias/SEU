@@ -10,7 +10,7 @@ $model=Usuarios::model()->findByPk(Yii::app()->session['var']);
 
 <div class="container">
     <div class="row">
-        <div class="span12 well">
+        <div class="span12">
             
             
 <div class="form">

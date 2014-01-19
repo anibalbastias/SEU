@@ -14,7 +14,7 @@
 
    
   
-    <div class="style_user well">
+    <div class="style_user">
     <h3>perfil    
    <?php 
                         $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
@@ -32,7 +32,8 @@
 
 
         <b><?php echo CHtml::encode($empaque->getAttributeLabel('rut')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($empaque->rut_usuario), array('view', 'id'=>$empaque->id_usuario)); ?>
+	<?php echo $empaque->rut_usuario; ?>
+	
 	<br />
         
         <b><?php echo CHtml::encode($empaque->getAttributeLabel('nom_usuario')); ?>:</b>
@@ -43,9 +44,9 @@
 	<?php echo $empaque->carreras->nom_carrera; ?>
 	<br />
         
-        <b><?php echo CHtml::encode($empaque->getAttributeLabel('universidad')); ?>:</b>
-	<?php echo $empaque->carreras->universidades->nom_univ; ?>
-	<br />
+        <!--<b><?php // echo CHtml::encode($empaque->getAttributeLabel('universidad')); ?>:</b>-->
+	<?php // echo $empaque->carreras->universidades->nom_univ; ?>
+	<!--<br />-->
 
         <b><?php echo CHtml::encode($empaque->getAttributeLabel('comuna')); ?>:</b>
 	<?php echo $empaque->comunas->nom_comuna; ?>
@@ -63,8 +64,9 @@
 
         <br><br><br>
         
-        <a href="<?php echo Yii:: app() ->baseUrl.'/site/mperfil' ?>"><h3>Modificar datos</h3></a>
-
+        <div type="button" class="btn btn-primary">
+                <a href="<?php echo Yii:: app() ->baseUrl.'/site/mperfil' ?>">Modificar datos</a>
+        </div>
         
         </div>
         <!--fuera de sesion-->

@@ -760,3 +760,447 @@ HTTP_REFERER=http://localhost/usuarios/admin
 2013/12/30 09:52:19 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
 in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\UsuariosController.php (113)
 in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)
+2013/12/31 01:41:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'seu'@'localhost' (using password: YES)' in C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\easy\SEU\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(624): CApplication->getDb()
+#5 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(2311): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Usuarios))
+#7 C:\wamp\www\easy\SEU\protected\models\Usuarios.php(33): CActiveRecord::model('Usuarios')
+#8 C:\wamp\www\easy\SEU\protected\components\UserIdentity.php(24): Usuarios::model()
+#9 C:\wamp\www\easy\SEU\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#10 C:\wamp\www\easy\SEU\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#12 C:\wamp\www\easy\SEU\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#13 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(45): CModel->validate()
+#14 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#15 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('')
+#19 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#20 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/easy/SEU/
+HTTP_REFERER=http://localhost/easy/SEU/
+---
+2013/12/31 01:48:51 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.img_usuario" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('img_usuario')
+#1 C:\wamp\www\easy\SEU\protected\views\usuarios\admin.php(56): CActiveRecord->__get('img_usuario')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#6 C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php(275): CController->render('admin', Array)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionAdmin()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#17 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/admin')
+#18 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/easy/SEU/usuarios/admin
+HTTP_REFERER=http://localhost/easy/SEU/site/admin
+---
+2013/12/30 22:53:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2013/12/30 22:53:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/9.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/9.jpg')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/9.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2013/12/30 22:53:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/9.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/9.jpg')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/9.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/update/9
+---
+2013/12/31 01:53:30 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (165)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/30 22:53:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2013/12/30 23:07:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2013/12/31 02:08:11 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (165)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/30 23:08:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2013/12/30 23:11:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/body-pattern.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/body-pat...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/images/body-pattern.jpg
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/30 23:11:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.woff".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.woff
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/30 23:11:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.ttf".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.ttf
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/30 23:11:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.svg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.svg
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/30 23:49:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/body-pattern.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/body-pat...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/images/body-pattern.jpg
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/30 23:49:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.woff".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.woff
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/30 23:49:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.ttf".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.ttf
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/30 23:49:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.svg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.svg
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/30 00:23:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/body-pattern.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/body-pat...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/images/body-pattern.jpg
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/30 00:23:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.woff".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.woff
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/30 00:23:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.ttf".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.ttf
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/30 00:23:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.svg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.svg
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/30 00:23:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/body-pattern.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/body-pat...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/images/body-pattern.jpg
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/30 00:23:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.woff".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.woff
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/30 00:23:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.ttf".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.ttf
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/30 00:23:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.svg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.svg
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/31 00:41:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/body-pattern.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/body-pat...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/images/body-pattern.jpg
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/31 00:41:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.woff".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.woff
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/31 00:41:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.ttf".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.ttf
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/31 00:41:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.svg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.svg
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2013/12/31 03:43:02 [error] [php] Use of undefined constant wday - assumed 'wday' (C:\wamp\www\easy\SEU\protected\views\site\peticion.php:10)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(126): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionPeticion()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/peticion
+in C:\wamp\www\easy\SEU\protected\views\site\peticion.php (10)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (126)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/31 03:44:05 [error] [php] print_r() expects parameter 2 to be boolean, array given (C:\wamp\www\easy\SEU\protected\views\site\peticion.php:10)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#3 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(126): SiteController->render()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionPeticion()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/peticion
+in C:\wamp\www\easy\SEU\protected\views\site\peticion.php (10)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (126)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/31 03:46:12 [error] [php] Use of undefined constant wday - assumed 'wday' (C:\wamp\www\easy\SEU\protected\views\site\peticion.php:10)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(126): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionPeticion()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/peticion
+in C:\wamp\www\easy\SEU\protected\views\site\peticion.php (10)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (126)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/31 03:47:42 [error] [php] Array to string conversion (C:\wamp\www\easy\SEU\protected\views\site\peticion.php:10)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(126): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionPeticion()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/peticion
+in C:\wamp\www\easy\SEU\protected\views\site\peticion.php (10)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (126)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/31 03:47:57 [error] [php] Use of undefined constant wday - assumed 'wday' (C:\wamp\www\easy\SEU\protected\views\site\peticion.php:10)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(126): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionPeticion()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/peticion
+in C:\wamp\www\easy\SEU\protected\views\site\peticion.php (10)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (126)
+in C:\wamp\www\easy\SEU\index.php (13)
+2013/12/31 15:00:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/01 18:11:59 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (91)
+in C:\wamp\www\easy\SEU\index.php (13)
+2014/01/01 15:12:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('view')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/view')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/9
+HTTP_REFERER=http://localhost/easy/SEU/site/mperfil
+---
+2014/01/01 18:13:16 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (91)
+in C:\wamp\www\easy\SEU\index.php (13)
+2014/01/01 18:18:26 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (91)
+in C:\wamp\www\easy\SEU\index.php (13)
+2014/01/16 21:57:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/17 01:48:08 [error] [php] Array to string conversion (C:\wamp\www\easy\SEU\protected\views\site\perfil.php:35)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(61): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionPerfil()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/perfil
+in C:\wamp\www\easy\SEU\protected\views\site\perfil.php (35)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (61)
+in C:\wamp\www\easy\SEU\index.php (13)
+2014/01/17 02:07:35 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (91)
+in C:\wamp\www\easy\SEU\index.php (13)
+2014/01/17 02:07:52 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (91)
+in C:\wamp\www\easy\SEU\index.php (13)
+2014/01/17 02:19:01 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (91)
+in C:\wamp\www\easy\SEU\index.php (13)
