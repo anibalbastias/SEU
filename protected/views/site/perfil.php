@@ -3,34 +3,42 @@
     $controlador = $this->getId();
     $pagina = $this->getAction()->getId(); 
  
-    
-    
     if(Yii::app()->session['var'] != NULL)
-            {
-
-     
-?>
-
-
-   
-  
+    {
+ 
+?>  
     <div class="style_user">
-    <h3>perfil    
+    <h3>Perfil    
    <?php 
-                        $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
-                       $nombre=$empaque->nom_usuario;
-                       $apellido=$empaque->apel1_usuario;
+            $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
+           $nombre=$empaque->nom_usuario;
+           $apellido=$empaque->apel1_usuario;
     
-    echo $nombre." ".$apellido;  
+            echo $nombre." ".$apellido;  
         
      
     ?>
     </h3>
+        
+       <div class="span6">    
     
-
-
-
-
+                
+                <?php
+                
+                if($empaque->img_usuario == "1")
+                {
+                    echo CHtml::image(Yii::app()->request->baseUrl.'/img/users/'.$empaque->id_usuario.".jpg","id_usuario",array("width"=>176));
+                }
+                else
+                {
+                    echo CHtml::image(Yii::app()->request->baseUrl.'/img/users/gen.png',"id_usuario",array("width"=>176));
+                }
+                
+                ?>
+                
+                
+            </div>
+        
         <b><?php echo CHtml::encode($empaque->getAttributeLabel('rut')); ?>:</b>
 	<?php echo $empaque->rut_usuario; ?>
 	

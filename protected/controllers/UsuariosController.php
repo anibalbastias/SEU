@@ -140,88 +140,61 @@ class UsuariosController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
-		$model=$this->loadModel($id);
-                
-                
-//                if(isset($_POST['Usuarios']))
-//		{
-//			$model->attributes=$_POST['Usuarios'];
-//                        $model->pass_usuario=md5($model->pass_usuario);
-//			if($model->save())
-//				$this->redirect(array($model->id_usuario));
-//		}
-                
-                
-                 $pass = $model->pass_usuario;
-                
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-             
+            $model=$this->loadModel($id);
+            $pass = $model->pass_usuario;
                  
-		if(isset($_POST['Usuarios']))
-		{
+            if(isset($_POST['Usuarios']))
+            {   
+                $model->attributes=$_POST['Usuarios'];
+                $uploadedFile=CUploadedFile::getInstance($model,'id_usuario');
+                $pass2 = $model->pass_usuario;
                     
-                    $model->attributes=$_POST['Usuarios'];
-                    $uploadedFile=CUploadedFile::getInstance($model,'id_usuario');
-                    $pass2 = $model->pass_usuario;
-                    
-                        if($pass == $pass2){
-			
-                              $model->pass_usuario = $pass2;  
-//                            $model->attributes=$_POST['Usuarios'];
-                            if($uploadedFile)
-							{
-								$model->img_usuario = 1;
-								$model->save();
-								$uploadedFile->saveAs(Yii::app()->basePath.'/../img/users/'.$model->id_usuario.'.jpg');
-							}
-							else
-							{
-								$model->img_usuario = 0;
-								$model->save();
-							}    
-							$this->redirect(array('view','id'=>$model->id_usuario));
-                                
-				$this->redirect(array('admin'));
-                        }
-                    
-                    
-			else{ 
-                            if($pass != md5($model->pass_usuario) ){
-			
-//                        $model->attributes=$_POST['Usuarios'];
-//                            $model->pass_usuario = md5($model->pass_usuario);
-                               $model->pass_usuario = md5($pass2); 
-                                
-                            if($model->save())
-//				$this->redirect(array($model->id_usuario));
-                                $this->redirect(array('admin'));
-		
-                        }
-                        else{
-                            
-                            if($pass == md5($pass2)){
-                                
-                                  $model->pass_usuario = $pass;
-//                                $model->attributes=$_POST['Usuarios'];
-                            if($model->save())
-				$this->redirect(array('admin'));
-                                
-                            }
-                            
-                        }
-                        
-                        
-                            }
-                        
-                    
-                    
-		}
+                if($pass == $pass2)
+                {	
+                    $model->pass_usuario = $pass2;  
 
-		$this->render('update',array(
-			'model'=>$model,
-		));
+                    if($uploadedFile)
+                    {
+                        $model->img_usuario = 1;
+                        $model->save();
+                        $uploadedFile->saveAs(Yii::app()->basePath.'/../img/users/'.$model->id_usuario.'.jpg');
+                    }
+                    else
+                    {
+                            $model->img_usuario = 0;
+                            $model->save();
+                    }    
+                    $this->redirect(array('view','id'=>$model->id_usuario));
+                                
+                    $this->redirect(array('admin'));
+                }
+                    
+                else
+                { 
+                    if($pass != md5($model->pass_usuario) )
+                    {
+                        $model->pass_usuario = md5($pass2); 
+
+                        if($model->save())
+                            $this->redirect(array('admin'));
+
+                    }
+                    else
+                    {
+                        if($pass == md5($pass2)){                                
+                              $model->pass_usuario = $pass;
+
+                        if($model->save())
+                            $this->redirect(array('admin'));
+
+                        }       
+                    }         
+                }        
+            }
+
+            $this->render('update',array(
+                    'model'=>$model,
+            ));
 	}
 
 	/**

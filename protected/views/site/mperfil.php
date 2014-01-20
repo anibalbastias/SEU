@@ -18,14 +18,32 @@ $model=Usuarios::model()->findByPk(Yii::app()->session['var']);
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'usuarios-form',
 	'enableAjaxValidation'=>false,
+        'htmlOptions' => array(
+            'enctype' => 'multipart/form-data',
+        ),
 )); ?>
-    <h2>Modificar Datos perfil</h2>
+    <h2>Modificar Datos Perfil</h2>
 	<p class="note">Campos con <span class="required">*</span> son obligatorios.</p>
 
     
         
 	<?php echo $form->errorSummary($model); ?>
+        
+        <div class="span3">
+                       <?php echo $form->labelEx($model,'foto_usuario'); ?>
+                       <?php echo CHtml::activeFileField($model, 'id_usuario'); ?>
+                       <?php echo $form->error($model,'id_usuario'); ?>
 
+               <?php if($model->isNewRecord!='1'){ ?>
+
+               <?php 
+                   if($model->img_usuario == "1")
+                       echo CHtml::image(Yii::app()->request->baseUrl.'/img/users/'.$model->id_usuario.".jpg","id_usuario",array("width"=>200)); 
+                   else
+                       echo CHtml::image(Yii::app()->request->baseUrl.'/img/users/gen.png',"id_usuario",array("width"=>200)); 
+               }
+               ?>
+        </div>
     
         <div class="span3">
 		<?php echo $form->labelEx($model,'rut_usuario'); ?>
