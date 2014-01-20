@@ -173,6 +173,14 @@ class SiteController extends Controller
                    
         }
         
+        public function actionQuienes()
+        {
+        
+            $this->render('quienes');
+                   
+        }
+        
+        
         public function actionRepechaje()
         {
         
