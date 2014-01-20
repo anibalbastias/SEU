@@ -112,7 +112,7 @@
 
           <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/' ?>">Inicio</a></li>
           <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/empresa' ?>">Empresa</a></li>
-          <li><a href="<?php echo Yii:: app() ->baseUrl.'#' ?>">Quienés Somos</a></li>
+          <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/quienes' ?>">Quienés Somos</a></li>
 
           <li><a href="<?php echo Yii:: app() ->baseUrl.'#' ?>">Eventos</a></li>
           <li><a href="<?php echo Yii:: app() ->baseUrl.'#' ?>">Fotos</a></li>
@@ -123,7 +123,7 @@
         <ul class="nav nav-tabs nav-stacked">
     
               <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/' ?>">Entrar</a></li>
-              <li><a href="<?php echo Yii:: app() ->baseUrl.'#' ?>">Postulacion</a></li>
+              <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/contact/' ?>">Postulacion</a></li>
           
         </ul>
       
