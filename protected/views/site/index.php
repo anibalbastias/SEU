@@ -3,14 +3,21 @@
 
         if(Yii::app()->session['var'] != NULL)
             {
+            
+         $usuario=Usuarios::model()->findByPk(Yii::app()->session['var']);   
 ?>
 
-<div class="well">
-    <h1>Página de inicio</h1>
-</div>
+        <!-- #################### cuerpo  #######################--> 
 
 
+        <h3><u> Bienvenido <?php echo $usuario->nom_usuario;  ?></u> </h3>    
 
+        <p><u>Turnos de la semana</u></p>
+        <p><u>Últimas faltas </u></p>
+        <p><u>Turnos para tomar</u></p>
+
+        
+        <!-- #################### fin cuerpo ################### -->
     <?php
 
         $admin=Usuarios::model()->findByPk(Yii::app()->session['var']);

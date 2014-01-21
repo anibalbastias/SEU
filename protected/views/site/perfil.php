@@ -19,8 +19,9 @@
      
     ?>
     </h3>
-        
-       <div class="span6">    
+    
+    <div class="row-fluid">    
+       <div class="span3">    
     
                 
                 <?php
@@ -39,6 +40,7 @@
                 
             </div>
         
+        <div class="span9">
         <b><?php echo CHtml::encode($empaque->getAttributeLabel('rut')); ?>:</b>
 	<?php echo $empaque->rut_usuario; ?>
 	
@@ -68,15 +70,41 @@
 	<?php echo CHtml::encode($empaque->comunas->provincias->regiones->nom_region); ?>
 	<br />
         
+        <b><?php echo CHtml::encode($empaque->getAttributeLabel('celular')); ?>:</b>
+	<?php echo $empaque->cel_usuario; ?>
+	<br />
         
+        <b><?php echo CHtml::encode($empaque->getAttributeLabel('email')); ?>:</b>
+	<?php echo $empaque->email_usuario; ?>
+	<br />
+        
+        <b><?php echo CHtml::encode($empaque->getAttributeLabel('estudios')); ?>:</b>
+	<?php if($empaque->estudios_usuario == 1){
+        
+                    echo "Si";
+            
+               }
+               else{
+                   echo "No";
+               }
+               ;
+             ?>
+	<br />
 
-        <br><br><br>
+        <b><?php echo CHtml::encode($empaque->getAttributeLabel('hijos')); ?>:</b>
+	<?php echo $empaque->hijos_usuario; ?>
+	<br />
+        
+        <br><br>
         
         <div type="button" class="btn btn-primary">
                 <a href="<?php echo Yii:: app() ->baseUrl.'/site/mperfil' ?>">Modificar datos</a>
         </div>
         
         </div>
+    </div>  
+        
+    </div>     
         <!--fuera de sesion-->
 <?php
 
