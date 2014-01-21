@@ -12,9 +12,48 @@
 
         <h3><u> Bienvenido <?php echo $usuario->nom_usuario;  ?></u> </h3>    
 
-        <p><u>Turnos de la semana</u></p>
-        <p><u>Últimas faltas </u></p>
-        <p><u>Turnos para tomar</u></p>
+        <!-- #####################  toma de turnos  ###################--> 
+        <div class="well">
+            <h3>Toma de turnos: Jueves - 23:00 hrs</h3>
+        </div>    
+            
+        <h3><u>Turnos de la semana</u></h3>
+
+         
+            
+       <!-- #############   faltas que tiene el usuario  ################-->
+            
+        <h3><u>Últimas faltas </u></h3>
+
+            <?php
+                
+             
+                $criteria = new CDbCriteria; 
+        
+                $falta = Faltas::model()->findAll(array("condition"=>"usuarios_id_usuario = $usuario->id_usuario","order"=>"fecha_falta DESC",));
+        
+         
+                
+                foreach ($falta as $f){
+        
+      
+                ?>
+
+                    <div class="well">
+    
+                         <?php echo "<b>Nombre:</b> ".$f->desc_falta."<br>"; ?>
+                         <?php echo "<b>Tipo: </b>".$f->tipo_falta."<br>"; ?>
+                         <?php echo "<b>Fecha: </b>".$f->fecha_falta."<br>"; ?>
+                         
+                    </div>  
+
+
+                <?php } ?>
+
+
+
+   <!-- ##############  turnos para tomar ##################### -->
+        <h3><u>Turnos para tomar</u></h3>
 
         
         <!-- #################### fin cuerpo ################### -->
