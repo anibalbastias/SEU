@@ -7,7 +7,7 @@
     <div class="container-fluid">
     <div class="row-fluid">
         <div class="span12">
-<h1><b>Ingreso al Sistema</b></h1>
+
 <br><br>
         </div>
 <div class="row-fluid">
@@ -22,6 +22,11 @@
     
 <div class="span5" style="padding-bottom: 50px;">
 
+    <h3><b><u>Algo sobre nosotros</u></b></h3>
+    
+    <br><br>
+
+    <div class="visita">
      <p class="ju">
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
     Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
@@ -44,7 +49,7 @@
     <img width="100%" class="img-rounded" src="<?php echo Yii:: app() ->baseUrl.'/img/uni2.png' ?>">
     
     
-  
+    </div>
     
 </div>
     
@@ -69,7 +74,6 @@
           <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/empresa' ?>">Empresa</a></li>
           <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/quienes' ?>">Quienés Somos</a></li>
 
-          <li><a href="<?php echo Yii:: app() ->baseUrl.'#' ?>">Eventos</a></li>
           <li><a href="<?php echo Yii:: app() ->baseUrl.'#' ?>">Fotos</a></li>
           
         </ul>

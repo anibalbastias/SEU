@@ -9,7 +9,7 @@
     <div class="container-fluid">
     <div class="row-fluid">
         <div class="span12">
-<h1><b>Ingreso al Sistema</b></h1>
+<h1><b>Postulación</b></h1>
 <br><br>
         </div>
 <div class="row-fluid">
@@ -94,9 +94,8 @@
 
           <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/' ?>">Inicio</a></li>
           <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/empresa' ?>">Empresa</a></li>
-          <li><a href="<?php echo Yii:: app() ->baseUrl.'#' ?>">Quienés Somos</a></li>
+          <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/quienes' ?>">Quienés Somos</a></li>
 
-          <li><a href="<?php echo Yii:: app() ->baseUrl.'#' ?>">Eventos</a></li>
           <li><a href="<?php echo Yii:: app() ->baseUrl.'#' ?>">Fotos</a></li>
           
         </ul>

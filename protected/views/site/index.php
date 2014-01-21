@@ -82,15 +82,15 @@
 
   <div class="">
   
-<div class=" inicio centrar">
+<div class="inicio centrar">
 
     <div class="container-fluid">
     <div class="row-fluid">
-        <div class="span12">
+        <div class="span12" >
 <h1><b>Ingreso al Sistema</b></h1>
 <br><br>
         </div>
-<div class="row-fluid">
+<div class="row-fluid" >
     
     <div class="span2"> 
         
@@ -160,8 +160,7 @@
           <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/empresa' ?>">Empresa</a></li>
           <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/quienes' ?>">Quienés Somos</a></li>
 
-          <li><a href="<?php echo Yii:: app() ->baseUrl.'#' ?>">Eventos</a></li>
-          <li><a href="<?php echo Yii:: app() ->baseUrl.'#' ?>">Fotos</a></li>
+          <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/fotos' ?>">Fotos</a></li>
           
         </ul>
       
