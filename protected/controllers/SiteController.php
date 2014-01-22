@@ -85,7 +85,6 @@ class SiteController extends Controller
                     }
                     else
                     {
-                        $model->img_usuario = 0;
                         $model->save();
                     }    
                     $this->redirect(array('perfil'));

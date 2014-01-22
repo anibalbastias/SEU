@@ -25,7 +25,9 @@
   
   
 
-<h1>Toma de turnos</h1>
+<h1>Toma de Turnos</h1>
+
+
 
 
 
