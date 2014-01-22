@@ -25,12 +25,7 @@
   
   
 
-<<<<<<< HEAD
-<h1>Toma de Turnos</h1>
 
-
-
-=======
 <h3>Toma de turnos</h3>
 
 
@@ -46,9 +41,6 @@
     <div class="span-2 planilla centrar well_semana"><?php echo $this->renderPartial('_col7'); ?></div>
     </div>    
 </div> 
->>>>>>> c297989b9a833ea456bf0ba6d2e0a034bea8b470
-
-
 <!--<div id="counter"></div>-->
 
 
