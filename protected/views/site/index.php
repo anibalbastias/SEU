@@ -12,9 +12,61 @@
 
         <h3><u> Bienvenido <?php echo $usuario->nom_usuario;  ?></u> </h3>    
 
-        <p><u>Turnos de la semana</u></p>
-        <p><u>Últimas faltas </u></p>
-        <p><u>Turnos para tomar</u></p>
+        <!-- #####################  toma de turnos  ###################--> 
+        <div class="well">
+            <h3>Toma de turnos: Jueves - 23:00 hrs</h3>
+            
+          <!-- ############## reloj ################3-->
+        
+          <?php // echo date('w'); ?>
+            
+<!--          <script>
+            
+                var V = "<?php echo date('w'); ?>";
+            
+                alert(V);
+          </script>  -->
+          
+          <!-- ############# fin del reloj ############### -->
+        </div>    
+            
+        <h3><u>Turnos de la semana</u></h3>
+
+         
+            
+       <!-- #############   faltas que tiene el usuario  ################-->
+            
+        <h3><u>Últimas faltas </u></h3>
+
+            <?php
+                
+             
+                $criteria = new CDbCriteria; 
+        
+                $falta = Faltas::model()->findAll(array("condition"=>"usuarios_id_usuario = $usuario->id_usuario","order"=>"fecha_falta DESC",));
+        
+         
+                
+                foreach ($falta as $f){
+        
+      
+                ?>
+
+                    <div class="well">
+    
+                         <?php echo "<b>Nombre:</b> ".$f->desc_falta."<br>"; ?>
+                         <?php echo "<b>Tipo: </b>".$f->tipo_falta."<br>"; ?>
+                         <?php echo "<b>Fecha: </b>".$f->fecha_falta."<br>"; ?>
+                         
+                    </div>  
+
+
+                <?php } ?>
+
+
+
+   <!-- ##############  turnos para tomar ##################### -->
+        <h3><u>Turnos para tomar</u></h3>
 
         
         <!-- #################### fin cuerpo ################### -->
@@ -43,15 +95,15 @@
 
   <div class="">
   
-<div class=" inicio centrar">
+<div class="inicio centrar">
 
     <div class="container-fluid">
     <div class="row-fluid">
-        <div class="span12">
+        <div class="span12" >
 <h1><b>Ingreso al Sistema</b></h1>
 <br><br>
         </div>
-<div class="row-fluid">
+<div class="row-fluid" >
     
     <div class="span2"> 
         
@@ -121,8 +173,7 @@
           <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/empresa' ?>">Empresa</a></li>
           <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/quienes' ?>">Quienés Somos</a></li>
 
-          <li><a href="<?php echo Yii:: app() ->baseUrl.'#' ?>">Eventos</a></li>
-          <li><a href="<?php echo Yii:: app() ->baseUrl.'#' ?>">Fotos</a></li>
+          <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/fotos' ?>">Fotos</a></li>
           
         </ul>
       

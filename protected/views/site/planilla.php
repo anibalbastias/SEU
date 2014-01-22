@@ -40,8 +40,11 @@
     </div>    
 </div>    
 
+<<<<<<< HEAD
 <!-- Fix div -->
 </div>
+=======
+>>>>>>> c297989b9a833ea456bf0ba6d2e0a034bea8b470
 
     
     

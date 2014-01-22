@@ -101,6 +101,11 @@
                 <a href="<?php echo Yii:: app() ->baseUrl.'/site/mperfil' ?>">Modificar datos</a>
         </div>
         
+        <div type="button" class="btn btn-success">
+                <a href="<?php echo Yii:: app() ->baseUrl.'/#' ?>">Descargar Credencial</a>
+        </div>
+        
+        
         </div>
     </div>  
         

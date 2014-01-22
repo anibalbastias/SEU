@@ -139,7 +139,6 @@ body{
     margin-top: 50px;
     /*opacity:0.8;*/
     
-    
 }
 
 .inicio h1{
@@ -211,22 +210,32 @@ body{
 
 .form_ini{
     
-    background-color: #00b2d9;
+    /*background-color: #00b2d9;*/
+   background-color: white;
+   color:#9f9f9f;
     padding-top: 40px;
    padding-bottom: 40px;
-   color:white;
+   /*color:white;*/
    /*opacity: 0.8;*/
-    
+ 
+   
+    border-style: solid;
+    border-width: 1px;
+   /*border-radius:10%;*/
 }
 
 .form_ini2{
     
-    background-color: #f5f5f5;
+    /*background-color: #f5f5f5;*/
     padding-top: 10px;
    padding-bottom: 40px;
    color:#b5b5b5;
+   background-color: white;
+   
+    border-style: solid;
+    border-width: 1px;
    /*opacity: 0.8;*/
-    
+    /*border-radius:10%;*/
 }
 
 .cuadro_turno{
@@ -242,5 +251,16 @@ body{
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    
+}
+
+
+
+.visita{
+    
+    border-width: 1px;
+    border-right-style: dotted;
+    /*border-radius:5%;*/
+    padding-right: 20px;
     
 }

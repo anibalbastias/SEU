@@ -26,6 +26,7 @@
         <link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/img/favicon.ico" />
      
         
+        
 </head>
 
 <body <?php  if(Yii::app()->session['var'] == NULL){ ?>  
@@ -33,7 +34,7 @@
  
      
      style="background-color:white; background-size: 100%;"
-            
+          
             <?php } ?> >
 
 <div class="all" id="">
