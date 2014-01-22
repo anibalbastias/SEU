@@ -15,6 +15,19 @@
         <!-- #####################  toma de turnos  ###################--> 
         <div class="well">
             <h3>Toma de turnos: Jueves - 23:00 hrs</h3>
+            
+          <!-- ############## reloj ################3-->
+        
+          <?php // echo date('w'); ?>
+            
+<!--          <script>
+            
+                var V = "<?php echo date('w'); ?>";
+            
+                alert(V);
+          </script>  -->
+          
+          <!-- ############# fin del reloj ############### -->
         </div>    
             
         <h3><u>Turnos de la semana</u></h3>

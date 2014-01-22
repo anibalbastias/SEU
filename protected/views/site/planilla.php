@@ -40,8 +40,7 @@
     </div>    
 </div>    
 
-<!-- Fix div -->
-</div>
+
     
     
 <?php

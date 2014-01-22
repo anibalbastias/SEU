@@ -21,7 +21,8 @@ $(document).ready(function(){
             min = 1;
             hr = 2;
             
-            dia = 3;
+//            dia = 3;
+
             
             
 //            if(diasSemana[f.getDay()] == 'Lunes'){ dia = 3; }

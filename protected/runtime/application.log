@@ -1690,3 +1690,66 @@ REQUEST_URI=/easy/SEU/index.php
 in C:\wamp\www\easy\SEU\protected\views\site\index.php (35)
 in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (53)
 in C:\wamp\www\easy\SEU\index.php (13)
+2014/01/22 19:23:22 [error] [php] date() expects at least 1 parameter, 0 given (C:\wamp\www\easy\SEU\protected\views\site\index.php:21)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#3 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(53): SiteController->render()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/index
+in C:\wamp\www\easy\SEU\protected\views\site\index.php (21)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (53)
+in C:\wamp\www\easy\SEU\index.php (13)
+2014/01/22 16:30:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/body-pattern.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/body-pat...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/images/body-pattern.jpg
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/22 16:30:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.woff".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.woff
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/22 16:30:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.ttf".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.ttf
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/22 16:30:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/League_Gothic-webfont.svg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('css/League_Goth...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/css/League_Gothic-webfont.svg
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/22 16:52:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
