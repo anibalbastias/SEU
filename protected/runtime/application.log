@@ -2588,3 +2588,83 @@ Stack trace:
 REQUEST_URI=/easy/SEU/site/peticion
 HTTP_REFERER=http://localhost/easy/SEU/index.php
 ---
+2014/01/22 13:17:37 [error] [php] Undefined variable: turnos2 (C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\site\turnosuser.php:18)
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\SiteController.php(122): SiteController->render()
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/turnosuser
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\site\turnosuser.php (18)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\SiteController.php (122)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)
+2014/01/22 18:17:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/01/22 18:22:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/users/37.jpg
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2014/01/22 13:23:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/body-pattern.jpg".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/body-pat...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/body-pattern.jpg
+---
+2014/01/22 13:23:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/body-pattern.jpg".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/body-pat...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/body-pattern.jpg
+---
+2014/01/23 11:40:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/users/37.jpg
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2014/01/23 06:43:52 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\SiteController.php (72)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)
+2014/01/23 11:45:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/users/37.jpg
+HTTP_REFERER=http://localhost/usuarios/admin
+---
+2014/01/23 06:47:26 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\SiteController.php (72)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)
+2014/01/23 06:47:36 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\SiteController.php (72)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)
+2014/01/23 06:47:41 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\SiteController.php (72)
+in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)

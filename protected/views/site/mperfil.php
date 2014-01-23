@@ -97,6 +97,8 @@ $model=Usuarios::model()->findByPk(Yii::app()->session['var']);
                         $this->widget('zii.widgets.jui.CJuiAutoComplete',array(
                             'name'=>'nom_carrera',
                             'sourceUrl'=>$this->createUrl('carreras/autocomplete'),
+                            "attribute"=>"carreras_id_carrera",
+                                "model"=>$model,
                             // additional javascript options for the autocomplete plugin
                             'options'=>array(
                                 'minLength'=>'1',
@@ -108,8 +110,8 @@ $model=Usuarios::model()->findByPk(Yii::app()->session['var']);
                         ));
                         ?>
                       </div>
-        
-	<div class="span3">
+
+                        <div class="span3">
                             <?php //echo $form->labelEx($model,'comunas_id_comuna'); ?>
                             <?php //echo $form->textField($model,'comunas_id_comuna',array('size'=>10,'maxlength'=>10)); ?>
                             <?php //echo $form->error($model,'comunas_id_comuna'); ?>
@@ -121,6 +123,8 @@ $model=Usuarios::model()->findByPk(Yii::app()->session['var']);
                                 'name'=>'nom_comuna',
                                 'sourceUrl'=>$this->createUrl('comunas/autocomplete'),
                                 // additional javascript options for the autocomplete plugin
+                                "attribute"=>"comunas_id_comuna",
+                                "model"=>$model,
                                 'options'=>array(
                                     'minLength'=>'1',
                                 ),
@@ -133,11 +137,11 @@ $model=Usuarios::model()->findByPk(Yii::app()->session['var']);
                             
                         </div>
 
-	<div class="span3">
-		<?php echo $form->labelEx($model,'estudios_usuario'); ?>
-		<?php echo $form->textField($model,'estudios_usuario'); ?>
-		<?php echo $form->error($model,'estudios_usuario'); ?>
-	</div>
+        <div class="span3">
+            <?php echo $form->labelEx($model,'estudios_usuario'); ?>
+            <?php echo $form->dropDownList($model,'estudios_usuario', array("1"=>"Si","0"=>"No")); ?>
+            <?php echo $form->error($model,'estudios_usuario'); ?>
+        </div>
 
 <!--	<div class="row">
 		<?php echo $form->labelEx($model,'fnac_usuario'); ?>
@@ -168,17 +172,20 @@ $model=Usuarios::model()->findByPk(Yii::app()->session['var']);
 	</div>
         
         
-	<div class="span3">
-		<?php echo $form->labelEx($model,'genero_usuario'); ?>
-		<?php echo $form->textField($model,'genero_usuario'); ?>
-		<?php echo $form->error($model,'genero_usuario'); ?>
-	</div>
+        <div class="span3">
+            <?php echo $form->labelEx($model,'genero_usuario'); ?>
+            <?php //echo $form->textField($model,'genero_usuario'); ?>
+            <?php echo $form->dropDownList($model,'hijos_usuario', array("0"=>"Masculino","1"=>"Femenino")); ?>
+            <?php echo $form->error($model,'genero_usuario'); ?>
+        </div>
 
-	<div class="span3">
-		<?php echo $form->labelEx($model,'hijos_usuario'); ?>
-		<?php echo $form->textField($model,'hijos_usuario',array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'hijos_usuario'); ?>
-	</div>
+
+        <div class="span3">
+            <?php echo $form->labelEx($model,'hijos_usuario'); ?>
+            <?php //echo $form->textField($model,'hijos_usuario',array('size'=>10,'maxlength'=>10)); ?>
+            <?php echo $form->dropDownList($model,'hijos_usuario', array("0"=>"0","1"=>"1","2"=>"2","3"=>"3","4"=>"4","5"=>"5")); ?>
+            <?php echo $form->error($model,'hijos_usuario'); ?>
+        </div>
 
 	<div class="span3">
 		<?php echo $form->labelEx($model,'pass_usuario'); ?>
