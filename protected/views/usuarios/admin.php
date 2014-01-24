@@ -70,10 +70,14 @@ $('.search-form form').submit(function(){
         <div type="button" class="btn btn-info btn-mini"><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/'.$emp->id_usuario ?>"> Perfil</a></div>
         <div type="button" class="btn btn-warning btn-mini"><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/update/'.$emp->id_usuario ?>"> Modificar</a></div>
         <div type="button" class="btn btn-success btn-mini"><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/faltas?id='.$emp->id_usuario ?> "> Faltas</a></div>
-        <div type="button" class="btn btn-danger btn-mini"><a  href="<?php echo Yii:: app() ->baseUrl.'/usuarios/delete/'.$emp->id_usuario ?>"> Eliminar</a></div>
-        
-       
-        
+<!--        <div type="button" class="btn btn-danger btn-mini"><a  href="<?php //echo Yii:: app() ->baseUrl.'/usuarios/delete/'.$emp->id_usuario ?>"> Eliminar</a></div>-->
+        <?php 
+            echo CHtml::button(
+                'Eliminar',
+                array('onClick'=>'location.replace("'.Yii:: app() ->baseUrl.'/usuarios/delete/'.$emp->id_usuario.'")', 
+                    'class'=>'btn btn-danger btn-mini','confirm' => '¿Está seguro de eliminar el usuario?')
+                );
+            ?>
         </div>
         
 
