@@ -18,6 +18,8 @@
         $turno2 = Turnos::model()->findByAttributes(array('id_turno'=>$t->turnos_id_turno));
         $model3 = Yii::app()->db->createCommand("select estado from usuarios_has_turnos
                 where usuarios_id_usuario=".Yii::app()->session['var']." and estado='Aceptado' and turnos_id_turno=".$turno2->id_turno.";")->queryScalar();
+        $model4 = Yii::app()->db->createCommand("select usuarios_id_usuario from usuarios_has_turnos
+                where estado='Rechazado' and turnos_id_turno=".$turno2->id_turno.";")->queryScalar();
         
         $t3 = explode(" ", $turno2->fecha_turno);
         $date1 = date_create($turno2->fecha_turno);
@@ -37,6 +39,16 @@
         if($model3 == "Aceptado")
         {
             echo "<br><b>Estado:</b> Aceptado";
+
+            if($model4)
+            {
+                $model5 = Usuarios::model()->find('id_usuario='.$model4);
+                echo "<br><b>Regalado por ".$model5->nom_usuario." ".$model5->apel1_usuario." ".$model5->apel2_usuario."</b>";
+            }
+            
+            
+            
+
             echo "<br>";
             echo "<br><div type=\"button\" class=\"btn btn-danger\" onclick=\"location.href='".Yii::app()->baseUrl."/site/regalaturno/".$turno2->id_turno."';\">Regalar turno</div>";
         }
