@@ -105,6 +105,73 @@
                 <a href="<?php echo Yii:: app() ->baseUrl.'/#' ?>">Descargar Credencial</a>
         </div>
         
+       
+        <!-- ############## reglamento  ##########################--> 
+        
+        <!-- Button to trigger modal -->
+            <a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal">Reglamento</a>
+ 
+        <!-- Modal -->
+            <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <div type="button" class="close" data-dismiss="modal" aria-hidden="true">×</div>
+                <h4 id="myModalLabel">Reglamento - Servicio de Empaques Universitarios</h4>
+            </div>
+            <div class="modal-body">
+                
+                 <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                 </p>
+                 
+                 <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                 </p>
+                 
+                 <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                 </p>
+                 
+                 <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                 </p>
+                 <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                 </p>
+                 
+                 <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                 </p>
+                 
+            </div>
+            <div class="modal-footer">
+                <div type="button" class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Cerrar</div>
+                
+            </div>
+            </div>
+        
+        <!-- ############## fin del reglamento ################-->
+        
+            <!-- ##############  alerta reglamento ###################-->
+        <div class="bs-docs-example" style="padding-top:30px;">
+          <div class="alert alert-block alert-error fade in">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Advertencia!</strong> Acuérdese de leer constantemente el reglamento.
+          </div>
+        </div>
+        
+        <!-- ############## fin alerta reglamento #############-->
         
         </div>
     </div>  

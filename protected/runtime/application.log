@@ -4463,3 +4463,41 @@ REQUEST_URI=/site/repechaje
 in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\site\_col2.php (73)
 in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\site\repechaje.php (19)
 in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\SiteController.php (216)
+2014/01/24 16:25:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'seu'@'localhost' (using password: YES)' in C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\wamp\www\easy\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\wamp\www\easy\SEU\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(624): CApplication->getDb()
+#5 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(2311): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Turnos))
+#7 C:\wamp\www\easy\SEU\protected\models\Turnos.php(20): CActiveRecord::model('Turnos')
+#8 C:\wamp\www\easy\SEU\protected\views\site\_col1.php(11): Turnos::model()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#12 C:\wamp\www\easy\SEU\protected\views\site\repechaje.php(18): CController->renderPartial('_col1')
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#15 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#16 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('repechaje', NULL, true)
+#17 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(216): CController->render('repechaje')
+#18 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionRepechaje()
+#19 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#20 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#21 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('repechaje')
+#23 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/repechaje')
+#24 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/easy/SEU/site/repechaje
+HTTP_REFERER=http://localhost/easy/SEU/site/repechaje
+---
+2014/01/24 16:31:31 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (72)
+in C:\wamp\www\easy\SEU\index.php (13)
+2014/01/24 17:16:04 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (72)
+in C:\wamp\www\easy\SEU\index.php (13)
