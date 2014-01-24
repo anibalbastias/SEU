@@ -211,7 +211,7 @@
                 echo $content; 
                 
                 
-                if(Yii::app()->session['var'] != NULL)
+                if(Yii::app()->session['var'] != NULL )
                     
             {
             
@@ -257,8 +257,63 @@
         <?php
         
             }
-        ?>
             
+            if (Yii::app()->session['var'] == NULL)
+            {
+        ?>
+            <div class="footer_null" style="margin-top: 100px;">
+            <div class="row-fluid">
+                <div class="span-12">
+                    <div class="pie centrar">
+                        <div class="row-fluid">
+                            
+                            <div class="span3">
+
+                            </div>
+                            <div class="span6">
+                            <div class="footer_border"> 
+                            <a href="<?php echo Yii:: app() ->baseUrl.'/site/' ?>">Inicio </a> -
+                            <a href="<?php echo Yii:: app() ->baseUrl.'/site/empresa' ?>">Empresa </a> - 
+                            <a href="<?php echo Yii:: app() ->baseUrl.'/site/quienes' ?>">Quienes Somos </a> -
+                            <a href="<?php echo Yii:: app() ->baseUrl.'/site/fotos' ?>">Fotos </a> -
+                            <a href="<?php echo Yii:: app() ->baseUrl.'/site/' ?>">Entrar </a> - 
+                         
+                            <a href="<?php echo Yii:: app() ->baseUrl.'/site/contact' ?>">Postulación </a>
+                      
+                            </div>
+                            </div>
+                            
+                            <div class="span3">
+                                
+                            </div>
+                            
+                        </div>    
+                        <br>
+                        <br>
+                        
+                        Copyright &copy; <?php echo date('Y'); ?> by Bastías - Rojas<br/>
+                        All Rights Reserved.<br/>
+                
+                    
+                        <br>
+                        Última conexión <?php
+
+                                date_default_timezone_set("Chile/Continental");
+                                echo "Hora:". date ("G:i:s") . "<br />";
+                                echo "Fecha:". date ("d:m:Y") . "<br/>";
+
+                                ?>
+                        
+                    </div>
+                </div>
+           </div>
+        </div>
+        
+        
+        <?php
+        
+            }
+        ?>
 </div><!-- page -->
 
 </body>

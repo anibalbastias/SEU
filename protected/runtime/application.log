@@ -5765,3 +5765,27 @@ REQUEST_URI=/img/users/37.jpg
 HTTP_REFERER=http://localhost/usuarios/admin
 >>>>>>> 4d4e7360491b62eea9c12064108cd1f7606c44a4
 ---
+2014/01/24 19:02:31 [error] [php] Trying to get property of non-object (C:\wamp\www\easy\SEU\protected\views\layouts\main.php:234)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\widgets\CContentDecorator.php(77): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#2 C:\wamp\www\easy\SEU\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(207): CContentDecorator->run()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(301): SiteController->endWidget()
+#5 C:\wamp\www\easy\SEU\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(785): SiteController->renderFile()
+#9 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(53): SiteController->render()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#15 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#16 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/
+in C:\wamp\www\easy\SEU\protected\views\layouts\main.php (234)
+in C:\wamp\www\easy\SEU\protected\views\layouts\column1.php (6)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (53)

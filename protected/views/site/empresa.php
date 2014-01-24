@@ -11,14 +11,18 @@
   
 <div class=" inicio centrar">
 
-    <div class="container-fluid">
+    <div class="">
     <div class="row-fluid">
-        <div class="span12">
-
+    
+    <div class="span12 title_index">
+<h1><b>Servicios de Empaques Universitarios</b></h1>
 <br><br>
-        </div>
+     </div>
+            
 <div class="row-fluid">
     
+    
+   <div style="margin-top: 60px; padding-bottom: 50px;"> 
     <div class="span2"> 
         
         
@@ -100,7 +104,7 @@
 
           <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/' ?>">Inicio</a></li>
           <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/empresa' ?>">Empresa</a></li>
-          <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/quienes' ?>">Quienés Somos</a></li>
+          <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/quienes' ?>">Quienes Somos</a></li>
 
           
           <li><a href="<?php echo Yii:: app() ->baseUrl.'#' ?>">Fotos</a></li>
@@ -121,7 +125,7 @@
         
     </div>
     
-    
+    </div>
         </div>    
 </div>
     </div>
