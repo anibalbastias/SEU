@@ -6,14 +6,15 @@
   
 <div class=" inicio centrar">
 
-    <div class="container-fluid">
+    <div class="">
     <div class="row-fluid">
-        <div class="span12">
-<h1><b>Postulación</b></h1>
-<br><br>
-        </div>
+        <div class="span12 title_index">
+            <h1><b>Servicios de Empaques Universitarios</b></h1>
+            <br><br>
+     </div>
 <div class="row-fluid">
     
+    <div style="margin-top: 60px; padding-bottom: 50px;">
     <div class="span2"> 
         
         
@@ -115,7 +116,7 @@
         
     </div>
     
-    
+    </div>
         </div>    
 </div>
     </div>

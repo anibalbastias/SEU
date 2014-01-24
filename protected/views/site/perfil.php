@@ -6,7 +6,10 @@
     if(Yii::app()->session['var'] != NULL)
     {
  
+     
 ?>  
+
+
     <div class="style_user">
     <h3>Perfil    
    <?php 
@@ -172,6 +175,9 @@
         </div>
         
         <!-- ############## fin alerta reglamento #############-->
+     
+     
+        
         
         </div>
     </div>  

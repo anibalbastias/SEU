@@ -70,6 +70,13 @@
 
         
         <!-- #################### fin cuerpo ################### -->
+        
+        
+        
+        
+    
+        
+        
     <?php
 
         $admin=Usuarios::model()->findByPk(Yii::app()->session['var']);
@@ -97,14 +104,15 @@
   
 <div class="inicio centrar">
 
-    <div class="container-fluid">
+    <div class="">
     <div class="row-fluid">
-        <div class="span12" >
-<h1><b>Ingreso al Sistema</b></h1>
+        <div class="span12 title_index">
+<h1><b>Servicios de Empaques Universitarios</b></h1>
 <br><br>
         </div>
 <div class="row-fluid" >
     
+    <div style="margin-top: 60px; padding-bottom: 50px;">
     <div class="span2"> 
         
         
@@ -171,7 +179,7 @@
 
           <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/' ?>">Inicio</a></li>
           <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/empresa' ?>">Empresa</a></li>
-          <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/quienes' ?>">Quienés Somos</a></li>
+          <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/quienes' ?>">Quienes Somos</a></li>
 
           <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/fotos' ?>">Fotos</a></li>
           
@@ -181,7 +189,7 @@
         <ul class="nav nav-tabs nav-stacked">
     
               <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/' ?>">Entrar</a></li>
-              <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/contact/' ?>">Postulacion</a></li>
+              <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/contact' ?>">Postulacion</a></li>
           
         </ul>
       
@@ -193,7 +201,8 @@
     </div>
     
     
-        </div>    
+        </div> 
+    </div>  
 </div>
     </div>
 </div>

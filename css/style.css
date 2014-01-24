@@ -156,9 +156,9 @@ body{
 .inicio h1{
     
     /*color:#57CCFE;*/
-    color:#b5b5b5;
+    color:white;
     /*color:white;*/
-    text-shadow:2px 2px white;
+    /*text-shadow:2px 2px white;*/
     /*font-weight: bold;*/
     
 }
@@ -223,7 +223,8 @@ body{
 .form_ini{
     
     /*background-color: #00b2d9;*/
-   background-color: white;
+   /*background-color: white;*/
+   background-color: #f5f5f5;
    color:#9f9f9f;
     padding-top: 40px;
    padding-bottom: 40px;
@@ -231,18 +232,18 @@ body{
    /*opacity: 0.8;*/
  
    
-    border-style: solid;
+    border-style: dotted;
     border-width: 1px;
    /*border-radius:10%;*/
 }
 
 .form_ini2{
     
-    /*background-color: #f5f5f5;*/
+    background-color: #f5f5f5;
     padding-top: 10px;
    padding-bottom: 40px;
    color:#b5b5b5;
-   background-color: white;
+   /*background-color: white;*/
    
     border-style: solid;
     border-width: 1px;
@@ -275,4 +276,40 @@ body{
     /*border-radius:5%;*/
     padding-right: 20px;
     
+}
+
+
+.title_index{
+    
+   background-color: #00b2d9;
+   padding-top: 20px; 
+   
+}
+
+.footer_null a{
+    
+    padding-left: 5px;
+    padding-right: 5px;
+    color:white;
+}
+
+.footer_null a:link{
+    
+    text-decoration: none;
+    color:white;
+    
+}
+
+.footer_null a:hover{
+    
+    color:#b5b5b5;
+    
+}
+
+.footer_border{
+    
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: white;
+    padding: 10px;
 }

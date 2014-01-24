@@ -13,12 +13,11 @@
 	<?php Yii::app()->bootstrap->registerAllCss(); ?>
         <?php Yii::app()->bootstrap->register(); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
 	<title>SEU</title>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
        
-        
         <?php $controlador = $this->getId(); ?>
         <?php $pagina = $this->getAction()->getId(); ?>
         <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'></link>
@@ -212,7 +211,7 @@
                 echo $content; 
                 
                 
-                if(Yii::app()->session['var'] != NULL)
+                if(Yii::app()->session['var'] != NULL )
                     
             {
             
@@ -258,8 +257,63 @@
         <?php
         
             }
-        ?>
             
+            if (Yii::app()->session['var'] == NULL)
+            {
+        ?>
+            <div class="footer_null" style="margin-top: 100px;">
+            <div class="row-fluid">
+                <div class="span-12">
+                    <div class="pie centrar">
+                        <div class="row-fluid">
+                            
+                            <div class="span3">
+
+                            </div>
+                            <div class="span6">
+                            <div class="footer_border"> 
+                            <a href="<?php echo Yii:: app() ->baseUrl.'/site/' ?>">Inicio </a> -
+                            <a href="<?php echo Yii:: app() ->baseUrl.'/site/empresa' ?>">Empresa </a> - 
+                            <a href="<?php echo Yii:: app() ->baseUrl.'/site/quienes' ?>">Quienes Somos </a> -
+                            <a href="<?php echo Yii:: app() ->baseUrl.'/site/fotos' ?>">Fotos </a> -
+                            <a href="<?php echo Yii:: app() ->baseUrl.'/site/' ?>">Entrar </a> - 
+                         
+                            <a href="<?php echo Yii:: app() ->baseUrl.'/site/contact' ?>">Postulación </a>
+                      
+                            </div>
+                            </div>
+                            
+                            <div class="span3">
+                                
+                            </div>
+                            
+                        </div>    
+                        <br>
+                        <br>
+                        
+                        Copyright &copy; <?php echo date('Y'); ?> by Bastías - Rojas<br/>
+                        All Rights Reserved.<br/>
+                
+                    
+                        <br>
+                        Última conexión <?php
+
+                                date_default_timezone_set("Chile/Continental");
+                                echo "Hora:". date ("G:i:s") . "<br />";
+                                echo "Fecha:". date ("d:m:Y") . "<br/>";
+
+                                ?>
+                        
+                    </div>
+                </div>
+           </div>
+        </div>
+        
+        
+        <?php
+        
+            }
+        ?>
 </div><!-- page -->
 
 </body>
