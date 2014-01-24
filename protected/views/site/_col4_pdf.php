@@ -39,8 +39,8 @@ if($model)
         
         if($m2_f1[0] == 'Thursday' && ($m2[0] == $m2_f3[1]))
         {
-            $model1 = UsuariosHasTurnos::model()->findall('turnos_id_turno='.$m->id_turno);
-            $model2 = UsuariosHasTurnos::model()->findall('turnos_id_turno='.$m->id_turno);
+            $model1 = UsuariosHasTurnos::model()->findall('turnos_id_turno='.$m->id_turno.' and estado="Aceptado"');
+            $model2 = UsuariosHasTurnos::model()->findall('turnos_id_turno='.$m->id_turno.' and estado="Aceptado"');
             
             $count1 = $m->cupos_turno - count($model1);
             

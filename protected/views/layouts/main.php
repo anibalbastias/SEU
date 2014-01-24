@@ -48,7 +48,8 @@
         
         
         <?php 
-        
+            $dia_peticion = 5;
+            $dia_repechaje = 5;
          
         
             if(Yii::app()->session['var'] != NULL){
@@ -74,7 +75,7 @@
             <li <?php if($pagina == "turnosuser") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/turnosuser' ?>"> Mis Turnos</a></li>
             <li <?php if($pagina == "peticion") { ?>class="active" <?php } ?> >
                 
-                    <?php if($fecha_dia == '4') { ?>
+                    <?php if($fecha_dia == $dia_peticion) { ?>
                                 <a href="<?php echo Yii:: app() ->baseUrl.'/site/peticion'; ?>">Tomar Turnos </a>
                     <?php } ?>
                                 
@@ -82,7 +83,7 @@
             <li 
                 <?php if($pagina == "repechaje") { ?>class="active" <?php } ?> >
             
-                       <?php if($fecha_dia == '3') { ?>
+                       <?php if($fecha_dia == $dia_repechaje) { ?>
                 
                                 <a href="<?php echo Yii:: app() ->baseUrl.'/site/repechaje' ?>"> Turnos Repechaje</a>
                        <?php } ?>
@@ -169,7 +170,7 @@
     
     <h3>Planilla</h3>
     <div class="nav">
-    <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/admin' ?>"><i class="icon-list-alt"></i> Listar turnos</a></li>
+<!--    <li><a href="<?php //echo Yii:: app() ->baseUrl.'/site/admin' ?>"><i class="icon-list-alt"></i> Listar turnos</a></li>-->
     <li><a href="<?php echo Yii:: app() ->baseUrl.'/turnos/create' ?>#"><i class="icon-plus-sign"></i> Crear turnos</a></li>
    
     <li><a href="<?php echo Yii:: app() ->baseUrl.'/site/planilla' ?>"><i class="icon-plus"></i> Generar planilla</a></li>

@@ -37,7 +37,7 @@
         $i++;
     }
     $resto = $total-$i;
-    if($resto !=0)
+    if($resto >0)
     {
         echo "<p>Le quedan <b>".($resto)."</b> turnos para tomar esta semana</p>";
         

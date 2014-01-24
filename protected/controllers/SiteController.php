@@ -155,25 +155,51 @@ class SiteController extends Controller
             
         }
         
-        public function actionRegalaTurno($id)
+        public function actionTomaTurnoRep($id)
         {
-//            $model= new UsuariosHasTurnos;
-            
-            $model = UsuariosHasTurnos::model()->find('usuarios_id_usuario='.Yii::app()->session['var']);      
-            
+            $model= new UsuariosHasTurnos;
+
             $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
             $model->turnos_id_turno = $id;
-            $model->usuarios_id_usuario = Yii::app()->session['var'];
-            $model->estado = "Rechazado";
+            $model->usuarios_id_usuario = $empaque->id_usuario;
+            $model->estado = "Aceptado";
+            $model->save();
             
-            $model->save();    
+            $this->redirect(array('repechaje'));
+            
+            $this->render('create',array(
+                    'model'=>$model,
+            ));
+            
+        }
+        
+        
+        
+        
+        public function actionRegalaTurno($id)
+        {
+            //$model = UsuariosHasTurnos::model()->find('usuarios_id_usuario='.Yii::app()->session['var']);      
+            
+//            $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
+//            $model->turnos_id_turno = $id;
+//            $model->usuarios_id_usuario = Yii::app()->session['var'];
+//            $model->estado = "Rechazado";
+//            
+//            $model->save();    
+            
+            
+//            $this->render('update',array(
+//                'model'=>$this->loadModel($empaque),
+//                
+//                'estado'=>'Rechazado',
+//                
+//            ));
+            
+            Yii::app()->db
+                ->createCommand("UPDATE usuarios_has_turnos SET estado = 'Rechazado' WHERE turnos_id_turno=:IdTurno AND usuarios_id_usuario=:IdUsuario")
+                ->bindValues(array(':IdTurno' => $id, ':IdUsuario' => Yii::app()->session['var']))
+                ->execute();
             $this->redirect(array('turnosuser'));
-            
-            $this->render('update',array(
-                'model'=>$this->loadModel($empaque),
-                'estado'=>'Rechazado',
-                
-    ));
         }
         
         public function actionQuienes()
