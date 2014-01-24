@@ -246,7 +246,7 @@
                                 echo "Hora:". date ("G:i:s") . "<br />";
                                 echo "Fecha:". date ("d:m:Y") . "<br/>";
 
-                                echo "version de actualizazion: 12:23 - 21/01/2013";
+                                echo "Versión de Actualización: 14:32 - 24/01/2013";
                                 ?>
                         
                     </div>
