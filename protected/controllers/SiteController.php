@@ -163,11 +163,11 @@ class SiteController extends Controller
             
             $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
             $model->turnos_id_turno = $id;
-            $model->usuarios_id_usuario = $empaque->id_usuario;
+            $model->usuarios_id_usuario = Yii::app()->session['var'];
             $model->estado = "Rechazado";
             
             $model->save();    
-            $this->redirect(array('peticion'));
+            $this->redirect(array('turnosuser'));
             
             $this->render('update',array(
                 'model'=>$this->loadModel($empaque),

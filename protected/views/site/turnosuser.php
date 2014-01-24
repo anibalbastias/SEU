@@ -16,6 +16,8 @@
         <div class="well">
         <?php
         $turno2 = Turnos::model()->findByAttributes(array('id_turno'=>$t->turnos_id_turno));
+        $model3 = Yii::app()->db->createCommand("select estado from usuarios_has_turnos
+                where usuarios_id_usuario=".Yii::app()->session['var']." and estado='Aceptado' and turnos_id_turno=".$turno2->id_turno.";")->queryScalar();
         
         $t3 = explode(" ", $turno2->fecha_turno);
         $date1 = date_create($turno2->fecha_turno);
@@ -31,7 +33,8 @@
         if(date_format($date1, "L") == "6") echo "Domingo";
 
         echo " ".$t3[0]."<br><b>Hora:</b> ".$t3[1];
-
+        echo "<br><b>Estado:</b> ".$model3;
+        echo "<br><div type=\"button\" class=\"btn btn-danger\" onclick=\"location.href='".Yii::app()->baseUrl."/site/regalaturno/".$turno2->id_turno."';\">Regalar turno</div>";
         $i++;
         ?>
         </div>

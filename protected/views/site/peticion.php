@@ -28,6 +28,20 @@
 
 <h3>Toma de turnos</h3>
 
+<?php
+    $model = UsuariosHasTurnos::model()->findall('usuarios_id_usuario='.Yii::app()->session['var'].' and estado="Aceptado"');
+    $total = 4;
+    $i=0;
+    foreach($model as $m)
+    {
+        $i++;
+    }
+    $resto = $total-$i;
+    if($resto !=0)
+    {
+        echo "<p>Le quedan <b>".($resto)."</b> turnos para tomar esta semana</p>";
+        
+        ?>
 
 <div class="span11">
    
@@ -44,6 +58,13 @@
 <!--<div id="counter"></div>-->
 
 
+        <?php
+    }
+    else 
+    {
+        echo "<p>No le quedan más turnos para tomar esta semana. Debe esperar para la próxima semana o regalar turnos.</p>";
+    }
+?>
 
 <?php
 
