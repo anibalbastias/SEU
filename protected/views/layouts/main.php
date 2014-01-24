@@ -25,7 +25,7 @@
         
         <link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/img/favicon.ico" />
      
-        
+        <?php if($pagina == 'peticion' || $pagina == 'repechaje') {?> <meta content="5" http-equiv="REFRESH"> </meta> <?php } ?>
         
 </head>
 
