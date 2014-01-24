@@ -68,7 +68,7 @@ if($model)
             }
             else if($model3 == Yii::app()->session['var'])
             {
-                echo "<div type=\"button\" class=\"btn btn-danger\" onclick=\"location.href='".Yii::app()->baseUrl."/site/regalaturno/".$m->id_turno."';\">Regalar turno</div>";
+                //echo "<div type=\"button\" class=\"btn btn-danger\" onclick=\"location.href='".Yii::app()->baseUrl."/site/regalaturno/".$m->id_turno."';\">Regalar turno</div>";
             }
             
             

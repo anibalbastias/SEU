@@ -39,8 +39,10 @@ if($model)
         
         if($m2_f1[0] == 'Wednesday' && ($m2[0] == $m2_f3[1]))
         {
-            $model1 = UsuariosHasTurnos::model()->findall('turnos_id_turno='.$m->id_turno);
-            $model2 = UsuariosHasTurnos::model()->findall('turnos_id_turno='.$m->id_turno);
+            $model1 = UsuariosHasTurnos::model()->findall('turnos_id_turno='.$m->id_turno.' and estado="Aceptado"');
+            $model2 = UsuariosHasTurnos::model()->findall('turnos_id_turno='.$m->id_turno.' and estado="Aceptado"');
+            $model3 = Yii::app()->db->createCommand("select usuarios_id_usuario from usuarios_has_turnos
+                where usuarios_id_usuario=".Yii::app()->session['var']." and estado='Aceptado' and turnos_id_turno=".$m->id_turno.";")->queryScalar();
             
             $count1 = $m->cupos_turno - count($model1);
             
@@ -57,8 +59,19 @@ if($model)
                 echo '<div class="well_cupos">';
             }
             
-            //echo "<h5>Turno: ".$m2[0]."</h5>";
+            
             echo "<h5><a href='#'>".$m2[1]." - ".$m2_f[1]."</a></h5>";
+            
+            if($model3 != Yii::app()->session['var'])
+            {
+                echo "<div type=\"button\" class=\"btn btn-primary\" onclick=\"location.href='".Yii::app()->baseUrl."/site/tomaturno/".$m->id_turno."';\">Tomar turno</div>";
+            }
+            else if($model3 == Yii::app()->session['var'])
+            {
+                //echo "<div type=\"button\" class=\"btn btn-danger\" onclick=\"location.href='".Yii::app()->baseUrl."/site/regalaturno/".$m->id_turno."';\">Regalar turno</div>";
+            }
+            
+            
             
             if($count1 != 0)
             {
