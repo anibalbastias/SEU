@@ -24,13 +24,13 @@
 
         echo "<b>".$i.". </b><br> <b>Fecha:</b> "; 
 
-        if(date_format($date1, "L") == "0") echo "Lunes";
-        if(date_format($date1, "L") == "1") echo "Martes";
-        if(date_format($date1, "L") == "2") echo "Miercoles";
-        if(date_format($date1, "L") == "3") echo "Jueves";
-        if(date_format($date1, "L") == "4") echo "Viernes";
-        if(date_format($date1, "L") == "5") echo "Sabado";
-        if(date_format($date1, "L") == "6") echo "Domingo";
+        if(date_format($date1, "w") == "1") echo "Lunes";
+        if(date_format($date1, "w") == "2") echo "Martes";
+        if(date_format($date1, "w") == "3") echo "Miercoles";
+        if(date_format($date1, "w") == "4") echo "Jueves";
+        if(date_format($date1, "w") == "5") echo "Viernes";
+        if(date_format($date1, "w") == "6") echo "Sabado";
+        if(date_format($date1, "w") == "0") echo "Domingo";
 
         echo " ".$t3[0]."<br><b>Hora:</b> ".$t3[1];
         echo "<br><b>Estado:</b> ".$model3;

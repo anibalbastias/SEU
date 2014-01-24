@@ -43,6 +43,8 @@ if($model)
             $model2 = UsuariosHasTurnos::model()->findall('turnos_id_turno='.$m->id_turno.' and estado="Aceptado"');
             $model3 = Yii::app()->db->createCommand("select usuarios_id_usuario from usuarios_has_turnos
                 where usuarios_id_usuario=".Yii::app()->session['var']." and estado='Aceptado' and turnos_id_turno=".$m->id_turno.";")->queryScalar();
+            $model4 = Yii::app()->db->createCommand("select estado from usuarios_has_turnos
+                where usuarios_id_usuario=".Yii::app()->session['var']." and estado='Rechazado' and turnos_id_turno=".$m->id_turno.";")->queryScalar();
             
             $count1 = $m->cupos_turno - count($model1);
             
@@ -62,13 +64,13 @@ if($model)
             
             echo "<h5><a href='#'>".$m2[1]." - ".$m2_f[1]."</a></h5>";
             
-            if($model3 != Yii::app()->session['var'] && $count1 != 0)
+            if($model3 != Yii::app()->session['var'])
             {
-                if(Yii::app()->controller->action->id == "peticion")
+                if(Yii::app()->controller->action->id == "peticion" && $model4 != "Rechazado")
                 {
                     echo "<div type=\"button\" class=\"btn btn-primary\" onclick=\"location.href='".Yii::app()->baseUrl."/site/tomaturno/".$m->id_turno."';\">Tomar turno</div>";
                 }
-                if(Yii::app()->controller->action->id == "repechaje")
+                if(Yii::app()->controller->action->id == "repechaje" && $model4 != "Rechazado")
                 {
                     echo "<div type=\"button\" class=\"btn btn-primary\" onclick=\"location.href='".Yii::app()->baseUrl."/site/tomaturnorep/".$m->id_turno."';\">Tomar turno</div>";
                 }   
