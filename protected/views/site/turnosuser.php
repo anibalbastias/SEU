@@ -33,15 +33,17 @@
         if(date_format($date1, "w") == "0") echo "Domingo";
 
         echo " ".$t3[0]."<br><b>Hora:</b> ".$t3[1];
-        echo "<br><b>Estado:</b> ".$model3;
-        echo "<br>";
+        
         if($model3 == "Aceptado")
         {
+            echo "<br><b>Estado:</b> Aceptado";
+            echo "<br>";
             echo "<br><div type=\"button\" class=\"btn btn-danger\" onclick=\"location.href='".Yii::app()->baseUrl."/site/regalaturno/".$turno2->id_turno."';\">Regalar turno</div>";
         }
         else
         {
-            
+            echo "<br><b>Estado:</b> Regalado";
+            echo "<br>";
         }
         
         $i++;
