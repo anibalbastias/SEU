@@ -80,17 +80,29 @@ body{
 }
 
 .well_concupos{
-    background-color: #A9F5BC;
+    background-color: #fcf8e3;
+    color: #333;
+    border-radius: 10px;
+    border:1px solid #D7DF01;
+    margin-bottom: 10px;
     /*opacity:0.8;*/
 }
 
 .well_cupos{
-    background-color: #A9F5E1;
+    background-color: #dff0d8;
+    color: #333;
+    border-radius: 10px;
+    border:1px solid #04B404;
+    margin-bottom: 10px;
     /*opacity:0.8;*/
 }
 
 .well_sincupos{
-    background-color: #EFC1C1;
+    background-color: #f2dede;
+    color: #333;
+    border-radius: 10px;
+    border:1px solid #F7819F;
+    margin-bottom: 10px;
     /*opacity:0.8;*/
 }
 

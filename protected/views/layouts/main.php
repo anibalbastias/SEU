@@ -74,7 +74,7 @@
             <li <?php if($pagina == "turnosuser") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/turnosuser' ?>"> Mis Turnos</a></li>
             <li <?php if($pagina == "peticion") { ?>class="active" <?php } ?> >
                 
-                    <?php if($fecha_dia == '3') { ?>
+                    <?php if($fecha_dia == '4') { ?>
                                 <a href="<?php echo Yii:: app() ->baseUrl.'/site/peticion'; ?>">Tomar Turnos </a>
                     <?php } ?>
                                 
@@ -82,7 +82,7 @@
             <li 
                 <?php if($pagina == "repechaje") { ?>class="active" <?php } ?> >
             
-                       <?php if($fecha_dia == '4') { ?>
+                       <?php if($fecha_dia == '3') { ?>
                 
                                 <a href="<?php echo Yii:: app() ->baseUrl.'/site/repechaje' ?>"> Turnos Repechaje</a>
                        <?php } ?>

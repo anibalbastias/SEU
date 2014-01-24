@@ -41,6 +41,7 @@ if($model)
         {
             $model1 = UsuariosHasTurnos::model()->findall('turnos_id_turno='.$m->id_turno);
             $model2 = UsuariosHasTurnos::model()->findall('turnos_id_turno='.$m->id_turno);
+            $model3 = UsuariosHasTurnos::model()->find('usuarios_id_usuario='.Yii::app()->session['var'],'turnos_id_turno='.$m->id_turno);
             
             $count1 = $m->cupos_turno - count($model1);
             
@@ -48,7 +49,7 @@ if($model)
             {
                 echo '<div class="well_concupos">';
             }
-            if($model2 && $count1 == 0)
+            else if($model2 && $count1 == 0)
             {
                 echo '<div class="well_sincupos">';
             }
@@ -57,8 +58,25 @@ if($model)
                 echo '<div class="well_cupos">';
             }
             
-            //echo "<h5>Turno: ".$m2[0]."</h5>";
+            
             echo "<h5><a href='#'>".$m2[1]." - ".$m2_f[1]."</a></h5>";
+            
+            echo $model3->usuarios_id_usuario;
+            
+            if($model3->usuarios_id_usuario != Yii::app()->session['var'])
+            {
+                echo "<button type=\"button\" class=\"btn btn-primary\" onclick=\"location.href='/site/tomaturno/".$m->id_turno."';\">Tomar turno</button>";
+            }
+            else
+            {
+                echo "<button disabled type=\"button\" class=\"btn btn-primary\" onclick=\"location.href='/site/tomaturno/".$m->id_turno."';\">Tomar turno</button>";
+            }
+            
+            
+            
+
+            
+            
             
             if($count1 != 0)
             {

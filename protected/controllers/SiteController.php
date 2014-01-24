@@ -20,7 +20,7 @@ class SiteController extends Controller
 			),
 		);
 	}
-
+        
 	/**
 	 * This is the default 'index' action that is invoked
 	 * when an action is not explicitly requested by users.
@@ -135,6 +135,24 @@ class SiteController extends Controller
         
             $this->render('peticion');
                    
+        }
+        
+        public function actionTomaTurno($id)
+        {
+            $model= new UsuariosHasTurnos;
+
+            $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
+            $model->turnos_id_turno = $id;
+            $model->usuarios_id_usuario = $empaque->id_usuario;
+            $model->estado = "Aceptado";
+            $model->save();
+            
+            $this->redirect(array('peticion'));
+            
+            $this->render('create',array(
+                    'model'=>$model,
+            ));
+            
         }
         
         public function actionQuienes()
