@@ -62,7 +62,7 @@ if($model)
             
             echo "<h5><a href='#'>".$m2[1]." - ".$m2_f[1]."</a></h5>";
             
-            if($model3 != Yii::app()->session['var'])
+            if($model3 != Yii::app()->session['var'] && $count1 != 0)
             {
                 echo "<div type=\"button\" class=\"btn btn-primary\" onclick=\"location.href='".Yii::app()->baseUrl."/site/tomaturno/".$m->id_turno."';\">Tomar turno</div>";
             }
