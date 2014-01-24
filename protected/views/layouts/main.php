@@ -13,12 +13,11 @@
 	<?php Yii::app()->bootstrap->registerAllCss(); ?>
         <?php Yii::app()->bootstrap->register(); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
 	<title>SEU</title>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
        
-        
         <?php $controlador = $this->getId(); ?>
         <?php $pagina = $this->getAction()->getId(); ?>
         <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'></link>

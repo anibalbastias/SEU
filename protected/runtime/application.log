@@ -5199,3 +5199,25 @@ in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\views\site\tu
 in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\SiteController.php (122)
 in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php (13)
 >>>>>>> 0f48d539b3bc4ed378c8adb07c83628df240b6db
+2014/01/24 14:35:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "image.png".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('image.png')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('image.png')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/image.png')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/image.png
+HTTP_REFERER=http://localhost/easy/SEU/site/perfil
+---
+2014/01/24 14:42:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "demoLightbox".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('demoLightbox')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('demoLightbox')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/demoLightb...')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/demoLightbox
+HTTP_REFERER=http://localhost/easy/SEU/site/perfil
+---

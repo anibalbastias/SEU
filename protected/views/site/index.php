@@ -70,6 +70,13 @@
 
         
         <!-- #################### fin cuerpo ################### -->
+        
+        
+        
+        
+    
+        
+        
     <?php
 
         $admin=Usuarios::model()->findByPk(Yii::app()->session['var']);
@@ -97,10 +104,10 @@
   
 <div class="inicio centrar">
 
-    <div class="container-fluid">
+    <div class="">
     <div class="row-fluid">
-        <div class="span12" >
-<h1><b>Ingreso al Sistema</b></h1>
+        <div class="span12 title_index">
+<h1><b>Servicios de Empaques Universitarios</b></h1>
 <br><br>
         </div>
 <div class="row-fluid" >

@@ -156,9 +156,9 @@ body{
 .inicio h1{
     
     /*color:#57CCFE;*/
-    color:#b5b5b5;
+    color:white;
     /*color:white;*/
-    text-shadow:2px 2px white;
+    /*text-shadow:2px 2px white;*/
     /*font-weight: bold;*/
     
 }
@@ -275,4 +275,11 @@ body{
     /*border-radius:5%;*/
     padding-right: 20px;
     
+}
+
+
+.title_index{
+    
+   background-color: #00b2d9;
+   padding-top: 20px; 
 }
