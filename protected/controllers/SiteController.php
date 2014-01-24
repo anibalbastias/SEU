@@ -104,7 +104,7 @@ class SiteController extends Controller
                     {
                         if($pass == md5($pass2)){                                
                               $model->pass_usuario = $pass;
-
+                         
                         if($model->save())
                             $this->redirect(array('admin'));
 
@@ -153,6 +153,27 @@ class SiteController extends Controller
                     'model'=>$model,
             ));
             
+        }
+        
+        public function actionRegalaTurno($id)
+        {
+//            $model= new UsuariosHasTurnos;
+            
+            $model = UsuariosHasTurnos::model()->find('usuarios_id_usuario='.Yii::app()->session['var']);      
+            
+            $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
+            $model->turnos_id_turno = $id;
+            $model->usuarios_id_usuario = $empaque->id_usuario;
+            $model->estado = "Rechazado";
+            
+            $model->save();    
+            $this->redirect(array('peticion'));
+            
+            $this->render('update',array(
+                'model'=>$this->loadModel($empaque),
+                'estado'=>'Rechazado',
+                
+    ));
         }
         
         public function actionQuienes()
