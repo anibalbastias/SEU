@@ -170,10 +170,11 @@
         <div class="bs-docs-example" style="padding-top:30px;">
           <div class="alert alert-block alert-error fade in">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <strong>Advertencia!</strong> Acuérdese de leer constantemente el reglamento.
+            <strong>Anuncio!</strong> Acuérdese de leer constantemente el reglamento.
           </div>
         </div>
         
+       
         <!-- ############## fin alerta reglamento #############-->
      
      
