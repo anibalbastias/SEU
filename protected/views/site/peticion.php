@@ -4,7 +4,7 @@
     if(Yii::app()->session['var'] != NULL)
             {
 
-        
+        date_default_timezone_set("Chile/Continental");
        
 
         
@@ -39,7 +39,15 @@
     $resto = $total-$i;
     if($resto >0)
     {
-        echo "<p>Le quedan <b>".($resto)."</b> turnos para tomar esta semana</p>";
+        echo "
+                    <div class='row-fluid'>
+                    <div class='span4'>
+                    <div class='alert alert-danger'>
+                    <p>Le quedan <b>".($resto)."</b> turnos para tomar esta semana</p>
+                    </div>
+                    </div>
+                    </div>"
+                ;
         
         ?>
 
