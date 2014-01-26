@@ -5789,3 +5789,466 @@ REQUEST_URI=/easy/SEU/site/
 in C:\wamp\www\easy\SEU\protected\views\layouts\main.php (234)
 in C:\wamp\www\easy\SEU\protected\views\layouts\column1.php (6)
 in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (53)
+2014/01/26 16:50:07 [error] [exception.CDbException] exception 'CDbException' with message 'Table "turnos" does not have a column named "order".' in C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(20): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#6 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): CController->render('turnosuser')
+#7 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#13 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/26 16:50:39 [error] [exception.CDbException] exception 'CDbException' with message 'Table "turnos" does not have a column named "order".' in C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(20): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#6 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): CController->render('turnosuser')
+#7 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#13 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/26 16:51:24 [error] [exception.CDbException] exception 'CDbException' with message 'Table "turnos" does not have a column named "order".' in C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(20): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#6 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): CController->render('turnosuser')
+#7 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#13 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/26 16:52:13 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.id_turno" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCriteria.php(161): CComponent->__set('id_turno', '27')
+#1 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1409): CDbCommandBuilder->createCriteria(Array, Array)
+#3 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(20): CActiveRecord->findAll(Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#8 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): CController->render('turnosuser')
+#9 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#15 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/26 16:55:23 [error] [exception.CDbException] exception 'CDbException' with message 'Table "turnos" does not have a column named "order".' in C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(20): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#6 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): CController->render('turnosuser')
+#7 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#13 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/26 16:57:36 [error] [php] Use of undefined constant fecha_turno - assumed 'fecha_turno' (C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php:20)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/turnosuser
+in C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php (20)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (122)
+in C:\wamp\www\easy\SEU\index.php (13)
+2014/01/26 16:57:50 [error] [exception.CException] exception 'CException' with message 'Property "UsuariosHasTurnos.fecha_turno" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('fecha_turno')
+#1 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(20): CActiveRecord->__get('fecha_turno')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#6 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): CController->render('turnosuser')
+#7 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#13 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/26 16:58:59 [error] [exception.CDbException] exception 'CDbException' with message 'Table "usuarios_has_turnos" does not have a column named "order".' in C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1475): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(8): CActiveRecord->findAllByAttributes(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#6 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): CController->render('turnosuser')
+#7 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#13 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/26 17:00:28 [error] [exception.CDbException] exception 'CDbException' with message 'Table "turnos" does not have a column named "0".' in C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(20): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#6 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): CController->render('turnosuser')
+#7 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#13 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/26 17:00:43 [error] [exception.CDbException] exception 'CDbException' with message 'Table "turnos" does not have a column named "order".' in C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(20): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#6 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): CController->render('turnosuser')
+#7 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#13 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/26 17:01:49 [error] [exception.CDbException] exception 'CDbException' with message 'Table "turnos" does not have a column named "0".' in C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(23): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#6 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): CController->render('turnosuser')
+#7 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#13 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/26 17:02:00 [error] [exception.CDbException] exception 'CDbException' with message 'Table "turnos" does not have a column named "0".' in C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(23): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#6 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): CController->render('turnosuser')
+#7 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#13 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/26 17:04:17 [error] [exception.CDbException] exception 'CDbException' with message 'Table "turnos" does not have a column named "criteria".' in C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(23): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#6 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): CController->render('turnosuser')
+#7 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#13 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/26 17:12:19 [error] [exception.CDbException] exception 'CDbException' with message 'Table "turnos" does not have a column named "order".' in C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(23): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#6 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): CController->render('turnosuser')
+#7 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#13 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/26 17:13:52 [error] [exception.CDbException] exception 'CDbException' with message 'Table "turnos" does not have a column named "order".' in C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(23): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#6 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): CController->render('turnosuser')
+#7 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#13 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/26 17:18:35 [error] [exception.CException] exception 'CException' with message 'Property "UsuariosHasTurnos.fecha_turno" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('fecha_turno')
+#1 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(23): CActiveRecord->__get('fecha_turno')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#6 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): CController->render('turnosuser')
+#7 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#13 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/26 17:19:12 [error] [exception.CDbException] exception 'CDbException' with message 'Table "turnos" does not have a column named "fecha_turno DESC".' in C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(23): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#6 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): CController->render('turnosuser')
+#7 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#13 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/26 17:22:50 [error] [php] Object of class CDbCriteria could not be converted to string (C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php:25)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/turnosuser
+in C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php (25)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (122)
+in C:\wamp\www\easy\SEU\index.php (13)
+2014/01/26 17:39:04 [error] [php] Trying to get property of non-object (C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php:28)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/turnosuser
+in C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php (28)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (122)
+in C:\wamp\www\easy\SEU\index.php (13)
+2014/01/26 17:39:17 [error] [exception.CException] exception 'CException' with message 'Turnos and its behaviors do not have a method or closure named "order".' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('order', Array)
+#1 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(24): CActiveRecord->__call('order', Array)
+#2 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(24): Turnos->order(Object(CDbCriteria))
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#7 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): CController->render('turnosuser')
+#8 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#14 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/26 17:39:41 [error] [php] Object of class CDbCriteria could not be converted to string (C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php:24)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/turnosuser
+in C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php (24)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (122)
+in C:\wamp\www\easy\SEU\index.php (13)
+2014/01/26 17:53:37 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.id_turno" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCriteria.php(161): CComponent->__set('id_turno', '27')
+#1 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1395): CDbCommandBuilder->createCriteria(Array, Array)
+#3 C:\wamp\www\easy\SEU\protected\views\site\turnosuser.php(23): CActiveRecord->find(Array)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('turnosuser', NULL, true)
+#8 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(122): CController->render('turnosuser')
+#9 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionTurnosuser()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('turnosuser')
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/turnosuser')
+#15 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/easy/SEU/site/turnosuser
+HTTP_REFERER=http://localhost/easy/SEU/site/peticion
+---
+2014/01/26 16:03:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/26 19:04:25 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (113)
+in C:\wamp\www\easy\SEU\index.php (13)
