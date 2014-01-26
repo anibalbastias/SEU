@@ -47,8 +47,10 @@
         
         
         <?php 
-            $dia_peticion = 5;
-            $dia_repechaje = 5;
+        
+            date_default_timezone_set("Chile/Continental");
+            $dia_peticion = 6;
+            $dia_repechaje = 6;
          
         
             if(Yii::app()->session['var'] != NULL){
@@ -58,17 +60,72 @@
                 
                  
                 $fecha_dia = date("w");
-
+//                echo $fecha_dia;
          
                 
             ?>
     
         
-        
+        <div class="row-fluid">
+            <div class="span12 barra alert alert-success">
+                <div class="container-fluid">
+                <div class="row-fluid" style="padding-top: 10px;">
+                    
+                    <div class="span4">
+                        
+                          <div class="style_user"> 
+                            <b>Bienvenido</b> &nbsp; <?php
+            
+                                 $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
+                                 $nombre=$empaque->nom_usuario;
+                                 $apellido=$empaque->apel1_usuario;   
+                                 echo $nombre." ".$apellido;
+            
+                                ?>
+                               - 
+                            
+                               <b> Estado</b> &nbsp;
+                               <?php
+                                if ($empaque->estudios_usuario == '1'){
+                                    
+                                    echo 'Activo';
+                                }
+                                else{
+                                    if($empaque->estudios_usuario == '0'){
+                                        
+                                     echo 'Inactivo';   
+                                        
+                                    }
+                                }
+                                
+                               ?>
+                               
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="span4">
+                        
+                        <b>Toma de Turnos</b> Jueves 23:00 hrs
+                        
+                    </div>
+                    <div class="span4">
+                      
+                             <div type="button" class="btn btn-danger pull-right">
+                                <a href="<?php echo Yii:: app() ->baseUrl.'/site/logout' ?>">Cerrar Sesion</a>
+                            </div>
+            
+                        
+                    </div>
+                    
+                </div>
+                </div>    
+            </div>
+        </div>    
         
         <div class="container">
         
-        <ul class="altura3 nav nav-tabs nav-pills">
+        <ul class="altura3 nav nav-tabs nav-pills ">
             <li <?php if($pagina == "index") { ?>class="active" <?php } ?>><a href="<?php echo Yii:: app() ->baseUrl.'/site/index' ?>"> Inicio</a></li>
             <li <?php if($pagina == "perfil") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/perfil' ?>"> Perfil</a></li>
             <li <?php if($pagina == "turnosuser") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/turnosuser' ?>"> Mis Turnos</a></li>
@@ -90,23 +147,11 @@
             </li>
            
             <li>  
-                <div class="style_user"> 
-                    Bienvenido <?php
-            
-                                 $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
-                                 $nombre=$empaque->nom_usuario;
-                                 $apellido=$empaque->apel1_usuario;   
-                                 echo $nombre." ".$apellido;
-            
-                        ?>
-                </div>
+                
                     
             </li>
             
-            <div type="button" class="btn btn-danger pull-right">
-                <a href="<?php echo Yii:: app() ->baseUrl.'/site/logout' ?>">Cerrar Sesion</a>
-            </div>
-            
+           
         </ul>
         <!--fin del menu-->
         </div>

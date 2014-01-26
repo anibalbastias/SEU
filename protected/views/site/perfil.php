@@ -11,7 +11,11 @@
 
 
     <div class="style_user">
-    <h3>Perfil    
+        
+    <div class="">
+         
+            
+    <h3 class="">Perfil    
    <?php 
             $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
            $nombre=$empaque->nom_usuario;
@@ -22,7 +26,9 @@
      
     ?>
     </h3>
-    
+    </div>
+        
+    <div class="">    
     <div class="row-fluid">    
        <div class="span3">    
     
@@ -176,10 +182,17 @@
         
        
         <!-- ############## fin alerta reglamento #############-->
-     
-     
+    
+<!--     <div class="accordion-group">
+        <div class="accordion-heading">
+          <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="accordion-inner">
+          Panel content
+        </div>
+      </div> -->
         
-        
+        </div>
         </div>
     </div>  
         

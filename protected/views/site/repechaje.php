@@ -4,6 +4,7 @@
     if(Yii::app()->session['var'] != NULL)
             {
 
+        date_default_timezone_set("Chile/Continental");
 ?>
 
 
