@@ -5836,3 +5836,48 @@ in C:\wamp\www\easy\SEU\protected\views\layouts\main.php (234)
 in C:\wamp\www\easy\SEU\protected\views\layouts\column1.php (6)
 in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (53)
 >>>>>>> 6a32c6c0aadc1a861919960703799710d31fe390
+2014/01/24 11:45:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(624): CApplication->getDb()
+#5 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(2311): CActiveRecord->getDbConnection()
+#6 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Usuarios))
+#7 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\models\Usuarios.php(33): CActiveRecord::model('Usuarios')
+#8 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\components\UserIdentity.php(24): Usuarios::model()
+#9 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#10 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#11 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#12 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#13 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\protected\controllers\SiteController.php(45): CModel->validate()
+#14 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#15 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(283): CController->run('')
+#19 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site')
+#20 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/site/
+HTTP_REFERER=http://localhost/site/
+---
+2014/01/24 16:45:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/01/25 22:54:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/users/37.jpg
+HTTP_REFERER=http://localhost/usuarios/admin
+---
