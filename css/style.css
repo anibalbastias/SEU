@@ -351,18 +351,21 @@ body{
 
 .id_credencial{
     
-    color: #b5b5b5;
-    margin-left: 50px;
+    /*color: #b5b5b5;*/
+    color:#00b2d9;
+    margin-left: 30px;
     margin-top: 50px;
     font-size: 100px;
+    text-shadow: 2px 2px #000000;
 }
 
 .nombre_credencial{
     
-    color:#b5b5b5;
-    margin-left: 150px;
-    font-size: 40px;
-    
+    /*color:#b5b5b5;*/
+    color:#00b2d9;
+    margin-left: 180px;
+    font-size: 30px;
+    text-shadow: 2px 2px #000000;
 }
 
 .carrera_credencial{
@@ -370,8 +373,9 @@ body{
     color:#b5b5b5;
     font-size: 20px;
     margin-top: 10px;
-    margin-left: 150px;
+    margin-left: 180px;
     padding-bottom: 20px;
+    text-shadow: 2px 2px #000000;
 }
 
 .credencial_all{

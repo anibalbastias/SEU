@@ -14,9 +14,17 @@
     $usuario = Usuarios::model()->findByPk(Yii::app()->session['var']);
 //    echo $usuario->nom_usuario;
     
-    echo CHtml::image(Yii::app()->request->baseUrl.'/img/users/'.$usuario->id_usuario.".jpg","id_usuario",array("width"=>165));
+//    echo CHtml::image(Yii::app()->request->baseUrl.'/img/users/'.$usuario->id_usuario.".jpg","id_usuario",array("width"=>165));
  
- 
+    if($usuario->img_usuario == "1")
+                {
+                    echo CHtml::image(Yii::app()->request->baseUrl.'/img/users/'.$usuario->id_usuario.".jpg","id_usuario",array("width"=>165));
+//                    echo "hola";
+                    }
+                else
+                {
+                    echo CHtml::image(Yii::app()->request->baseUrl.'/img/users/gen.png',"id_usuario",array("width"=>165,"height" =>165));
+                }
  
  ?>
 

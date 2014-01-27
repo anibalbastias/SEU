@@ -44,6 +44,8 @@
                     echo CHtml::image(Yii::app()->request->baseUrl.'/img/users/gen.png',"id_usuario",array("width"=>176));
                 }
                 
+//                echo $empaque->img_usuario;
+                
                 ?>
                 
                 
