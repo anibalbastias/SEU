@@ -10,15 +10,16 @@
         <!-- #################### cuerpo  #######################--> 
 
 
+        
            
-
+<div id="theMenu">
         <!-- #####################  noticias  ###################--> 
         <div class="    ">
         
             <div class="">
         <div class="row-fluid" style="background-color: #00b2d9; color:white;">
             <div class="span12">
-               <h3 style="margin-left: 20px;"> Noticias</h3> 
+               <h3  style="margin-left: 20px;"> Noticias</h3> 
             </div>    
         </div>
         </div>
@@ -239,7 +240,7 @@
         
         
         
-    
+</div>  
         
         
     <?php
