@@ -6346,4 +6346,26 @@ HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
 2014/01/26 19:04:25 [warning] [application] Failed to set unsafe attribute "id_usuario" of "Usuarios".
 in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (113)
 in C:\wamp\www\easy\SEU\index.php (13)
+<<<<<<< HEAD
 >>>>>>> 62abc2a89431575e2d12696a517299619bfbde01
+=======
+2014/01/27 12:51:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "credencial".' in C:\wamp\www\easy\SEU\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(271): CController->missingAction('credencial')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('credencial')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/credencial')
+#3 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/easy/SEU/site/credencial
+HTTP_REFERER=http://localhost/easy/SEU/site/perfil
+---
+2014/01/27 13:49:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/.jpg')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/.jpg
+---
+>>>>>>> 56dfec62d8b71d1cc093f66a809feebd6360695d
