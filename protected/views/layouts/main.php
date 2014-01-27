@@ -17,7 +17,11 @@
         
 	<title>SEU</title>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-       
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+         <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        
+        
         <?php $controlador = $this->getId(); ?>
         <?php $pagina = $this->getAction()->getId(); ?>
         <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'></link>
@@ -25,6 +29,8 @@
         <link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/img/favicon.ico" />
      
         <?php if($pagina == 'peticion' || $pagina == 'repechaje') {?> <meta content="5" http-equiv="REFRESH"> </meta> <?php } ?>
+        
+        
         
 </head>
 
@@ -49,8 +55,8 @@
         <?php 
         
             date_default_timezone_set("Chile/Continental");
-            $dia_peticion = 6;
-            $dia_repechaje = 6;
+            $dia_peticion = 0;
+            $dia_repechaje = 0;
          
         
             if(Yii::app()->session['var'] != NULL){

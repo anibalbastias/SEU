@@ -10,8 +10,15 @@
 
 <h3>Turnos de repechaje</h3>
 
-<p>Usted puede tomar todos los turnos que desee para completar cupos disponibles.</p>
 
+
+<div class='row-fluid'>
+     <div class='span7'>
+          <div class='alert alert-danger'>
+                   <p>Usted puede tomar todos los turnos que desee para completar cupos disponibles.</p>
+          </div>
+     </div>
+</div>
 
 <div class="span11">
    
