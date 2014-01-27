@@ -111,7 +111,9 @@
         </div>
         
         <div type="button" class="btn btn-success">
-                <a href="<?php echo Yii:: app() ->baseUrl.'/#' ?>">Descargar Credencial</a>
+                
+                <a target="_blank" href="<?php echo Yii:: app() ->baseUrl.'/site/credencial'?> "> Descargar Credencial</a>
+
         </div>
         
        

@@ -230,6 +230,8 @@ class SiteController extends Controller
                    
         }
        
+       
+        
          public function actionFotos()
         {
         
@@ -244,7 +246,32 @@ class SiteController extends Controller
                    
         }
         
-                public function actionPdf()
+        public function actionCredencial(){
+            
+            $mPDF1 = Yii::app()->ePdf->mpdf();
+            $this->layout="//layouts/credencial_usuario";
+            $stylesheet = file_get_contents(Yii::getPathOfAlias('webroot.css') . '/style.css');
+            $stylesheet2 = file_get_contents(Yii::getPathOfAlias('webroot.css') . '/style_1.css');
+            $stylesheet3 = file_get_contents(Yii::getPathOfAlias('bootstrap').'/assets/css/bootstrap.css');
+            $stylesheet4 = file_get_contents(Yii::getPathOfAlias('bootstrap').'/assets/css/bootstrap.min.css');
+            
+            $mPDF1->WriteHTML($stylesheet,1);
+            $mPDF1->WriteHTML($stylesheet2,1);
+            $mPDF1->WriteHTML($stylesheet3,1);
+            $mPDF1->WriteHTML($stylesheet4,1);
+            
+//            $mPDF1->WriteHTML(CHtml::image(Yii::app()->request->baseUrl.'/img/credencial.png',' ',array(
+//                'class'=>'')));
+            
+        
+            $mPDF1->WriteHTML($this->render('credencial',array(),true));
+            $mPDF1->Output();
+            exit();
+            
+        } 
+        
+        
+       public function actionPdf()
 	{
             
             $mPDF1 = Yii::app()->ePdf->mpdf();
@@ -256,7 +283,7 @@ class SiteController extends Controller
             $stylesheet4 = file_get_contents(Yii::getPathOfAlias('bootstrap').'/assets/css/bootstrap.min.css');
 // 
 //            
-//            $mPDF1->WriteHTML($stylesheet, 1);
+//             $mPDF1->WriteHTML($stylesheet, 1);
 //            $mPDF1->WriteHTML($stylesheet2, 1);
 //            $mPDF1->WriteHTML($stylesheet3, 1);
 //          
