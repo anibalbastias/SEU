@@ -6369,3 +6369,27 @@ Stack trace:
 REQUEST_URI=/easy/SEU/img/users/.jpg
 ---
 >>>>>>> 56dfec62d8b71d1cc093f66a809feebd6360695d
+2014/01/27 18:28:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/body-pattern.jpg".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/body-pat...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/body-pattern.jpg
+---
+2014/01/27 18:28:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/body-pattern.jpg".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/body-pat...')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/body-pattern.jpg
+---
+2014/01/27 18:28:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
