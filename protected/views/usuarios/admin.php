@@ -57,12 +57,12 @@ $('.search-form form').submit(function(){
     
 <div class="row-fluid">
 <div class="span-12 
-    <?php if($i%2 == 0){ 
-                        echo 'well';
+    <?php if($emp->estado_usuario == 1){ 
+                        echo 'alert alert-danger';
     
                         }
          else{
-             if($i%2 == 1){
+             if($emp->estado_usuario != 1){
                  
                     echo 'mis_turnos';
              }
@@ -73,7 +73,7 @@ $('.search-form form').submit(function(){
     
         <?php
         
-                $i = $i+1;
+//                $i = $i+1;
         
                 if($emp->img_usuario == "1")
                 {
@@ -93,13 +93,13 @@ $('.search-form form').submit(function(){
          <?php 
             if($emp->estado_usuario != 1){
                 
-                echo "<div type=\"button\" class=\"btn btn-warning\" onclick=\"location.href='".Yii::app()->baseUrl."/usuarios/bloquear/".$emp->id_usuario."';\">Bloquear</div>";
+                echo "<div type=\"button\" class=\"btn btn-mini btn-danger\" onclick=\"location.href='".Yii::app()->baseUrl."/usuarios/bloquear/".$emp->id_usuario."';\">Bloquear</div>";
             
             }
             else{
                 if($emp->estado_usuario == 1){
                   
-                        echo "<div type=\"button\" class=\"btn btn-success\" onclick=\"location.href='".Yii::app()->baseUrl."/usuarios/desbloquear/".$emp->id_usuario."';\">Desbloquear</div>";
+                        echo "<div type=\"button\" class=\"btn btn-mini btn-success\" onclick=\"location.href='".Yii::app()->baseUrl."/usuarios/desbloquear/".$emp->id_usuario."';\">Desbloquear</div>";
                  
                 }
             }
