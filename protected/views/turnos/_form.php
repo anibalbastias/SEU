@@ -4,7 +4,12 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="container form well">
+<div class="container row-fluid">
+    
+    <div class="span12">
+
+        <br>   
+<div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'turnos-form',
@@ -47,9 +52,11 @@
 	</div>
 
 	<div class="span3" style="margin-top: 24px;">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear Turno' : 'Guardar Turno'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear Turno' : 'Guardar Turno',array('class'=>'btn btn-success',)); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+    </div>
+</div>

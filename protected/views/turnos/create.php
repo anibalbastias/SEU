@@ -30,7 +30,15 @@ $this->menu=array(
 );
 ?>
 
-<h1>Crear Turnos</h1>
+
+<div class="">
+        <div class="row-fluid" style="background-color: #00b2d9; color:white;">
+            <div class="span12">
+                <h3 style="margin-left: 20px;">Crear turnos </h3>
+            </div>    
+        </div>
+        </div>
+
 
 <?php echo $this->renderPartial('_form', array('model'=>$model));
 

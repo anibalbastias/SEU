@@ -28,9 +28,15 @@ $('.search-form form').submit(function(){
 ?>
 
 
+<div class="">
+        <div class="row-fluid" style="background-color: #00b2d9; color:white;">
+            <div class="span12">
+                <h3 style="margin-left: 20px;">Administrar empaques </h3>
+            </div>    
+        </div>
+        </div>
 
-<h3>Administrar Usuarios</h3>
-
+<br>
 <div type="button" class="btn btn-info btn-mini"><a target="_blank" href="<?php echo Yii:: app() ->baseUrl.'/usuarios/pdf'?> "> Generar PDF</a></div>
         
 
@@ -42,7 +48,7 @@ $('.search-form form').submit(function(){
     $criteria->order = "nom_usuario ASC";
     $empaque = Usuarios::model()->findAll($criteria);
 
-    
+    $i = 0;
 
     foreach ($empaque as $emp){
         
@@ -50,9 +56,25 @@ $('.search-form form').submit(function(){
     ?> 
     
 <div class="row-fluid">
-<div class="span-12 well style_user ">
+<div class="span-12 
+    <?php if($i%2 == 0){ 
+                        echo 'well';
+    
+                        }
+         else{
+             if($i%2 == 1){
+                 
+                    echo 'mis_turnos';
+             }
+         }
+?> style_user ">
            
+    
+    
         <?php
+        
+                $i = $i+1;
+        
                 if($emp->img_usuario == "1")
                 {
                     echo CHtml::image(Yii::app()->request->baseUrl.'/img/users/'.$emp->id_usuario.".jpg","id_usuario",array("width"=>50));

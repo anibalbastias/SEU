@@ -32,7 +32,12 @@ $this->menu=array(
 );
 ?>
 
-<h1>Faltas</h1>
+<div class='row-fluid' style='background-color: #00b2d9; color:white;'>
+            <div class='span12'>
+                <h3 style='margin-left: 20px;'>Faltas </h3>
+                    
+    </div>    
+        </div>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
