@@ -89,6 +89,21 @@ $('.search-form form').submit(function(){
 	<b><?php echo CHtml::encode($emp->nom_usuario." ".$emp->apel1_usuario." ".$emp->apel2_usuario); ?></b>
 	<!--<br />-->
         <div class="pull-right">
+            
+         <?php 
+            if($emp->estado_usuario != 1){
+                
+                echo "<div type=\"button\" class=\"btn btn-warning\" onclick=\"location.href='".Yii::app()->baseUrl."/usuarios/bloquear/".$emp->id_usuario."';\">Bloquear</div>";
+            
+            }
+            else{
+                if($emp->estado_usuario == 1){
+                  
+                        echo "<div type=\"button\" class=\"btn btn-success\" onclick=\"location.href='".Yii::app()->baseUrl."/usuarios/desbloquear/".$emp->id_usuario."';\">Desbloquear</div>";
+                 
+                }
+            }
+          ?>       
         <div type="button" class="btn btn-info btn-mini"><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/'.$emp->id_usuario ?>"> Perfil</a></div>
         <div type="button" class="btn btn-warning btn-mini"><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/update/'.$emp->id_usuario ?>"> Modificar</a></div>
         <div type="button" class="btn btn-success btn-mini"><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/faltas?id='.$emp->id_usuario ?> "> Faltas</a></div>

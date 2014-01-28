@@ -55,8 +55,8 @@
         <?php 
         
             date_default_timezone_set("Chile/Continental");
-            $dia_peticion = 0;
-            $dia_repechaje = 0;
+            $dia_peticion = 2;
+            $dia_repechaje = 2;
          
         
             if(Yii::app()->session['var'] != NULL){

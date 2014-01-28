@@ -33,6 +33,8 @@
                 </div>
             </div>
              
+            <?php // echo $usuario->estado_usuario;   ?>
+            
             <div class="bs-docs-example">
                 <div class="alert alert-block alert-error fade in">
                     <button type="button" class="close" data-dismiss="alert">&times;</button>
