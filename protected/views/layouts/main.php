@@ -204,7 +204,7 @@
 
 <div class="container panel">
     <div class="row-fluid">
-<div class="span4 centrar">
+<div class="span4 centrar alert alert-info">
 
     <h3> Usuarios </h3>
     
@@ -216,7 +216,7 @@
 </div>
        
 
-<div class="span4 centrar">
+<div class="span4 centrar alert alert-success">
     
     <h3>Planilla</h3>
     <div class="nav">
@@ -229,7 +229,7 @@
         
         
         
-<div class="span4 centrar">
+<div class="span4 centrar alert alert-danger">
     
     <h3>Faltas</h3>
     <div class="nav ">
@@ -252,7 +252,7 @@
         <!--contenido-->
         
        
-        <div class="container contenido">
+        <div class="container  contenido">
         
             <?php 
             
