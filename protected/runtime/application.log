@@ -6643,6 +6643,7 @@ Stack trace:
 REQUEST_URI=/easy/SEU/img/users/37.jpg
 HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
 ---
+<<<<<<< HEAD
 2014/01/27 22:17:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/body-pattern.jpg".' in C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php:287
 Stack trace:
 #0 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('images/body-pat...')
@@ -6658,4 +6659,539 @@ Stack trace:
 #2 C:\Program Files\BitNami WAMPStack\apache2\htdocs\SEU\index.php(13): CApplication->run()
 #3 {main}
 REQUEST_URI=/images/body-pattern.jpg
+=======
+2014/01/27 22:05:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/27 22:07:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/27 22:25:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 03:20:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 03:27:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 03:27:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 03:28:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 03:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 03:31:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 16:47:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 16:57:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:20:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:21:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:21:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:22:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:22:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:22:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:24:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:24:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:24:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:25:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:25:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:35:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:35:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:36:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:36:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 21:39:49 [error] [php] Undefined variable: m (C:\wamp\www\easy\SEU\protected\views\usuarios\admin.php:96)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): UsuariosController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): UsuariosController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php(265): UsuariosController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionAdmin()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(134): UsuariosController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): UsuariosController->filterAccessControl()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): UsuariosController->runActionWithFilters()
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): UsuariosController->run()
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/usuarios/admin
+in C:\wamp\www\easy\SEU\protected\views\usuarios\admin.php (96)
+in C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php (265)
+in C:\wamp\www\easy\SEU\index.php (13)
+2014/01/28 18:40:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:40:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\easy\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('bloquear')
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/bloque...')
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/easy/SEU/usuarios/bloquear/9
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:41:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:41:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:42:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\easy\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('bloquear')
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/bloque...')
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/easy/SEU/usuarios/bloquear/9
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:49:28 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\easy\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('bloquear')
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/bloque...')
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/easy/SEU/usuarios/bloquear/9
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:49:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:49:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\easy\SEU\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\easy\SEU\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\easy\SEU\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('bloquear')
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/bloque...')
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/easy/SEU/usuarios/bloquear/9
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:50:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:50:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:56:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 18:56:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 19:08:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 19:08:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 19:08:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 22:09:56 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.estado" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('estado')
+#1 C:\wamp\www\easy\SEU\protected\views\usuarios\admin.php(60): CActiveRecord->__get('estado')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#6 C:\wamp\www\easy\SEU\protected\controllers\UsuariosController.php(282): CController->render('admin', Array)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): UsuariosController->actionAdmin()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('usuarios/admin')
+#13 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/easy/SEU/usuarios/admin
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 19:10:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 19:10:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 19:11:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 19:11:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 19:13:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 19:13:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 19:13:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 19:15:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 19:22:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/01/28 19:22:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+>>>>>>> 188600772d26b3f31fc57765cc450b12ecf4a270
 ---

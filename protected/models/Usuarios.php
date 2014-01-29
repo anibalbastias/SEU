@@ -17,6 +17,7 @@
  * @property integer $estudios_usuario
  * @property string $fnac_usuario
  * @property integer $genero_usuario
+ * @property integer $estado_usuario
  * @property string $hijos_usuario
  * @property string $pass_usuario
  * @property bool $img_usuario
@@ -56,7 +57,7 @@ class Usuarios extends CActiveRecord
 			array('fnac_usuario', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id_usuario, carreras_id_carrera, comunas_id_comuna, nom_usuario, apel1_usuario, apel2_usuario, rut_usuario, dir_usuario, email_usuario, cel_usuario, estudios_usuario, fnac_usuario, genero_usuario, hijos_usuario, pass_usuario', 'safe', 'on'=>'search'),
+			array('id_usuario, carreras_id_carrera, comunas_id_comuna, nom_usuario, apel1_usuario, apel2_usuario, rut_usuario, dir_usuario, email_usuario, cel_usuario, estudios_usuario, fnac_usuario, genero_usuario,estado_usuario, hijos_usuario, pass_usuario', 'safe', 'on'=>'search'),
                         array('id_usuario', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'), 
 		);
 	}
@@ -95,6 +96,7 @@ class Usuarios extends CActiveRecord
 			'estudios_usuario' => 'Educacion Superior',
 			'fnac_usuario' => 'Fecha Nacimiento',
 			'genero_usuario' => 'Genero',
+                        'estado_usuario' => 'Estado',
 			'hijos_usuario' => 'Cantidad Hijos',
 			'pass_usuario' => 'Contraseña',
                         'img_usuario' => 'Foto Usuario',
@@ -125,6 +127,7 @@ class Usuarios extends CActiveRecord
 		$criteria->compare('estudios_usuario',$this->estudios_usuario);
 		$criteria->compare('fnac_usuario',$this->fnac_usuario,true);
 		$criteria->compare('genero_usuario',$this->genero_usuario);
+                $criteria->compare('estado_usuario',$this->estado_usuario);
 		$criteria->compare('hijos_usuario',$this->hijos_usuario,true);
 		$criteria->compare('pass_usuario',$this->pass_usuario,true);
                 $criteria->compare('img_usuario',$this->img_usuario,true);

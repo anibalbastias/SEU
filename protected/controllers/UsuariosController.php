@@ -14,7 +14,7 @@ class UsuariosController extends Controller
 	public function filters()
 	{
 		return array(
-			'accessControl', // perform access control for CRUD operations
+//			'accessControl', // perform access control for CRUD operations
 //			'postOnly + delete', // we only allow deletion via POST request
 		);
 	}
@@ -55,6 +55,40 @@ class UsuariosController extends Controller
 			'model'=>$this->loadModel($id),
 		));
 	}
+        
+        public function actionBloquear($id)
+        {
+//            $model= new Usuarios;
+
+            $model=Usuarios::model()->findByPk($id);
+           
+            $model->estado_usuario = 1;
+            $model->save();
+            
+            $this->redirect(array('admin'));
+            
+            $this->render('create',array(
+                    'model'=>$model,
+            ));
+            
+        }
+        
+        public function actionDesbloquear($id)
+        {
+//            $model= new Usuarios;
+
+            $model=Usuarios::model()->findByPk($id);
+           
+            $model->estado_usuario = 0;
+            $model->save();
+            
+            $this->redirect(array('admin'));
+            
+            $this->render('create',array(
+                    'model'=>$model,
+            ));
+            
+        }
         
         public function actionPdf()
 	{

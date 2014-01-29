@@ -14,8 +14,14 @@
         </div>
         <div class="span8 centrar">
             
-            <h1>Create Faltas</h1>
+            <div class='row-fluid' style='background-color: #00b2d9; color:white;'>
+            <div class='span12'>
+                <h3 style='margin-left: 20px;'>Crear faltas </h3>
+                    
+    </div>    
+        </div>
             
+            <br><br>    
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(

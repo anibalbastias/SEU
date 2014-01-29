@@ -28,9 +28,15 @@ $('.search-form form').submit(function(){
 ?>
 
 
+<div class="">
+        <div class="row-fluid" style="background-color: #00b2d9; color:white;">
+            <div class="span12">
+                <h3 style="margin-left: 20px;">Administrar empaques </h3>
+            </div>    
+        </div>
+        </div>
 
-<h3>Administrar Usuarios</h3>
-
+<br>
 <div type="button" class="btn btn-info btn-mini"><a target="_blank" href="<?php echo Yii:: app() ->baseUrl.'/usuarios/pdf'?> "> Generar PDF</a></div>
         
 
@@ -42,7 +48,7 @@ $('.search-form form').submit(function(){
     $criteria->order = "nom_usuario ASC";
     $empaque = Usuarios::model()->findAll($criteria);
 
-    
+    $i = 0;
 
     foreach ($empaque as $emp){
         
@@ -50,9 +56,25 @@ $('.search-form form').submit(function(){
     ?> 
     
 <div class="row-fluid">
-<div class="span-12 well style_user ">
+<div class="span-12 
+    <?php if($emp->estado_usuario == 1){ 
+                        echo 'alert alert-danger';
+    
+                        }
+         else{
+             if($emp->estado_usuario != 1){
+                 
+                    echo 'mis_turnos';
+             }
+         }
+?> style_user ">
            
+    
+    
         <?php
+        
+//                $i = $i+1;
+        
                 if($emp->img_usuario == "1")
                 {
                     echo CHtml::image(Yii::app()->request->baseUrl.'/img/users/'.$emp->id_usuario.".jpg","id_usuario",array("width"=>50));
@@ -67,6 +89,21 @@ $('.search-form form').submit(function(){
 	<b><?php echo CHtml::encode($emp->nom_usuario." ".$emp->apel1_usuario." ".$emp->apel2_usuario); ?></b>
 	<!--<br />-->
         <div class="pull-right">
+            
+         <?php 
+            if($emp->estado_usuario != 1){
+                
+                echo "<div type=\"button\" class=\"btn btn-mini btn-danger\" onclick=\"location.href='".Yii::app()->baseUrl."/usuarios/bloquear/".$emp->id_usuario."';\">Bloquear</div>";
+            
+            }
+            else{
+                if($emp->estado_usuario == 1){
+                  
+                        echo "<div type=\"button\" class=\"btn btn-mini btn-success\" onclick=\"location.href='".Yii::app()->baseUrl."/usuarios/desbloquear/".$emp->id_usuario."';\">Desbloquear</div>";
+                 
+                }
+            }
+          ?>       
         <div type="button" class="btn btn-info btn-mini"><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/'.$emp->id_usuario ?>"> Perfil</a></div>
         <div type="button" class="btn btn-warning btn-mini"><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/update/'.$emp->id_usuario ?>"> Modificar</a></div>
         <div type="button" class="btn btn-success btn-mini"><a href="<?php echo Yii:: app() ->baseUrl.'/usuarios/faltas?id='.$emp->id_usuario ?> "> Faltas</a></div>

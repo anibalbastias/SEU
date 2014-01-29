@@ -31,7 +31,15 @@ $this->breadcrumbs=array(
 //);
 ?>
 
-<h3>Crear Usuarios</h3>
+<div class="">
+        <div class="row-fluid" style="background-color: #00b2d9; color:white;">
+            <div class="span12">
+                <h3 style="margin-left: 20px;">Crear Empaques </h3>
+            </div>    
+        </div>
+        </div>
+
+<!--<h3>Crear Usuarios</h3>-->
 
 <?php echo $this->renderPartial('_form', array('model'=>$model));
 

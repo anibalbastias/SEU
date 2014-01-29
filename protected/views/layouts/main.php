@@ -55,8 +55,8 @@
         <?php 
         
             date_default_timezone_set("Chile/Continental");
-            $dia_peticion = 0;
-            $dia_repechaje = 0;
+            $dia_peticion = 2;
+            $dia_repechaje = 2;
          
         
             if(Yii::app()->session['var'] != NULL){
@@ -73,7 +73,18 @@
     
         
         <div class="row-fluid">
-            <div class="span12 barra alert alert-success">
+            <div class="span12 barra alert <?php 
+                                            if($usuario->estado_usuario != 1){ 
+                                                echo' alert-success';
+                                                
+                                            }else{ if($usuario->estado_usuario == 1){
+                                            
+                                              echo 'alert-danger';  
+                                                
+                                            }}
+?>">
+                                            
+                                            
                 <div class="container-fluid">
                 <div class="row-fluid" style="padding-top: 10px;">
                     
@@ -92,14 +103,14 @@
                             
                                <b> Estado</b> &nbsp;
                                <?php
-                                if ($empaque->estudios_usuario == '1'){
+                                if ($empaque->estado_usuario == 1){
                                     
-                                    echo 'Activo';
+                                    echo 'Bloqueado';
                                 }
                                 else{
-                                    if($empaque->estudios_usuario == '0'){
+                                    if($empaque->estado_usuario != 1){
                                         
-                                     echo 'Inactivo';   
+                                     echo 'Activo';   
                                         
                                     }
                                 }
