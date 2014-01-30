@@ -226,7 +226,13 @@
     }
     else
     {
-        echo "No se encuentran turnos registrados en esta semana";
+        echo "<br><div class='row-fluid'>
+        <div class='span4'>
+        <div class='alert alert-success'>
+        <p>No se encuentran turnos registrados</p>
+        </div>
+        </div>
+        </div>";
     }
 
 ?>     
