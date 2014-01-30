@@ -24,7 +24,7 @@
         </div>
         </div>
             
-            
+            <br>
             
             <div class="bs-docs-example">
                 <div class="alert alert-block alert-success fade in">
