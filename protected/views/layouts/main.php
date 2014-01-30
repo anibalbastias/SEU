@@ -55,8 +55,8 @@
         <?php 
         
             date_default_timezone_set("Chile/Continental");
-            $dia_peticion = 4;
-            $dia_repechaje = 5;
+            $dia_peticion = '4 23:00:00';
+            $dia_repechaje = '5 00:00:00';
          
         
             if(Yii::app()->session['var'] != NULL){
@@ -65,7 +65,8 @@
                 {    
                 
                  
-                $fecha_dia = date("w");
+                //$fecha_dia = date("w");
+                $fecha_dia = date("w H:i:s");
 //                echo $fecha_dia;
          
                 
@@ -159,7 +160,7 @@
             <li <?php if($pagina == "turnosuser") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/turnosuser' ?>"> Mis Turnos</a></li>
             <li <?php if($pagina == "peticion") { ?>class="active" <?php } ?> >
                 
-                    <?php if($fecha_dia == $dia_peticion) { ?>
+                    <?php if($fecha_dia > $dia_peticion) { ?>
                                 <a href="<?php echo Yii:: app() ->baseUrl.'/site/peticion'; ?>">Tomar Turnos </a>
                     <?php } ?>
                                 
@@ -167,7 +168,7 @@
             <li 
                 <?php if($pagina == "repechaje") { ?>class="active" <?php } ?> >
             
-                       <?php if($fecha_dia == $dia_repechaje) { ?>
+                       <?php if($fecha_dia > $dia_repechaje) { ?>
                 
                                 <a href="<?php echo Yii:: app() ->baseUrl.'/site/repechaje' ?>"> Turnos Repechaje</a>
                        <?php } ?>
