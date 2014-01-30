@@ -116,7 +116,7 @@
                 }
                 else
                 {
-                    echo "<div class='row-fluid'>
+                    echo "<br><div class='row-fluid'>
                     <div class='span4'>
                     <div class='alert alert-success'>
                     <p>El Usuario no registra faltas.</p>
