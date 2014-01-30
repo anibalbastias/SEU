@@ -27,7 +27,7 @@
             
             
             <div class="bs-docs-example">
-                <div class="alert alert-block alert-error fade in">
+                <div class="alert alert-block alert-success fade in">
                     <button type="button" class="close" data-dismiss="alert">&times;</button>
                     <strong>Anuncio!</strong> Nueva plataforma de Servicios de Empaques Universitarios.
                 </div>
@@ -36,98 +36,25 @@
             <?php // echo $usuario->estado_usuario;   ?>
             
             <div class="bs-docs-example">
-                <div class="alert alert-block alert-error fade in">
+                <div class="alert alert-block alert-success fade in">
                     <button type="button" class="close" data-dismiss="alert">&times;</button>
                     <strong>Publicaciones!</strong> Podrán ver sus faltas respectivas.
                 </div>
             </div>
             
-<<<<<<< HEAD
-        <h3><u>Turnos de la semana</u></h3>
 
-        <?php $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);  ?>
-
-
-
-<?php
-    $turno1 = UsuariosHasTurnos::model()->findAllByAttributes(array('usuarios_id_usuario'=>Yii::app()->session['var']));
-    $i=1;
-    
-    if($turno1 != null)
-    {
-        foreach($turno1 as $t)
-    {
-        ?>
-        <div class="well">
-        <?php
-        $turno2 = Turnos::model()->findByAttributes(array('id_turno'=>$t->turnos_id_turno));
-        $model3 = Yii::app()->db->createCommand("select estado from usuarios_has_turnos
-                where usuarios_id_usuario=".Yii::app()->session['var']." and estado='Aceptado' and turnos_id_turno=".$turno2->id_turno.";")->queryScalar();
-        $model4 = Yii::app()->db->createCommand("select usuarios_id_usuario from usuarios_has_turnos
-                where estado='Rechazado' and turnos_id_turno=".$turno2->id_turno.";")->queryScalar();
         
-        $t3 = explode(" ", $turno2->fecha_turno);
-        $date1 = date_create($turno2->fecha_turno);
-
-        echo "<b>".$i.". </b><br> <b>Fecha:</b> "; 
-
-        if(date_format($date1, "w") == "1") echo "Lunes";
-        if(date_format($date1, "w") == "2") echo "Martes";
-        if(date_format($date1, "w") == "3") echo "Miercoles";
-        if(date_format($date1, "w") == "4") echo "Jueves";
-        if(date_format($date1, "w") == "5") echo "Viernes";
-        if(date_format($date1, "w") == "6") echo "Sabado";
-        if(date_format($date1, "w") == "0") echo "Domingo";
-
-        echo " ".$t3[0]."<br><b>Hora:</b> ".$t3[1];
-        
-        if($model3 == "Aceptado")
-        {
-            echo "<br><b>Estado:</b> Aceptado";
-
-            if($model4)
-            {
-                $model5 = Usuarios::model()->find('id_usuario='.$model4);
-                echo "<br><b>Regalado por ".$model5->nom_usuario." ".$model5->apel1_usuario." ".$model5->apel2_usuario."</b>";
-            }
-            
-            
-            
-
-            echo "<br>";
-            echo "<br><div type=\"button\" class=\"btn btn-danger\" onclick=\"location.href='".Yii::app()->baseUrl."/site/regalaturno/".$turno2->id_turno."';\">Regalar turno</div>";
-        }
-        else
-        {
-            echo "<br><b>Estado:</b> Regalado";
-            echo "<br>";
-        }
-        
-        $i++;
-        ?>
-        </div>
-        <?php
-                
-    }
-        
-    }
-    else
-    {
-        echo "No se encuentran turnos registrados en esta semana";
-    }
-
-?>
  
-=======
+
              <div class="bs-docs-example">
-                <div class="alert alert-block alert-error fade in">
+                <div class="alert alert-block alert-success fade in">
                     <button type="button" class="close" data-dismiss="alert">&times;</button>
-                    <strong>Anuncio!</strong> Acuérdese de leer constantemente el reglamento.
+                    <strong>Anuncio!</strong> Recordar de leer constantemente el reglamento.
                 </div>
             </div>
       
         </div>    
->>>>>>> 62abc2a89431575e2d12696a517299619bfbde01
+
             
         <div class="container-fluid">
         <div class="row-fluid">
@@ -203,55 +130,7 @@
             </div>    
         </div>
         </div>
-     
-<?php $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);  ?>
-
-<<<<<<< HEAD
-   <!-- ##############  turnos para tomar ##################### -->
-        <h3><u>Turnos para tomar</u></h3>
         
-        <?php
-    $model = UsuariosHasTurnos::model()->findall('usuarios_id_usuario='.Yii::app()->session['var'].' and estado="Aceptado"');
-    $total = 4;
-    $i=0;
-    foreach($model as $m)
-    {
-        $i++;
-    }
-    $resto = $total-$i;
-    if($resto >0)
-    {
-        echo "<p>Le quedan <b>".($resto)."</b> turnos para tomar esta semana</p>";
-        
-        ?>
-
-<div class="span11">
-   
-    <div class="row planilla-all well">
-    <div class="span-2 centrar planilla well_semana"><?php echo $this->renderPartial('_col1'); ?></div>
-    <div class="span-2 centrar planilla well_semana"><?php echo $this->renderPartial('_col2'); ?></div>
-    <div class="span-2 centrar planilla well_semana"><?php echo $this->renderPartial('_col3'); ?></div>
-    <div class="span-2 centrar planilla well_semana"><?php echo $this->renderPartial('_col4'); ?></div>
-    <div class="span-2 centrar planilla well_semana"><?php echo $this->renderPartial('_col5'); ?></div>
-    <div class="span-2 centrar planilla well_semana"><?php echo $this->renderPartial('_col6'); ?></div>
-    <div class="span-2 planilla centrar well_semana"><?php echo $this->renderPartial('_col7'); ?></div>
-    </div>    
-</div> 
-<!--<div id="counter"></div>-->
-
-
-        <?php
-    }
-    else 
-    {
-        echo "<p>No le quedan más turnos para tomar esta semana. Debe esperar para la próxima semana o regalar turnos.</p>";
-    }
-?>
-
-
-=======
->>>>>>> 62abc2a89431575e2d12696a517299619bfbde01
-
 <?php
     $turno1 = UsuariosHasTurnos::model()->findAllByAttributes(array('usuarios_id_usuario'=>Yii::app()->session['var']));
     $i=1;
@@ -334,6 +213,9 @@
     }
 
 ?>     
+
+     
+
         
         
     <div class="container-fluid">
@@ -357,10 +239,58 @@
                   <h3 style="margin-left: 20px;">Turnos para tomar</h3>
             </div>    
         </div>
+       
+       <?php $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);  ?>
+
+
+   <!-- ##############  turnos para tomar ##################### -->
+        <h3><u>Turnos para tomar</u></h3>
+        
+        <?php
+    $model = UsuariosHasTurnos::model()->findall('usuarios_id_usuario='.Yii::app()->session['var'].' and estado="Aceptado"');
+    $total = 4;
+    $i=0;
+    foreach($model as $m)
+    {
+        $i++;
+    }
+    $resto = $total-$i;
+    if($resto >0)
+    {
+        echo "<p>Quedan <b>".($resto)."</b> turnos para tomar esta semana</p>";
+        
+        ?>
+
+<div class="span11">
+   
+    <div class="row planilla-all well">
+    <div class="span-2 centrar planilla well_semana"><?php echo $this->renderPartial('_col1'); ?></div>
+    <div class="span-2 centrar planilla well_semana"><?php echo $this->renderPartial('_col2'); ?></div>
+    <div class="span-2 centrar planilla well_semana"><?php echo $this->renderPartial('_col3'); ?></div>
+    <div class="span-2 centrar planilla well_semana"><?php echo $this->renderPartial('_col4'); ?></div>
+    <div class="span-2 centrar planilla well_semana"><?php echo $this->renderPartial('_col5'); ?></div>
+    <div class="span-2 centrar planilla well_semana"><?php echo $this->renderPartial('_col6'); ?></div>
+    <div class="span-2 planilla centrar well_semana"><?php echo $this->renderPartial('_col7'); ?></div>
+    </div>    
+</div> 
+<!--<div id="counter"></div>-->
+
+
+        <?php
+    }
+    else 
+    {
+        echo "<p>No le quedan más turnos para tomar esta semana. Debe esperar para la próxima semana o regalar turnos.</p>";
+    }
+?>
+
+
+
+       
         </div>
    
           
-   <h1> En construcción </h1>
+   
         
         <!-- #################### fin cuerpo ################### -->
         
