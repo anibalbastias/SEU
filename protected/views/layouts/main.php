@@ -55,8 +55,8 @@
         <?php 
         
             date_default_timezone_set("Chile/Continental");
-            $dia_peticion = 2;
-            $dia_repechaje = 2;
+            $dia_peticion = 4;
+            $dia_repechaje = 5;
          
         
             if(Yii::app()->session['var'] != NULL){
@@ -91,9 +91,20 @@
                     <div class="span4">
                         
                           <div class="style_user"> 
-                            <b>Bienvenido</b> &nbsp; <?php
+                              <p>
+                                <?php 
+                                $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']); if($empaque->img_usuario == "1")
+                                {
+                                    echo CHtml::image(Yii::app()->request->baseUrl.'/img/users/'.$empaque->id_usuario.".jpg","id_usuario",array("width"=>40));
+                                }
+                                else
+                                {
+                                    echo CHtml::image(Yii::app()->request->baseUrl.'/img/users/gen.png',"id_usuario",array("width"=>40));
+                                } 
+                                ?>
+                                  
+                                  <b>Bienvenido</b> &nbsp; <?php
             
-                                 $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
                                  $nombre=$empaque->nom_usuario;
                                  $apellido=$empaque->apel1_usuario;   
                                  echo $nombre." ".$apellido;
@@ -116,7 +127,7 @@
                                 }
                                 
                                ?>
-                               
+                               </p>
                         </div>
                         
                         

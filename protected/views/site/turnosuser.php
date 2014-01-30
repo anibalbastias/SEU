@@ -4,33 +4,55 @@
 
 <h3>Turnos de la semana</h3>
 
+<p>Turnos registrados durante la semana actual por el usuario.</p>
+
 <?php
-    $turno1 = UsuariosHasTurnos::model()->findAllByAttributes(array('usuarios_id_usuario'=>Yii::app()->session['var']));
-    $i=1;
+    //$turno1 = UsuariosHasTurnos::model()->findAllByAttributes(array('usuarios_id_usuario'=>Yii::app()->session['var']));
+    $fecha1 = date ( 'Y-m-d H:i:s' , strtotime("monday this week"));
+    $fecha2 = date ( 'Y-m-d H:i:s' , strtotime("sunday next week"));
     
-    $criteria = new CDbCriteria();
-    $criteria->order = "fecha_turno ASC";
+    $turno1 = Yii::app()->db->createCommand("
+                select turnos_id_turno
+                from usuarios_has_turnos,turnos
+                where 
+                usuarios_has_turnos.turnos_id_turno = turnos.id_turno
+                and usuarios_has_turnos.usuarios_id_usuario=".Yii::app()->session['var']." 
+                and turnos.fecha_turno >= '".$fecha1."' 
+                and turnos.fecha_turno < '".$fecha2."';")->queryAll();
+        
+    $i=1;
     
     if($turno1 != null)
     {
-        foreach($turno1 as $t)
-    {
+        foreach($turno1 as $t1)
+        {
+            foreach($t1 as $t)
+            {
+                
+            
         ?>
         <div class="row-fluid">
           
         <div class=" alinear">
           <div class="mis_turnos">    
         <?php
-        $turno2 = Turnos::model()->findByAttributes(array('id_turno'=>$t->turnos_id_turno));
-//        $turno2 = $turno_s->$criteria;
-//        $turno2->find($criteria);
         
-        $model3 = Yii::app()->db->createCommand("select estado from usuarios_has_turnos
-                where usuarios_id_usuario=".Yii::app()->session['var']." and estado='Aceptado' and turnos_id_turno=".$turno2->id_turno.";")->queryScalar();
-        $model4 = Yii::app()->db->createCommand("select usuarios_id_usuario from usuarios_has_turnos
-                where estado='Rechazado' and turnos_id_turno=".$turno2->id_turno.";")->queryScalar();
+        $turno2 = Turnos::model()->find("id_turno=".$t."");
         
-//        echo $turno2->fecha_turno;
+        $model3 = Yii::app()->db->createCommand("
+                select estado 
+                from usuarios_has_turnos
+                where usuarios_id_usuario=".Yii::app()->session['var']." 
+                and estado='Aceptado' 
+                and turnos_id_turno=".$turno2->id_turno.";")->queryScalar();
+        
+        $model4 = Yii::app()->db->createCommand("
+                select usuarios_id_usuario 
+                from usuarios_has_turnos
+                where estado='Rechazado' 
+                and turnos_id_turno=".$turno2->id_turno.";")->queryScalar();
+        
+        //echo $fecha1." - ".$fecha2;
         
         $t3 = explode(" ", $turno2->fecha_turno);
         $date1 = date_create($turno2->fecha_turno);
@@ -75,6 +97,7 @@
         </div>
         <?php
                 
+        }
     }
         
     }

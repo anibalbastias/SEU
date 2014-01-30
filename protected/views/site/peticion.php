@@ -29,12 +29,30 @@
 <h3>Toma de turnos</h3>
 
 <?php
-    $model = UsuariosHasTurnos::model()->findall('usuarios_id_usuario='.Yii::app()->session['var'].' and estado="Aceptado"');
+
+    $fecha1 = date ( 'Y-m-d H:i:s' , strtotime("monday next week"));
+    $fecha2 = date ( 'Y-m-d H:i:s' , strtotime("sunday next week"));
+        
+//    $model = UsuariosHasTurnos::model()->findall('usuarios_id_usuario='.Yii::app()->session['var'].' 
+//        and estado="Aceptado"');
+    
+    $model = Yii::app()->db->createCommand("
+        select turnos_id_turno
+        from usuarios_has_turnos,turnos
+        where 
+        usuarios_has_turnos.estado = 'Aceptado'
+        and usuarios_has_turnos.turnos_id_turno = turnos.id_turno
+        and usuarios_has_turnos.usuarios_id_usuario=".Yii::app()->session['var']." 
+        and turnos.fecha_turno >= '".$fecha1."' 
+        and turnos.fecha_turno < '".$fecha2."';")->queryAll();
+ 
     $total = 4;
     $i=0;
     foreach($model as $m)
     {
-        $i++;
+        foreach ($m as $m1) {
+            $i++;
+        }
     }
     $resto = $total-$i;
     if($resto >0)

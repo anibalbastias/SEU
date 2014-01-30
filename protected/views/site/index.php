@@ -89,25 +89,43 @@
                 $falta = Faltas::model()->findAll(array("condition"=>"usuarios_id_usuario = $usuario->id_usuario","order"=>"fecha_falta DESC",));
         
          
+                if($falta)
+                {
+                    
                 
-                foreach ($falta as $f){
-        
-      
+                    foreach ($falta as $f){
+
+
+                    ?>
+
+                        <div class="mis_turnos">
+                            <div class="row-fluid">
+                                <div class="">
+                                <?php echo "<div class='span4'><b>Descripción:</b> ".$f->desc_falta."</div>"; ?>
+                                <?php echo "<div class='span2'><b>Tipo: </b>".$f->tipo_falta."</div>"; ?>
+                                <?php echo "<div class='span2'><b>Fecha: </b>".$f->fecha_falta."</div>"; ?>
+
+                                </div>
+                            </div>    
+                        </div>  
+
+
+                <?php 
+                
+                    } 
+                }
+                else
+                {
+                    echo "<div class='row-fluid'>
+                    <div class='span4'>
+                    <div class='alert alert-success'>
+                    <p>El Usuario no registra faltas.</p>
+                    </div>
+                    </div>
+                    </div>";
+                }
+                
                 ?>
-
-                    <div class="mis_turnos">
-                        <div class="row-fluid">
-                            <div class="">
-                            <?php echo "<div class='span4'><b>Descripción:</b> ".$f->desc_falta."</div>"; ?>
-                            <?php echo "<div class='span2'><b>Tipo: </b>".$f->tipo_falta."</div>"; ?>
-                            <?php echo "<div class='span2'><b>Fecha: </b>".$f->fecha_falta."</div>"; ?>
-
-                            </div>
-                        </div>    
-                    </div>  
-
-
-                <?php } ?>
 
 
      <div class="container-fluid">
@@ -158,7 +176,7 @@
                 where estado='Rechazado' and turnos_id_turno=".$turno2->id_turno.";")->queryScalar();
         
         
-        echo date("d",strtotime($turno2->fecha_turno));
+        //echo date("d",strtotime($turno2->fecha_turno));
        
         
         $t3 = explode(" ", $turno2->fecha_turno);
@@ -183,13 +201,12 @@
             if($model4)
             {
                 $model5 = Usuarios::model()->find('id_usuario='.$model4);
-                echo "<div class='well'><b>Regalado por ".$model5->nom_usuario." ".$model5->apel1_usuario." ".$model5->apel2_usuario."</b></div>";
+                echo "<div class=''><b>Regalado por ".$model5->nom_usuario." ".$model5->apel1_usuario." ".$model5->apel2_usuario."</b></div>";
             }
-            
-            
-            
-
-            echo "<div class='span3'><div type=\"button\" class=\"btn btn-mini btn-warning\" onclick=\"location.href='".Yii::app()->baseUrl."/site/regalaturno/".$turno2->id_turno."';\">Regalar turno</div> </div>";
+            else
+            {
+                echo "<div class='span3'><div type=\"button\" class=\"btn btn-mini btn-warning\" onclick=\"location.href='".Yii::app()->baseUrl."/site/regalaturno/".$turno2->id_turno."';\">Regalar turno</div> </div>";
+            }
         }
         else
         {
@@ -244,20 +261,46 @@
 
 
    <!-- ##############  turnos para tomar ##################### -->
-        <h3><u>Turnos para tomar</u></h3>
+<!--        <h3><u>Turnos para tomar</u></h3>-->
+<br>
         
         <?php
-    $model = UsuariosHasTurnos::model()->findall('usuarios_id_usuario='.Yii::app()->session['var'].' and estado="Aceptado"');
+    $fecha1 = date ( 'Y-m-d H:i:s' , strtotime("monday next week"));
+    $fecha2 = date ( 'Y-m-d H:i:s' , strtotime("sunday next week"));
+        
+//    $model = UsuariosHasTurnos::model()->findall('usuarios_id_usuario='.Yii::app()->session['var'].' 
+//        and estado="Aceptado"');
+    
+    $model = Yii::app()->db->createCommand("
+        select turnos_id_turno
+        from usuarios_has_turnos,turnos
+        where 
+        usuarios_has_turnos.estado = 'Aceptado'
+        and usuarios_has_turnos.turnos_id_turno = turnos.id_turno
+        and usuarios_has_turnos.usuarios_id_usuario=".Yii::app()->session['var']." 
+        and turnos.fecha_turno >= '".$fecha1."' 
+        and turnos.fecha_turno < '".$fecha2."';")->queryAll();
+ 
     $total = 4;
     $i=0;
     foreach($model as $m)
     {
-        $i++;
+        foreach ($m as $m1) {
+            $i++;
+        }
     }
     $resto = $total-$i;
     if($resto >0)
     {
-        echo "<p>Quedan <b>".($resto)."</b> turnos para tomar esta semana</p>";
+        echo "
+                    <div class='row-fluid'>
+                    <div class='span4'>
+                    <div class='alert alert-danger'>
+                    <p>Le quedan <b>".($resto)."</b> turnos para tomar esta semana</p>
+                    </div>
+                    </div>
+                    </div>"
+                ;
         
         ?>
 

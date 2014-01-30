@@ -10,12 +10,12 @@
 <?php
 $model= Turnos::model()->findall(array('order'=>'fecha_turno'));
 
-$nuevafecha2 = date ( 'l j/m' , strtotime("wednesday this week"));
+$nuevafecha2 = date ( 'l j/m' , strtotime("wednesday next week"));
 $m2_f2 = explode(" ", $nuevafecha2);
 
 echo "<h3>Miércoles ".$m2_f2[1]."</h3>";
 
-$nuevafecha3 = date ( 'l j-m' , strtotime("wednesday this week"));
+$nuevafecha3 = date ( 'l j-m' , strtotime("wednesday next week"));
 $m2_f3 = explode(" ", $nuevafecha3);
 
 if($model)
