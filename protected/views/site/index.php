@@ -278,7 +278,9 @@
         $model4 = Yii::app()->db->createCommand("select usuarios_id_usuario from usuarios_has_turnos
                 where estado='Rechazado' and turnos_id_turno=".$turno2->id_turno.";")->queryScalar();
         
-//        echo $turno2->fecha_turno;
+        
+        echo date("d",strtotime($turno2->fecha_turno));
+       
         
         $t3 = explode(" ", $turno2->fecha_turno);
         $date1 = date_create($turno2->fecha_turno);
@@ -293,7 +295,7 @@
         if(date_format($date1, "w") == "6") echo "Sabado";
         if(date_format($date1, "w") == "0") echo "Domingo";
 
-        echo " ".$t3[0]."</div> <div class='span3'><b>Hora:</b> ".$t3[1]."</div>";
+        echo " ".date("d-m-Y",strtotime($t3[0]))."</div> <div class='span3'><b>Hora:</b> ".$t3[1]."</div>";
         
         if($model3 == "Aceptado")
         {
