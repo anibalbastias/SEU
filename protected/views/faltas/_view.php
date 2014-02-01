@@ -7,7 +7,8 @@
     <div class="well">
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('falta')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->desc_falta), array('view', 'id'=>$data->id_falta)); ?>
+	<?php // echo CHtml::link(CHtml::encode($data->desc_falta), array('view', 'id'=>$data->id_falta)); ?>
+        <?php echo CHtml::encode($data->desc_falta); ?>
 	<br />
         
 	<b><?php echo CHtml::encode($data->getAttributeLabel('usuario')); ?>:</b>

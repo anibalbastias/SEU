@@ -112,11 +112,11 @@
                 <a href="<?php echo Yii:: app() ->baseUrl.'/site/mperfil' ?>">Modificar datos</a>
         </div>
         
-        <div type="button" class="btn btn-success">
+<!--        <div type="button" class="btn btn-success">
                 
                 <a target="_blank" href="<?php echo Yii:: app() ->baseUrl.'/site/credencial'?> "> Descargar Credencial</a>
 
-        </div>
+        </div>-->
         
        
         <!-- ############## reglamento  ##########################--> 
