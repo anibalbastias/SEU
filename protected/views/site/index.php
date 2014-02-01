@@ -289,45 +289,27 @@
 <!--        <h3><u>Turnos para tomar</u></h3>-->
 <br>
         
-        <?php
-    $fecha1 = date ( 'Y-m-d H:i:s' , strtotime("monday next week"));
-    $fecha2 = date ( 'Y-m-d H:i:s' , strtotime("sunday next week"));
-        
-//    $model = UsuariosHasTurnos::model()->findall('usuarios_id_usuario='.Yii::app()->session['var'].' 
-//        and estado="Aceptado"');
-    
-    $model = Yii::app()->db->createCommand("
-        select turnos_id_turno
-        from usuarios_has_turnos,turnos
-        where 
-        usuarios_has_turnos.estado = 'Aceptado'
-        and usuarios_has_turnos.turnos_id_turno = turnos.id_turno
-        and usuarios_has_turnos.usuarios_id_usuario=".Yii::app()->session['var']." 
-        and turnos.fecha_turno >= '".$fecha1."' 
-        and turnos.fecha_turno < '".$fecha2."';")->queryAll();
- 
-    $total = 4;
-    $i=0;
-    foreach($model as $m)
-    {
-        foreach ($m as $m1) {
-            $i++;
-        }
-    }
-    $resto = $total-$i;
-    if($resto >0)
-    {
-        echo "
-                    <div class='row-fluid'>
-                    <div class='span4'>
-                    <div class='alert alert-danger'>
-                    <p>Le quedan <b>".($resto)."</b> turnos para tomar esta semana</p>
-                    </div>
-                    </div>
-                    </div>"
-                ;
-        
-        ?>
+        <div class='row-fluid'>
+     <div class='span7'>
+          <div class='alert alert-danger'>
+                   <p>Usted puede tomar todos los turnos que desee para completar cupos disponibles.</p>
+          </div>
+     </div>
+</div>
+
+
+<div class="span11">
+   
+    <div class="row planilla-all well">
+    <div class="span-2 centrar planilla well_semana"><?php echo $this->renderPartial('_col1_1'); ?></div>
+    <div class="span-2 centrar planilla well_semana"><?php echo $this->renderPartial('_col2_1'); ?></div>
+    <div class="span-2 centrar planilla well_semana"><?php echo $this->renderPartial('_col3_1'); ?></div>
+    <div class="span-2 centrar planilla well_semana"><?php echo $this->renderPartial('_col4_1'); ?></div>
+    <div class="span-2 centrar planilla well_semana"><?php echo $this->renderPartial('_col5_1'); ?></div>
+    <div class="span-2 centrar planilla well_semana"><?php echo $this->renderPartial('_col6_1'); ?></div>
+    <div class="span-2 planilla centrar well_semana"><?php echo $this->renderPartial('_col7_1'); ?></div>
+    </div>    
+</div>
 
 <div class="span11">
    
@@ -341,19 +323,6 @@
     <div class="span-2 planilla centrar well_semana"><?php echo $this->renderPartial('_col7'); ?></div>
     </div>    
 </div> 
-<!--<div id="counter"></div>-->
-
-
-        <?php
-    }
-    else 
-    {
-        echo "<p>No le quedan más turnos para tomar esta semana. Debe esperar para la próxima semana o regalar turnos.</p>";
-    }
-?>
-
-
-
        
         </div>
    
