@@ -55,9 +55,16 @@
         <?php 
         
             date_default_timezone_set("Chile/Continental");
-            $dia_peticion = '4 23:00:00';
-            $dia_repechaje = '5 00:00:00';
-         
+            $dia_peticion = '4';
+            $hora_peticion = '23';
+            $min_i_peticion = '00';
+            $min_f_peticion = '59';
+            
+            $dia_repechaje = '5';
+            $hora_repechaje = '23';
+            $min_i_repechaje = '00';
+            $min_f_repechaje = '59';
+            
         
             if(Yii::app()->session['var'] != NULL){
              $usuario=Usuarios::model()->findByPk(Yii::app()->session['var']);
@@ -66,8 +73,10 @@
                 
                  
                 //$fecha_dia = date("w");
-                $fecha_dia = date("w H:i:s");
-//                echo $fecha_dia;
+                $fecha_dia = date("w");
+                $hora_dia = date("H");
+                $min_dia = date("i");
+//                echo $min_dia;
          
                 
             ?>
@@ -160,7 +169,7 @@
             <li <?php if($pagina == "turnosuser") { ?>class="active" <?php } ?> ><a href="<?php echo Yii:: app() ->baseUrl.'/site/turnosuser' ?>"> Mis Turnos</a></li>
             <li <?php if($pagina == "peticion") { ?>class="active" <?php } ?> >
                 
-                    <?php if($fecha_dia > $dia_peticion) { ?>
+                    <?php if(($fecha_dia == $dia_peticion) && ($hora_dia == $hora_peticion) && ($min_dia >= $min_i_peticion) && ($min_dia <= $min_f_peticion)) { ?>
                                 <a href="<?php echo Yii:: app() ->baseUrl.'/site/peticion'; ?>">Tomar Turnos </a>
                     <?php } ?>
                                 
@@ -168,7 +177,7 @@
             <li 
                 <?php if($pagina == "repechaje") { ?>class="active" <?php } ?> >
             
-                       <?php if($fecha_dia > $dia_repechaje) { ?>
+                       <?php if(($fecha_dia == $dia_repechaje)&& ($hora_dia == $hora_repechaje) && ($min_dia >= $min_i_repechaje) && ($min_dia <= $min_f_repechaje)) { ?>
                 
                                 <a href="<?php echo Yii:: app() ->baseUrl.'/site/repechaje' ?>"> Turnos Repechaje</a>
                        <?php } ?>

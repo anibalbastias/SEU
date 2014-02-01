@@ -183,7 +183,7 @@ class SiteController extends Controller
             $model->estado = "Aceptado";
             $model->save();
             
-            $this->redirect(array('repechaje'));
+            $this->redirect(array('index'));
             
             $this->render('create',array(
                     'model'=>$model,

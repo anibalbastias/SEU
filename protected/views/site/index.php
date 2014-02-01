@@ -150,6 +150,9 @@
         </div>
         
 <?php
+
+    date_default_timezone_set("Chile/Continental");
+
     //$turno1 = UsuariosHasTurnos::model()->findAllByAttributes(array('usuarios_id_usuario'=>Yii::app()->session['var']));
     $fecha1 = date ( 'Y-m-d H:i:s' , strtotime("monday this week"));
     $fecha2 = date ( 'Y-m-d H:i:s' , strtotime("sunday next week"));
@@ -315,6 +318,12 @@
     </div>    
 </div>
 
+<?php 
+
+ if(date("w") == 6 || date("w") == 0)   
+
+{
+?>
 <div class="span11">
    
     <div class="row planilla-all well">
@@ -327,7 +336,11 @@
     <div class="span-2 planilla centrar well_semana"><?php echo $this->renderPartial('_col7'); ?></div>
     </div>    
 </div> 
-       
+ 
+<?php
+}
+?>
+
         </div>
    
           
