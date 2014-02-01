@@ -37,7 +37,7 @@
           <div class="mis_turnos">    
         <?php
         
-        $turno2 = Turnos::model()->find("id_turno=".$t."");
+        $turno2 = Turnos::model()->find("id_turno=".$t."",array('fecha_turno'=>'fecha_turno ASC'));
         
         $model3 = Yii::app()->db->createCommand("
                 select estado 
@@ -75,8 +75,8 @@
 
             if($model4)
             {
-                $model5 = Usuarios::model()->find('id_usuario='.$model4);
-                echo "<div class='well'><b>Regalado por ".$model5->nom_usuario." ".$model5->apel1_usuario." ".$model5->apel2_usuario."</b></div>";
+//                $model5 = Usuarios::model()->find('id_usuario='.$model4);
+//                echo "<div class='well'><b>Regalado por ".$model5->nom_usuario." ".$model5->apel1_usuario." ".$model5->apel2_usuario."</b></div>";
             }
             
             

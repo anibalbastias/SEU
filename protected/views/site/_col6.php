@@ -73,7 +73,11 @@ if($model)
                 if(Yii::app()->controller->action->id == "repechaje" && $model4 != "Rechazado")
                 {
                     echo "<div type=\"button\" class=\"btn btn-primary\" onclick=\"location.href='".Yii::app()->baseUrl."/site/tomaturnorep/".$m->id_turno."';\">Tomar turno</div>";
-                }   
+                }
+                 if(Yii::app()->controller->action->id == "index" && $model4 != "Rechazado")
+                {
+                    echo "<div type=\"button\" class=\"btn btn-primary\" onclick=\"location.href='".Yii::app()->baseUrl."/site/rellenar/".$m->id_turno."';\">Tomar turno</div>";
+                }
             }
             else if($model3 == Yii::app()->session['var'])
             {

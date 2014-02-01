@@ -173,7 +173,23 @@ class SiteController extends Controller
             
         }
         
-        
+        public function actionRellenar($id)
+        {
+            $model= new UsuariosHasTurnos;
+
+            $empaque=Usuarios::model()->findByPk(Yii::app()->session['var']);
+            $model->turnos_id_turno = $id;
+            $model->usuarios_id_usuario = $empaque->id_usuario;
+            $model->estado = "Aceptado";
+            $model->save();
+            
+            $this->redirect(array('repechaje'));
+            
+            $this->render('create',array(
+                    'model'=>$model,
+            ));
+            
+        }
         
         
         public function actionRegalaTurno($id)

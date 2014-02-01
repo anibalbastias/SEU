@@ -766,3 +766,96 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2014/02/01 14:44:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/02/01 18:44:47 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY fecha_turno ASC LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `turnos` `t` WHERE id_turno=35ORDER BY fecha_turno ASC LIMIT 1.
+in C:\wamp\www\easy\SEU\protected\views\site\index.php (187)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (53)
+in C:\wamp\www\easy\SEU\index.php (13)
+2014/02/01 18:44:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY fecha_turno ASC LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `turnos` `t` WHERE id_turno=35ORDER BY fecha_turno ASC LIMIT 1' in C:\wamp\www\easy\SEU\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1291): CDbCommand->queryRow()
+#2 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1396): CActiveRecord->query(Object(CDbCriteria))
+#3 C:\wamp\www\easy\SEU\protected\views\site\index.php(187): CActiveRecord->find('id_turno=35ORDE...')
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', Array, true)
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', Array, true)
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(53): CController->render('index', Array)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/index')
+#15 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/easy/SEU/site/index
+HTTP_REFERER=http://localhost/easy/SEU/site/turnosuser
+---
+2014/02/01 18:51:31 [error] [php] Trying to get property of non-object (C:\wamp\www\easy\SEU\protected\views\site\index.php:194)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(53): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/index
+in C:\wamp\www\easy\SEU\protected\views\site\index.php (194)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (53)
+in C:\wamp\www\easy\SEU\index.php (13)
+2014/02/01 18:52:05 [error] [php] Use of undefined constant order - assumed 'order' (C:\wamp\www\easy\SEU\protected\views\site\index.php:187)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(53): SiteController->render()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/index
+in C:\wamp\www\easy\SEU\protected\views\site\index.php (187)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (53)
+in C:\wamp\www\easy\SEU\index.php (13)
+2014/02/01 18:54:11 [error] [php] Array to string conversion (C:\wamp\www\easy\SEU\yii\framework\db\CDbCommand.php:275)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\schema\CDbCommandBuilder.php(101): CDbCommandBuilder->bindValues()
+#1 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1290): CDbCommandBuilder->createFindCommand()
+#2 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(1396): Turnos->query()
+#3 C:\wamp\www\easy\SEU\protected\views\site\index.php(187): Turnos->find()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#8 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(53): SiteController->render()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/index
+in C:\wamp\www\easy\SEU\protected\views\site\index.php (187)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (53)
+in C:\wamp\www\easy\SEU\index.php (13)
