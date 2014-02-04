@@ -931,3 +931,67 @@ Stack trace:
 REQUEST_URI=/easy/SEU/img/users/37.jpg
 HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
 ---
+2014/02/04 00:35:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/users/37.jpg".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('img/users/37.jp...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/img/users/37.jpg
+HTTP_REFERER=http://localhost/easy/SEU/usuarios/admin
+---
+2014/02/04 03:40:06 [error] [php] Trying to get property of non-object (C:\wamp\www\easy\SEU\protected\views\site\_col1.php:38)
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\easy\SEU\protected\views\site\planilla.php(47): SiteController->renderPartial()
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require()
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): SiteController->renderFile()
+#5 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#6 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(129): SiteController->render()
+#7 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionPlanilla()
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): SiteController->runAction()
+#10 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\easy\SEU\index.php(13): CWebApplication->run()
+REQUEST_URI=/easy/SEU/site/planilla
+in C:\wamp\www\easy\SEU\protected\views\site\_col1.php (38)
+in C:\wamp\www\easy\SEU\protected\views\site\planilla.php (47)
+in C:\wamp\www\easy\SEU\protected\controllers\SiteController.php (129)
+2014/02/04 03:51:19 [error] [exception.CException] exception 'CException' with message 'Property "Turnos.id_falta" is not defined.' in C:\wamp\www\easy\SEU\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('id_falta')
+#1 C:\wamp\www\easy\SEU\protected\views\site\_col2.php(69): CActiveRecord->__get('id_falta')
+#2 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#3 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#4 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#5 C:\wamp\www\easy\SEU\protected\views\site\planilla.php(48): CController->renderPartial('_col2')
+#6 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\eas...')
+#7 C:\wamp\www\easy\SEU\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\eas...', NULL, true)
+#8 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\eas...', NULL, true)
+#9 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(783): CController->renderPartial('planilla', NULL, true)
+#10 C:\wamp\www\easy\SEU\protected\controllers\SiteController.php(129): CController->render('planilla')
+#11 C:\wamp\www\easy\SEU\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionPlanilla()
+#12 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\easy\SEU\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(283): CController->run('planilla')
+#16 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/planilla')
+#17 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/easy/SEU/site/planilla
+HTTP_REFERER=http://localhost/easy/SEU/turnos/43
+---
+2014/02/04 00:54:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "easy/SEU/site/planilla".' in C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\easy\SEU\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('easy/SEU/site/p...')
+#1 C:\wamp\www\easy\SEU\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\easy\SEU\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/easy/SEU/easy/SEU/site/planilla
+HTTP_REFERER=http://localhost/easy/SEU/site/planilla
+---

@@ -64,6 +64,15 @@ if($model)
             
             echo "<h5><a href='#'>".$m2[1]." - ".$m2_f[1]."</a></h5>";
             
+            $admin=Usuarios::model()->findByPk(Yii::app()->session['var']);
+            if($admin->rut_usuario == 'admin'){
+            echo CHtml::button(
+                'Eliminar',
+                array('onClick'=>'location.replace("'.Yii:: app() ->baseUrl.'/turnos/delete/'.$m->id_turno.'")', 
+                    'class'=>'btn btn-danger btn-mini','confirm' => '¿Está seguro de eliminar el usuario?')
+                );;
+            }
+            
             if($model3 != Yii::app()->session['var'])
             {
                 if(Yii::app()->controller->action->id == "peticion" && $model4 != "Rechazado")

@@ -36,7 +36,6 @@ if($model)
         $m2_f1 = explode(" ", $nuevafecha1);
         
         
-        
         if($m2_f1[0] == 'Monday' && ($m2[0] == $m2_f3[1]))
         {
             $model1 = UsuariosHasTurnos::model()->findall('turnos_id_turno='.$m->id_turno.' and estado="Aceptado"');
@@ -63,6 +62,15 @@ if($model)
             
             
             echo "<h5><a href='#'>".$m2[1]." - ".$m2_f[1]."</a></h5>";
+            
+             $admin=Usuarios::model()->findByPk(Yii::app()->session['var']);
+            if($admin->rut_usuario == 'admin'){
+            echo CHtml::button(
+                'Eliminar',
+                array('onClick'=>'location.replace("'.Yii:: app() ->baseUrl.'/turnos/delete/'.$m->id_turno.'")', 
+                    'class'=>'btn btn-danger btn-mini','confirm' => '¿Está seguro de eliminar el usuario?')
+                );;
+            }
             
             if($model3 != Yii::app()->session['var'])
             {
