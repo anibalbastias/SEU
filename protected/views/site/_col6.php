@@ -113,7 +113,7 @@ if($model)
                     $model2 = Usuarios::model()->findall('id_usuario='.$m2->usuarios_id_usuario);
                     foreach($model2 as $m3)
                     {
-                        echo "<p class='enum_user'>".$j.". ".$m3->nom_usuario." ".$m3->apel1_usuario."</p>";
+//                        echo "<p class='enum_user'>".$j.". ".$m3->nom_usuario." ".$m3->apel1_usuario."</p>";
                         $j++;
                     }
                 }
